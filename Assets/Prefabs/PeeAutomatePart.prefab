@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 7347016709170691350}
   - component: {fileID: 7705642638587982233}
   - component: {fileID: 4462124901614301573}
-  - component: {fileID: 6565902114852320227}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -115,29 +114,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &6565902114852320227
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686422760378162591}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &5336710075580667165
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5498311064539671439}
   m_Layer: 0
-  m_Name: PeeAutomatPart
+  m_Name: PeeAutomatePart
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -170,7 +146,7 @@ Transform:
   - {fileID: 1891865614884903270}
   - {fileID: 2691468609874742844}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -55.717}
 --- !u!1 &5885118557344518245
 GameObject:

@@ -377,7 +377,7 @@ GameObject:
   - component: {fileID: 8551063308835627800}
   - component: {fileID: 1910065385870143141}
   m_Layer: 0
-  m_Name: NeepPeePanel
+  m_Name: NeedPeePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PeeAutomat : MonoBehaviour
+public class PeeGenerator : BaseAutomatePart
 {
     [SerializeField] private float peeStrength = 1.0f;
     [SerializeField] private float spawnPeeInterval = 0.1f;
@@ -15,6 +15,8 @@ public class PeeAutomat : MonoBehaviour
 
     private void Update()
     {
+        if (!IsActive) return;
+
         if (Time.time - _lastSpawnPeeTime >= spawnPeeInterval)
         {
             Pee();
@@ -25,7 +27,8 @@ public class PeeAutomat : MonoBehaviour
     {
         foreach (var peeOrigin in peeOrigins)
         {
-            var peeBox = Instantiate(peeBoxPrefab, peeOrigin.position, Quaternion.LookRotation(transform.forward));
+            PeeBox peeBox = Instantiate(peeBoxPrefab, peeOrigin.position, Quaternion.LookRotation(transform.forward));
+            peeBox.SetGenerator(this);
             peeBox.PeeForward(peeOrigin.forward, peeStrength);
         }
 

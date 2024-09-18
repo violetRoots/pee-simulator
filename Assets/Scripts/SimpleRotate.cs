@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SimpleRotate : MonoBehaviour
+public class SimpleRotate : BaseAutomatePart
 {
     [SerializeField] private float speed = 100.0f;
 
@@ -10,6 +10,8 @@ public class SimpleRotate : MonoBehaviour
 
     private void Update()
     {
+        if (!IsActive) return;
+
         target.Rotate(Vector3.up, speed * Time.deltaTime, Space.Self);
     }
 }
