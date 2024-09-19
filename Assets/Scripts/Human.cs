@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
 public class Human : MonoBehaviour
@@ -17,6 +18,11 @@ public class Human : MonoBehaviour
     [SerializeField] private float peeCooldown = 1.0f;
     [SerializeField] private float addMoneyCooldown = 1.0f;
     [SerializeField] private float moneyMultiplier = 1.0f;
+
+    [Space]
+    [SerializeField] private AnimationClip idleAnimationClip;
+    [SerializeField] private AnimationClip celebrationAnimationClip;
+    [SerializeField] private Animation humanAnimation;
 
     [SerializeField] private NeedPeePanel needPeePanel;
 
@@ -41,6 +47,7 @@ public class Human : MonoBehaviour
         UpdateOriginInfos();
         UpdateNeedPeePanel();
         UpdateMoney();
+        UpdateAnimation();
 
         if(_peeOriginInfos.Count == 0)
             SetMaterials(defaultMaterial);
@@ -88,5 +95,22 @@ public class Human : MonoBehaviour
         {
             renderer.material = material;
         }
+    }
+
+    private void UpdateAnimation()
+    {
+        //humanAnimation.Stop();
+        
+
+        //if (_peeOriginInfos.Count < neededPeeOriginsCount)
+        //{
+        //    humanAnimation.clip = idleAnimationClip;
+        //}
+        //else
+        //{
+        //    humanAnimation.clip = celebrationAnimationClip;
+        //}
+
+        //humanAnimation.Play();
     }
 }

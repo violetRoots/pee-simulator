@@ -52,7 +52,7 @@ public class UiCircleMenu : MonoBehaviour
 
             segmentInfo.segment.Deselect();
 
-            var offset = -45.0f;
+            var offset = -60.0f;
             var diff = Mathf.Abs(angle - segmentInfo.targetAngle + offset);
 
             if (diff < minAngleDiff)

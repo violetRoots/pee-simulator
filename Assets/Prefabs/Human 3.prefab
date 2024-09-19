@@ -61,6 +61,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: fee4e9a665d7771418db94f0ac426a03, type: 2}
     - target: {fileID: 9185089189383402363, guid: 63e94f537f1eeb64a8256fcdeadc8ba5, type: 3}
+      propertyPath: humanAnimation
+      value: 
+      objectReference: {fileID: 7799122541394090510}
+    - target: {fileID: 9185089189383402363, guid: 63e94f537f1eeb64a8256fcdeadc8ba5, type: 3}
       propertyPath: defaultMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 76425f3b5dd37e64ebe55e37c245da12, type: 2}
@@ -154,6 +158,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11100000, guid: 76a4ddcefddf783499cac977dc6638e6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -162,6 +170,11 @@ PrefabInstance:
 --- !u!4 &7799122541387587488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400078, guid: 76a4ddcefddf783499cac977dc6638e6, type: 3}
+  m_PrefabInstance: {fileID: 7799122541387187566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &7799122541394090510 stripped
+Animation:
+  m_CorrespondingSourceObject: {fileID: 11100000, guid: 76a4ddcefddf783499cac977dc6638e6, type: 3}
   m_PrefabInstance: {fileID: 7799122541387187566}
   m_PrefabAsset: {fileID: 0}
 --- !u!137 &7799122541400886990 stripped
