@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PeeRail_CircleItem
   m_EditorClassIdentifier: 
   title: "\u0420\u0415\u041B\u042C\u0421\u042B \u0421\u0421\u0410\u041D\u042C\u042F"
-  price: 400
+  price: 100
   automate: {fileID: 8206282974585324324, guid: ec443b531a1f8944586c643a207bfac3, type: 3}

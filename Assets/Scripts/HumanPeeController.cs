@@ -1,11 +1,11 @@
+using NaughtyAttributes;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
-public class Human : MonoBehaviour
+public class HumanPeeController : MonoBehaviour
 {
     [Serializable]
     public class PeeOriginInfo
@@ -14,15 +14,11 @@ public class Human : MonoBehaviour
         public float registeredTime;
     }
 
-    [SerializeField] private int neededPeeOriginsCount = 3;
+    [MinMaxSlider(1, 10)]
+    [SerializeField] private Vector2Int neededPeeOriginsBounds;
     [SerializeField] private float peeCooldown = 1.0f;
     [SerializeField] private float addMoneyCooldown = 1.0f;
     [SerializeField] private float moneyMultiplier = 1.0f;
-
-    [Space]
-    [SerializeField] private AnimationClip idleAnimationClip;
-    [SerializeField] private AnimationClip celebrationAnimationClip;
-    [SerializeField] private Animation humanAnimation;
 
     [SerializeField] private NeedPeePanel needPeePanel;
 
@@ -35,19 +31,25 @@ public class Human : MonoBehaviour
 
     private List<PeeOriginInfo> _peeOriginInfos = new List<PeeOriginInfo>();
 
+    private bool _hasOrder;
+    private int _neededPeeOriginsCount;
+
     private float _lastAddMoneyTime;
 
     private void Awake()
     {
         _gameManager = GameManager.Instance;
+
+        HideNeedPeePanel();
     }
 
     private void Update()
     {
+        if (!_hasOrder) return; 
+
         UpdateOriginInfos();
         UpdateNeedPeePanel();
         UpdateMoney();
-        UpdateAnimation();
 
         if(_peeOriginInfos.Count == 0)
             SetMaterials(defaultMaterial);
@@ -68,6 +70,15 @@ public class Human : MonoBehaviour
         });
     }
 
+    public void InitOrder()
+    {
+        _neededPeeOriginsCount = UnityEngine.Random.Range(neededPeeOriginsBounds.x, neededPeeOriginsBounds.y);
+
+        ShowNeedPeePanel();
+
+        _hasOrder = true;
+    }
+
     private void UpdateOriginInfos()
     {
         _peeOriginInfos = _peeOriginInfos.Where(info => Time.time - info.registeredTime < peeCooldown).ToList();
@@ -75,12 +86,22 @@ public class Human : MonoBehaviour
 
     private void UpdateNeedPeePanel()
     {
-        needPeePanel.SetCount(neededPeeOriginsCount - _peeOriginInfos.Count);
+        needPeePanel.SetCount(_neededPeeOriginsCount - _peeOriginInfos.Count);
+    }
+
+    private void ShowNeedPeePanel()
+    {
+        needPeePanel.gameObject.SetActive(true);
+    }
+
+    private void HideNeedPeePanel()
+    {
+        needPeePanel.gameObject.SetActive(false);
     }
 
     private void UpdateMoney()
     {
-        if (_peeOriginInfos.Count < neededPeeOriginsCount) return;
+        if (_peeOriginInfos.Count < _neededPeeOriginsCount) return;
 
         if (Time.time - _lastAddMoneyTime < addMoneyCooldown) return;
 
@@ -95,22 +116,5 @@ public class Human : MonoBehaviour
         {
             renderer.material = material;
         }
-    }
-
-    private void UpdateAnimation()
-    {
-        //humanAnimation.Stop();
-        
-
-        //if (_peeOriginInfos.Count < neededPeeOriginsCount)
-        //{
-        //    humanAnimation.clip = idleAnimationClip;
-        //}
-        //else
-        //{
-        //    humanAnimation.clip = celebrationAnimationClip;
-        //}
-
-        //humanAnimation.Play();
     }
 }
