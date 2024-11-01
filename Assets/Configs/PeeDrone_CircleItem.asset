@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PeeDrone_CircleItem
   m_EditorClassIdentifier: 
   title: "\u041C\u041E\u0427\u0415\u0413\u041E\u041D\u041D\u042B\u0419 \u0414\u0420\u041E\u041D"
-  price: 50
+  price: 0
   automate: {fileID: 5149983721916730565, guid: c059a7ba7d4c21447a09f430bac0745a, type: 3}

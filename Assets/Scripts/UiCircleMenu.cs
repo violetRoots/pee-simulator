@@ -29,8 +29,8 @@ public class UiCircleMenu : MonoBehaviour
     private void Awake()
     {
         _gameManager = GameManager.Instance;
-        _characterBuildController = GameManager.Instance.CharacterProvider.CharacterBuildController;
-        _characterInteractionController = GameManager.Instance.CharacterProvider.CharacterInteractionController;
+        _characterBuildController = GameManager.Instance.CharacterProvider.BuildController;
+        _characterInteractionController = GameManager.Instance.CharacterProvider.InteractionController;
 
         _centerPos = new Vector2(Screen.width / 2, Screen.height / 2);
     }

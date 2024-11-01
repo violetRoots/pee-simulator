@@ -27,9 +27,10 @@ public class ZombieStateController : MonoBehaviour
     [SerializeField]
     [HideInInspector]
     private ZombieProvider _zombieProvider;
-    private ZombieMovementController _zombieMovementController;
-    private ZombieAnimationController _zombieAnimationController;
-    private ZombieDetectionController _zombieDetectionController;
+    private ZombieMovementController _movementController;
+    private ZombieAnimationController _animationController;
+    private ZombieDetectionController _detectionController;
+    private ZombieAttackController _attackController;
 
     private GameManager _gameManager;
 
@@ -47,9 +48,10 @@ public class ZombieStateController : MonoBehaviour
 
     private void Awake()
     {
-        _zombieMovementController = _zombieProvider.MovementController;
-        _zombieAnimationController = _zombieProvider.AnimationController;
-        _zombieDetectionController = _zombieProvider.DetectionController;
+        _movementController = _zombieProvider.MovementController;
+        _animationController = _zombieProvider.AnimationController;
+        _detectionController = _zombieProvider.DetectionController;
+        _attackController = _zombieProvider.AttackController;
 
         _gameManager = GameManager.Instance;
     }
@@ -69,23 +71,24 @@ public class ZombieStateController : MonoBehaviour
     {
         if (state.Value == ZombieState.Attack || state.Value == ZombieState.Die) return;
 
-        if (_zombieDetectionController.IsTargetDetected())
+        if (_detectionController.IsTargetDetected())
         {
             if(state.Value != ZombieState.Agression)
             {
-                _zombieMovementController.Stop();
+                _movementController.Stop();
                 state.Value = ZombieState.Agression;
             }
 
-            _target = _zombieDetectionController.GetTarget();
-            _zombieMovementController.SetDestination(_target.position, attackStoppingDistance, () =>
+            _target = _detectionController.GetTarget();
+            _movementController.SetDestination(_target.position, attackStoppingDistance, () =>
             {
                 state.Value = ZombieState.Attack;
-                _zombieMovementController.RotateTowards(_target.position);
+                _attackController.Attack();
+                _movementController.RotateTowards(_target.position);
             });
             _lastDetectedTime = Time.time;
         }
-        else if (state.Value == ZombieState.Agression && !_zombieDetectionController.IsTargetDetected())
+        else if (state.Value == ZombieState.Agression && !_detectionController.IsTargetDetected())
         {
             if(_target == null)
             {
@@ -105,30 +108,30 @@ public class ZombieStateController : MonoBehaviour
 
         if(newState == ZombieState.Idle)
         {
-            _zombieMovementController.Stop();
-            _zombieAnimationController.PlayIdleAnimation();
+            _movementController.Stop();
+            _animationController.PlayIdleAnimation();
             DelayedAction(UnityEngine.Random.Range(zombieIdleTimeBounds.x, zombieIdleTimeBounds.y), () => state.Value = ZombieState.Walk);
         }
         else if(newState == ZombieState.Walk)
         {
-            _zombieAnimationController.PlayWalkAnimation();
-            _zombieMovementController.SetDestination(_gameManager.ZombiePointsManager.GetRandomPoint().position, () => state.Value = ZombieState.Idle);
+            _animationController.PlayWalkAnimation();
+            _movementController.SetDestination(_gameManager.ZombiePointsManager.GetRandomPoint().position, () => state.Value = ZombieState.Idle);
         }
         else if(newState == ZombieState.Agression)
         {
-            _zombieAnimationController.PlayWalkAnimation();
+            _animationController.PlayWalkAnimation();
         }
         else if(newState == ZombieState.Attack)
         {
-            _zombieMovementController.Stop();
-            _zombieAnimationController.PlayAttackAnimation();
+            _movementController.Stop();
+            _animationController.PlayAttackAnimation();
             DelayedAction(attackTime, () => state.Value = ZombieState.Walk);
 
         }
         else if (newState == ZombieState.Die)
         {
-            _zombieMovementController.Stop();
-            _zombieAnimationController.PlayDieAnimation();
+            _movementController.Stop();
+            _animationController.PlayDieAnimation();
             DelayedAction(dieTime, () => Destroy(gameObject));
 
         }

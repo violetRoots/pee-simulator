@@ -16,7 +16,7 @@ public class CharacterPeeController : MonoBehaviour
     private void Awake()
     {
         _inputManager = InputManager.Instance;
-        _characterInteractionController = GameManager.Instance.CharacterProvider.CharacterInteractionController;
+        _characterInteractionController = GameManager.Instance.CharacterProvider.InteractionController;
     }
 
     private void OnEnable()

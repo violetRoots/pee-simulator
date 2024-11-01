@@ -51,7 +51,7 @@ public class CharacterBuildController : MonoBehaviour
     {
         _gameManager = GameManager.Instance;
         _inputManager = InputManager.Instance;
-        _characterInteractionController = GameManager.Instance.CharacterProvider.CharacterInteractionController;
+        _characterInteractionController = GameManager.Instance.CharacterProvider.InteractionController;
 
         _layerMask = LayerMask.GetMask(layerMaskName);
     }
@@ -119,7 +119,7 @@ public class CharacterBuildController : MonoBehaviour
         if (!_canBuild || !_canPlace) return;
 
         _content.transform.SetParent(placedAutomatesContainer, true);
-        _content.Activate();
+        _content.Activate(_currentItemToBuild);
         _content = null;
 
         _gameManager.Data.SetMoney(_gameManager.Data.Money - _currentItemToBuild.price);

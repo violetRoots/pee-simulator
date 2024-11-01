@@ -550,7 +550,7 @@ MonoBehaviour:
     moneyMultiplier: 2
     emotion: 1
   maxPeeCountBounds: {x: 1, y: 2}
-  maxPeeMultiplier: 200
+  maxPeeMultiplier: 500
   changeMaterialCooldown: 1
   addMoneyCooldown: 0.25
   needPeePanel: {fileID: 1129903101362580918}
