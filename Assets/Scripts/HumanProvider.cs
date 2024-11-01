@@ -18,4 +18,7 @@ public class HumanProvider : MonoBehaviour
 
     public HumanPeeController PeeController => peeController;
     [SerializeField] private HumanPeeController peeController;
+
+    public HumanEmotionController EmotionController => emotionController;
+    [SerializeField] private HumanEmotionController emotionController;
 }

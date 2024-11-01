@@ -101,7 +101,7 @@ public class ZombieStateController : MonoBehaviour
 
     private void OnStateChanged(ZombieState newState)
     {
-        Debug.Log(newState);
+        //Debug.Log(newState);
 
         if(newState == ZombieState.Idle)
         {

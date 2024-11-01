@@ -3,22 +3,31 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UniRx;
 using UnityEngine;
 
 public class HumanPeeController : MonoBehaviour
 {
+    public float HappyValue => Mathf.Clamp01((float)_peeCount / _maxPeeCount);
+
     [Serializable]
-    public class PeeOriginInfo
+    public class PeeState
     {
-        public PeeGenerator generator;
-        public float registeredTime;
+        [Range(0f, 1f)]
+        public float happyValue;
+        public float moneyMultiplier = 1.0f;
+
+        public HumanEmotionController.HumanEmotion emotion;
     }
 
+    [SerializeField] private PeeState[] states;
+
     [MinMaxSlider(1, 10)]
-    [SerializeField] private Vector2Int neededPeeOriginsBounds;
-    [SerializeField] private float peeCooldown = 1.0f;
+    [SerializeField] private Vector2Int maxPeeCountBounds;
+    [SerializeField] private int maxPeeMultiplier = 100;
+    [SerializeField] private float changeMaterialCooldown = 1.0f;
+
     [SerializeField] private float addMoneyCooldown = 1.0f;
-    [SerializeField] private float moneyMultiplier = 1.0f;
 
     [SerializeField] private NeedPeePanel needPeePanel;
 
@@ -29,90 +38,97 @@ public class HumanPeeController : MonoBehaviour
 
     private GameManager _gameManager;
 
-    private List<PeeOriginInfo> _peeOriginInfos = new List<PeeOriginInfo>();
+    public readonly ReactiveProperty<PeeState> state = new ReactiveProperty<PeeState>();
 
     private bool _hasOrder;
-    private int _neededPeeOriginsCount;
 
+    private int _peeCount;
+    private int _maxPeeCount;
+
+    private float _lastPeeTime;
     private float _lastAddMoneyTime;
 
     private void Awake()
     {
         _gameManager = GameManager.Instance;
 
-        HideNeedPeePanel();
+        _maxPeeCount = UnityEngine.Random.Range(maxPeeCountBounds.x, maxPeeCountBounds.y) * maxPeeMultiplier;
+        state.Value = states[0];
+
+        //HideUI();
+    }
+
+    public void InitOrder()
+    {
+        ShowUI();
+
+        _hasOrder = true;
     }
 
     private void Update()
     {
-        if (!_hasOrder) return; 
+        UpdatePeeState();
 
-        UpdateOriginInfos();
-        UpdateNeedPeePanel();
-        UpdateMoney();
+        //if (!_hasOrder) return; 
 
-        if(_peeOriginInfos.Count == 0)
-            SetMaterials(defaultMaterial);
-        else
-            SetMaterials(peeMaterial);
+        UpdateVisual();
+        UpdateUI();
     }
 
     private void OnTriggerEnter(Collider collider)
     {
         if (!collider.TryGetComponent(out PeeBox peeBox)) return;
 
-        if (_peeOriginInfos.Any(info => info.generator == peeBox.Generator)) return;
+        _peeCount = Mathf.Clamp(_peeCount + 1, 0, _maxPeeCount);
+        _lastPeeTime = Time.time;
 
-        _peeOriginInfos.Add( new PeeOriginInfo 
-        {  
-            generator = peeBox.Generator, 
-            registeredTime = Time.time 
-        });
+        AddMoney();
     }
 
-    public void InitOrder()
+    private void UpdatePeeState()
     {
-        _neededPeeOriginsCount = UnityEngine.Random.Range(neededPeeOriginsBounds.x, neededPeeOriginsBounds.y);
-
-        ShowNeedPeePanel();
-
-        _hasOrder = true;
+        var newState = states.OrderBy(s => s.happyValue).Where(s => s.happyValue - HappyValue >= 0).FirstOrDefault();
+        if (newState != null && newState != state.Value)
+        {
+            state.Value = newState;
+        }
     }
 
-    private void UpdateOriginInfos()
+    private void UpdateVisual()
     {
-        _peeOriginInfos = _peeOriginInfos.Where(info => Time.time - info.registeredTime < peeCooldown).ToList();
+        if (Time.time - _lastPeeTime >= changeMaterialCooldown)
+            SetMaterials(defaultMaterial);
+        else
+            SetMaterials(peeMaterial);
     }
 
-    private void UpdateNeedPeePanel()
+    private void AddMoney()
     {
-        needPeePanel.SetCount(_neededPeeOriginsCount - _peeOriginInfos.Count);
-    }
-
-    private void ShowNeedPeePanel()
-    {
-        needPeePanel.gameObject.SetActive(true);
-    }
-
-    private void HideNeedPeePanel()
-    {
-        needPeePanel.gameObject.SetActive(false);
-    }
-
-    private void UpdateMoney()
-    {
-        if (_peeOriginInfos.Count < _neededPeeOriginsCount) return;
-
         if (Time.time - _lastAddMoneyTime < addMoneyCooldown) return;
 
-        _gameManager.Data.SetMoney((int)(_gameManager.Data.Money + (1 * moneyMultiplier)));
+        _gameManager.Data.SetMoney((int)(_gameManager.Data.Money + (1 * state.Value.moneyMultiplier)));
 
         _lastAddMoneyTime = Time.time;
     }
 
+    private void ShowUI()
+    {
+        needPeePanel.gameObject.SetActive(true);
+    }
+
+    private void UpdateUI()
+    {
+        needPeePanel.UpdateSlider(HappyValue);
+    }
+
+    private void HideUI()
+    {
+        needPeePanel.gameObject.SetActive(false);
+    }
+
     private void SetMaterials(Material material)
     {
-        foreach(var renderer in renderers)
+        foreach (var renderer in renderers)
         {
             renderer.material = material;
         }
