@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0bca6f03801a243bd968107c3436f1, type: 3}
   m_Name: PeeFountain_CircleItem
   m_EditorClassIdentifier: 
-  title: "\u041D\u0415\u0428\u041E\u041A\u041E\u041B\u0410\u0414\u041D\u042B\u0419
-    \u0424\u041E\u041D\u0422\u0410\u041D"
-  price: 0
+  title: "\u0417\u041E\u041B\u041E\u0422\u041E\u0419 \u0424\u041E\u041D\u0422\u0410\u041D"
+  price: 10
   duration: 10
   automate: {fileID: 7913420000253184615, guid: d285c9790699cea4ca684fa8d7732043, type: 3}

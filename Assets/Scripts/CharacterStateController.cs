@@ -51,7 +51,6 @@ public class CharacterStateController : MonoBehaviour
 
     private void OnCharacterDamaged(float DamagedTime)
     {
-        Debug.Log("DAMAGE");
         state.Value = CharacterState.Injured;
     }
 

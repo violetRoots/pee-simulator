@@ -18,11 +18,12 @@ public partial class GameManager : Singleton<GameManager>
     public ZombiePointsManager ZombiePointsManager => zombiePointsManager;
     [SerializeField] private ZombiePointsManager zombiePointsManager;
 
-    public ExitPointsManager ExitPointsManager => exitPointsManager;
-    [SerializeField] private ExitPointsManager exitPointsManager;
+    public DoorsManager DoorsManager => doorsManager;
+    [SerializeField] protected DoorsManager doorsManager;
 
     private void Awake()
     {
         sitPlaceManager.Init();
+        doorsManager.Init();
     }
 }

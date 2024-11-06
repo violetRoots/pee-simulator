@@ -1,11 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PeeBox : MonoBehaviour
 {
+    [Serializable]
+    public class ExplosionIfno
+    {
+        public float force = 100.0f;
+        public float radius = 1.0f;
+    }
+
     public PeeGenerator Generator { get; private set; }
 
+    [SerializeField] private ExplosionIfno explosionInfo;
     [SerializeField] private int scoreAddiction = 10;
 
     [SerializeField] private Transform peeTracePrefab;
@@ -41,5 +50,10 @@ public class PeeBox : MonoBehaviour
         var trace = Instantiate(peeTracePrefab, position, Quaternion.LookRotation(direction));
 
         _gameManager.Data.SetScore(_gameManager.Data.Score + scoreAddiction);
+    }
+
+    public ExplosionIfno GetExplosionIfno()
+    {
+        return explosionInfo;
     }
 }

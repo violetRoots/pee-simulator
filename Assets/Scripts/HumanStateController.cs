@@ -186,7 +186,7 @@ public class HumanStateController : MonoBehaviour
         }
         else if (newState == HumanState.WantsToLeave)
         {
-            var exitPoint = _gameManager.ExitPointsManager.GetRandomExitPoint();
+            var exitPoint = _gameManager.DoorsManager.GetRandomDoor().GetEntrancePoint();
             _humanMovementController.SetDestination(exitPoint.position, () => Destroy(gameObject));
             _humanAnimationController.PlayWalkAnimation();
         }
@@ -196,7 +196,7 @@ public class HumanStateController : MonoBehaviour
         }
         else if (newState == HumanState.RunsAwayForever)
         {
-            var exitPoint = _gameManager.ExitPointsManager.GetRandomExitPoint();
+            var exitPoint = _gameManager.DoorsManager.GetRandomDoor().GetEntrancePoint();
             _humanMovementController.SetDestination(exitPoint.position, () => Destroy(gameObject));
             _humanAnimationController.PlayWalkAnimation();
         }

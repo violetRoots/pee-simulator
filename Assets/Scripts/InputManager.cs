@@ -10,6 +10,7 @@ public class InputManager : Singleton<InputManager>
     public event Action OnRightMouseDown;
     public event Action OnLeftShiftDown;
     public event Action OnLeftShiftUp;
+    public event Action OnInterationButtonDown;
 
     private void Update()
     {
@@ -32,6 +33,10 @@ public class InputManager : Singleton<InputManager>
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             OnLeftShiftUp?.Invoke();
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            OnInterationButtonDown?.Invoke();
         }
     }
 }

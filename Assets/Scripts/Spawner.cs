@@ -1,39 +1,68 @@
 using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
     [MinMaxSlider(0, 100)]
     [SerializeField] private Vector2 spawnTimeBounds;
-    [Range(0, 1)]
-    [SerializeField] private float zombieSpawnChance = 0.1f;
+    [SerializeField] private AnimationCurve zombieCurve;
     [SerializeField] private bool spawnOnStart = true;
 
-    [SerializeField] private Transform[] spawnPoints;
+    [SerializeField] private Door[] doors;
     [SerializeField] private Transform npcContainer;
 
     [SerializeField] private GameObject[] humans;
     [SerializeField] private GameObject zombie;
+
+    private float _normalizedDayValue;
 
     private bool _canSpawn = true;
 
     private void Start()
     {
         if(spawnOnStart)
-            StartCoroutine(SpawnProcess());
+            StartSpawn();
+    }
+
+    public void StartSpawn()
+    {
+        _canSpawn = true;
+        StartCoroutine(SpawnProcess());
+    }
+
+    public void StopSpawn()
+    {
+        _canSpawn = false;
+        StopCoroutine(SpawnProcess());
+    }
+
+    public void SetDayValue(float normalizedValue)
+    {
+        _normalizedDayValue = normalizedValue;
     }
 
     private IEnumerator SpawnProcess()
     {
         while (_canSpawn)
         {
-            var spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-            var spawnObj = Random.value <= zombieSpawnChance ? zombie : humans[Random.Range(0, humans.Length)];
-            Instantiate(spawnObj, spawnPoint.position, spawnPoint.rotation, npcContainer);
+            var openedDoors = doors.Where(door => door.State == Door.DoorState.Opened).ToArray();
 
-            yield return new WaitForSeconds(Random.Range(spawnTimeBounds.x, spawnTimeBounds.y));
+            if(openedDoors.Length > 0)
+            {
+                var spawnPoints = openedDoors.Select(door => door.GetEntrancePoint()).ToArray();
+                var spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+
+                var zombieChance = zombieCurve.Evaluate(_normalizedDayValue);
+                var spawnObj = Random.value <= zombieChance ? zombie : humans[Random.Range(0, humans.Length)];
+
+                Instantiate(spawnObj, spawnPoint.position, spawnPoint.rotation, npcContainer);
+            }
+
+            var randTime = Random.Range(spawnTimeBounds.x, spawnTimeBounds.y);
+            yield return new WaitForSeconds(randTime);
         }
     }
 }

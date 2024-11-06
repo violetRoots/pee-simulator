@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e1749d8113b2af428f6aa5c9fb8fe0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreAddiction: 10
   peeTracePrefab: {fileID: 8760973377094937433, guid: 433905e8f3ba3b8479b710322b28b902, type: 3}
 --- !u!33 &1673214944217578253
 MeshFilter:
@@ -114,7 +115,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
