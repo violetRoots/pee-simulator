@@ -31,14 +31,20 @@ public class HumanPeeController : MonoBehaviour
 
     [SerializeField] private NeedPeePanel needPeePanel;
 
-    [SerializeField] private Material defaultMaterial;
-    [SerializeField] private Material peeMaterial;
+    [SerializeField] private Color peeColor;
 
-    [SerializeField] private Renderer[] renderers;
+    [HideInInspector]
+    [SerializeField]
+    private HumanProvider _humanProvider;
+    private HumanContentController _contentController;
 
     private GameManager _gameManager;
 
     public readonly ReactiveProperty<PeeState> state = new ReactiveProperty<PeeState>();
+
+    private Renderer[] _renderers;
+    private readonly List<Material> _defaultMaterials = new();
+    private readonly List<Material> _peeMaterials = new();
 
     private bool _hasOrder;
 
@@ -48,14 +54,46 @@ public class HumanPeeController : MonoBehaviour
     private float _lastPeeTime;
     private float _lastAddMoneyTime;
 
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        _humanProvider = GetComponent<HumanProvider>();
+    }
+#endif
+
     private void Awake()
     {
         _gameManager = GameManager.Instance;
+
+        _contentController = _humanProvider.ContentController;
 
         _maxPeeCount = UnityEngine.Random.Range(maxPeeCountBounds.x, maxPeeCountBounds.y) * maxPeeMultiplier;
         state.Value = states[0];
 
         //HideUI();
+    }
+
+    private void OnEnable()
+    {
+        _contentController.ContentSpawned += InitMeshRenderers;
+    }
+
+    private void OnDisable()
+    {
+        _contentController.ContentSpawned -= InitMeshRenderers;
+    }
+
+    private void InitMeshRenderers(GameObject content)
+    {
+        _renderers = content.GetComponentsInChildren<Renderer>();
+        
+        foreach (Renderer renderer in _renderers)
+        {
+            _defaultMaterials.Add(renderer.sharedMaterial);
+            var peeMaterial = new Material(renderer.sharedMaterial);
+            peeMaterial.color = peeColor;
+            _peeMaterials.Add(peeMaterial);
+        }
     }
 
     public void InitOrder()
@@ -97,9 +135,9 @@ public class HumanPeeController : MonoBehaviour
     private void UpdateVisual()
     {
         if (Time.time - _lastPeeTime >= changeMaterialCooldown)
-            SetMaterials(defaultMaterial);
+            SetMaterials(false);
         else
-            SetMaterials(peeMaterial);
+            SetMaterials(true);
     }
 
     private void AddMoney()
@@ -126,10 +164,12 @@ public class HumanPeeController : MonoBehaviour
         needPeePanel.gameObject.SetActive(false);
     }
 
-    private void SetMaterials(Material material)
+    private void SetMaterials(bool isPee)
     {
-        foreach (var renderer in renderers)
+        for (int i = 0; i < _renderers.Length; i++)
         {
+            Renderer renderer = _renderers[i];
+            var material = isPee ? _peeMaterials[i] : _defaultMaterials[i];
             renderer.material = material;
         }
     }
