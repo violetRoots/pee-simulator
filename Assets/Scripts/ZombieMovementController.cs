@@ -41,7 +41,8 @@ public class ZombieMovementController : MonoBehaviour
     public bool SetDestination(Vector3 destinationPoint, Action onCompleteAction)
     {
         _agent.isStopped = false;
-        var canMove = _agent.SetDestination(destinationPoint);
+        NavMeshUtility.GetNavMeshPoint(destinationPoint, out Vector3 navMeshPoint);
+        var canMove = _agent.SetDestination(navMeshPoint);
 
         StartCoroutine(MovementProcess(destinationPoint, stoppingDistance, onCompleteAction));
 
@@ -51,7 +52,8 @@ public class ZombieMovementController : MonoBehaviour
     public bool SetDestination(Vector3 destinationPoint, float customStoppingDistance, Action onCompleteAction)
     {
         _agent.isStopped = false;
-        var canMove = _agent.SetDestination(destinationPoint);
+        NavMeshUtility.GetNavMeshPoint(destinationPoint, out Vector3 navMeshPoint);
+        var canMove = _agent.SetDestination(navMeshPoint);
 
         StartCoroutine(MovementProcess(destinationPoint, customStoppingDistance, onCompleteAction));
 

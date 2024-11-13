@@ -58,7 +58,8 @@ public class Spawner : MonoBehaviour
                 var zombieChance = zombieCurve.Evaluate(_normalizedDayValue);
                 var spawnObj = Random.value <= zombieChance ? zombie : humans[Random.Range(0, humans.Length)];
 
-                Instantiate(spawnObj, spawnPoint.position, spawnPoint.rotation, npcContainer);
+                NavMeshUtility.GetNavMeshPoint(spawnPoint.position, out Vector3 spawnPosition);
+                Instantiate(spawnObj, spawnPosition, spawnPoint.rotation, npcContainer);
             }
 
             var randTime = Random.Range(spawnTimeBounds.x, spawnTimeBounds.y);

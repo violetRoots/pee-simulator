@@ -26,6 +26,12 @@ public class HumanMovementController : MonoBehaviour
     }
 #endif
 
+    private void Awake()
+    {
+        NavMeshUtility.GetNavMeshPoint(transform.position, out Vector3 startPos);
+        transform.position = startPos;
+    }
+
     public void Stop()
     {
         if(_isStopped) return;
@@ -56,13 +62,13 @@ public class HumanMovementController : MonoBehaviour
 
     public bool SetDestination(Vector3 destinationPoint, Action onCompleteAction = null)
     {
-        bool canMove = false;
+        bool canMove = NavMeshUtility.GetNavMeshPoint(destinationPoint, out Vector3 navMeshPoint);
 
         Resume(() =>
         {
-            canMove = _agent.SetDestination(destinationPoint);
+            canMove = _agent.SetDestination(navMeshPoint);
 
-            StartCoroutine(MovementProcess(destinationPoint, onCompleteAction));
+            StartCoroutine(MovementProcess(navMeshPoint, onCompleteAction));
         });
         
         return canMove;
@@ -87,7 +93,9 @@ public class HumanMovementController : MonoBehaviour
 
     public void HardMoveToPoint(Transform point)
     {
-        _transform.position = point.position;
+        NavMeshUtility.GetNavMeshPoint(point.position, out Vector3 navMeshPoint);
+
+        _transform.position = navMeshPoint;
         _transform.rotation = point.rotation;
     }
 }
