@@ -11,6 +11,8 @@ public class InputManager : Singleton<InputManager>
     public event Action OnLeftShiftDown;
     public event Action OnLeftShiftUp;
     public event Action OnInterationButtonDown;
+    public event Action OnShopButtonDown;
+    public event Action OnBackButtonDown;
 
     private void Update()
     {
@@ -37,6 +39,14 @@ public class InputManager : Singleton<InputManager>
         if (Input.GetKeyDown(KeyCode.E))
         {
             OnInterationButtonDown?.Invoke();
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            OnShopButtonDown?.Invoke();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            OnBackButtonDown?.Invoke();
         }
     }
 }

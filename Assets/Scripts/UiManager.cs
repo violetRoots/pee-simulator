@@ -5,6 +5,7 @@ using UnityEngine;
 public class UiManager : Singleton<UiManager>
 {
     [SerializeField] private UiCircleMenu circleMenu;
+    [SerializeField] private UiShopView shopView;
 
     private GameManager _gameManager;
     private InputManager _inputManager;
@@ -15,12 +16,16 @@ public class UiManager : Singleton<UiManager>
         _inputManager = InputManager.Instance;
 
         circleMenu.gameObject.SetActive(false);
+        shopView.gameObject.SetActive(false);
     }
 
     private void OnEnable()
     {
         _inputManager.OnLeftShiftDown += ShowCircleMenu;
         _inputManager.OnLeftShiftUp += HideCircleMenu;
+
+        _inputManager.OnShopButtonDown += ShowShopView;
+        _inputManager.OnBackButtonDown += HideShopView;
     }
 
     private void OnDisable()
@@ -29,21 +34,32 @@ public class UiManager : Singleton<UiManager>
         {
             _inputManager.OnLeftShiftDown -= ShowCircleMenu;
             _inputManager.OnLeftShiftUp -= HideCircleMenu;
+
+            _inputManager.OnShopButtonDown -= ShowShopView;
+            _inputManager.OnBackButtonDown -= HideShopView;
         }
     }
 
     private void ShowCircleMenu()
     {
-        _gameManager.SetSceneState(GameManager.SceneState.Ui);
+        if (_gameManager.sceneState.Value != GameManager.SceneState.Gameplay) return;
 
         circleMenu.gameObject.SetActive(true);
     }
 
     private void HideCircleMenu()
     {
-        _gameManager.SetSceneState(GameManager.SceneState.Gameplay);
-
         circleMenu.ApplySelectedAutomate();
         circleMenu.gameObject.SetActive(false);
+    }
+
+    private void ShowShopView()
+    {
+        shopView.gameObject.SetActive(true);
+    }
+
+    private void HideShopView()
+    {
+        shopView.gameObject.SetActive(false);
     }
 }

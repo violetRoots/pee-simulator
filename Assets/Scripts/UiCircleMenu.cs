@@ -35,6 +35,16 @@ public class UiCircleMenu : MonoBehaviour
         _centerPos = new Vector2(Screen.width / 2, Screen.height / 2);
     }
 
+    private void OnEnable()
+    {
+        _gameManager.AddLock(this);
+    }
+
+    private void OnDisable()
+    {
+        _gameManager.RemoveLock(this);
+    }
+
     private void Update()
     {
         Vector2 mousePos = Input.mousePosition;
