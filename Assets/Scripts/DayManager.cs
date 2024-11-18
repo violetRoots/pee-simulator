@@ -17,7 +17,6 @@ public class DayManager : Singleton<DayManager>
     [SerializeField] private float allDayDuration = 60 * 10;
 
     [Space]
-    [SerializeField] private Toilet toilet;
     [SerializeField] private Spawner spawner;
 
     [HideInInspector]
@@ -93,7 +92,6 @@ public class DayManager : Singleton<DayManager>
         else if (newState == DayState.NeedEndDay)
         {
             spawner.StopSpawn();
-            toilet.InteractionHandler.SetInteractable(true);
 
             GameManager.Instance.Data.SetMoney(GameManager.Instance.Data.Money - 100);
         }

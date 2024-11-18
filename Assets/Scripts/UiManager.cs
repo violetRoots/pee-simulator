@@ -24,7 +24,7 @@ public class UiManager : Singleton<UiManager>
         _inputManager.OnLeftShiftDown += ShowCircleMenu;
         _inputManager.OnLeftShiftUp += HideCircleMenu;
 
-        _inputManager.OnShopButtonDown += ShowShopView;
+        //_inputManager.OnShopButtonDown += ShowShopView;
         _inputManager.OnBackButtonDown += HideShopView;
     }
 
@@ -35,7 +35,7 @@ public class UiManager : Singleton<UiManager>
             _inputManager.OnLeftShiftDown -= ShowCircleMenu;
             _inputManager.OnLeftShiftUp -= HideCircleMenu;
 
-            _inputManager.OnShopButtonDown -= ShowShopView;
+            //_inputManager.OnShopButtonDown -= ShowShopView;
             _inputManager.OnBackButtonDown -= HideShopView;
         }
     }
@@ -53,7 +53,7 @@ public class UiManager : Singleton<UiManager>
         circleMenu.gameObject.SetActive(false);
     }
 
-    private void ShowShopView()
+    public void ShowShopView()
     {
         shopView.gameObject.SetActive(true);
     }

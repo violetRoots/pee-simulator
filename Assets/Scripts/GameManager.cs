@@ -6,6 +6,9 @@ public partial class GameManager : Singleton<GameManager>
 {
     public GameplayDataContainer Data {  get; private set; } = new GameplayDataContainer();
 
+    public GameplaySector[] GameplaySectors => gameplaySectors;
+    [SerializeField] GameplaySector[] gameplaySectors;
+
     public CharacterProvider CharacterProvider => characterProvider;
     [SerializeField] private CharacterProvider characterProvider;
 
@@ -30,6 +33,12 @@ public partial class GameManager : Singleton<GameManager>
     public ChecksManager ChecksManager => checksManager;
     [SerializeField] private ChecksManager checksManager;
 
+    public RoomsManager RoomsManager => roomsManager;
+    [SerializeField] private RoomsManager roomsManager;
+
+    public BottleManager BottleManager => bottleManager;
+    [SerializeField] private BottleManager bottleManager;
+
     private void Awake()
     {
         InitStateSubscription();
@@ -39,6 +48,7 @@ public partial class GameManager : Singleton<GameManager>
         suppliersManager.Init();
         questManager.Init();
         checksManager.Init();
+        bottleManager.Init(this);
     }
 
     public override void OnDestroy()

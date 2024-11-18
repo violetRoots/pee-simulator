@@ -19,6 +19,6 @@ public class UiQuestCell : MonoBehaviour
         icon.sprite = quest.supplier.iconSprite;
         title.text = quest.title;
         description.text = quest.description;
-        progress.text = string.Format(progressPattern, progress);
+        progress.text = string.Format(progressPattern, quest.progress);
     }
 }

@@ -12,12 +12,12 @@ public class Door : MonoBehaviour
 
     public DoorState State => _state;
 
-    public PlayerInteractionHandler InteractionHandler => interactionHandler;
+    public BasicLookInteractionController InteractionHandler => interactionHandler;
 
     [SerializeField] private GameObject visual;
     [SerializeField] private Transform entrancePoint;
 
-    [SerializeField] private PlayerInteractionHandler interactionHandler;
+    [SerializeField] private BasicLookInteractionController interactionHandler;
 
     private DoorState _state = DoorState.Closed;
 

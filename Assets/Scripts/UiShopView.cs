@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Android.Types;
 using UnityEngine;
 using UnityEngine.UI;
 using static SuppliersManager;
@@ -12,12 +11,14 @@ public class UiShopView : MonoBehaviour
     [SerializeField] private UiShopUpperButton suppliersButton;
     [SerializeField] private UiShopUpperButton questsButton;
     [SerializeField] private UiShopUpperButton checksButton;
+    [SerializeField] private UiShopUpperButton roomsButton;
     [SerializeField] private Button exitButton;
 
     [Header("Panels")]
     [SerializeField] private GameObject suppliersPanel;
     [SerializeField] private GameObject questsPanel;
     [SerializeField] private GameObject checksPanel;
+    [SerializeField] private GameObject roomsPanel;
 
     [Header("Suppliers")]
     [SerializeField] private UiPeeSupplierCell peeSupplierCell;
@@ -31,10 +32,15 @@ public class UiShopView : MonoBehaviour
     [SerializeField] private UiCheckCell checkCell;
     [SerializeField] RectTransform checksContentObj;
 
+    [Header("Rooms")]
+    [SerializeField] private UiRoomCell roomCell;
+    [SerializeField] RectTransform roomsContentObj;
+
     private GameManager _gameManager;
     private SuppliersManager _suppliersManager;
     private QuestsManager _questsManager;
     private ChecksManager _checksManager;
+    private RoomsManager _roomsManager;
 
     private void Awake()
     {
@@ -42,14 +48,18 @@ public class UiShopView : MonoBehaviour
         _suppliersManager = _gameManager.SuppliersManager;
         _questsManager = _gameManager.QuestManager;
         _checksManager = _gameManager.ChecksManager;
+        _roomsManager = _gameManager.RoomsManager;
 
         InitSuppliers();
         InitQuests();
         InitChecks();
+        InitRooms();
 
         suppliersButton.Subscribe(ShowSuppliers);
         questsButton.Subscribe(ShowQuests);
         checksButton.Subscribe(ShowChecks);
+        roomsButton.Subscribe(ShowRooms);
+
         exitButton.onClick.AddListener(OnExitButton);
     }
 
@@ -95,15 +105,27 @@ public class UiShopView : MonoBehaviour
         }
     }
 
+    private void InitRooms()
+    {
+        var rooms = _roomsManager.GetRooms();
+        foreach (var room in rooms)
+        {
+            var cell = Instantiate(roomCell, roomsContentObj);
+            cell.SetContext(room);
+        }
+    }
+
     private void ShowSuppliers()
     {
         suppliersPanel.SetActive(true);
         questsPanel.SetActive(false);
         checksPanel.SetActive(false);
+        roomsPanel.SetActive(false);
 
         suppliersButton.IsActive = true;
         questsButton.IsActive = false;
         checksButton.IsActive = false;
+        roomsButton.IsActive = false;
     }
 
     private void ShowQuests()
@@ -111,10 +133,12 @@ public class UiShopView : MonoBehaviour
         suppliersPanel.SetActive(false);
         questsPanel.SetActive(true);
         checksPanel.SetActive(false);
+        roomsPanel.SetActive(false);
 
         suppliersButton.IsActive = false;
         questsButton.IsActive = true;
         checksButton.IsActive = false;
+        roomsButton.IsActive = false;
     }
 
     private void ShowChecks()
@@ -122,10 +146,25 @@ public class UiShopView : MonoBehaviour
         suppliersPanel.SetActive(false);
         questsPanel.SetActive(false);
         checksPanel.SetActive(true);
+        roomsPanel.SetActive(false);
 
         suppliersButton.IsActive = false;
         questsButton.IsActive = false;
         checksButton.IsActive = true;
+        roomsButton.IsActive = false;
+    }
+
+    private void ShowRooms()
+    {
+        suppliersPanel.SetActive(false);
+        questsPanel.SetActive(false);
+        checksPanel.SetActive(false);
+        roomsPanel.SetActive(true);
+
+        suppliersButton.IsActive = false;
+        questsButton.IsActive = false;
+        checksButton.IsActive = false;
+        roomsButton.IsActive = true;
     }
 
     private void OnExitButton()

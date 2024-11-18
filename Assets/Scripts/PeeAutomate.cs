@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PeeAutomate : MonoBehaviour
@@ -14,6 +15,9 @@ public class PeeAutomate : MonoBehaviour
 
     [SerializeField] private PeeAutomateTimerPanel automateTimerPanel;
 
+    private GameManager _gameManager;
+    private GameplaySector _sector;
+
     private CircleItemConfig _config;
 
     private MeshRenderer _placeMarkerRenderer;
@@ -23,19 +27,27 @@ public class PeeAutomate : MonoBehaviour
 
     private void Awake()
     {
+        _gameManager = GameManager.Instance;
+
         _placeMarkerRenderer = placeMarker.GetComponent<MeshRenderer>();
 
         SetActiveUI(false);
     }
 
-    public void Activate(CircleItemConfig circleItemConfig)
+    public void Activate(GameplaySector sector, CircleItemConfig circleItemConfig)
     {
         _config = circleItemConfig;
+        _sector = sector;
 
         foreach (var part in automateParts)
         {
-            part.Activate();
+            if (part is PeeGenerator peeGenerator)
+            {
+                peeGenerator.Init(sector.BoilerSystem);
+            }
         }
+
+        _sector.AutomateSystem.AddAutomate(this);
 
         SetPlaceMarkerActive(false);
         SetActiveUI(true);
@@ -47,7 +59,9 @@ public class PeeAutomate : MonoBehaviour
     private void Update()
     {
         if (!_isActivated) return;
-        
+
+        SetCanPee(_sector.BoilerSystem.HasBottles());
+
         UpdateTimerLogic();
 
         UpdateUI();
@@ -84,6 +98,17 @@ public class PeeAutomate : MonoBehaviour
         if (Time.time - _activatedTime >= _activatedTime + _config.duration)
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void SetCanPee(bool value)
+    {
+        foreach (var part in automateParts)
+        {
+            if(value)
+                part.Activate();
+            else
+                part.Deactivate();
         }
     }
 }

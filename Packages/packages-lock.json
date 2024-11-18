@@ -311,6 +311,21 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unityfx.outline": {
+      "version": "file:UnityFx.Outline",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.unityfx.outline.postprocessing": {
+      "version": "file:UnityFx.Outline.PostProcessing",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unityfx.outline": "0.8.0",
+        "com.unity.postprocessing": "2.3.0"
+      }
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

@@ -11,6 +11,8 @@ public class PeeGenerator : BaseAutomatePart
     [SerializeField] private PeeBox peeBoxPrefab;
     [SerializeField] private Transform[] peeOrigins;
 
+    private BoilerSystem _boilerSystem;
+
     private float _lastSpawnPeeTime;
 
     private void Update()
@@ -23,13 +25,19 @@ public class PeeGenerator : BaseAutomatePart
         }
     }
 
+    public void Init(BoilerSystem boilerSystem)
+    {
+        _boilerSystem = boilerSystem;
+    }
+
     private void Pee()
     {
         foreach (var peeOrigin in peeOrigins)
         {
             PeeBox peeBox = Instantiate(peeBoxPrefab, peeOrigin.position, Quaternion.LookRotation(transform.forward));
-            peeBox.SetGenerator(this);
             peeBox.PeeForward(peeOrigin.forward, peeStrength);
+
+            _boilerSystem.TickPee();
         }
 
         _lastSpawnPeeTime = Time.time;

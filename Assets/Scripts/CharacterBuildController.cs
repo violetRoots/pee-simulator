@@ -5,6 +5,7 @@ using UniRx;
 using UnityEngine;
 using NaughtyAttributes;
 using Common.Utils;
+using System.Linq;
 
 public class CharacterBuildController : MonoBehaviour
 {
@@ -19,14 +20,15 @@ public class CharacterBuildController : MonoBehaviour
     [SerializeField] private Vector3 contentRotationOffset;
 
     [Space]
+    [SerializeField] private float scrollSensitivity = 0.1f;
+
+    [Space]
     [SerializeField] private GameObject wholeBuildContainer;
 
     [SerializeField] private Transform raycastOrigin;
 
     [SerializeField] private Transform buildTarget;
     [SerializeField] private Transform deafultTargetPositionAndRotation;
-
-    [SerializeField] private Transform placedAutomatesContainer;
 
     private GameManager _gameManager;
     private InputManager _inputManager;
@@ -39,6 +41,7 @@ public class CharacterBuildController : MonoBehaviour
     private Vector3 _movementDampVelocity;
     private Quaternion _targetRotation;
     private Quaternion _rotationDampVelocity;
+    private Vector3 _offsetEuler;
 
     private LayerMask _layerMask;
 
@@ -75,11 +78,17 @@ public class CharacterBuildController : MonoBehaviour
     {
         if (!_canBuild) return;
 
+        var scrollDelta = Input.mouseScrollDelta.y;
+        if (Mathf.Abs(scrollDelta) > scrollSensitivity)
+        {
+            _offsetEuler += new Vector3(0.0f, 0.0f, Mathf.Sign(scrollDelta) * 90.0f);
+        }
+
         if(Physics.SphereCast(raycastOrigin.position, raycastRadius, raycastOrigin.forward, out RaycastHit hit, raycastDistance, _layerMask))
         {
             _targetPos = hit.point;
             _targetPos += hit.normal * _targetOffset;
-            _targetRotation = Quaternion.LookRotation(hit.normal);
+            _targetRotation = Quaternion.LookRotation(hit.normal) * Quaternion.Euler(_offsetEuler);
 
             _canPlace = true;
         }
@@ -118,8 +127,8 @@ public class CharacterBuildController : MonoBehaviour
 
         if (!_canBuild || !_canPlace) return;
 
-        _content.transform.SetParent(placedAutomatesContainer, true);
-        _content.Activate(_currentItemToBuild);
+        var sector = GetGameplaySector(_content.transform.position);
+        _content.Activate(sector, _currentItemToBuild);
         _content = null;
 
         _gameManager.Data.SetMoney(_gameManager.Data.Money - _currentItemToBuild.price);
@@ -149,5 +158,10 @@ public class CharacterBuildController : MonoBehaviour
     {
         _content.SetPlaceMarkerActive(_canPlace);
         _content.SetPlaceMarkerMaterial(_currentItemToBuild != null && _gameManager.Data.Money >= _currentItemToBuild.price);
+    }
+
+    private GameplaySector GetGameplaySector(Vector3 pos)
+    {
+        return _gameManager.GameplaySectors.Where(sector => sector.Contains(pos)).FirstOrDefault();
     }
 }

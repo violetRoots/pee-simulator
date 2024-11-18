@@ -13,6 +13,7 @@ public class InputManager : Singleton<InputManager>
     public event Action OnInterationButtonDown;
     public event Action OnShopButtonDown;
     public event Action OnBackButtonDown;
+    public event Action OnItemDropButtonDown;
 
     private void Update()
     {
@@ -47,6 +48,10 @@ public class InputManager : Singleton<InputManager>
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             OnBackButtonDown?.Invoke();
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            OnItemDropButtonDown?.Invoke();
         }
     }
 }

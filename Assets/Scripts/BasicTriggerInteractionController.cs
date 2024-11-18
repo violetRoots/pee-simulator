@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInteractionHandler : MonoBehaviour
+public class BasicTriggerInteractionController : MonoBehaviour
 {
     public Action CustomInteration;
 

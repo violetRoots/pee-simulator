@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class CharacterPeeController : MonoBehaviour
 {
-    [SerializeField] private PeeGenerator peeGenerator;
+    [SerializeField] private CharacterPeeGenerator peeGenerator;
 
     private InputManager _inputManager;
     private CharacterInteractionController _characterInteractionController;
@@ -41,7 +41,7 @@ public class CharacterPeeController : MonoBehaviour
 
     private void ActivatePee()
     {
-        if (_characterInteractionController.interactionMode.Value != CharacterInteractionController.CharacterInteractionMode.Default) return;
+        if (_characterInteractionController.interactionMode.Value != CharacterInteractionController.CharacterInteractionMode.Gameplay) return;
 
         peeGenerator.Activate();
     }

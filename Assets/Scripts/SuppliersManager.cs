@@ -32,4 +32,9 @@ public class SuppliersManager
     {
         return suppliersInfo.ToArray();
     }
+
+    public PeeSupplierRuntimeInfo GetRandomavailableSupplier()
+    {
+        return suppliersInfo[UnityEngine.Random.Range(0, suppliersInfo.Count)];
+    }
 }

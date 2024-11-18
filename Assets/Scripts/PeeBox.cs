@@ -12,31 +12,23 @@ public class PeeBox : MonoBehaviour
         public float radius = 1.0f;
     }
 
-    public PeeGenerator Generator { get; private set; }
-
     [SerializeField] private ExplosionIfno explosionInfo;
     [SerializeField] private int scoreAddiction = 10;
 
     [SerializeField] private Transform peeTracePrefab;
 
-    private GameManager _gameManager;
-
     private Rigidbody _rigidbody;
+    private SuppliersManager.PeeSupplierRuntimeInfo _supplier;
 
     private void Awake()
     {
-        _gameManager = GameManager.Instance;
-
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    public void SetGenerator(PeeGenerator generator)
+    public void PeeForward(Vector3 direction, float stregnth, SuppliersManager.PeeSupplierRuntimeInfo supplier = null)
     {
-        Generator = generator;
-    }
+        _supplier = supplier;
 
-    public void PeeForward(Vector3 direction, float stregnth)
-    {
         _rigidbody.AddForce(direction * stregnth);
     }
 
@@ -48,8 +40,11 @@ public class PeeBox : MonoBehaviour
         var direction = contact.normal;
         var position = contact.point + direction * 0.1f;
         var trace = Instantiate(peeTracePrefab, position, Quaternion.LookRotation(direction));
+    }
 
-        _gameManager.Data.SetScore(_gameManager.Data.Score + scoreAddiction);
+    public SuppliersManager.PeeSupplierRuntimeInfo GetSupplier()
+    {
+        return _supplier;
     }
 
     public ExplosionIfno GetExplosionIfno()

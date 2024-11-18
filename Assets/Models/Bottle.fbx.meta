@@ -3,7 +3,42 @@ guid: ae5b70d2de7ffcc45a2e52b0df5bfa87
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottle
+    second: {fileID: 2100000, guid: 1674271f769df194db9888a3aac58775, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cyll
+    second: {fileID: 2100000, guid: 33e6cb3e5ea29e7429f6c76747abf44c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gorlo
+    second: {fileID: 2100000, guid: 6a6986f72b8eeb84ab7ea0aca8726082, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Konus
+    second: {fileID: 2100000, guid: 9382e1b0c2a672948b86955d5eeb8d0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Krishka
+    second: {fileID: 2100000, guid: d8e0025b1cc432a48996a16e4d0cea70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rough
+    second: {fileID: 2100000, guid: 6f149ab640c9c794d83ab736b5354812, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sticker
+    second: {fileID: 2100000, guid: 8819f3e81226de6488d7ebdac14c0822, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

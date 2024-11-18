@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class Toilet : MonoBehaviour
 {
-    public PlayerInteractionHandler InteractionHandler => interactionHandler;
+    public BasicLookInteractionController InteractionHandler => lookInteractionController;
 
-    [SerializeField] private PlayerInteractionHandler interactionHandler;
+    [SerializeField] private BasicLookInteractionController lookInteractionController;
 
-    private DayManager _dayManager;
+    private UiManager _uiManager;
 
     private void Awake()
     {
-        _dayManager = DayManager.Instance;
+        _uiManager = UiManager.Instance;
 
-        interactionHandler.CustomInteration = OnInteract;
-        interactionHandler.SetInteractable(false);
+        lookInteractionController.CustomInteration = OnInteract;
     }
 
     private void OnInteract()
     {
-        _dayManager.state.Value = DayManager.DayState.NeedOpenDoors;
+        //if(_dayManager.state.Value == DayManager.DayState.NeedEndDay)
+        //    _dayManager.state.Value = DayManager.DayState.NeedOpenDoors;
 
-        interactionHandler.SetInteractable(false);
+        _uiManager.ShowShopView();
     }
 }

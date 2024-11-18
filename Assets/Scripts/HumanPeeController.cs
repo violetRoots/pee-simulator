@@ -22,6 +22,8 @@ public class HumanPeeController : MonoBehaviour
 
     [SerializeField] private PeeState[] states;
 
+    [SerializeField] private float preferSupplierPeeMultiplier = 1.5f;
+
     [MinMaxSlider(1, 10)]
     [SerializeField] private Vector2Int maxPeeCountBounds;
     [SerializeField] private int maxPeeMultiplier = 100;
@@ -30,6 +32,7 @@ public class HumanPeeController : MonoBehaviour
     [SerializeField] private float addMoneyCooldown = 1.0f;
 
     [SerializeField] private NeedPeePanel needPeePanel;
+    [SerializeField] private HumanPreferPanel preferPanel;
 
     [SerializeField] private Color peeColor;
 
@@ -41,6 +44,8 @@ public class HumanPeeController : MonoBehaviour
     private GameManager _gameManager;
 
     public readonly ReactiveProperty<PeeState> state = new ReactiveProperty<PeeState>();
+
+    private SuppliersManager.PeeSupplierRuntimeInfo _preferSupplier;
 
     private Renderer[] _renderers;
     private readonly List<Material> _defaultMaterials = new();
@@ -100,6 +105,9 @@ public class HumanPeeController : MonoBehaviour
     {
         ShowUI();
 
+        _preferSupplier = _gameManager.SuppliersManager.GetRandomavailableSupplier();
+        preferPanel.SetContext(_preferSupplier);
+
         _hasOrder = true;
     }
 
@@ -119,8 +127,10 @@ public class HumanPeeController : MonoBehaviour
 
         _peeCount = Mathf.Clamp(_peeCount + 1, 0, _maxPeeCount);
         _lastPeeTime = Time.time;
+        var preferMult = peeBox.GetSupplier() == _preferSupplier ? 1.0f : preferSupplierPeeMultiplier;
+        var stateMult = state.Value.moneyMultiplier;
 
-        AddMoney();
+        AddMoney(preferMult * stateMult);
     }
 
     private void UpdatePeeState()
@@ -140,11 +150,11 @@ public class HumanPeeController : MonoBehaviour
             SetMaterials(true);
     }
 
-    private void AddMoney()
+    private void AddMoney(float mult)
     {
         if (Time.time - _lastAddMoneyTime < addMoneyCooldown) return;
 
-        _gameManager.Data.SetMoney((int)(_gameManager.Data.Money + (1 * state.Value.moneyMultiplier)));
+        _gameManager.Data.SetMoney((int)(_gameManager.Data.Money + (1 * mult)));
 
         _lastAddMoneyTime = Time.time;
     }

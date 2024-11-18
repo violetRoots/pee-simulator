@@ -272,6 +272,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8897180072350869187}
+  - component: {fileID: 5634156974282476969}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -296,6 +297,30 @@ Transform:
   m_Father: {fileID: 4484407362253429424}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5634156974282476969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7703090493872082771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 271c580db5fd384429cdac899152e9e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _outlineResources: {fileID: 11400000, guid: d28e70f030b1a634db9a6a6d5478ef19, type: 2}
+  _outlineSettings:
+    _outlineSettings: {fileID: 11400000, guid: 564d11c79ed91104f8c94ca1ab8e5ba4, type: 2}
+    _outlineColor: {r: 1, g: 0, b: 0, a: 1}
+    _outlineWidth: 4
+    _outlineIntensity: 2
+    _outlineAlphaCutoff: 0.9
+    _outlineMode: 0
+  _ignoreLayerMask: 0
+  _cameraEvent: 20
+  _targetCamera: {fileID: 0}
+  _updateRenderers: 0
 --- !u!1 &8266469635041372326
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,7 +331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4484407362253429424}
   - component: {fileID: 6210666705262818087}
-  - component: {fileID: 4497267588413380779}
+  - component: {fileID: 7488082028469913470}
   - component: {fileID: 1191181762295634074}
   m_Layer: 0
   m_Name: Door_New
@@ -346,8 +371,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visual: {fileID: 7703090493872082771}
   entrancePoint: {fileID: 8032539843429715278}
-  interactionHandler: {fileID: 4497267588413380779}
---- !u!114 &4497267588413380779
+  interactionHandler: {fileID: 7488082028469913470}
+--- !u!114 &7488082028469913470
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -356,9 +381,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8266469635041372326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db991b83600764e45b244121731493d3, type: 3}
+  m_Script: {fileID: 11500000, guid: da373aa8fb7bddd4191be4d7ecb2f5f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outline: {fileID: 5634156974282476969}
 --- !u!65 &1191181762295634074
 BoxCollider:
   m_ObjectHideFlags: 0

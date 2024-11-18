@@ -20,6 +20,12 @@ public class CharacterProvider : MonoBehaviour
     public CharacterDamageController DamageController => damageController;
     [SerializeField] private CharacterDamageController damageController;
 
+    public CharacterLookInteractionController LookInteractionController => lookInteractionController;
+    [SerializeField] private CharacterLookInteractionController lookInteractionController;
+
+    public CharacterItemController ItemController => itemController;
+    [SerializeField] private CharacterItemController itemController;
+
 #if UNITY_EDITOR
     private void OnValidate()
     {

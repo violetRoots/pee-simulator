@@ -8,11 +8,12 @@ public class CharacterInteractionController : MonoBehaviour
 {
     public enum CharacterInteractionMode
     {
-        Default = 0,
+        Gameplay = 0,
         Build = 1,
+        CarryItem = 2,
     }
 
-    public readonly ReactiveProperty<CharacterInteractionMode> interactionMode = new ReactiveProperty<CharacterInteractionMode>(CharacterInteractionMode.Default);
+    public readonly ReactiveProperty<CharacterInteractionMode> interactionMode = new ReactiveProperty<CharacterInteractionMode>(CharacterInteractionMode.Gameplay);
 
     private GameManager _gameManager;
     private InputManager _inputManager;
@@ -46,6 +47,6 @@ public class CharacterInteractionController : MonoBehaviour
 
         if (interactionMode.Value != CharacterInteractionMode.Build) return;
 
-        interactionMode.Value = CharacterInteractionMode.Default;
+        interactionMode.Value = CharacterInteractionMode.Gameplay;
     }
 }
