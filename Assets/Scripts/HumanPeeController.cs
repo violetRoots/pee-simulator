@@ -1,6 +1,5 @@
 using NaughtyAttributes;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UniRx;
@@ -154,7 +153,7 @@ public class HumanPeeController : MonoBehaviour
     {
         if (Time.time - _lastAddMoneyTime < addMoneyCooldown) return;
 
-        _gameManager.Data.SetMoney((int)(_gameManager.Data.Money + (1 * mult)));
+        _gameManager.Data.ChangeMoney((int)(1 * mult));
 
         _lastAddMoneyTime = Time.time;
     }

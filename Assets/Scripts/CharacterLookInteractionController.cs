@@ -25,11 +25,13 @@ public class CharacterLookInteractionController : MonoBehaviour
     private void OnEnable()
     {
         _inputManager.OnInterationButtonDown += OnInteract;
+        _inputManager.OnTalkButtonDown += OnTalk;
     }
 
     private void OnDisable()
     {
         _inputManager.OnInterationButtonDown -= OnInteract;
+        _inputManager.OnTalkButtonDown += OnTalk;
     }
 
     private void Update()
@@ -60,10 +62,20 @@ public class CharacterLookInteractionController : MonoBehaviour
 
     private void OnInteract()
     {
-        if (_gameManager.sceneState.Value != GameManager.SceneState.Gameplay) return;
-
-        if (_selectedLookInteraction == null) return;
+        if (!LookIsFine()) return;
 
         _selectedLookInteraction.OnInteract();
+    }
+
+    private void OnTalk()
+    {
+        if (!LookIsFine()) return;
+
+        _selectedLookInteraction.OnTalk();
+    }
+
+    private bool LookIsFine()
+    {
+        return _gameManager.sceneState.Value == GameManager.SceneState.Gameplay && _selectedLookInteraction != null;
     }
 }

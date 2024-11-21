@@ -8,20 +8,26 @@ public class Toilet : MonoBehaviour
 
     [SerializeField] private BasicLookInteractionController lookInteractionController;
 
-    private UiManager _uiManager;
+    private DayManager _dayManager;
+    private UiGameplayManager _uiManager;
 
     private void Awake()
     {
-        _uiManager = UiManager.Instance;
+        _dayManager = DayManager.Instance;
+        _uiManager = UiGameplayManager.Instance;
 
         lookInteractionController.CustomInteration = OnInteract;
+        lookInteractionController.TalkInteration = OnTalk;
     }
 
     private void OnInteract()
     {
-        //if(_dayManager.state.Value == DayManager.DayState.NeedEndDay)
-        //    _dayManager.state.Value = DayManager.DayState.NeedOpenDoors;
-
         _uiManager.ShowShopView();
+    }
+
+    private void OnTalk()
+    {
+        if (_dayManager.state.Value == DayManager.DayState.NeedEndDay)
+            _dayManager.state.Value = DayManager.DayState.NeedOpenDoors;
     }
 }

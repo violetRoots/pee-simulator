@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
 
-public class PauseManager : Singleton<PauseManager>
+public class PauseManager : SingletonMonoBehaviourBase<PauseManager>
 {
     private GameManager _gameManager;
 
@@ -12,6 +12,7 @@ public class PauseManager : Singleton<PauseManager>
 
     private void Awake()
     {
+
         _gameManager = GameManager.Instance;
 
         Play();

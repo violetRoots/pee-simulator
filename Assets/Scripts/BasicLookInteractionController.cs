@@ -7,6 +7,7 @@ using UnityFx.Outline;
 public class BasicLookInteractionController : MonoBehaviour
 {
     public Action CustomInteration;
+    public Action TalkInteration;
 
     [SerializeField] private OutlineBehaviour outline;
 
@@ -44,5 +45,12 @@ public class BasicLookInteractionController : MonoBehaviour
         if (!_canInteract) return;
 
         CustomInteration?.Invoke();
+    }
+
+    public void OnTalk()
+    {
+        if (!_canInteract) return;
+
+        TalkInteration?.Invoke();
     }
 }

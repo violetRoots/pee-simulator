@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class UiCheckCell : MonoBehaviour
 {
+    public CheckConfig CheckConfig { get; private set; }
+
     [SerializeField] private TextMeshProUGUI title;
     [SerializeField] private TextMeshProUGUI description;
     [SerializeField] private TextMeshProUGUI term;
@@ -20,10 +22,12 @@ public class UiCheckCell : MonoBehaviour
 
     public void SetContext(CheckConfig check)
     {
-        title.text = check.title;
-        description.text = check.description;
-        term.text = string.Format(termPattern, check.term);
-        price.text = string.Format(pricePattern, check.price);
-        background.color = check.backgroundColor;
+        CheckConfig = check;
+
+        title.text = CheckConfig.title;
+        description.text = CheckConfig.description;
+        term.text = string.Format(termPattern, CheckConfig.term);
+        price.text = string.Format(pricePattern, CheckConfig.price);
+        background.color = CheckConfig.backgroundColor;
     }
 }

@@ -14,18 +14,18 @@ public class BottleManager
 
     [SerializeField] private Bottle bottlePrefab;
 
-    private GameManager _gameManager;
+    private GameplayDataContainer _data;
 
-    public void Init(GameManager gameManager)
+    public void Init()
     {
-        _gameManager = gameManager;
+        _data = GameManager.Instance.Data;
     }
 
     public void TryBuyBottle(PeeSupplierConfig supplier)
     {
-        if (_gameManager.Data.Money < supplier.price) return;
+        if (_data.Money < supplier.price) return;
 
-        _gameManager.Data.SetMoney(_gameManager.Data.Money - supplier.price);
+        _data.ChangeMoney(-supplier.price);
         SpawnBottle(supplier);
     }
 

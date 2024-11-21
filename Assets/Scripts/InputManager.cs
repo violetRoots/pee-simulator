@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InputManager : Singleton<InputManager>
+public class InputManager : SingletonMonoBehaviourBase<InputManager>
 {
     public event Action OnLeftMouseDown;
     public event Action OnLeftMouseUp;
@@ -11,7 +11,7 @@ public class InputManager : Singleton<InputManager>
     public event Action OnLeftShiftDown;
     public event Action OnLeftShiftUp;
     public event Action OnInterationButtonDown;
-    public event Action OnShopButtonDown;
+    public event Action OnTalkButtonDown;
     public event Action OnBackButtonDown;
     public event Action OnItemDropButtonDown;
 
@@ -43,7 +43,7 @@ public class InputManager : Singleton<InputManager>
         }
         if (Input.GetKeyDown(KeyCode.T))
         {
-            OnShopButtonDown?.Invoke();
+            OnTalkButtonDown?.Invoke();
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {

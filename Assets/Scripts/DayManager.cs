@@ -1,11 +1,11 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
 
-public class DayManager : Singleton<DayManager>
+public class DayManager : SingletonMonoBehaviourBase<DayManager>
 {
+    public event Action onPastDay;
+
     public enum DayState
     {
         NeedOpenDoors = 0,
@@ -22,6 +22,7 @@ public class DayManager : Singleton<DayManager>
     [HideInInspector]
     public readonly ReactiveProperty<DayState> state = new ReactiveProperty<DayState>(DayState.NeedOpenDoors);
 
+    private GameManager _gameManager;
     private DoorsManager _doorsManager;
 
     private float _currentDayTime;
@@ -30,6 +31,7 @@ public class DayManager : Singleton<DayManager>
 
     private void Awake()
     {
+        _gameManager = GameManager.Instance;
         _doorsManager = GameManager.Instance.DoorsManager;
     }
 
@@ -80,6 +82,8 @@ public class DayManager : Singleton<DayManager>
         {
             _currentDayTime = 0;
             _doorsManager.SetDoorsInteractable(true);
+
+            onPastDay?.Invoke();
         }
         else if(newState == DayState.SpawnProcess)
         {
@@ -92,8 +96,6 @@ public class DayManager : Singleton<DayManager>
         else if (newState == DayState.NeedEndDay)
         {
             spawner.StopSpawn();
-
-            GameManager.Instance.Data.SetMoney(GameManager.Instance.Data.Money - 100);
         }
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public partial class GameManager : Singleton<GameManager>
+public partial class GameManager : SingletonMonoBehaviourBase<GameManager>
 {
     public GameplayDataContainer Data {  get; private set; } = new GameplayDataContainer();
 
@@ -48,13 +48,17 @@ public partial class GameManager : Singleton<GameManager>
         suppliersManager.Init();
         questManager.Init();
         checksManager.Init();
-        bottleManager.Init(this);
+        bottleManager.Init();
+
+        Data.Init();
     }
 
-    public override void OnDestroy()
+    private void OnDestroy()
     {
-        DisposeStateSubscription();
+        checksManager.Dispose();
 
-        base.OnDestroy();
+        Data.Dispose();
+
+        DisposeStateSubscription();
     }
 }

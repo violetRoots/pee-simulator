@@ -1,5 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 using static SuppliersManager;
@@ -42,6 +45,11 @@ public class UiShopView : MonoBehaviour
     private ChecksManager _checksManager;
     private RoomsManager _roomsManager;
 
+    private List<UiCheckCell> _checkCells = new();
+
+    private IDisposable _checksAddSubscription;
+    private IDisposable _checksRemoveSubscription;
+
     private void Awake()
     {
         _gameManager = GameManager.Instance;
@@ -52,7 +60,6 @@ public class UiShopView : MonoBehaviour
 
         InitSuppliers();
         InitQuests();
-        InitChecks();
         InitRooms();
 
         suppliersButton.Subscribe(ShowSuppliers);
@@ -61,6 +68,9 @@ public class UiShopView : MonoBehaviour
         roomsButton.Subscribe(ShowRooms);
 
         exitButton.onClick.AddListener(OnExitButton);
+
+        _checksAddSubscription = _checksManager.runtimeChecks.ObserveAdd().Subscribe(OnNewCheckAdded);
+        _checksRemoveSubscription = _checksManager.runtimeChecks.ObserveRemove().Subscribe(OnNewCheckRemoved);
     }
 
     private void OnEnable()
@@ -92,16 +102,6 @@ public class UiShopView : MonoBehaviour
         {
             var cell = Instantiate(questCell, questsContentObj);
             cell.SetContext(quest.config);
-        }
-    }
-
-    private void InitChecks()
-    {
-        var checks = _checksManager.GetChecks();
-        foreach (var check in checks)
-        {
-            var cell = Instantiate(checkCell, checksContentObj);
-            cell.SetContext(check.config);
         }
     }
 
@@ -170,5 +170,23 @@ public class UiShopView : MonoBehaviour
     private void OnExitButton()
     {
         gameObject.SetActive(false);
+    }
+
+    private void OnNewCheckAdded(CollectionAddEvent<ChecksManager.CheckRuntimeInfo> e)
+    {
+        var cell = Instantiate(checkCell, checksContentObj);
+        cell.SetContext(e.Value.config);
+
+        _checkCells.Add(cell);
+    }
+
+    private void OnNewCheckRemoved(CollectionRemoveEvent<ChecksManager.CheckRuntimeInfo> e)
+    {
+        var cellToRemove = _checkCells.Where(cell => cell.CheckConfig == e.Value.config).FirstOrDefault();
+
+        if (cellToRemove == null) return;
+
+        _checkCells.Remove(cellToRemove);
+        Destroy(cellToRemove.gameObject);
     }
 }

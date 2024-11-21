@@ -131,7 +131,7 @@ public class CharacterBuildController : MonoBehaviour
         _content.Activate(sector, _currentItemToBuild);
         _content = null;
 
-        _gameManager.Data.SetMoney(_gameManager.Data.Money - _currentItemToBuild.price);
+        _gameManager.Data.ChangeMoney(-_currentItemToBuild.price);
 
         SetContent();
     }

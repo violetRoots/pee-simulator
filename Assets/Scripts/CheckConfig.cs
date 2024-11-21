@@ -10,5 +10,6 @@ public class CheckConfig : ScriptableObject
     public string description;
     public int term = 1;
     public int price = 1;
+    public int surcharge = 1;
     public Color backgroundColor = Color.white;
 }
