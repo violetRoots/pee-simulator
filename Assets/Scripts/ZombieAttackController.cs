@@ -17,6 +17,13 @@ public class ZombieAttackController : MonoBehaviour
         StartCoroutine(HideAttackTriggerDelayed(attackDuration));
     }
 
+    public void StopAttack()
+    {
+        damageTrigger.gameObject.SetActive(false);
+
+        StopAllCoroutines();
+    }
+
     private IEnumerator HideAttackTriggerDelayed(float time)
     {
         yield return new WaitForSeconds(time);

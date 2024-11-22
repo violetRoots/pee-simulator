@@ -39,6 +39,9 @@ public partial class GameManager : SingletonMonoBehaviourBase<GameManager>
     public BottleManager BottleManager => bottleManager;
     [SerializeField] private BottleManager bottleManager;
 
+    public LightManager LightManager => lightManager;
+    [SerializeField] private LightManager lightManager;
+
     private void Awake()
     {
         InitStateSubscription();

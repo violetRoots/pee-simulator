@@ -21,4 +21,7 @@ public class ZombieProvider : MonoBehaviour
 
     public ZombieAttackController AttackController => attackController;
     [SerializeField] private ZombieAttackController attackController;
+
+    public ZombieExplosionController ExplosionController => explosionController;
+    [SerializeField] private ZombieExplosionController explosionController;
 }

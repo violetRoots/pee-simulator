@@ -56,7 +56,7 @@ public class Spawner : MonoBehaviour
                 var spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
 
                 var zombieChance = zombieCurve.Evaluate(_normalizedDayValue);
-                var spawnObj = Random.value <= zombieChance ? zombie : humans[Random.Range(0, humans.Length)];
+                var spawnObj = zombie;// Random.value <= zombieChance ? zombie : humans[Random.Range(0, humans.Length)];
 
                 NavMeshUtility.GetNavMeshPoint(spawnPoint.position, out Vector3 spawnPosition);
                 Instantiate(spawnObj, spawnPosition, spawnPoint.rotation, npcContainer);

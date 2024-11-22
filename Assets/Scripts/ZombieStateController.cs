@@ -12,7 +12,7 @@ public class ZombieStateController : MonoBehaviour
         Walk = 1,
         Agression = 2,
         Attack = 3,
-        Die = 4,
+        Dead = 4,
     }
     
     public readonly ReactiveProperty<ZombieState> state = new ReactiveProperty<ZombieState>(ZombieState.Walk);
@@ -20,7 +20,7 @@ public class ZombieStateController : MonoBehaviour
     [MinMaxSlider(0, 25)]
     [SerializeField] private Vector2 zombieIdleTimeBounds;
     [SerializeField] private float attackTime = 1.0f;
-    [SerializeField] private float dieTime = 1.0f;
+    [SerializeField] private float destroyAfterTime = 10.0f;
     [SerializeField] private float attackStoppingDistance = 0.5f;
     [SerializeField] private float cathTime = 5.0f;
 
@@ -35,6 +35,7 @@ public class ZombieStateController : MonoBehaviour
     private GameManager _gameManager;
 
     private Transform _target;
+    private Collider _collider;
     private float _lastDetectedTime;
 
     private IDisposable _stateSuscription;
@@ -48,12 +49,14 @@ public class ZombieStateController : MonoBehaviour
 
     private void Awake()
     {
+        _gameManager = GameManager.Instance;
+
         _movementController = _zombieProvider.MovementController;
         _animationController = _zombieProvider.AnimationController;
         _detectionController = _zombieProvider.DetectionController;
         _attackController = _zombieProvider.AttackController;
 
-        _gameManager = GameManager.Instance;
+        _collider = GetComponent<Collider>();
     }
 
     private void OnEnable()
@@ -69,7 +72,7 @@ public class ZombieStateController : MonoBehaviour
 
     private void Update()
     {
-        if (state.Value == ZombieState.Attack || state.Value == ZombieState.Die) return;
+        if (state.Value == ZombieState.Attack || state.Value == ZombieState.Dead) return;
 
         if (_detectionController.IsTargetDetected())
         {
@@ -128,12 +131,18 @@ public class ZombieStateController : MonoBehaviour
             DelayedAction(attackTime, () => state.Value = ZombieState.Walk);
 
         }
-        else if (newState == ZombieState.Die)
+        else if (newState == ZombieState.Dead)
         {
-            _movementController.Stop();
-            _animationController.PlayDieAnimation();
-            DelayedAction(dieTime, () => Destroy(gameObject));
+            //_animationController.PlayDieAnimation();
 
+            StopAllCoroutines();
+
+            _collider.enabled = false;
+
+            _attackController.StopAttack();
+            _movementController.Stop();
+
+            DelayedAction(destroyAfterTime, () => Destroy(gameObject));
         }
     }
 

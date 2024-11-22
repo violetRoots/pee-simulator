@@ -5,6 +5,11 @@ using UnityFx.Outline;
 
 public abstract class Item : MonoBehaviour
 {
+
+    protected Rigidbody Rigidbody => rb;
+
+    [SerializeField] private float attackCollisionSpeed = 10.0f;
+
     [SerializeField] private BasicLookInteractionController lookInteraction;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private Collider itemCollider;
@@ -31,6 +36,18 @@ public abstract class Item : MonoBehaviour
         lookInteraction.CustomInteration = OnItemInteract;
     }
 
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (Rigidbody.velocity.magnitude < attackCollisionSpeed) return;
+
+        OnItemAttack(collider);
+    }
+
+    protected virtual void OnItemAttack(Collider collider)
+    {
+
+    }
+
     protected virtual void OnItemInteract()
     {
         _characterItemController.GetItem(this);
@@ -51,5 +68,10 @@ public abstract class Item : MonoBehaviour
         itemCollider.enabled = true;
 
         transform.SetParent(_startParent);
+    }
+
+    public void Throw(Vector3 direction, float force)
+    {
+        rb.AddForce(direction * force);
     }
 }

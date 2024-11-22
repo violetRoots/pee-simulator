@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16e94e8a6ac43844a4cd039db595f9a, type: 3}
+  m_Name: Gosling
+  m_EditorClassIdentifier: 
+  iconSprite: {fileID: 21300000, guid: c0cc2af202e595f4c89e2ab7985e1c7d, type: 3}
+  title: "\u041F\u0438\u043F\u043A\u0430 \u0438\u0437 \u0414\u0440\u0430\u0439\u0432\u0430"
+  description: "\u0417\u0430\u0442\u043A\u043D\u0438 \u0441\u0432\u043E\u044E \u043F\u0430\u0441\u0442\u044C
+    \u0438\u043B\u0438 \u044F \u0437\u0430\u043B\u044C\u044E \u044D\u0442\u043E \u0442\u0435\u0431\u0435
+    \u0432 \u0433\u043B\u043E\u0442\u043A\u0443"
+  price: 10
+  satisfaction: 3
+  causticity: 3
+  saturation: 8

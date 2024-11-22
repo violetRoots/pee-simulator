@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CharacterItemController : MonoBehaviour
 {
+    [SerializeField] private float throwForce = 100.0f;
+
     [SerializeField] private Transform itemContainer;
+    [SerializeField] private Transform itemThrowContainer;
 
     [HideInInspector]
     [SerializeField] private CharacterProvider _characterProvider;
@@ -30,11 +33,13 @@ public class CharacterItemController : MonoBehaviour
 
     private void OnEnable()
     {
+        _inputManager.OnLeftMouseDown += ThrowItem;
         _inputManager.OnItemDropButtonDown += DropItem;
     }
 
     private void OnDisable()
     {
+        _inputManager.OnLeftMouseDown -= ThrowItem;
         _inputManager.OnItemDropButtonDown -= DropItem;
     }
 
@@ -49,19 +54,36 @@ public class CharacterItemController : MonoBehaviour
         _currentItem.Attach(itemContainer);
     }
 
-    public void PopItem()
+    public Item PopItem()
     {
-        if (_currentItem == null) return;
+        if (!HasItem()) return null;
 
-        _currentItem.Detach();
+        var item = _currentItem;
         _currentItem = null;
 
+        item.Detach();
+
         _interactionController.SetInteractionMode(CharacterInteractionController.CharacterInteractionMode.Gameplay);
+
+        return item;
     }
 
     public void DropItem()
     {
         PopItem();
+    }
+
+    public void ThrowItem()
+    {
+        if (!HasItem()) return;
+
+        _characterProvider.transform.SetParent(itemThrowContainer, false);
+
+        var item = PopItem();
+
+        item.Throw(itemThrowContainer.forward, throwForce);
+
+        
     }
 
     public bool HasItem()

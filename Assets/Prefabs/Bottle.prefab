@@ -310,10 +310,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec03379c5aba24eaec7623a2139c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackCollisionSpeed: 5
   lookInteraction: {fileID: 2166648873956693361}
   rb: {fileID: 8768027633283762199}
   itemCollider: {fileID: 9070901720264097270}
-  peeTickValue: 0.05
   gorloAmount: 0.1
   conusAmount: 0.2
   stickers: []

@@ -35,6 +35,15 @@ public class Bottle : Item
         UpdateFillVisual(FillAmount);
     }
 
+    protected override void OnItemAttack(Collider collider)
+    {
+        base.OnItemAttack(collider);
+
+        if (!collider.TryGetComponent(out ZombieProvider zombieProvider)) return;
+
+        zombieProvider.ExplosionController.Exlode(collider.ClosestPoint(transform.position));
+    }
+
     public void SetSupplier(PeeSupplierConfig supplier)
     {
         Supplier = supplier;

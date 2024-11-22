@@ -10,15 +10,15 @@ public class ZombiePeeController : MonoBehaviour
     [SerializeField] private int startHP = 100;
     [SerializeField] private float peeEffectDuration = 1.0f;
 
-    [SerializeField] private Material defaultMaterial;
-    [SerializeField] private Material peeMaterial;
+    [SerializeField] private Color defaultColorMaterial;
+    [SerializeField] private Color peeColorMaterial;
 
     [SerializeField] private Renderer[] renderers;
 
     [SerializeField]
     [HideInInspector]
     private ZombieProvider _zombieProvider;
-    private ZombieStateController _zombieStateController;
+    private ZombieExplosionController _explosionController;
 
 #if UNITY_EDITOR
     private void OnValidate()
@@ -33,7 +33,7 @@ public class ZombiePeeController : MonoBehaviour
 
     private void Awake()
     {
-        _zombieStateController = _zombieProvider.StateController;
+        _explosionController = _zombieProvider.ExplosionController;
     }
 
     private void Start()
@@ -53,27 +53,30 @@ public class ZombiePeeController : MonoBehaviour
         _lastPeeTime = Time.time;
 
         _HP -= peeBoxDamage;
-        Destroy(peeBox.gameObject);
 
-        if(_HP <= 0)
+        if (_HP < 0)
         {
-            _zombieStateController.state.Value = ZombieStateController.ZombieState.Die;
+            _explosionController.Exlode(collider.ClosestPoint(peeBox.transform.position));
         }
+
+        Destroy(peeBox.gameObject);
     }
 
     private void UpdatePeeEffect()
     {
         if (Time.time - _lastPeeTime < peeEffectDuration)
-            UpdateMaterials(peeMaterial);
+            UpdateMaterials(peeColorMaterial);
         else
-            UpdateMaterials(defaultMaterial);
+            UpdateMaterials(defaultColorMaterial);
     }
 
-    private void UpdateMaterials(Material material)
+    private void UpdateMaterials(Color colorMaterial)
     {
         foreach (var renderer in renderers)
         {
-            renderer.material = material;
+            var material = renderer.material;
+            material.color = colorMaterial;
+            renderer.sharedMaterial = material;
         }
     }
 }
