@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Hunter
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: d86bfdc1e4ed2e44789054d07968063a, type: 3}
-  title: "\u041D\u0443 \u0442\u043E\u0439 \u0434\u0435\u0432\u043A\u0438 \u0438\u0437
-    \u042D\u0439\u0444\u043E\u0440\u0438\u0438"
-  description: "\u041E\u0434\u0438\u043D \u0440\u0430\u0437 \u043D\u0435, \u0431\u0440\u0430\u0442"
+  title: hunter_name
+  description: hunter_description
   price: 91
   satisfaction: 3
   causticity: 3

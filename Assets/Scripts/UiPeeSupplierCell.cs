@@ -1,3 +1,4 @@
+using Common.Localisation;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -7,15 +8,13 @@ using UnityEngine.UI;
 public class UiPeeSupplierCell : MonoBehaviour
 {
     [SerializeField] private Image icon;
-    [SerializeField] private TextMeshProUGUI title;
-    [SerializeField] private TextMeshProUGUI description;
-    [SerializeField] private TextMeshProUGUI characteristics;
-    [SerializeField] private TextMeshProUGUI price;
+    [SerializeField] private TranslatedTextMeshPro title;
+    [SerializeField] private TranslatedTextMeshPro description;
+    [SerializeField] private TranslatedTextMeshPro characteristics;
+    [SerializeField] private TranslatedTextMeshPro price;
     [SerializeField] private Button buyButton;
 
-    [TextArea]
     [SerializeField] private string characteristicsPattern;
-    [TextArea]
     [SerializeField] private string pricePattern;
 
     private BottleManager _bottleManager;
@@ -42,10 +41,10 @@ public class UiPeeSupplierCell : MonoBehaviour
         _supplier = supplier;
 
         icon.sprite = _supplier.iconSprite;
-        title.text = _supplier.title;
-        description.text = _supplier.description;
-        characteristics.text = string.Format(characteristicsPattern, _supplier.satisfaction, _supplier.causticity, _supplier.satisfaction);
-        price.text = string.Format(pricePattern, _supplier.price);
+        title.SetKey(_supplier.title);
+        description.SetKey(_supplier.description);
+        characteristics.SetKey(characteristicsPattern, _supplier.satisfaction, _supplier.causticity, _supplier.satisfaction);
+        price.SetKey(pricePattern, _supplier.price);
     }
 
     private void OnBuyButtonClicked()

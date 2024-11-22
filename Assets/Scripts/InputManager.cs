@@ -15,6 +15,8 @@ public class InputManager : SingletonMonoBehaviourBase<InputManager>
     public event Action OnBackButtonDown;
     public event Action OnItemDropButtonDown;
 
+    public bool RunButtonValue { get; private set; }
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -29,11 +31,11 @@ public class InputManager : SingletonMonoBehaviourBase<InputManager>
         {
             OnRightMouseDown?.Invoke();
         }
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             OnLeftShiftDown?.Invoke();
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyUp(KeyCode.Tab))
         {
             OnLeftShiftUp?.Invoke();
         }
@@ -53,5 +55,7 @@ public class InputManager : SingletonMonoBehaviourBase<InputManager>
         {
             OnItemDropButtonDown?.Invoke();
         }
+
+        RunButtonValue = Input.GetKey(KeyCode.LeftShift);
     }
 }

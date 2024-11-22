@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8666508330196860542}
   - component: {fileID: 7415325196155122845}
   - component: {fileID: 356772936609427313}
+  - component: {fileID: 4605412820934112966}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u041E\u0421\u0422\u0410\u0412\u0429\u0418\u041A\u0418"
+  m_text: ui_suppliers
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}
   m_sharedMaterial: {fileID: -1961053746560472971, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}
@@ -150,6 +151,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &4605412820934112966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5701547362578427604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca638a8f7f72294fb0d1b13bca8b451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: ui_suppliers
+  rectTransform: {fileID: 4355396673500756885}
+  textfield: {fileID: 7415325196155122845}
 --- !u!1 &8869699466033279602
 GameObject:
   m_ObjectHideFlags: 0

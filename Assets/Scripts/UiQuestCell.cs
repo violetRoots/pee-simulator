@@ -1,14 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Common.Localisation;
 
 public class UiQuestCell : MonoBehaviour
 {
     [SerializeField] private Image icon;
-    [SerializeField] private TextMeshProUGUI title;
-    [SerializeField] private TextMeshProUGUI description;
+    [SerializeField] private TranslatedTextMeshPro title;
+    [SerializeField] private TranslatedTextMeshPro description;
     [SerializeField] private TextMeshProUGUI progress;
 
     [TextArea]
@@ -17,8 +16,8 @@ public class UiQuestCell : MonoBehaviour
     public void SetContext(QuestConfig quest)
     {
         icon.sprite = quest.supplier.iconSprite;
-        title.text = quest.title;
-        description.text = quest.description;
+        title.SetKey(quest.title);
+        description.SetKey(quest.description, quest.progress);
         progress.text = string.Format(progressPattern, quest.progress);
     }
 }

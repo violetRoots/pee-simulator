@@ -6,7 +6,6 @@ using UnityEngine;
 public class CheckConfig : ScriptableObject
 {
     public string title;
-    [TextArea]
     public string description;
     public int term = 1;
     public int price = 1;

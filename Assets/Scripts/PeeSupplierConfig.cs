@@ -7,7 +7,6 @@ public class PeeSupplierConfig : ScriptableObject
 {
     public Sprite iconSprite;
     public string title;
-    [TextArea]
     public string description;
 
     public int price;

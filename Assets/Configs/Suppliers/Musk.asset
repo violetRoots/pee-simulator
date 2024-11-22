@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Musk
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: fe82f9454a75fb24baf16ee5814c1c72, type: 3}
-  title: "\u0423\u0440\u0438\u043D\u0430X"
-  description: "\u041A\u0430\u043A \u0442\u0435\u0431\u0435 \u0442\u0430\u043A\u043E\u0435?
-    \u0445\u0430\u0445\u0430 \u043E\u0444\u0438\u0433\u0435\u043D\u043D\u043E"
+  title: musk_name
+  description: musk_description
   price: 70
   satisfaction: 6
   causticity: 3

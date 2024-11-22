@@ -47,7 +47,7 @@ public class InjuredEffectPanel : MonoBehaviour
 
     private void OnCharacterStateChanged(CharacterStateController.CharacterState newState)
     {
-        if(newState == CharacterStateController.CharacterState.Injured)
+        if (newState == CharacterStateController.CharacterState.Injured)
         {
             _isEffectActive = true;
         }

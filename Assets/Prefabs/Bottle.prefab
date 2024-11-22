@@ -316,7 +316,9 @@ MonoBehaviour:
   itemCollider: {fileID: 9070901720264097270}
   gorloAmount: 0.1
   conusAmount: 0.2
-  stickers: []
+  stickers:
+  - {fileID: 1301800953232315222}
+  - {fileID: 2800933767273232383}
   peeCyllinder: {fileID: 7754536533274200013}
   peeConus: {fileID: 6425530101504556950}
   peeGorlo: {fileID: 5012878362998029375}

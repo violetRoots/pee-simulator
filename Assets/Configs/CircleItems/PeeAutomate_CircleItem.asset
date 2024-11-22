@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0bca6f03801a243bd968107c3436f1, type: 3}
   m_Name: PeeAutomate_CircleItem
   m_EditorClassIdentifier: 
-  title: "\u0421\u0421\u0410\u041D\u041D\u0410\u042F \u041F\u041E\u041B\u0418\u0412\u0410\u041B\u041A\u0410"
+  title: ui_polivalka_name
   price: 30
   duration: 10
   automate: {fileID: 7938455433468244784, guid: c1505fb4a7dc3824eb099f85e4a1efec, type: 3}

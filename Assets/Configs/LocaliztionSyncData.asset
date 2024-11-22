@@ -1,0 +1,414 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cb9cc632071a0469d157175062c049, type: 3}
+  m_Name: LocaliztionSyncData
+  m_EditorClassIdentifier: 
+  tableId: 1dmXP9AVAtTqqx7UMNUwQ1OB2RWIHtYzl1Mag_Ya_Hkg
+  sheetsUrlNames:
+  - 1445096931
+  - 0
+  - 1963244579
+  - 343999243
+  - 940019245
+  - 1117683676
+  validateAfterSync: 1
+  clearConsole: 1
+  translation:
+  - langKey: russian
+    localization:
+    - key: trump_name
+      text: "\u041E\u0440\u0430\u043D\u0436\u0435\u0432\u044B\u0439 \u0441\u043B\u043E\u043D"
+    - key: trump_description
+      text: "\u041E\u0431\u043E\u0433\u0430\u0449\u0435\u043D\u0430 \u0432\u0438\u0442\u0430\u043C\u0438\u043D\u043E\u043C
+        \u041A"
+    - key: borat_name
+      text: "\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D \u0441\u0443\u043F\u0435\u0440
+        \u0433\u0443\u0434"
+    - key: borat_description
+      text: "\u042F \u0437\u0430\u043A\u0443\u043F\u0430\u0439 \u043C\u043D\u043E\u0433\u043E
+        \u0431\u0443\u0442\u044B\u043B\u0435\u0439, \u043E\u043D \u043D\u0435 \u043D\u0430\u043A\u043E\u043F\u0438\u043B.
+        \u0420\u0430\u0434\u043E\u0441\u0442\u043D\u043E!"
+    - key: eva_name
+      text: "\u041F\u043E\u043B\u0443\u044D\u043B\u044C\u0444 \u041F\u043E\u043B\u0443\u043A\u0442\u043E"
+    - key: eva_description
+      text: "\u0418\u0442\u0441 \u0433\u0435\u0442\u0442\u0438\u043D\u0433 \u0432\u0435\u0442\u0442\u0435\u0440"
+    - key: hideo_name
+      text: "\u0413\u0415\u041D\u0418\u0410\u041B\u042C\u041D\u0410\u042F"
+    - key: hideo_description
+      text: BY HIT!NEO KOTZIMA
+    - key: skibididopdop_name
+      text: "\u0422\u0440\u0440\u0440 \u0421\u043A\u0438\u0431\u0438\u0434\u0438"
+    - key: skibididopdop_description
+      text: "\u0414\u043E\u0431 \u0434\u043E\u0431 \u0435\u0441 \u0435\u0441\u0441\u0441"
+    - key: maddison_name
+      text: "\u041C\u0443\u0434\u0434\u0438\u0431\u0430\u0442\u044F"
+    - key: maddison_description
+      text: "\u0421 \u043F\u0440\u0438\u0432\u043A\u0443\u0441\u043E\u043C \u043F\u0438\u0432\u0430
+        \u0438 \u0440\u0430\u0437\u043E\u0447\u0430\u0440\u043E\u0432\u0430\u043D\u0438\u044F"
+    - key: musk_name
+      text: "\u0423\u0440\u0438\u043D\u0430X"
+    - key: musk_description
+      text: "\u041A\u0430\u043A \u0442\u0435\u0431\u0435 \u0442\u0430\u043A\u043E\u0435?
+        \u0445\u0430\u0445\u0430 \u043E\u0444\u0438\u0433\u0435\u043D\u043D\u043E"
+    - key: gosling_name
+      text: "\u0414\u0440\u0430\u0439\u0432\u043E\u0432\u044B\u0439 \u041F\u0438\u043F\u043A\u0430"
+    - key: gosling_description
+      text: "\u0417\u0430\u0442\u043A\u043D\u0438 \u0441\u0432\u043E\u044E \u043F\u0430\u0441\u0442\u044C
+        \u0438\u043B\u0438 \u044F \u0437\u0430\u043B\u044C\u044E \u044D\u0442\u043E
+        \u0442\u0435\u0431\u0435 \u0432 \u0433\u043B\u043E\u0442\u043A\u0443"
+    - key: hunter_name
+      text: "\u042D\u0439\u0444\u043E\u0440\u0438\u0447\u043D\u0430\u044F \u0434\u0435\u0432\u043A\u0430"
+    - key: hunter_description
+      text: "\u041E\u0434\u0438\u043D \u0440\u0430\u0437 \u043D\u0435, \u0431\u0440\u0430\u0442"
+    - key: mrbeast_name
+      text: "\u041C\u0438\u0441\u0442\u043E\u0440 \u041F\u0441-\u041F\u0441-\u041F\u0441\u0441\u0442"
+    - key: mrbeast_description
+      text: "\u0412\u0441\u0442\u0430\u0432\u0438\u0442 \u0440\u0435\u043A\u043B\u0430\u043C\u043D\u0443\u044E
+        \u0438\u043D\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044E \u044D\u0442\u043E\u0433\u043E
+        \u043D\u0435\u043A\u0442\u0430\u0440\u0430 \u0432 \u0431\u0443\u0434\u0443\u0449\u0438\u0439
+        \u0440\u043E\u043B\u0438\u043A"
+    - key: pepe_name
+      text: "\u041F\u0438\u043F\u0438 \u043E\u0442 \u041F\u0435\u043F\u0435"
+    - key: pepe_description
+      text: "\u041B\u044F\u0433\u0443\u0448\u043A\u0438 \u043D\u0435 \u0443\u043C\u0435\u044E\u0442
+        \u043F\u0438\u0441\u0430\u0442\u044C. \u0414\u0443\u043C\u0430\u0439\u0442\u0435."
+    - key: gnom_name
+      text: "\u041F\u0438\u0441 \u041F\u0438\u0441\u044B\u0447"
+    - key: gnom_description
+      text: "\u0413\u043E\u0440\u044C\u043A\u0430\u044F, \u043A\u0430\u043A \u0438
+        \u0435\u0433\u043E \u0443\u043B\u044B\u0431\u043A\u0430"
+    - key: supplier_characteristics_pattern
+      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0435\u043D\u0438\u0435:
+        <b>{0}</b>\n\u0415\u0434\u043A\u043E\u0441\u0442\u044C: <b>{1}</b>\n\u041D\u0430\u0441\u044B\u0449\u0435\u043D\u043D\u043E\u0441\u0442\u044C:
+        <b>{2}</b>"
+    - key: supplier_price_pattern
+      text: "\u041A\u0423\u041F\u0418\u0422\u042C {0}$"
+    - key: ui_satisfaction
+      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0435\u043D\u0438\u0435"
+    - key: ui_saturation
+      text: "\u041D\u0430\u0441\u044B\u0449\u0435\u043D\u043D\u043E\u0441\u0442\u044C"
+    - key: ui_causticity
+      text: "\u0415\u0434\u043A\u043E\u0441\u0442\u044C"
+    - key: ui_suppliers
+      text: "\u041F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0438"
+    - key: ui_quests
+      text: "\u0417\u0430\u0434\u0430\u0447\u043A\u0438"
+    - key: ui_checks
+      text: "\u0421\u0447\u0435\u0442\u0430"
+    - key: ui_rent
+      text: "\u0410\u0440\u0435\u043D\u0434\u0430"
+    - key: ui_buy
+      text: "\u041A\u0443\u043F\u0438\u0442\u044C"
+    - key: ui_pay
+      text: "\u041E\u043F\u043B\u0430\u0442\u0438\u0442\u044C"
+    - key: ui_rent_button
+      text: "\u0421\u043D\u044F\u0442\u044C"
+    - key: ui_main_menu_new_game
+      text: "\u041D\u043E\u0432\u0430\u044F \u0438\u0433\u0440\u0432"
+    - key: ui_main_menu_continue_game
+      text: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+    - key: ui_main_menu_options
+      text: "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+    - key: ui_main_menu_exit
+      text: "\u0412\u044B\u0439\u0442\u0438"
+    - key: ui_lang_russian
+      text: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
+    - key: ui_lang_english
+      text: "\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439"
+    - key: ui_drone_name
+      text: "\u041C\u043E\u0447\u0435\u0433\u043E\u043D\u043D\u044B\u0439 \u0434\u0440\u043E\u043D"
+    - key: ui_polivalka_name
+      text: "\u0421\u0441\u0430\u043D\u0430\u044F \u043F\u043E\u043B\u0438\u0432\u0430\u043B\u043A\u0430"
+    - key: ui_fountain_name
+      text: "\u0417\u043E\u043B\u043E\u0442\u043E\u0439 \u0424\u043E\u043D\u0442\u0430\u043D"
+    - key: ui_rails_name
+      text: "\u0420\u0435\u043B\u044C\u0441\u044B \u0421\u0441\u0430\u043D\u044C\u044F"
+    - key: quest_run_name
+      text: "\u0411\u0435\u0433\u0438, \u043E\u0431\u0441\u0441\u044B\u0445\u0430,
+        \u0431\u0435\u0433\u0438!"
+    - key: quest_run_description
+      text: "\u041F\u0440\u043E\u0431\u0435\u0433\u0438 <b>{0}</b> \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432"
+    - key: quest_allyourself_name
+      text: "\u0412\u0441\u0451 \u0441\u0430\u043C!"
+    - key: quest_allyourself_description
+      text: "\u041D\u0430\u0441\u0441\u044B <b>{0}</b> \u043B\u0438\u0442\u0440\u043E\u0432
+        \u0441\u0430\u043C"
+    - key: quest_fullbottle_name
+      text: "\u0417\u0430\u0447\u0435\u043C, \u0430 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
+        \u043D\u0430\u0444\u0438\u0433\u0430?"
+    - key: quest_fullbottle_description
+      text: "\u0412\u044B\u0431\u0440\u043E\u0441\u0438 <b>{0}</b> \u043F\u043E\u043B\u043D\u044B\u0445
+        \u0431\u0443\u0442\u044B\u043B\u043E\u043A"
+    - key: skibidi_random_phrase_1
+      text: "\u041D\u0430\u043B\u0435\u0442\u0430\u0439! \u041F\u043E\u043A\u0443\u043F\u0430\u0439!"
+    - key: skibidi_random_phrase_2
+      text: "\u0427\u0435 \u043F\u044B\u0440\u0438\u0448\u044C? \u0421\u043A\u0438\u0434\u043E\u043A
+        \u043D\u0435 \u0431\u0443\u0434\u0435\u0442."
+    - key: skibidi_random_phrase_3
+      text: "\u042F \u0442\u043E\u043B\u043A\u0430\u044E \u0442\u043E\u043B\u044C\u043A\u043E
+        \u043F\u0435\u0440\u0432\u0438\u0447\u043D\u0443\u044E \u043C\u043E\u0447\u0443.
+        \u0411\u0435\u0437 \u0434\u0435\u0440\u044C\u043C\u0430"
+    - key: skibidi_random_phrase_4
+      text: "\u041C\u043E\u0447\u0430 \u043C\u043E\u0447\u043E\u0439, \u0437\u0430\u0442\u043E
+        \u043A\u0430\u043A\u0430\u044F!"
+    - key: skibidi_random_phrase_5
+      text: "\u041D\u0430 \u0440\u0435\u0434\u043A\u043E\u0441\u0442\u044C \u0432\u043A\u0443\u0441\u043D\u0430\u044F
+        \u0441\u0441\u0430\u043D\u0438\u043D\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u0430\u0441\u044C!"
+    - key: skibidi_random_phrase_6
+      text: "\u0422\u044B \u0432\u0435\u0441\u044C \u043F\u0440\u043E\u043F\u0430\u0445
+        \u043C\u043E\u0447\u043E\u0439, \u0431\u0440\u0430\u0442\u0430\u043D! \u041F\u043E\u043A\u0443\u043F\u0430\u0439
+        \u0438 \u043F\u0440\u043E\u0432\u0430\u043B\u0438\u0432\u0430\u0439"
+    - key: skibidi_random_phrase_7
+      text: "Death Grips \u2014 \xABPss Pss\xBB starts playing"
+    - key: skibidi_random_phrase_8
+      text: "\u0422\u044B \u0432\u044B\u0433\u043B\u044F\u0434\u0438\u0448\u044C
+        \u043A\u0430\u043A \u0447\u0435\u043B, \u043A\u043E\u0442\u043E\u0440\u043E\u043C\u0443
+        \u0431\u0430\u0431\u043A\u0430 \u0433\u043E\u0432\u043E\u0440\u0438\u043B\u0430
+        \u043F\u0441-\u043F\u0441-\u043F\u0441 \u0438 \u0442\u044B \u043F\u043E\u0441\u0441\u0430\u0442\u044C
+        \u0442\u0435\u043F\u0435\u0440\u044C \u0431\u0435\u0437 \u044D\u0442\u043E\u0433\u043E
+        \u043D\u0435 \u043C\u043E\u0436\u0435\u0448\u044C"
+    - key: skibidi_random_phrase_9
+      text: "\u0423\u0441\u043A\u043E\u0440\u044F\u0439\u0441\u044F, \u0442\u044B
+        \u043E\u0431\u043E\u0441\u0441\u0430\u043B\u0441\u044F"
+    - key: skibidi_random_phrase_10
+      text: "\u0425\u0430-\u0445\u0430. \u0422\u0443\u0442 \u043E\u0431\u043E\u0441\u0441\u0430\u0442\u044C\u0441\u044F
+        \u043A\u0430\u043A\u0430\u044F \u0441\u043C\u0435\u0448\u043D\u0430\u044F
+        \u0440\u0435\u043F\u043B\u0438\u043A\u0430. \u0410 \u0442\u0435\u043F\u0435\u0440\u044C
+        \u043E\u0442\u0432\u0430\u043B\u0438"
+    - key: skibidi_random_phrase_11
+      text: "\u0425\u043B\u043E\u043F\u043D\u0435\u043C \u043F\u043E \u0440\u044E\u043C\u0430\u0448\u043A\u0435?
+        \u041D\u0435? \u0410 \u0447\u0435 \u0442\u0430\u043A?"
+    - key: skibidi_random_phrase_12
+      text: "\u0421\u0430\u043C\u044B\u0439 \u043F\u043E\u043F\u0443\u043B\u044F\u0440\u043D\u044B\u0439
+        \u043A\u043E\u043C\u043C\u0435\u043D\u0442 \u0432 \u0442\u0432\u043E\u0435\u043C
+        \u0431\u043B\u043E\u0433\u0435? \u041E\u0422\u041F\u0418\u0421\u041A\u0410"
+    - key: skibidi_random_phrase_13
+      text: "\u0421\u0441\u0430\u043A\u0430. \u041A\u0430\u043A \u043C\u043D\u043E\u0433\u043E
+        \u0432 \u044D\u0442\u043E\u043C \u0441\u043B\u043E\u0432\u0435."
+    - key: skibidi_random_phrase_14
+      text: "\u042F \u043F\u043E\u0434\u043C\u044B\u0432\u0430\u043B\u044C\u043D\u0438\u043A\u043E\u0432
+        \u043D\u0430\u0447\u0430\u043B\u044C\u043D\u0438\u043A, \u0442\u044B \u043E\u0431\u0431\u0441\u044B\u043A\u043E\u0432
+        \u043A\u043E\u043C\u0430\u043D\u0434\u0438\u0440"
+    - key: skibidi_random_phrase_15
+      text: "\u0410 \u044F \u043B\u044E\u0431\u043B\u044E \u043A\u043E\u0433\u0434\u0430
+        \u0434\u043E\u0436\u0434\u044C. \u041C\u043D\u0435 \u0435\u0449\u0451 \u043C\u043E\u044F
+        \u0431\u0430\u0431\u0443\u0448\u043A\u0430 \u0433\u043E\u0432\u043E\u0440\u0438\u043B\u0430,
+        \u0447\u0442\u043E \u044D\u0442\u043E \u043D\u0430 \u043D\u0430\u0441 \u0441
+        \u043D\u0435\u0431\u0430 \u0430\u043D\u0433\u0435\u043B\u043E\u0447\u043A\u0438
+        \u043F\u0438\u0441\u0430\u044E\u0442"
+    - key: skibidi_random_phrase_16
+      text: "\u041D\u0430\u0441\u0442\u0443\u043F\u0430\u0435\u0442 \u0432\u0440\u0435\u043C\u044F,
+        \u043A\u043E\u0433\u0434\u0430 \u043F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u0441\u044F
+        \u043F\u043E \u043A\u0430\u043F\u043B\u044F\u043C \u0432\u044B\u0434\u0430\u0432\u043B\u0438\u0432\u0430\u0442\u044C
+        \u0438\u0437 \u0441\u0435\u0431\u044F \u043D\u0435 \u0440\u0430\u0431\u0430,
+        \u0430 \u043C\u043E\u0447\u0443."
+    - key: skibidi_random_phrase_17
+      text: "\u0420\u0430\u043D\u044C\u0448\u0435 \u043A \u0442\u0435\u0431\u0435
+        \u043F\u0440\u0438\u0445\u043E\u0434\u0438\u043B\u0438 \u0441 \u043C\u0435\u0447\u0430\u043C\u0438.
+        \u0422\u044B \u0441\u0430\u043C \u0441\u043C\u0435\u043D\u0438\u043B \u043C\u0435\u0447\u0438
+        \u043D\u0430 \u043C\u043E\u0447\u0443."
+    - key: skibidi_random_phrase_18
+      text: "\u041E\u0434\u043D\u0430\u0436\u0434\u044B \u0442\u044B \u043F\u0440\u043E\u0441\u043D\u0443\u043B\u0441\u044F
+        \u0438 \u0441\u043A\u0430\u0437\u0430\u043B \u0441\u0435\u0431\u0435 \u0445\u043E\u0447\u0443
+        \u043F\u0440\u0438\u0442\u043E\u0440\u0433\u043E\u0432\u044B\u0432\u0430\u0442\u044C
+        \u043C\u043E\u0447\u043E\u0439? \u041A\u0430\u043A \u0435\u0451 \u0437\u0432\u0430\u043B\u0438,
+        \u0431\u0440\u0430\u0442?"
+    - key: skibidi_random_phrase_19
+      text: "\u0420\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u043C\u0430\u0440\u043A\u0435\u0442\u043E\u043B\u043E\u0433\u043E\u043C
+        \u0437\u0430\u0448\u043A\u0432\u0430\u0440\u043D\u0435\u0435"
+    - key: room_name_1
+      text: "\u041F\u041E\u041C\u041E\u0415\u0427\u041D\u0410\u042F"
+    - key: room_description_1
+      text: "<b>4</b> \u0431\u043E\u0439\u043B\u0435\u0440\u0430\n<b>11</b> \u043C\u0435\u0441\u0442\n<b>100</b>
+        \u043A\u0432. \u043C."
+    - key: room_price_pattern
+      text: "\u0421\u0440\u043E\u043A: <b>{0}</b> \u0434\u043D\u0435\u0439"
+    - key: check_name_1
+      text: "\u0428\u0422\u0420\u0410\u0424: \u041C\u041E\u0427\u0415\u0413\u041E\u041D\u041D\u0410\u042F
+        \u0418\u041D\u0421\u041F\u0415\u041A\u0426\u0418\u042F"
+    - key: check_description_1
+      text: "\u0426\u0432\u0435\u0442 \u043C\u043E\u0447\u0438 \u043D\u0435 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u0442
+        \u0437\u0430\u0434\u0430\u043D\u043D\u043E\u0439 \u043D\u043E\u0440\u043C\u0435"
+    - key: check_term_pattern
+      text: "\u041E\u041F\u041B\u0410\u0422\u0418\u0422\u042C {0}$"
+    - key: check_price_pattern
+      text: "\u0421\u0440\u043E\u043A: <b>{0}</b> \u0434\u043D\u0435\u0439"
+  - langKey: english
+    localization:
+    - key: trump_name
+      text: Orange asf
+    - key: trump_description
+      text: IT'S NOT A JUICE.
+    - key: borat_name
+      text: Kazakhstan's Super Good
+    - key: borat_description
+      text: U get a big stream, they cannot afford. Great success!
+    - key: eva_name
+      text: Adam's GF
+    - key: eva_description
+      text: It's show(er) time
+    - key: hideo_name
+      text: Metal Genius
+    - key: hideo_description
+      text: We'll drink every drop of whatever he offers
+    - key: skibididopdop_name
+      text: Trr Stibidi
+    - key: skibididopdop_description
+      text: Dob dob yes yes
+    - key: maddison_name
+      text: Stinky Letsplayer
+    - key: maddison_description
+      text: Flavored with beer and disappointment
+    - key: musk_name
+      text: UrineX
+    - key: musk_description
+      text: Innovative (to the creator's taste)
+    - key: gosling_name
+      text: A Real Human Pee
+    - key: gosling_description
+      text: Hey girl, it tastes almost like a cappuccino
+    - key: hunter_name
+      text: What's a F#@king Pussy
+    - key: hunter_description
+      text: It's okay to be
+    - key: mrbeast_name
+      text: Mr.Peest
+    - key: mrbeast_description
+      text: Deez nuts
+    - key: pepe_name
+      text: Pepe's Pee-Pee
+    - key: pepe_description
+      text: Frogs can't piss, btw
+    - key: gnom_name
+      text: Suicidal Nepo-Kid
+    - key: gnom_description
+      text: Bitter like his future drug addiction
+    - key: supplier_characteristics_pattern
+      text: 'Satisfaction: <b>{0}</b>
+
+        Acidity: <b>{1}</b>
+
+        Saturation:
+        <b>{2}</b>'
+    - key: supplier_price_pattern
+      text: BUY {0}$
+    - key: ui_satisfaction
+      text: Pleasure
+    - key: ui_saturation
+      text: Saturation
+    - key: ui_causticity
+      text: Causticity
+    - key: ui_suppliers
+      text: Suppliers
+    - key: ui_quests
+      text: Challenges
+    - key: ui_checks
+      text: Bills
+    - key: ui_rent
+      text: Rent
+    - key: ui_buy
+      text: Buy
+    - key: ui_pay
+      text: Pay
+    - key: ui_rent_button
+      text: Rent
+    - key: ui_main_menu_new_game
+      text: New game
+    - key: ui_main_menu_continue_game
+      text: Continue
+    - key: ui_main_menu_options
+      text: Options
+    - key: ui_main_menu_exit
+      text: Exit
+    - key: ui_lang_russian
+      text: Russian
+    - key: ui_lang_english
+      text: English
+    - key: ui_drone_name
+      text: Diuretic Drone
+    - key: ui_polivalka_name
+      text: Piss Sprinkler
+    - key: ui_fountain_name
+      text: Golden Fountain
+    - key: ui_rails_name
+      text: Peeing Rails
+    - key: quest_run_name
+      text: Run, PissBoy! Run!
+    - key: quest_run_description
+      text: Runs <b>{0}</b> kilometers
+    - key: quest_allyourself_name
+      text: All by yourself!
+    - key: quest_allyourself_description
+      text: Piss <b>{0}</b> liters
+    - key: quest_fullbottle_name
+      text: Why'd you do that?
+    - key: quest_fullbottle_description
+      text: Throw away <b>{0}</b> full bottles
+    - key: skibidi_random_phrase_1
+      text: Come on! Buy!
+    - key: skibidi_random_phrase_2
+      text: Don't whine. There's no discounts
+    - key: skibidi_random_phrase_3
+      text: Only today's urine is on sale
+    - key: skibidi_random_phrase_4
+      text: Piss is piss, but it's good piss!
+    - key: skibidi_random_phrase_5
+      text: This is a deliciously delicious piss!
+    - key: skibidi_random_phrase_6
+      text: You smell like piss, bro! Buy it and get out
+    - key: skibidi_random_phrase_7
+      text: "Death Grips \u2014 \xABPss Pss\xBB starts playing"
+    - key: skibidi_random_phrase_8
+      text: "You look like a guy whose mommmy told \u201Cpsst, psst, psst\u201D and
+        now you can't take a piss without it"
+    - key: skibidi_random_phrase_9
+      text: You peed your pants, bro
+    - key: skibidi_random_phrase_10
+      text: Ha-ha. That's a pissing funny line. Now piss off
+    - key: skibidi_random_phrase_11
+      text: Lets have a drink after finals. No? Why not?
+    - key: skibidi_random_phrase_12
+      text: Why did the urine sample join a band? It had great pee-rhythm!
+    - key: skibidi_random_phrase_13
+      text: Urine. There are so many things in that word.
+    - key: skibidi_random_phrase_14
+      text: My suppliers are pissing like a race horse
+    - key: skibidi_random_phrase_15
+      text: This pee is great for pissy moods!
+    - key: skibidi_random_phrase_16
+      text: How do you make a bathroom laugh? Just flush out some hilarious pee jokes!
+    - key: skibidi_random_phrase_17
+      text: Tell your PEEps this sim is out. Breaking the fourth wall for sales!
+        Capitalism!
+    - key: skibidi_random_phrase_18
+      text: "Did you wake up one day and say: \u201CI want to sell piss\u201D? What
+        was her name?"
+    - key: skibidi_random_phrase_19
+      text: Your job is still more useful than a marketer's job
+    - key: room_name_1
+      text: GARBAGE
+    - key: room_description_1
+      text: '<b>4</b> boilers
+
+        <b>11</b> places
+
+        <b>100</b> sq. m.'
+    - key: room_price_pattern
+      text: 'Term: <b>{0}</b> days'
+    - key: check_name_1
+      text: 'FINE: DIURETIC INSPECTION'
+    - key: check_description_1
+      text: The color of urine does not correspond to the specified norm
+    - key: check_term_pattern
+      text: PAY {0}$
+    - key: check_price_pattern
+      text: 'Term: <b>{0}</b> days'

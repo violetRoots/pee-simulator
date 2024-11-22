@@ -1,3 +1,4 @@
+using Common.Localisation;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ public class UiCircleMenu : MonoBehaviour
         public float targetAngle;
     }
 
-    [SerializeField] private TextMeshProUGUI title;
+    [SerializeField] private TranslatedTextMeshPro title;
     [SerializeField] private TextMeshProUGUI price;
 
     [SerializeField] private CircleSegmentInfo[] segmentInfos;
@@ -75,7 +76,7 @@ public class UiCircleMenu : MonoBehaviour
 
         _targetSegment.Select();
 
-        title.text = _targetSegment.ItemConfig.title;
+        title.SetKey(_targetSegment.ItemConfig.title);
         price.text = $"{_targetSegment.ItemConfig.price}";
         price.color = _gameManager.Data.Money < _targetSegment.ItemConfig.price ? Color.red : Color.green;
     }

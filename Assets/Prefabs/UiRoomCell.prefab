@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 2629161294628887636}
   - component: {fileID: 5975100946901978682}
   - component: {fileID: 1343234911032817520}
+  - component: {fileID: 1230090600385438241}
   m_Layer: 5
   m_Name: Price
   m_TagString: Untagged
@@ -142,7 +143,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0421\u041D\u042F\u0422\u042C {0}$"
+  m_text: room_price_pattern
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}
   m_sharedMaterial: {fileID: -1961053746560472971, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}
@@ -211,6 +212,22 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1230090600385438241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917554893680098261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca638a8f7f72294fb0d1b13bca8b451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: room_price_pattern
+  values: 
+  rectTransform: {fileID: 2629161294628887636}
+  textfield: {fileID: 1343234911032817520}
 --- !u!1 &3366307266037487570
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,10 +282,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f717af3027234e44999607e85306223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: {fileID: 8727300180450541570}
-  description: {fileID: 77438473292625196}
-  price: {fileID: 1343234911032817520}
-  pricePattern: "\u0421\u041D\u042F\u0422\u042C {0}$"
+  title: {fileID: 7027622510999335810}
+  description: {fileID: 3481775665626614811}
+  price: {fileID: 1230090600385438241}
+  pricePattern: room_price_pattern
   icon: {fileID: 3172782149046411807}
 --- !u!1 &6217687230647577141
 GameObject:
@@ -359,6 +376,7 @@ GameObject:
   - component: {fileID: 77438473292625196}
   - component: {fileID: 6865288422695925657}
   - component: {fileID: 6649925953270583712}
+  - component: {fileID: 3481775665626614811}
   m_Layer: 5
   m_Name: Description
   m_TagString: Untagged
@@ -414,8 +432,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>4</b> \u0431\u043E\u0439\u043B\u0435\u0440\u0430\n<b>11</b> \u043C\u0435\u0441\u0442\n<b>100</b>
-    \u043A\u0432. \u043C."
+  m_text: room_description_1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}
   m_sharedMaterial: {fileID: -1961053746560472971, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}
@@ -518,6 +535,22 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &3481775665626614811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106470238316058107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca638a8f7f72294fb0d1b13bca8b451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: room_description_1
+  values: 
+  rectTransform: {fileID: 4464540713620377644}
+  textfield: {fileID: 77438473292625196}
 --- !u!1 &7158383943110659386
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,6 +686,7 @@ GameObject:
   - component: {fileID: 8727300180450541570}
   - component: {fileID: 7711489579218282017}
   - component: {fileID: 7033241920946858896}
+  - component: {fileID: 7027622510999335810}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -708,7 +742,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u041E\u041C\u041E\u0415\u0427\u041D\u0410\u042F"
+  m_text: room_name_1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}
   m_sharedMaterial: {fileID: -1961053746560472971, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}
@@ -811,3 +845,19 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &7027622510999335810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527014639759487915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca638a8f7f72294fb0d1b13bca8b451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: room_name_1
+  values: 
+  rectTransform: {fileID: 355145797141388614}
+  textfield: {fileID: 8727300180450541570}

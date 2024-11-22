@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b19ca87323b8e349a84a7e6bc92a5d0, type: 3}
   m_Name: Room
   m_EditorClassIdentifier: 
-  title: "\u041F\u041E\u041C\u041E\u0415\u0427\u041D\u0410\u042F"
-  description: "<b>4</b> \u0431\u043E\u0439\u043B\u0435\u0440\u0430\n<b>11</b> \u043C\u0435\u0441\u0442\n<b>100</b>
-    \u043A\u0432. \u043C."
+  title: room_name_1
+  description: room_description_1
   iconSprite: {fileID: 21300000, guid: c8f591600f87e56439173b01be224cfb, type: 3}
+  price: 0

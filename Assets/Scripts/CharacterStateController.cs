@@ -9,7 +9,8 @@ public class CharacterStateController : MonoBehaviour
     public enum CharacterState
     {
         Normal = 1,
-        Injured = 2,
+        Run = 2,
+        Injured = 3,
     }
 
     [SerializeField] private float injuredDuration = 3.0f;
@@ -21,8 +22,9 @@ public class CharacterStateController : MonoBehaviour
     [HideInInspector]
     [SerializeField] 
     private CharacterProvider _characterProvider;
-    private CharacterMovementController _movementController;
     private CharacterDamageController _damageController;
+
+    private InputManager _inputManager;
 
 #if UNITY_EDITOR
     private void OnValidate()
@@ -33,7 +35,8 @@ public class CharacterStateController : MonoBehaviour
 
     private void Awake()
     {
-        _movementController = _characterProvider.MovementController;
+        _inputManager = InputManager.Instance;
+
         _damageController = _characterProvider.DamageController;
     }
 
@@ -49,6 +52,13 @@ public class CharacterStateController : MonoBehaviour
         _stateSubscriprion = null;
     }
 
+    private void Update()
+    {
+        if (state.Value == CharacterState.Injured) return;
+
+        state.Value = _inputManager.RunButtonValue ? CharacterState.Run : CharacterState.Normal;
+    }
+
     private void OnCharacterDamaged(float DamagedTime)
     {
         state.Value = CharacterState.Injured;
@@ -58,11 +68,14 @@ public class CharacterStateController : MonoBehaviour
     {
         if (newState == CharacterState.Normal)
         {
-            _movementController.SetNormalSpeed();
+            
+        }
+        else if (newState == CharacterState.Run)
+        {
+            
         }
         else if (newState == CharacterState.Injured)
         {
-            _movementController.SetInjuredSpeed();
             DelayedAction(injuredDuration, () => state.Value = CharacterState.Normal);
         }
     }

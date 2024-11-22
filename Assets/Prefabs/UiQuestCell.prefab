@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 6846804552811165007}
   - component: {fileID: 1813614894617649948}
   - component: {fileID: 1692722875278361492}
+  - component: {fileID: 9139597817040053779}
   m_Layer: 5
   m_Name: Description
   m_TagString: Untagged
@@ -143,7 +144,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0440\u043E\u0431\u0435\u0433\u0438 10 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432"
+  m_text: quest_run_description
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}
   m_sharedMaterial: {fileID: -1961053746560472971, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}
@@ -226,6 +227,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &9139597817040053779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935545238567416215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca638a8f7f72294fb0d1b13bca8b451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: quest_run_description
+  values: 
+  rectTransform: {fileID: 5136486744863620551}
+  textfield: {fileID: 1813614894617649948}
 --- !u!1 &3008018463623107877
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,8 +300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 4226247175131750266}
-  title: {fileID: 6817106172527888269}
-  description: {fileID: 1813614894617649948}
+  title: {fileID: 5029912594879541134}
+  description: {fileID: 9139597817040053779}
   progress: {fileID: 5694392616977736833}
   progressPattern: 0/{0}
 --- !u!1 &6383317041950659447
@@ -525,6 +542,7 @@ GameObject:
   - component: {fileID: 8161479429762655232}
   - component: {fileID: 6817106172527888269}
   - component: {fileID: 1472734820575799032}
+  - component: {fileID: 5029912594879541134}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -549,9 +567,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 327.72, y: -43.295}
+  m_AnchoredPosition: {x: 203.73, y: -43.295}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &8161479429762655232
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -580,7 +598,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0420\u041E\u0421\u0422\u041E \u0411\u0415\u0413\u0418"
+  m_text: quest_run_name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}
   m_sharedMaterial: {fileID: -1961053746560472971, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}
@@ -663,6 +681,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &5029912594879541134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6551826982289375202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca638a8f7f72294fb0d1b13bca8b451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: quest_run_name
+  values: 
+  rectTransform: {fileID: 149137217730635797}
+  textfield: {fileID: 6817106172527888269}
 --- !u!1 &7116891145048551910
 GameObject:
   m_ObjectHideFlags: 0

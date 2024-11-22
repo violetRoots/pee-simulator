@@ -62,7 +62,9 @@ public class Bottle : Item
     {
         foreach (var sticker in stickers)
         {
-            sticker.sharedMaterial.mainTexture = supplier.iconSprite.texture;
+            var material = sticker.material;
+            material.SetTexture("_MainTex", supplier.iconSprite.texture);
+            sticker.sharedMaterial = material;
         }
     }
 
