@@ -12,7 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7c438ff4e155b24c85cd17727d0c3c2, type: 3}
   m_Name: RunQuest
   m_EditorClassIdentifier: 
+  Data:
+    type: 0
+    supplierData:
+      iconSprite: {fileID: 21300000, guid: d86bfdc1e4ed2e44789054d07968063a, type: 3}
+      title: hunter_name
+      description: hunter_description
+      price: 91
+      satisfaction: 3
+      causticity: 3
+      saturation: 4
+    title: quest_run_name
+    description: quest_run_description
+    maxProgress: 100
   supplier: {fileID: 11400000, guid: 554bb0113605cbe47bb84bd5eb45a0cc, type: 2}
-  title: quest_run_name
-  description: quest_run_description
-  progress: 10

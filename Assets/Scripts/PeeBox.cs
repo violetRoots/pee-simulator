@@ -18,14 +18,14 @@ public class PeeBox : MonoBehaviour
     [SerializeField] private Transform peeTracePrefab;
 
     private Rigidbody _rigidbody;
-    private SuppliersManager.PeeSupplierRuntimeInfo _supplier;
+    private SuppliersManager.SupplierRuntimeInfo _supplier;
 
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    public void PeeForward(Vector3 direction, float stregnth, SuppliersManager.PeeSupplierRuntimeInfo supplier = null)
+    public void PeeForward(Vector3 direction, float stregnth, SuppliersManager.SupplierRuntimeInfo supplier = null)
     {
         _supplier = supplier;
 
@@ -42,7 +42,7 @@ public class PeeBox : MonoBehaviour
         var trace = Instantiate(peeTracePrefab, position, Quaternion.LookRotation(direction));
     }
 
-    public SuppliersManager.PeeSupplierRuntimeInfo GetSupplier()
+    public SuppliersManager.SupplierRuntimeInfo GetSupplier()
     {
         return _supplier;
     }

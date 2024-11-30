@@ -22,7 +22,7 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
     [HideInInspector]
     public readonly ReactiveProperty<DayState> state = new ReactiveProperty<DayState>(DayState.NeedOpenDoors);
 
-    private GameManager _gameManager;
+    private SavesManager _dataManager;
     private DoorsManager _doorsManager;
 
     private float _currentDayTime;
@@ -31,7 +31,7 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
 
     private void Awake()
     {
-        _gameManager = GameManager.Instance;
+        _dataManager = SavesManager.Instance;
         _doorsManager = GameManager.Instance.DoorsManager;
     }
 
@@ -76,7 +76,7 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
 
     private void OnStateChanged(DayState newState)
     {
-        Debug.Log(newState);
+        //Debug.Log(newState);
 
         if(newState == DayState.NeedOpenDoors)
         {
@@ -84,6 +84,8 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
             _doorsManager.SetDoorsInteractable(true);
 
             onPastDay?.Invoke();
+
+            _dataManager.PlayerStats.Save();
         }
         else if(newState == DayState.SpawnProcess)
         {
@@ -97,5 +99,11 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
         {
             spawner.StopSpawn();
         }
+    }
+
+    public void DebugSkipDay()
+    {
+        state.Value = DayState.NeedEndDay;
+        state.Value = DayState.NeedOpenDoors;
     }
 }

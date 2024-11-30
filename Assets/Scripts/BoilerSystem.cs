@@ -40,8 +40,8 @@ public class BoilerSystem : MonoBehaviour
 
         foreach (var bottle in _bottles)
         {
-            sumSatisfaction += bottle.Supplier.satisfaction;
-            sumCausticity += bottle.Supplier.causticity;
+            sumSatisfaction += bottle.RuntimeInfo.configData.satisfaction;
+            sumCausticity += bottle.RuntimeInfo.configData.causticity;
         }
 
         _generalSatisfaction = sumSatisfaction / _bottles.Length;

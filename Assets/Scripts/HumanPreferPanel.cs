@@ -12,9 +12,9 @@ public class HumanPreferPanel : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void SetContext(SuppliersManager.PeeSupplierRuntimeInfo peeSupplierRuntimeInfo)
+    public void SetContext(SuppliersManager.SupplierRuntimeInfo peeSupplierRuntimeInfo)
     {
-        preferIcon.sprite = peeSupplierRuntimeInfo.config.iconSprite;
+        //preferIcon.sprite = peeSupplierRuntimeInfo.configData.iconSprite;
 
         gameObject.SetActive(true);
     }

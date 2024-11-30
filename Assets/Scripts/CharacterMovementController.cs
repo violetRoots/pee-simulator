@@ -18,7 +18,9 @@ public class CharacterMovementController : MonoBehaviour
     private CharacterProvider _characterProvider;
     private CharacterStateController _stateController;
 
-    private InputManager _inputManager;
+    private QuestsManager _questsManager;
+
+    Vector3 _previousPos;
 
     private IDisposable _stateSubscription;
 
@@ -31,11 +33,29 @@ public class CharacterMovementController : MonoBehaviour
 
     private void Awake()
     {
-        _inputManager = GetComponent<InputManager>();
+        _questsManager = GameManager.Instance.QuestsManager;
 
         _stateController = _characterProvider.StateController;
 
         SetNormalSpeed();
+
+        StartCoroutine(RunQuestProgressUpdate());
+    }
+
+    private IEnumerator RunQuestProgressUpdate()
+    {
+        _previousPos = transform.position;
+
+        while (!_questsManager.IsQuestFinished(QuestConfig.QuestType.Run))
+        {
+            var charOffset = (transform.position - _previousPos).magnitude;
+
+            _questsManager.ChangeProgressQuest(QuestConfig.QuestType.Run, charOffset);
+
+            _previousPos = transform.position;
+
+            yield return new WaitForSeconds(0.5f);
+        }        
     }
 
     private void OnEnable()

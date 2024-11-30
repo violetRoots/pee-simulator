@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16e94e8a6ac43844a4cd039db595f9a, type: 3}
   m_Name: Hideo
   m_EditorClassIdentifier: 
-  iconSprite: {fileID: 21300000, guid: 13e22331611871d43891eec839f22024, type: 3}
-  title: hideo_name
-  description: hideo_description
-  price: 42
-  satisfaction: 5
-  causticity: 1
-  saturation: 5
+  Data:
+    iconSpriteId: 3c43979d-7544-48b9-9ad9-de0a2fdabed5
+    title: hideo_name
+    description: hideo_description
+    price: 42
+    satisfaction: 5
+    causticity: 1
+    saturation: 5

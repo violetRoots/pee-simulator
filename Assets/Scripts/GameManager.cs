@@ -4,8 +4,6 @@ using UnityEngine;
 
 public partial class GameManager : SingletonMonoBehaviourBase<GameManager>
 {
-    public GameplayDataContainer Data {  get; private set; } = new GameplayDataContainer();
-
     public GameplaySector[] GameplaySectors => gameplaySectors;
     [SerializeField] GameplaySector[] gameplaySectors;
 
@@ -27,7 +25,7 @@ public partial class GameManager : SingletonMonoBehaviourBase<GameManager>
     public SuppliersManager SuppliersManager => suppliersManager;
     [SerializeField] private SuppliersManager suppliersManager;
 
-    public QuestsManager QuestManager => questManager;
+    public QuestsManager QuestsManager => questManager;
     [SerializeField] private QuestsManager questManager;
 
     public ChecksManager ChecksManager => checksManager;
@@ -44,6 +42,8 @@ public partial class GameManager : SingletonMonoBehaviourBase<GameManager>
 
     private void Awake()
     {
+        SavesManager.Instance.PlayerStats.Load();
+
         InitStateSubscription();
 
         sitPlaceManager.Init();
@@ -52,15 +52,12 @@ public partial class GameManager : SingletonMonoBehaviourBase<GameManager>
         questManager.Init();
         checksManager.Init();
         bottleManager.Init();
-
-        Data.Init();
     }
 
     private void OnDestroy()
     {
+        questManager.Dispose();
         checksManager.Dispose();
-
-        Data.Dispose();
 
         DisposeStateSubscription();
     }

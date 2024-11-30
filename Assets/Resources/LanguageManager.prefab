@@ -46,3 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   russianLanguage: {fileID: 11400000, guid: 908b0e9dfcb9029479a5449bb0611248, type: 2}
   englishLanguage: {fileID: 11400000, guid: 0db6b55510492714699cfdbfae6c1c92, type: 2}
+  chineseLanguage: {fileID: 11400000, guid: ed0935a0e6d795e4cabe2c92144cf4d7, type: 2}
+  spanishLanguage: {fileID: 11400000, guid: 1b037e9014d8d3846826cf800375f98e, type: 2}
+  portugueseLanguage: {fileID: 11400000, guid: 1d52650f4c515d54186b328f80a0791f, type: 2}
+  germanLanguage: {fileID: 11400000, guid: 30fb1ae5cdaefe44685bd651adc6e7ab, type: 2}
+  japaneseLanguage: {fileID: 11400000, guid: 431d454a088f19344948c390c752a875, type: 2}
+  frenchLanguage: {fileID: 11400000, guid: 753415b975433ee42bcc3877f3fb31b3, type: 2}

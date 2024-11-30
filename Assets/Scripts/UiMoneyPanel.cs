@@ -7,15 +7,15 @@ public class UiMoneyPanel : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI moneyText;
 
-    private GameManager _gameManager;
+    private PlayerStats _playerStats;
 
     private void Awake()
     {
-        _gameManager = GameManager.Instance;
+        _playerStats = SavesManager.Instance.PlayerStats.Value;
     }
 
     private void Update()
     {
-        moneyText.text = $"{_gameManager.Data.Money}";
+        moneyText.text = $"{_playerStats.money}";
     }
 }

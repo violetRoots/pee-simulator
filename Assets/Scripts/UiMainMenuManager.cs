@@ -13,14 +13,20 @@ public class UiMainMenuManager : SingletonFromResourcesBase<UiMainMenuManager>
     [Header("Languages")]
     [SerializeField] private UiMainMenuButton russianButton;
     [SerializeField] private UiMainMenuButton englishButton;
+    [SerializeField] private UiMainMenuButton chineseButton;
+    [SerializeField] private UiMainMenuButton spanishButton;
+    [SerializeField] private UiMainMenuButton portugueseButton;
+    [SerializeField] private UiMainMenuButton germanButton;
+    [SerializeField] private UiMainMenuButton japaneseButton;
+    [SerializeField] private UiMainMenuButton frenchButton;
 
-    private SaveGameManager _saveGameManager;
+    private SavesManager _dataManager;
     private LoadManager _loadManager;
     private LanguageManager _languageManager;
 
     private void Awake()
     {
-        _saveGameManager = SaveGameManager.Instance;
+        _dataManager = SavesManager.Instance;
         _loadManager = LoadManager.Instance;
         _languageManager = LanguageManager.Instance;
 
@@ -31,11 +37,17 @@ public class UiMainMenuManager : SingletonFromResourcesBase<UiMainMenuManager>
 
         russianButton.Subscribe(OnRussianLanguageButtonClicked);
         englishButton.Subscribe(OnEnglishLanguageButtonClicked);
+        chineseButton.Subscribe(OnChineseLanguageButtonClicked);
+        spanishButton.Subscribe(OnSpanishLanguageButtonClicked);
+        portugueseButton.Subscribe(OnPortugueseLanguageButtonClicked);
+        germanButton.Subscribe(OnGermanLanguageButtonClicked);
+        japaneseButton.Subscribe(OnJapaneseLanguageButtonClicked);
+        frenchButton.Subscribe(OnFrenchLanguageButtonClicked);
     }
 
     private void OnNewGameButtonClicked()
     {
-        _saveGameManager.ClearSaves();
+        _dataManager.PlayerStats.Clear();
 
         StartGame();
     }
@@ -63,6 +75,36 @@ public class UiMainMenuManager : SingletonFromResourcesBase<UiMainMenuManager>
     private void OnEnglishLanguageButtonClicked()
     {
         _languageManager.SetEnglishLanguage();
+    }
+
+    private void OnChineseLanguageButtonClicked()
+    {
+        _languageManager.SetChineseLanguage();
+    }
+
+    private void OnSpanishLanguageButtonClicked()
+    {
+        _languageManager.SetSpanishLanguage();
+    }
+
+    private void OnPortugueseLanguageButtonClicked()
+    {
+        _languageManager.SetPortugueseLanguage();
+    }
+
+    private void OnGermanLanguageButtonClicked()
+    {
+        _languageManager.SetGermanLanguage();
+    }
+
+    private void OnJapaneseLanguageButtonClicked()
+    {
+        _languageManager.SetJapaneseLanguage();
+    }
+
+    private void OnFrenchLanguageButtonClicked()
+    {
+        _languageManager.SetFrenchLanguage();
     }
 
     private void StartGame()

@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad744ca79c9b83d4a99173e96130ab89, type: 3}
   m_Name: Check
   m_EditorClassIdentifier: 
-  title: check_name_1
-  description: check_description_1
-  term: 1
-  price: 100
-  surcharge: 1
-  backgroundColor: {r: 1, g: 0.54402506, b: 0.54402506, a: 1}
+  data:
+    title: check_name_1
+    description: check_description_1
+    term: 5
+    price: 100
+    surcharge: 20
+    backgroundColor: {r: 1, g: 0.63836473, b: 0.63836473, a: 1}

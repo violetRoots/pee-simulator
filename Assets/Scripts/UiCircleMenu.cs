@@ -21,6 +21,7 @@ public class UiCircleMenu : MonoBehaviour
     [SerializeField] private CircleSegmentInfo[] segmentInfos;
 
     private GameManager _gameManager;
+    private PlayerStats _playerStats;
     private CharacterInteractionController _characterInteractionController;
     private CharacterBuildController _characterBuildController;
 
@@ -30,6 +31,7 @@ public class UiCircleMenu : MonoBehaviour
     private void Awake()
     {
         _gameManager = GameManager.Instance;
+        _playerStats = SavesManager.Instance.PlayerStats.Value;
         _characterBuildController = GameManager.Instance.CharacterProvider.BuildController;
         _characterInteractionController = GameManager.Instance.CharacterProvider.InteractionController;
 
@@ -78,7 +80,7 @@ public class UiCircleMenu : MonoBehaviour
 
         title.SetKey(_targetSegment.ItemConfig.title);
         price.text = $"{_targetSegment.ItemConfig.price}";
-        price.color = _gameManager.Data.Money < _targetSegment.ItemConfig.price ? Color.red : Color.green;
+        price.color = _playerStats.money < _targetSegment.ItemConfig.price ? Color.red : Color.green;
     }
 
     public void ApplySelectedAutomate()

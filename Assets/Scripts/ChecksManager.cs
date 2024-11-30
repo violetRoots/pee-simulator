@@ -1,65 +1,91 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Xml.Serialization;
 using UniRx;
 using UnityEngine;
 
 [Serializable]
 public class ChecksManager
 {
+    [Serializable]
     public class CheckRuntimeInfo
     {
-        public CheckConfig config;
+        public CheckConfig.CheckConfigData configData;
         public int term;
     }
 
-    [SerializeField] private CheckConfig[] checks;
+    [SerializeField] private CheckConfig[] checkConfigs;
 
-    public readonly ReactiveCollection<CheckRuntimeInfo> runtimeChecks = new ReactiveCollection<CheckRuntimeInfo>();
+    public ReactiveCollection<CheckRuntimeInfo> runtimeChecks;
 
     private DayManager _dayManager;
-    private GameplayDataContainer _data;
+    private PlayerStats _playerStats;
 
     public void Init()
     {
         _dayManager = DayManager.Instance;
-        _data = GameManager.Instance.Data;
+        _playerStats = SavesManager.Instance.PlayerStats.Value;
 
+        runtimeChecks = new ReactiveCollection<CheckRuntimeInfo>(_playerStats.runtimeChecks);
 
-
-        _dayManager.onPastDay += UpdateCheckTerms;
-        _dayManager.onPastDay += AddRandomCheck;
+        _dayManager.onPastDay += OnPastDay;
     }
 
     public void Dispose()
     {
-        _dayManager.onPastDay -= UpdateCheckTerms;
-        _dayManager.onPastDay -= AddRandomCheck;
+        _dayManager.onPastDay -= OnPastDay;
     }
 
-    public void AddRandomCheck()
+    private void OnPastDay()
     {
-        var check = checks[UnityEngine.Random.Range(0, checks.Length)];
+        AddRandomCheck();
+        UpdateCheckTerms();
+
+        _playerStats.runtimeChecks = runtimeChecks.ToList();
+    }
+
+    private void AddRandomCheck()
+    {
+        var config = checkConfigs[UnityEngine.Random.Range(0, checkConfigs.Length)];
 
         var checkInfo = new CheckRuntimeInfo()
         {
-            config = check,
-            term = check.term,
+            configData = config.data,
+            term = config.data.term,
         };
 
         runtimeChecks.Add(checkInfo);
     }
 
+    public void PayCheck(CheckRuntimeInfo info)
+    {
+        var checkInfo = runtimeChecks.Where(i => i == info).FirstOrDefault();
+
+        if (checkInfo == null) return;
+
+        runtimeChecks.Remove(checkInfo);
+        _playerStats.ChangeMoney(-info.configData.price);
+    }
+
     private void UpdateCheckTerms()
     {
+        var removeCheck = new List<CheckRuntimeInfo>();
+
         foreach (var checkInfo in runtimeChecks)
         {
             checkInfo.term--;
 
-            if(checkInfo.term < 0)
-            {
-                _data.ChangeMoney(-(checkInfo.config.price + checkInfo.config.surcharge));
-            }
+            if (checkInfo.term >= 0) continue;
+
+            removeCheck.Add(checkInfo);
+        }
+
+        foreach (var checkInfo in removeCheck)
+        {
+            runtimeChecks.Remove(checkInfo);
+
+            _playerStats.ChangeMoney(-(checkInfo.configData.price + checkInfo.configData.surcharge));
         }
     }
 }

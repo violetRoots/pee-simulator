@@ -113,7 +113,7 @@ MonoBehaviour:
     - key: ui_rent_button
       text: "\u0421\u043D\u044F\u0442\u044C"
     - key: ui_main_menu_new_game
-      text: "\u041D\u043E\u0432\u0430\u044F \u0438\u0433\u0440\u0432"
+      text: "\u041D\u043E\u0432\u0430\u044F \u0438\u0433\u0440\u0430"
     - key: ui_main_menu_continue_game
       text: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
     - key: ui_main_menu_options
@@ -123,7 +123,19 @@ MonoBehaviour:
     - key: ui_lang_russian
       text: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
     - key: ui_lang_english
-      text: "\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439"
+      text: English
+    - key: ui_lang_chinese
+      text: Chinese
+    - key: ui_lang_spanish
+      text: Spanish
+    - key: ui_lang_portuguese
+      text: Portuguese
+    - key: ui_lang_german
+      text: German
+    - key: ui_lang_japanese
+      text: Japanese
+    - key: ui_lang_french
+      text: French
     - key: ui_drone_name
       text: "\u041C\u043E\u0447\u0435\u0433\u043E\u043D\u043D\u044B\u0439 \u0434\u0440\u043E\u043D"
     - key: ui_polivalka_name
@@ -231,16 +243,16 @@ MonoBehaviour:
       text: "<b>4</b> \u0431\u043E\u0439\u043B\u0435\u0440\u0430\n<b>11</b> \u043C\u0435\u0441\u0442\n<b>100</b>
         \u043A\u0432. \u043C."
     - key: room_price_pattern
-      text: "\u0421\u0440\u043E\u043A: <b>{0}</b> \u0434\u043D\u0435\u0439"
+      text: "\u0421\u041D\u042F\u0422\u042C {0}$"
     - key: check_name_1
       text: "\u0428\u0422\u0420\u0410\u0424: \u041C\u041E\u0427\u0415\u0413\u041E\u041D\u041D\u0410\u042F
         \u0418\u041D\u0421\u041F\u0415\u041A\u0426\u0418\u042F"
     - key: check_description_1
       text: "\u0426\u0432\u0435\u0442 \u043C\u043E\u0447\u0438 \u043D\u0435 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u0442
         \u0437\u0430\u0434\u0430\u043D\u043D\u043E\u0439 \u043D\u043E\u0440\u043C\u0435"
-    - key: check_term_pattern
-      text: "\u041E\u041F\u041B\u0410\u0422\u0418\u0422\u042C {0}$"
     - key: check_price_pattern
+      text: "\u041E\u041F\u041B\u0410\u0422\u0418\u0422\u042C {0}$"
+    - key: check_term_pattern
       text: "\u0421\u0440\u043E\u043A: <b>{0}</b> \u0434\u043D\u0435\u0439"
   - langKey: english
     localization:
@@ -330,9 +342,21 @@ MonoBehaviour:
     - key: ui_main_menu_exit
       text: Exit
     - key: ui_lang_russian
-      text: Russian
+      text: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
     - key: ui_lang_english
       text: English
+    - key: ui_lang_chinese
+      text: Chinese
+    - key: ui_lang_spanish
+      text: Spanish
+    - key: ui_lang_portuguese
+      text: Portuguese
+    - key: ui_lang_german
+      text: German
+    - key: ui_lang_japanese
+      text: Japanese
+    - key: ui_lang_french
+      text: French
     - key: ui_drone_name
       text: Diuretic Drone
     - key: ui_polivalka_name
@@ -403,12 +427,1239 @@ MonoBehaviour:
 
         <b>100</b> sq. m.'
     - key: room_price_pattern
-      text: 'Term: <b>{0}</b> days'
+      text: RENT {0}$
     - key: check_name_1
       text: 'FINE: DIURETIC INSPECTION'
     - key: check_description_1
       text: The color of urine does not correspond to the specified norm
-    - key: check_term_pattern
-      text: PAY {0}$
     - key: check_price_pattern
+      text: PAY {0}$
+    - key: check_term_pattern
       text: 'Term: <b>{0}</b> days'
+  - langKey: eng default
+    localization:
+    - key: trump_name
+      text: The Orange Man
+    - key: trump_description
+      text: Almost Peking duck
+    - key: borat_name
+      text: Kazakhstan's Super Good
+    - key: borat_description
+      text: Do you know where Kazakhstan is?
+    - key: eva_name
+      text: Home movie actress
+    - key: eva_description
+      text: Also sells water from her bathtub
+    - key: hideo_name
+      text: Metal Genius
+    - key: hideo_description
+      text: We'll drink every drop of whatever he offers
+    - key: skibididopdop_name
+      text: Trr Stibidi
+    - key: skibididopdop_description
+      text: Dob dob yes yes
+    - key: maddison_name
+      text: Stinky Letsplayer
+    - key: maddison_description
+      text: Flavored with beer and disappointment
+    - key: musk_name
+      text: UrineX
+    - key: musk_description
+      text: Innovative (to the creator's taste)
+    - key: gosling_name
+      text: A Real Human Hero
+    - key: gosling_description
+      text: He can pee instead of you and me!
+    - key: hunter_name
+      text: Netflix Girl
+    - key: hunter_description
+      text: If she's even a girl...
+    - key: mrbeast_name
+      text: Mr.Peest
+    - key: mrbeast_description
+      text: It's a donation from the richest youtuber in the world
+    - key: pepe_name
+      text: Pepe's Pee-Pee
+    - key: pepe_description
+      text: Frogs can't piss, by the way
+    - key: gnom_name
+      text: Suicidal Nepo-Kid
+    - key: gnom_description
+      text: Bitter like his future drug addiction
+    - key: supplier_characteristics_pattern
+      text: 'Satisfaction: <b>{0}</b>
+
+        Acidity: <b>{1}</b>
+
+        Saturation:
+        <b>{2}</b>'
+    - key: supplier_price_pattern
+      text: BUY {0}$
+    - key: ui_satisfaction
+      text: 
+    - key: ui_saturation
+      text: 
+    - key: ui_causticity
+      text: 
+    - key: ui_suppliers
+      text: 
+    - key: ui_quests
+      text: 
+    - key: ui_checks
+      text: 
+    - key: ui_rent
+      text: 
+    - key: ui_buy
+      text: 
+    - key: ui_pay
+      text: 
+    - key: ui_rent_button
+      text: 
+    - key: ui_main_menu_new_game
+      text: 
+    - key: ui_main_menu_continue_game
+      text: 
+    - key: ui_main_menu_options
+      text: 
+    - key: ui_main_menu_exit
+      text: 
+    - key: ui_lang_russian
+      text: 
+    - key: ui_lang_english
+      text: 
+    - key: ui_lang_chinese
+      text: 
+    - key: ui_lang_spanish
+      text: 
+    - key: ui_lang_portuguese
+      text: 
+    - key: ui_lang_german
+      text: 
+    - key: ui_lang_japanese
+      text: 
+    - key: ui_lang_french
+      text: 
+    - key: ui_drone_name
+      text: 
+    - key: ui_polivalka_name
+      text: 
+    - key: ui_fountain_name
+      text: 
+    - key: ui_rails_name
+      text: 
+    - key: quest_run_name
+      text: Run, pisser! Run!
+    - key: quest_run_description
+      text: Runs <b>{0}</b> kilometers
+    - key: quest_allyourself_name
+      text: All by yourself!
+    - key: quest_allyourself_description
+      text: Piss <b>{0}</b> liters
+    - key: quest_fullbottle_name
+      text: Why'd you do that?
+    - key: quest_fullbottle_description
+      text: Throw away <b>{0}</b> full bottles
+    - key: skibidi_random_phrase_1
+      text: Come on! Buy!
+    - key: skibidi_random_phrase_2
+      text: Don't whine. There's no discounts
+    - key: skibidi_random_phrase_3
+      text: Only today's urine is on sale
+    - key: skibidi_random_phrase_4
+      text: Piss is piss, but it's good piss!
+    - key: skibidi_random_phrase_5
+      text: This is a deliciously delicious piss!
+    - key: skibidi_random_phrase_6
+      text: You smell like piss, bro! Buy it and get out
+    - key: skibidi_random_phrase_7
+      text: We all peed our pants when we were kids. But not all of us will pee our
+        pants when we're old. Think about it.
+    - key: skibidi_random_phrase_8
+      text: "You look like a guy whose mommmy told \u201Cpsst, psst, psst\u201D and
+        now you can't take a piss without it"
+    - key: skibidi_random_phrase_9
+      text: You peed your pants, bro
+    - key: skibidi_random_phrase_10
+      text: Ha-ha. That's a pissing funny line. Now piss off
+    - key: skibidi_random_phrase_11
+      text: Let's have a drink too! How dare you refuse me?
+    - key: skibidi_random_phrase_12
+      text: Why don't we put Little Peeing Monk out front?
+    - key: skibidi_random_phrase_13
+      text: Urine. There are so many things in that word.
+    - key: skibidi_random_phrase_14
+      text: Would you love your girlfriend if she peed her pants? That's how I met
+        my wife.
+    - key: skibidi_random_phrase_15
+      text: Come on, get your fire hose! Okay, not today.
+    - key: skibidi_random_phrase_16
+      text: We could sell cupcakes instead of all that stuff.
+    - key: skibidi_random_phrase_17
+      text: Soon you'll have the title of urine tester.
+    - key: skibidi_random_phrase_18
+      text: "Did you wake up one day and say, \u201CI want to sell urine\u201D? What
+        was the name of the girl who broke your heart?"
+    - key: skibidi_random_phrase_19
+      text: Your job is still more useful than a marketer's job
+    - key: room_name_1
+      text: 
+    - key: room_description_1
+      text: 
+    - key: room_price_pattern
+      text: 
+    - key: check_name_1
+      text: 
+    - key: check_description_1
+      text: 
+    - key: check_price_pattern
+      text: 
+    - key: check_term_pattern
+      text: 
+  - langKey: chinese
+    localization:
+    - key: trump_name
+      text: "\u6A59\u8272\u7684\u4EBA"
+    - key: trump_description
+      text: "\u51E0\u4E4E\u662F\u5317\u4EAC\u70E4\u9E2D"
+    - key: borat_name
+      text: "\u54C8\u8428\u514B\u65AF\u5766\u8D85\u7EA7\u597D"
+    - key: borat_description
+      text: "\u4F60\u77E5\u9053\u54C8\u8428\u514B\u65AF\u5766\u5728\u54EA\u91CC\u5417\uFF1F"
+    - key: eva_name
+      text: "\u5BB6\u5EAD\u7535\u5F71\u5973\u6F14\u5458"
+    - key: eva_description
+      text: "\u8FD8\u9500\u552E\u5979\u6D74\u7F38\u4E2D\u7684\u6C34"
+    - key: hideo_name
+      text: "\u91D1\u5C5E\u5929\u624D"
+    - key: hideo_description
+      text: "\u6211\u4EEC\u4F1A\u559D\u4E0B\u4ED6\u63D0\u4F9B\u7684\u6BCF\u4E00\u6EF4\u4E1C\u897F"
+    - key: skibididopdop_name
+      text: "\u7279\u5C14\xB7\u65AF\u8482\u6BD4\u8FEA"
+    - key: skibididopdop_description
+      text: "\u591A\u5E03\u591A\u5E03\uFF0C\u662F\u7684\u662F\u7684"
+    - key: maddison_name
+      text: "\u81ED\u81ED\u7684Letsplayer"
+    - key: maddison_description
+      text: "\u4EE5\u5564\u9152\u548C\u5931\u671B\u8C03\u5473"
+    - key: musk_name
+      text: "\u5C3F\u6DB2X"
+    - key: musk_description
+      text: "\u521B\u65B0\uFF08\u6309\u521B\u4F5C\u8005\u7684\u53E3\u5473\uFF09"
+    - key: gosling_name
+      text: "\u4E00\u4E2A\u771F\u6B63\u7684\u4EBA\u7C7B\u82F1\u96C4"
+    - key: gosling_description
+      text: "\u4ED6\u53EF\u4EE5\u66FF\u4F60\u6211\u6492\u5C3F\uFF01"
+    - key: hunter_name
+      text: "Netflix\u5973\u5B69"
+    - key: hunter_description
+      text: "\u5982\u679C\u5979\u751A\u81F3\u662F\u4E2A\u5973\u5B69\u2026\u2026"
+    - key: mrbeast_name
+      text: Mr.Peest
+    - key: mrbeast_description
+      text: "\u8FD9\u662F\u6765\u81EA\u4E16\u754C\u4E0A\u6700\u5BCC\u6709\u7684YouTuber\u7684\u6350\u8D60"
+    - key: pepe_name
+      text: "\u4F69\u4F69\u7684\u5C0F\u4FBF"
+    - key: pepe_description
+      text: "\u987A\u4FBF\u8BF4\u4E00\u4E0B\uFF0C\u9752\u86D9\u4E0D\u80FD\u6492\u5C3F"
+    - key: gnom_name
+      text: "\u81EA\u6740\u7684\u6709\u5173\u7CFB\u7684\u5B69\u5B50"
+    - key: gnom_description
+      text: "\u50CF\u4ED6\u672A\u6765\u7684\u836F\u7269\u6210\u763E\u4E00\u6837\u82E6\u6DA9"
+    - key: supplier_characteristics_pattern
+      text: "\u6EE1\u610F\u5EA6\uFF1A<b>{0}</b>\r\n\u9178\u5EA6\uFF1A<b>{1}</b>\r\n\u9971\u548C\u5EA6\uFF1A<b>{2}</b>"
+    - key: supplier_price_pattern
+      text: "\u8D2D\u4E70 {0}$"
+    - key: ui_satisfaction
+      text: "\u5FEB\u4E50"
+    - key: ui_saturation
+      text: "\u9971\u548C"
+    - key: ui_causticity
+      text: "\u8150\u8680\u6027"
+    - key: ui_suppliers
+      text: "\u4F9B\u5E94\u5546"
+    - key: ui_quests
+      text: "\u6311\u6218"
+    - key: ui_checks
+      text: "\u8D26\u5355"
+    - key: ui_rent
+      text: "\u79DF\u91D1"
+    - key: ui_buy
+      text: "\u8D2D\u4E70"
+    - key: ui_pay
+      text: "\u652F\u4ED8"
+    - key: ui_rent_button
+      text: "\u79DF\u91D1"
+    - key: ui_main_menu_new_game
+      text: "\u65B0\u6E38\u620F"
+    - key: ui_main_menu_continue_game
+      text: "\u7EE7\u7EED"
+    - key: ui_main_menu_options
+      text: "\u9009\u9879"
+    - key: ui_main_menu_exit
+      text: "\u9000\u51FA"
+    - key: ui_lang_russian
+      text: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
+    - key: ui_lang_english
+      text: English
+    - key: ui_lang_chinese
+      text: Chinese
+    - key: ui_lang_spanish
+      text: Spanish
+    - key: ui_lang_portuguese
+      text: Portuguese
+    - key: ui_lang_german
+      text: German
+    - key: ui_lang_japanese
+      text: Japanese
+    - key: ui_lang_french
+      text: French
+    - key: ui_drone_name
+      text: "\u5229\u5C3F\u65E0\u4EBA\u673A"
+    - key: ui_polivalka_name
+      text: "\u5C3F\u55B7\u5934"
+    - key: ui_fountain_name
+      text: "\u91D1\u8272\u55B7\u6CC9"
+    - key: ui_rails_name
+      text: "\u6492\u5C3F\u94C1\u8F68"
+    - key: quest_run_name
+      text: "\u8DD1\uFF0C\u6492\u5C3F\u8005\uFF01\u5FEB\u8DD1\uFF01"
+    - key: quest_run_description
+      text: "\u8DD1\u4E86 <b>{0}</b> \u516C\u91CC"
+    - key: quest_allyourself_name
+      text: "\u5168\u9760\u4F60\u81EA\u5DF1\uFF01"
+    - key: quest_allyourself_description
+      text: "\u6492\u5C3F <b>{0}</b> \u5347"
+    - key: quest_fullbottle_name
+      text: "\u4F60\u4E3A\u4EC0\u4E48\u8FD9\u4E48\u505A\uFF1F"
+    - key: quest_fullbottle_description
+      text: "\u6254\u6389 <b>{0}</b> \u74F6\u6EE1\u74F6\u5B50"
+    - key: skibidi_random_phrase_1
+      text: "\u5FEB\u70B9\uFF01\u4E70\u5427\uFF01"
+    - key: skibidi_random_phrase_2
+      text: "\u522B\u62B1\u6028\u3002\u6CA1\u6709\u6298\u6263"
+    - key: skibidi_random_phrase_3
+      text: "\u53EA\u6709\u4ECA\u5929\u7684\u5C3F\u6DB2\u5728\u552E"
+    - key: skibidi_random_phrase_4
+      text: "\u5C3F\u5C31\u662F\u5C3F\uFF0C\u4F46\u8FD9\u662F\u597D\u5C3F\uFF01"
+    - key: skibidi_random_phrase_5
+      text: "\u8FD9\u662F\u7F8E\u5473\u53EF\u53E3\u7684\u5C3F\uFF01"
+    - key: skibidi_random_phrase_6
+      text: "\u4F60\u95FB\u8D77\u6765\u50CF\u5C3F\uFF0C\u5144\u5F1F\uFF01\u4E70\u4E86\u7136\u540E\u8D70"
+    - key: skibidi_random_phrase_7
+      text: "\u6211\u4EEC\u5C0F\u65F6\u5019\u90FD\u5C3F\u88E4\u5B50\u3002\u4F46\u5E76\u4E0D\u662F\u6240\u6709\u4EBA\u8001\u4E86\u90FD\u4F1A\u5C3F\u88E4\u5B50\u3002\u60F3\u60F3\u5427\u3002"
+    - key: skibidi_random_phrase_8
+      text: "\u4F60\u770B\u8D77\u6765\u50CF\u4E00\u4E2A\u5988\u5988\u544A\u8BC9\u201C\u5618\uFF0C\u5618\uFF0C\u5618\u201D\u7684\u5BB6\u4F19\uFF0C\u73B0\u5728\u6CA1\u6709\u5B83\u4F60\u5C31\u4E0D\u80FD\u6492\u5C3F"
+    - key: skibidi_random_phrase_9
+      text: "\u4F60\u5C3F\u88E4\u5B50\u4E86\uFF0C\u5144\u5F1F"
+    - key: skibidi_random_phrase_10
+      text: "\u54C8\u54C8\u3002\u8FD9\u662F\u4E00\u4E2A\u8D85\u7EA7\u641E\u7B11\u7684\u53F0\u8BCD\u3002\u73B0\u5728\u6EDA\u5F00"
+    - key: skibidi_random_phrase_11
+      text: "\u6211\u4EEC\u4E5F\u6765\u559D\u4E00\u676F\u5427\uFF01\u4F60\u600E\u4E48\u6562\u62D2\u7EDD\u6211\uFF1F"
+    - key: skibidi_random_phrase_12
+      text: "\u4E3A\u4EC0\u4E48\u6211\u4EEC\u4E0D\u628A\u5C0F\u6492\u5C3F\u548C\u5C1A\u653E\u5728\u524D\u9762\uFF1F"
+    - key: skibidi_random_phrase_13
+      text: "\u5C3F\u3002\u8FD9\u4E2A\u8BCD\u91CC\u6709\u8FD9\u4E48\u591A\u4E1C\u897F\u3002"
+    - key: skibidi_random_phrase_14
+      text: "\u5982\u679C\u4F60\u7684\u5973\u670B\u53CB\u5C3F\u88E4\u5B50\uFF0C\u4F60\u8FD8\u4F1A\u7231\u5979\u5417\uFF1F\u90A3\u662F\u6211\u9047\u89C1\u6211\u59BB\u5B50\u7684\u65B9\u5F0F\u3002"
+    - key: skibidi_random_phrase_15
+      text: "\u5FEB\u70B9\uFF0C\u62FF\u4F60\u7684\u6D88\u9632\u6C34\u5E26\uFF01\u597D\u5427\uFF0C\u4ECA\u5929\u4E0D\u884C\u3002"
+    - key: skibidi_random_phrase_16
+      text: "\u6211\u4EEC\u53EF\u4EE5\u5356\u676F\u5B50\u86CB\u7CD5\u800C\u4E0D\u662F\u90A3\u4E9B\u4E1C\u897F\u3002"
+    - key: skibidi_random_phrase_17
+      text: "\u5F88\u5FEB\u4F60\u5C31\u4F1A\u6709\u5C3F\u6DB2\u6D4B\u8BD5\u5458\u7684\u5934\u8854\u3002"
+    - key: skibidi_random_phrase_18
+      text: "\u4F60\u6709\u4E00\u5929\u9192\u6765\u8BF4\uFF0C\u201C\u6211\u60F3\u5356\u5C3F\u201D\uFF1F\u90A3\u4E2A\u4F24\u4E86\u4F60\u5FC3\u7684\u5973\u5B69\u53EB\u4EC0\u4E48\u540D\u5B57\uFF1F"
+    - key: skibidi_random_phrase_19
+      text: "\u4F60\u7684\u5DE5\u4F5C\u4ECD\u7136\u6BD4\u5E02\u573A\u8425\u9500\u4EBA\u5458\u7684\u5DE5\u4F5C\u66F4\u6709\u7528"
+    - key: room_name_1
+      text: "\u5783\u573E"
+    - key: room_description_1
+      text: "<b>4</b> \u9505\u7089\n<b>11</b> \u4E2A\u5730\u70B9\n<b>100</b> \u5E73\u65B9\u7C73."
+    - key: room_price_pattern
+      text: "\u79DF\u91D1 {0}$"
+    - key: check_name_1
+      text: "\u7F5A\u6B3E\uFF1A\u5229\u5C3F\u68C0\u67E5"
+    - key: check_description_1
+      text: "\u5C3F\u6DB2\u7684\u989C\u8272\u4E0D\u7B26\u5408\u89C4\u5B9A\u7684\u6807\u51C6"
+    - key: check_price_pattern
+      text: "\u652F\u4ED8 {0}$"
+    - key: check_term_pattern
+      text: "\u671F\u9650\uFF1A<b>{0}</b> \u5929"
+  - langKey: spanish
+    localization:
+    - key: trump_name
+      text: El Hombre Naranja
+    - key: trump_description
+      text: "Casi pato Pek\xEDn"
+    - key: borat_name
+      text: "El S\xFAper Bueno de Kazajist\xE1n"
+    - key: borat_description
+      text: "\xBFSabes d\xF3nde est\xE1 Kazajist\xE1n?"
+    - key: eva_name
+      text: Actriz de cine en casa
+    - key: eva_description
+      text: "Tambi\xE9n vende agua de su ba\xF1era"
+    - key: hideo_name
+      text: Genio del Metal
+    - key: hideo_description
+      text: "Beberemos cada gota de lo que \xE9l ofrezca"
+    - key: skibididopdop_name
+      text: Trr Stibidi
+    - key: skibididopdop_description
+      text: "Dob dob s\xED s\xED"
+    - key: maddison_name
+      text: Stinky Letsplayer
+    - key: maddison_description
+      text: "Saborizado con cerveza y decepci\xF3n"
+    - key: musk_name
+      text: UrineX
+    - key: musk_description
+      text: Innovador (a gusto del creador)
+    - key: gosling_name
+      text: "Un verdadero h\xE9roe humano"
+    - key: gosling_description
+      text: "\xA1\xC9l puede orinar en lugar de ti y de m\xED!"
+    - key: hunter_name
+      text: Chica de Netflix
+    - key: hunter_description
+      text: Si es que ella siquiera es una chica...
+    - key: mrbeast_name
+      text: Mr.Peest
+    - key: mrbeast_description
+      text: "Es una donaci\xF3n del youtuber m\xE1s rico del mundo"
+    - key: pepe_name
+      text: "El Pip\xED de Pepe"
+    - key: pepe_description
+      text: Por cierto, las ranas no pueden orinar
+    - key: gnom_name
+      text: "Ni\xF1o Nepo Suicida"
+    - key: gnom_description
+      text: "Amargo como su futura adicci\xF3n a las drogas"
+    - key: supplier_characteristics_pattern
+      text: "Satisfacci\xF3n: <b>{0}</b>\nAcidez: <b>{1}</b>\nSaturaci\xF3n: <b>{2}</b>"
+    - key: supplier_price_pattern
+      text: COMPRAR {0}$
+    - key: ui_satisfaction
+      text: Placer
+    - key: ui_saturation
+      text: "Saturaci\xF3n"
+    - key: ui_causticity
+      text: "C\xE1usticidad"
+    - key: ui_suppliers
+      text: Proveedores
+    - key: ui_quests
+      text: "Desaf\xEDos"
+    - key: ui_checks
+      text: Facturas
+    - key: ui_rent
+      text: Alquiler
+    - key: ui_buy
+      text: Comprar
+    - key: ui_pay
+      text: Pagar
+    - key: ui_rent_button
+      text: Alquiler
+    - key: ui_main_menu_new_game
+      text: Nuevo juego
+    - key: ui_main_menu_continue_game
+      text: Continuar
+    - key: ui_main_menu_options
+      text: Opciones
+    - key: ui_main_menu_exit
+      text: Salir
+    - key: ui_lang_russian
+      text: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
+    - key: ui_lang_english
+      text: English
+    - key: ui_lang_chinese
+      text: Chinese
+    - key: ui_lang_spanish
+      text: Spanish
+    - key: ui_lang_portuguese
+      text: Portuguese
+    - key: ui_lang_german
+      text: German
+    - key: ui_lang_japanese
+      text: Japanese
+    - key: ui_lang_french
+      text: French
+    - key: ui_drone_name
+      text: "Dron Diur\xE9tico"
+    - key: ui_polivalka_name
+      text: Rociador de Orina
+    - key: ui_fountain_name
+      text: Fuente Dorada
+    - key: ui_rails_name
+      text: Rieles Orinando
+    - key: quest_run_name
+      text: "\xA1Corre, meador! \xA1Corre!"
+    - key: quest_run_description
+      text: "Corre <b>{0}</b> kil\xF3metros"
+    - key: quest_allyourself_name
+      text: "\xA1Todo por ti mismo!"
+    - key: quest_allyourself_description
+      text: Orina <b>{0}</b> litros
+    - key: quest_fullbottle_name
+      text: "\xBFPor qu\xE9 hiciste eso?"
+    - key: quest_fullbottle_description
+      text: Tira <b>{0}</b> botellas llenas
+    - key: skibidi_random_phrase_1
+      text: "\xA1Vamos! \xA1Compra!"
+    - key: skibidi_random_phrase_2
+      text: No te quejes. No hay descuentos
+    - key: skibidi_random_phrase_3
+      text: "Solo la orina de hoy est\xE1 en venta"
+    - key: skibidi_random_phrase_4
+      text: "\xA1El pis es pis, pero es buen pis!"
+    - key: skibidi_random_phrase_5
+      text: "\xA1Este es un pis deliciosamente delicioso!"
+    - key: skibidi_random_phrase_6
+      text: "\xA1Hueles a pis, hermano! C\xF3mpralo y l\xE1rgate"
+    - key: skibidi_random_phrase_7
+      text: "Todos nos mojamos los pantalones cuando \xE9ramos ni\xF1os. Pero no
+        todos nos mojaremos los pantalones cuando seamos mayores. Pi\xE9nsalo."
+    - key: skibidi_random_phrase_8
+      text: "Te pareces a un tipo cuya mam\xE1 le dec\xEDa \u201Cpsst, psst, psst\u201D
+        y ahora no puedes orinar sin eso"
+    - key: skibidi_random_phrase_9
+      text: Te mojaste los pantalones, hermano
+    - key: skibidi_random_phrase_10
+      text: "Ja-ja. Esa es una l\xEDnea de pis s\xFAper graciosa. Ahora vete a la
+        mierda"
+    - key: skibidi_random_phrase_11
+      text: "\xA1Vamos a tomar una copa tambi\xE9n! \xBFC\xF3mo te atreves a rechazarme?"
+    - key: skibidi_random_phrase_12
+      text: "\xBFPor qu\xE9 no ponemos al Peque\xF1o Monje Orinando al frente?"
+    - key: skibidi_random_phrase_13
+      text: Orina. Hay tantas cosas en esa palabra.
+    - key: skibidi_random_phrase_14
+      text: "\xBFAmar\xEDas a tu novia si se mojara los pantalones? As\xED es como
+        conoc\xED a mi esposa."
+    - key: skibidi_random_phrase_15
+      text: "\xA1Vamos, consigue tu manguera contra incendios! Est\xE1 bien, no hoy."
+    - key: skibidi_random_phrase_16
+      text: "Podr\xEDamos vender cupcakes en lugar de todas esas cosas."
+    - key: skibidi_random_phrase_17
+      text: "Pronto tendr\xE1s el t\xEDtulo de tester de orina."
+    - key: skibidi_random_phrase_18
+      text: "\xBFTe despertaste un d\xEDa y dijiste, \u201CQuiero vender orina\u201D?
+        \xBFCu\xE1l era el nombre de la chica que te rompi\xF3 el coraz\xF3n?"
+    - key: skibidi_random_phrase_19
+      text: "Tu trabajo todav\xEDa es m\xE1s \xFAtil que el de un comercializador"
+    - key: room_name_1
+      text: Basura
+    - key: room_description_1
+      text: "<b>4</b> calderas\n<b>11</b> lugares\n<b>100</b> m\xB2."
+    - key: room_price_pattern
+      text: Alquiler {0}$
+    - key: check_name_1
+      text: "MULTA: INSPECCI\xD3N DIUR\xC9TICA"
+    - key: check_description_1
+      text: El color de la orina no corresponde a la norma especificada
+    - key: check_price_pattern
+      text: PAGAR {0}$
+    - key: check_term_pattern
+      text: "Plazo: <b>{0}</b> d\xEDas"
+  - langKey: portuguese
+    localization:
+    - key: trump_name
+      text: O Homem Laranja
+    - key: trump_description
+      text: "Quase pato Pekin\xEAs"
+    - key: borat_name
+      text: "O Super Bom do Cazaquist\xE3o"
+    - key: borat_description
+      text: "Voc\xEA sabe onde fica o Cazaquist\xE3o?"
+    - key: eva_name
+      text: Atriz de filmes caseiros
+    - key: eva_description
+      text: "Tamb\xE9m vende \xE1gua da sua banheira"
+    - key: hideo_name
+      text: "G\xEAnio do Metal"
+    - key: hideo_description
+      text: Vamos beber cada gota do que ele oferecer
+    - key: skibididopdop_name
+      text: Trr Stibidi
+    - key: skibididopdop_description
+      text: Dob dob sim sim
+    - key: maddison_name
+      text: Stinky Letsplayer
+    - key: maddison_description
+      text: "Saborizado com cerveja e decep\xE7\xE3o"
+    - key: musk_name
+      text: UrineX
+    - key: musk_description
+      text: Inovador (ao gosto do criador)
+    - key: gosling_name
+      text: "Um verdadeiro her\xF3i humano"
+    - key: gosling_description
+      text: "Ele pode fazer xixi no lugar de voc\xEA e de mim!"
+    - key: hunter_name
+      text: Garota da Netflix
+    - key: hunter_description
+      text: "Se ela \xE9 mesmo uma garota..."
+    - key: mrbeast_name
+      text: Mr.Peest
+    - key: mrbeast_description
+      text: "\xC9 uma doa\xE7\xE3o do YouTuber mais rico do mundo"
+    - key: pepe_name
+      text: O Xixi do Pepe
+    - key: pepe_description
+      text: "Ali\xE1s, sapos n\xE3o conseguem fazer xixi"
+    - key: gnom_name
+      text: "Crian\xE7a Nepo Suicida"
+    - key: gnom_description
+      text: "Amargo como seu futura v\xEDcio em drogas"
+    - key: supplier_characteristics_pattern
+      text: "Satisfa\xE7\xE3o: <b>{0}</b>\nAcidez: <b>{1}</b>\nSatura\xE7\xE3o: <b>{2}</b>"
+    - key: supplier_price_pattern
+      text: COMPRAR {0}$
+    - key: ui_satisfaction
+      text: Prazer
+    - key: ui_saturation
+      text: "Satura\xE7\xE3o"
+    - key: ui_causticity
+      text: Causticidade
+    - key: ui_suppliers
+      text: Fornecedores
+    - key: ui_quests
+      text: Desafios
+    - key: ui_checks
+      text: Contas
+    - key: ui_rent
+      text: Aluguel
+    - key: ui_buy
+      text: Comprar
+    - key: ui_pay
+      text: Pagar
+    - key: ui_rent_button
+      text: Aluguel
+    - key: ui_main_menu_new_game
+      text: Novo jogo
+    - key: ui_main_menu_continue_game
+      text: Continuar
+    - key: ui_main_menu_options
+      text: "Op\xE7\xF5es"
+    - key: ui_main_menu_exit
+      text: Sair
+    - key: ui_lang_russian
+      text: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
+    - key: ui_lang_english
+      text: English
+    - key: ui_lang_chinese
+      text: Chinese
+    - key: ui_lang_spanish
+      text: Spanish
+    - key: ui_lang_portuguese
+      text: Portuguese
+    - key: ui_lang_german
+      text: German
+    - key: ui_lang_japanese
+      text: Japanese
+    - key: ui_lang_french
+      text: French
+    - key: ui_drone_name
+      text: "Drone Diur\xE9tico"
+    - key: ui_polivalka_name
+      text: Aspersor de Urina
+    - key: ui_fountain_name
+      text: Fonte Dourada
+    - key: ui_rails_name
+      text: Trilhos Urinando
+    - key: quest_run_name
+      text: Corra, mijador! Corra!
+    - key: quest_run_description
+      text: "Corre <b>{0}</b> quil\xF4metros"
+    - key: quest_allyourself_name
+      text: Tudo sozinho!
+    - key: quest_allyourself_description
+      text: Mija <b>{0}</b> litros
+    - key: quest_fullbottle_name
+      text: "Por que voc\xEA fez isso?"
+    - key: quest_fullbottle_description
+      text: Jogue fora <b>{0}</b> garrafas cheias
+    - key: skibidi_random_phrase_1
+      text: "Vamos l\xE1! Compre!"
+    - key: skibidi_random_phrase_2
+      text: "N\xE3o reclame. N\xE3o h\xE1 descontos"
+    - key: skibidi_random_phrase_3
+      text: "S\xF3 a urina de hoje est\xE1 \xE0 venda"
+    - key: skibidi_random_phrase_4
+      text: "Mijar \xE9 mijar, mas \xE9 bom mijar!"
+    - key: skibidi_random_phrase_5
+      text: "Esta \xE9 uma urina deliciosamente deliciosa!"
+    - key: skibidi_random_phrase_6
+      text: "Voc\xEA cheira a urina, mano! Compre e saia"
+    - key: skibidi_random_phrase_7
+      text: "Todos n\xF3s molhamos as cal\xE7as quando \xE9ramos crian\xE7as. Mas
+        nem todos n\xF3s molharemos as cal\xE7as quando envelhecermos. Pense nisso."
+    - key: skibidi_random_phrase_8
+      text: "Voc\xEA parece um cara cuja m\xE3e dizia \u201Cpsst, psst, psst\u201D
+        e agora voc\xEA n\xE3o consegue fazer xixi sem isso"
+    - key: skibidi_random_phrase_9
+      text: "Voc\xEA molhou as cal\xE7as, mano"
+    - key: skibidi_random_phrase_10
+      text: "Ha-ha. Essa \xE9 uma linha de xixi super engra\xE7ada. Agora vai se
+        ferrar"
+    - key: skibidi_random_phrase_11
+      text: "Vamos tomar uma bebida tamb\xE9m! Como voc\xEA ousa me recusar?"
+    - key: skibidi_random_phrase_12
+      text: "Por que n\xE3o colocamos o Pequeno Monge Mijando na frente?"
+    - key: skibidi_random_phrase_13
+      text: "Urina. H\xE1 tantas coisas nessa palavra."
+    - key: skibidi_random_phrase_14
+      text: "Voc\xEA amaria sua namorada se ela molhasse as cal\xE7as? Foi assim
+        que conheci minha esposa."
+    - key: skibidi_random_phrase_15
+      text: "Vamos l\xE1, pegue sua mangueira de inc\xEAndio! Ok, n\xE3o hoje."
+    - key: skibidi_random_phrase_16
+      text: "Poder\xEDamos vender cupcakes em vez de todas essas coisas."
+    - key: skibidi_random_phrase_17
+      text: "Em breve voc\xEA ter\xE1 o t\xEDtulo de testador de urina."
+    - key: skibidi_random_phrase_18
+      text: "Voc\xEA acordou um dia e disse: \u201CQuero vender urina\u201D? Qual
+        era o nome da garota que partiu seu cora\xE7\xE3o?"
+    - key: skibidi_random_phrase_19
+      text: "Seu trabalho ainda \xE9 mais \xFAtil do que o de um profissional de
+        marketing"
+    - key: room_name_1
+      text: Lixo
+    - key: room_description_1
+      text: "<b>4</b> caldeiras\n<b>11</b> locais\n<b>100</b> m\xB2."
+    - key: room_price_pattern
+      text: Aluguel {0}$
+    - key: check_name_1
+      text: "MULTA: INSPE\xC7\xC3O DIUR\xC9TICA"
+    - key: check_description_1
+      text: "A cor da urina n\xE3o corresponde \xE0 norma especificada"
+    - key: check_price_pattern
+      text: PAGAR {0}$
+    - key: check_term_pattern
+      text: 'Prazo: <b>{0}</b> dias'
+  - langKey: german
+    localization:
+    - key: trump_name
+      text: Der Orange Mann
+    - key: trump_description
+      text: Fast Pekingente
+    - key: borat_name
+      text: Kasachstans Super Gut
+    - key: borat_description
+      text: "Wei\xDFt du, wo Kasachstan ist?"
+    - key: eva_name
+      text: Heimische Film-Schauspielerin
+    - key: eva_description
+      text: Verkauft auch Wasser aus ihrer Badewanne
+    - key: hideo_name
+      text: Metal-Genie
+    - key: hideo_description
+      text: Wir werden jeden Tropfen trinken, den er anbietet
+    - key: skibididopdop_name
+      text: Trr Stibidi
+    - key: skibididopdop_description
+      text: Dob dob ja ja
+    - key: maddison_name
+      text: Stinkender Letsplayer
+    - key: maddison_description
+      text: "Mit Bier und Entt\xE4uschung gew\xFCrzt"
+    - key: musk_name
+      text: UrineX
+    - key: musk_description
+      text: "Innovativ (nach Geschmack des Sch\xF6pfers)"
+    - key: gosling_name
+      text: Ein echter menschlicher Held
+    - key: gosling_description
+      text: Er kann an deiner und meiner Stelle pinkeln!
+    - key: hunter_name
+      text: "Netflix M\xE4dchen"
+    - key: hunter_description
+      text: "Wenn sie \xFCberhaupt ein M\xE4dchen ist..."
+    - key: mrbeast_name
+      text: Mr.Peest
+    - key: mrbeast_description
+      text: Es ist eine Spende vom reichsten YouTuber der Welt
+    - key: pepe_name
+      text: Pepes Pipi
+    - key: pepe_description
+      text: "\xDCbrigens, Fr\xF6sche k\xF6nnen nicht pinkeln"
+    - key: gnom_name
+      text: Suizidaler Nepo-Kid
+    - key: gnom_description
+      text: "Bitter wie seine zuk\xFCnftige Drogenabh\xE4ngigkeit"
+    - key: supplier_characteristics_pattern
+      text: "Satisfaction: <b>{0}</b>\nS\xE4uregehalt: <b>{1}</b>\nS\xE4ttigung:
+        <b>{2}</b>"
+    - key: supplier_price_pattern
+      text: KAUFEN {0}$
+    - key: ui_satisfaction
+      text: Freude
+    - key: ui_saturation
+      text: "S\xE4ttigung"
+    - key: ui_causticity
+      text: "\xC4tzwirkung"
+    - key: ui_suppliers
+      text: Lieferanten
+    - key: ui_quests
+      text: Herausforderungen
+    - key: ui_checks
+      text: Rechnungen
+    - key: ui_rent
+      text: Miete
+    - key: ui_buy
+      text: Kaufen
+    - key: ui_pay
+      text: Bezahlen
+    - key: ui_rent_button
+      text: Miete
+    - key: ui_main_menu_new_game
+      text: Neues Spiel
+    - key: ui_main_menu_continue_game
+      text: Fortsetzen
+    - key: ui_main_menu_options
+      text: Optionen
+    - key: ui_main_menu_exit
+      text: Beenden
+    - key: ui_lang_russian
+      text: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
+    - key: ui_lang_english
+      text: English
+    - key: ui_lang_chinese
+      text: Chinese
+    - key: ui_lang_spanish
+      text: Spanish
+    - key: ui_lang_portuguese
+      text: Portuguese
+    - key: ui_lang_german
+      text: German
+    - key: ui_lang_japanese
+      text: Japanese
+    - key: ui_lang_french
+      text: French
+    - key: ui_drone_name
+      text: Diuretische Drohne
+    - key: ui_polivalka_name
+      text: Urin-Sprinkler
+    - key: ui_fountain_name
+      text: Goldener Brunnen
+    - key: ui_rails_name
+      text: Urinierende Schienen
+    - key: quest_run_name
+      text: Lauf, Pisser! Lauf!
+    - key: quest_run_description
+      text: "L\xE4uft <b>{0}</b> Kilometer"
+    - key: quest_allyourself_name
+      text: Ganz allein!
+    - key: quest_allyourself_description
+      text: Pinkel <b>{0}</b> Liter
+    - key: quest_fullbottle_name
+      text: Warum hast du das getan?
+    - key: quest_fullbottle_description
+      text: Wirf <b>{0}</b> volle Flaschen weg
+    - key: skibidi_random_phrase_1
+      text: Komm schon! Kauf!
+    - key: skibidi_random_phrase_2
+      text: Jammer nicht. Es gibt keine Rabatte
+    - key: skibidi_random_phrase_3
+      text: Nur die heutige Urin ist im Verkauf
+    - key: skibidi_random_phrase_4
+      text: Pissen ist pissen, aber es ist gutes Pissen!
+    - key: skibidi_random_phrase_5
+      text: "Das ist ein k\xF6stlich leckeres Pissen!"
+    - key: skibidi_random_phrase_6
+      text: Du riechst nach Pisse, Bro! Kauf es und hau ab
+    - key: skibidi_random_phrase_7
+      text: "Wir haben alle in die Hose gemacht, als wir Kinder waren. Aber nicht
+        alle von uns werden in die Hose machen, wenn wir alt sind. Denk dar\xFCber
+        nach."
+    - key: skibidi_random_phrase_8
+      text: "Du siehst aus wie ein Typ, dessen Mama \u201Cpsst, psst, psst\u201D
+        gesagt hat und jetzt kannst du nicht pissen ohne es"
+    - key: skibidi_random_phrase_9
+      text: Du hast in die Hose gemacht, Bro
+    - key: skibidi_random_phrase_10
+      text: Haha. Das ist eine super witzige Pissen-Linie. Jetzt verpiss dich
+    - key: skibidi_random_phrase_11
+      text: Lass uns auch einen Drink nehmen! Wie wagst du es, mich abzulehnen?
+    - key: skibidi_random_phrase_12
+      text: "Warum setzen wir nicht den Kleinen Pissenden M\xF6nch nach vorne?"
+    - key: skibidi_random_phrase_13
+      text: Urin. Es gibt so viele Dinge in diesem Wort.
+    - key: skibidi_random_phrase_14
+      text: "W\xFCrdest du deine Freundin lieben, wenn sie in die Hose machen w\xFCrde?
+        So habe ich meine Frau kennengelernt."
+    - key: skibidi_random_phrase_15
+      text: Komm schon, hol deinen Feuerwehrschlauch! Okay, nicht heute.
+    - key: skibidi_random_phrase_16
+      text: "Wir k\xF6nnten Cupcakes statt all dem Zeug verkaufen."
+    - key: skibidi_random_phrase_17
+      text: Bald wirst du den Titel eines Urintesters haben.
+    - key: skibidi_random_phrase_18
+      text: "Bist du eines Tages aufgewacht und hast gesagt: \u201CIch will Urin
+        verkaufen\u201D? Wie hie\xDF das M\xE4dchen, das dir das Herz gebrochen hat?"
+    - key: skibidi_random_phrase_19
+      text: "Dein Job ist immer noch n\xFCtzlicher als der eines Vermarkters"
+    - key: room_name_1
+      text: "M\xFCll"
+    - key: room_description_1
+      text: "<b>4</b> Kessel\n<b>11</b> Pl\xE4tze\n<b>100</b> qm."
+    - key: room_price_pattern
+      text: Miete {0}$
+    - key: check_name_1
+      text: 'STRAFE: DIURETISCHE INSPEKTION'
+    - key: check_description_1
+      text: Die Farbe des Urins entspricht nicht der angegebenen Norm
+    - key: check_price_pattern
+      text: ZAHLEN {0}$
+    - key: check_term_pattern
+      text: 'Frist: <b>{0}</b> Tage'
+  - langKey: japanese
+    localization:
+    - key: trump_name
+      text: "\u6A59\u8272\u306E\u7537"
+    - key: trump_description
+      text: "\u307B\u307C\u5317\u4EAC\u30C0\u30C3\u30AF"
+    - key: borat_name
+      text: "\u30AB\u30B6\u30D5\u30B9\u30BF\u30F3\u306E\u30B9\u30FC\u30D1\u30FC\u30B0\u30C3\u30C9"
+    - key: borat_description
+      text: "\u30AB\u30B6\u30D5\u30B9\u30BF\u30F3\u304C\u3069\u3053\u306B\u3042\u308B\u304B\u77E5\u3063\u3066\u3044\u307E\u3059\u304B\uFF1F"
+    - key: eva_name
+      text: "\u30DB\u30FC\u30E0\u30E0\u30FC\u30D3\u30FC\u5973\u512A"
+    - key: eva_description
+      text: "\u5F7C\u5973\u306E\u30D0\u30B9\u30BF\u30D6\u306E\u6C34\u3082\u8CA9\u58F2\u3057\u3066\u3044\u307E\u3059"
+    - key: hideo_name
+      text: "\u30E1\u30BF\u30EB\u306E\u5929\u624D"
+    - key: hideo_description
+      text: "\u5F7C\u304C\u63D0\u4F9B\u3059\u308B\u3082\u306E\u3092\u79C1\u305F\u3061\u306F\u4E00\u6EF4\u3082\u98F2\u307F\u5E72\u3057\u307E\u3059"
+    - key: skibididopdop_name
+      text: Trr Stibidi
+    - key: skibididopdop_description
+      text: "Dob dob \u306F\u3044\u306F\u3044"
+    - key: maddison_name
+      text: "\u81ED\u3044Letsplayer"
+    - key: maddison_description
+      text: "\u30D3\u30FC\u30EB\u3068\u5931\u671B\u3067\u5473\u4ED8\u3051"
+    - key: musk_name
+      text: UrineX
+    - key: musk_description
+      text: "\u9769\u65B0\u7684\uFF08\u30AF\u30EA\u30A8\u30A4\u30BF\u30FC\u306E\u597D\u307F\u306B\u5408\u308F\u305B\u3066\uFF09"
+    - key: gosling_name
+      text: "\u672C\u7269\u306E\u4EBA\u9593\u306E\u82F1\u96C4"
+    - key: gosling_description
+      text: "\u5F7C\u304C\u3042\u306A\u305F\u3068\u79C1\u306E\u4EE3\u308F\u308A\u306B\u304A\u3057\u3063\u3053\u3092\u3067\u304D\u307E\u3059\uFF01"
+    - key: hunter_name
+      text: "Netflix\u30AC\u30FC\u30EB"
+    - key: hunter_description
+      text: "\u3082\u3057\u5F7C\u5973\u304C\u672C\u5F53\u306B\u5973\u306E\u5B50\u306A\u3089..."
+    - key: mrbeast_name
+      text: Mr.Peest
+    - key: mrbeast_description
+      text: "\u4E16\u754C\u3067\u6700\u3082\u88D5\u798F\u306A\u30E6\u30FC\u30C1\u30E5\u30FC\u30D0\u30FC\u304B\u3089\u306E\u5BC4\u4ED8\u3067\u3059"
+    - key: pepe_name
+      text: "\u30DA\u30DA\u306E\u30DA\u30FC\u30DA\u30FC"
+    - key: pepe_description
+      text: "\u3061\u306A\u307F\u306B\u3001\u30AB\u30A8\u30EB\u306F\u304A\u3057\u3063\u3053\u3067\u304D\u307E\u305B\u3093"
+    - key: gnom_name
+      text: "\u81EA\u6BBA\u9858\u671B\u306E\u30CD\u30DD\u30AD\u30C3\u30C9"
+    - key: gnom_description
+      text: "\u5F7C\u306E\u5C06\u6765\u306E\u85AC\u7269\u4F9D\u5B58\u306E\u3088\u3046\u306B\u82E6\u3044"
+    - key: supplier_characteristics_pattern
+      text: 'Satisfaction: <b>{0}</b>
+
+        Acidity: <b>{1}</b>
+
+        Saturation:
+        <b>{2}</b>'
+    - key: supplier_price_pattern
+      text: "\u8CFC\u5165 {0}$"
+    - key: ui_satisfaction
+      text: "\u5FEB\u697D"
+    - key: ui_saturation
+      text: "\u98FD\u548C"
+    - key: ui_causticity
+      text: "\u8150\u98DF\u6027"
+    - key: ui_suppliers
+      text: "\u30B5\u30D7\u30E9\u30A4\u30E4\u30FC"
+    - key: ui_quests
+      text: "\u30C1\u30E3\u30EC\u30F3\u30B8"
+    - key: ui_checks
+      text: "\u8ACB\u6C42\u66F8"
+    - key: ui_rent
+      text: "\u5BB6\u8CC3"
+    - key: ui_buy
+      text: "\u8CFC\u5165"
+    - key: ui_pay
+      text: "\u652F\u6255\u3046"
+    - key: ui_rent_button
+      text: "\u5BB6\u8CC3"
+    - key: ui_main_menu_new_game
+      text: "\u65B0\u3057\u3044\u30B2\u30FC\u30E0"
+    - key: ui_main_menu_continue_game
+      text: "\u7D9A\u884C"
+    - key: ui_main_menu_options
+      text: "\u30AA\u30D7\u30B7\u30E7\u30F3"
+    - key: ui_main_menu_exit
+      text: "\u7D42\u4E86"
+    - key: ui_lang_russian
+      text: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
+    - key: ui_lang_english
+      text: English
+    - key: ui_lang_chinese
+      text: Chinese
+    - key: ui_lang_spanish
+      text: Spanish
+    - key: ui_lang_portuguese
+      text: Portuguese
+    - key: ui_lang_german
+      text: German
+    - key: ui_lang_japanese
+      text: Japanese
+    - key: ui_lang_french
+      text: French
+    - key: ui_drone_name
+      text: "\u5229\u5C3F\u30C9\u30ED\u30FC\u30F3"
+    - key: ui_polivalka_name
+      text: "\u5C3F\u30B9\u30D7\u30EA\u30F3\u30AF\u30E9\u30FC"
+    - key: ui_fountain_name
+      text: "\u9EC4\u91D1\u306E\u5674\u6C34"
+    - key: ui_rails_name
+      text: "\u5C3F\u3092\u5782\u3089\u3059\u30EC\u30FC\u30EB"
+    - key: quest_run_name
+      text: "\u8D70\u308C\u3001\u6392\u5C3F\u8005\uFF01\u8D70\u308C\uFF01"
+    - key: quest_run_description
+      text: "<b>{0}</b>\u30AD\u30ED\u8D70\u308B"
+    - key: quest_allyourself_name
+      text: "\u3059\u3079\u3066\u81EA\u5206\u3067\uFF01"
+    - key: quest_allyourself_description
+      text: "<b>{0}</b>\u30EA\u30C3\u30C8\u30EB\u6492\u5C3F"
+    - key: quest_fullbottle_name
+      text: "\u3069\u3046\u3057\u3066\u305D\u3093\u306A\u3053\u3068\u3092\u3057\u305F\u306E\uFF1F"
+    - key: quest_fullbottle_description
+      text: "<b>{0}</b>\u672C\u306E\u6E80\u30BF\u30F3\u306E\u30DC\u30C8\u30EB\u3092\u6368\u3066\u308B"
+    - key: skibidi_random_phrase_1
+      text: "\u3055\u3042\uFF01\u8CB7\u3048\uFF01"
+    - key: skibidi_random_phrase_2
+      text: "\u6CE3\u304B\u306A\u3044\u3067\u3002\u5272\u5F15\u306F\u3042\u308A\u307E\u305B\u3093"
+    - key: skibidi_random_phrase_3
+      text: "\u4ECA\u65E5\u306E\u5C3F\u3060\u3051\u304C\u8CA9\u58F2\u4E2D\u3067\u3059"
+    - key: skibidi_random_phrase_4
+      text: "\u304A\u3057\u3063\u3053\u306F\u304A\u3057\u3063\u3053\u3001\u3067\u3082\u826F\u3044\u304A\u3057\u3063\u3053\u3067\u3059\uFF01"
+    - key: skibidi_random_phrase_5
+      text: "\u3053\u308C\u306F\u3068\u3066\u3082\u7F8E\u5473\u3057\u3044\u304A\u3057\u3063\u3053\u3067\u3059\uFF01"
+    - key: skibidi_random_phrase_6
+      text: "\u304A\u3057\u3063\u3053\u306E\u5302\u3044\u304C\u3059\u308B\u306D\u3001\u5144\u5F1F\uFF01\u8CB7\u3063\u3066\u51FA\u3066\u884C\u3051"
+    - key: skibidi_random_phrase_7
+      text: "\u5B50\u4F9B\u306E\u9803\u3001\u307F\u3093\u306A\u304A\u3057\u3063\u3053\u3092\u6F0F\u3089\u3057\u305F\u3002\u3067\u3082\u3001\u307F\u3093\u306A\u304C\u5E74\u3092\u53D6\u3063\u3066\u304B\u3089\u3082\u6F0F\u3089\u3059\u308F\u3051\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u3002\u8003\u3048\u3066\u307F\u3066\u3002"
+    - key: skibidi_random_phrase_8
+      text: "\u541B\u306F\u201C\u3077\u3059\u3063\u3001\u3077\u3059\u3063\u3001\u3077\u3059\u3063\u201D\u3068\u8A00\u308F\u308C\u3066\u3001\u304A\u3057\u3063\u3053\u3092\u3059\u308B\u305F\u3073\u306B\u305D\u308C\u304C\u5FC5\u8981\u306A\u7537\u306B\u898B\u3048\u308B"
+    - key: skibidi_random_phrase_9
+      text: "\u541B\u306F\u30D1\u30F3\u30C4\u306B\u304A\u3057\u3063\u3053\u3092\u3057\u305F\u3088\u3001\u5144\u5F1F"
+    - key: skibidi_random_phrase_10
+      text: "\u306F\u306F\u3002\u305D\u308C\u306F\u8D85\u9762\u767D\u3044\u304A\u3057\u3063\u3053\u30E9\u30A4\u30F3\u3060\u3002\u4ECA\u3059\u3050\u6D88\u3048\u308D"
+    - key: skibidi_random_phrase_11
+      text: "\u79C1\u305F\u3061\u3082\u98F2\u307F\u7269\u3092\u98F2\u3082\u3046\uFF01\u3069\u3046\u3057\u3066\u79C1\u3092\u62D2\u3080\u306E\uFF1F"
+    - key: skibidi_random_phrase_12
+      text: "\u306A\u305C\u5C0F\u3055\u306A\u304A\u3057\u3063\u3053\u50E7\u3092\u524D\u306B\u51FA\u3055\u306A\u3044\u306E\uFF1F"
+    - key: skibidi_random_phrase_13
+      text: "\u5C3F\u3002\u3042\u306E\u8A00\u8449\u306B\u306F\u305F\u304F\u3055\u3093\u306E\u610F\u5473\u304C\u3042\u308A\u307E\u3059\u3002"
+    - key: skibidi_random_phrase_14
+      text: "\u5F7C\u5973\u304C\u30D1\u30F3\u30C4\u306B\u304A\u3057\u3063\u3053\u3092\u3057\u305F\u3089\u5F7C\u5973\u3092\u611B\u3057\u307E\u3059\u304B\uFF1F\u305D\u308C\u304C\u79C1\u304C\u59BB\u3068\u51FA\u4F1A\u3063\u305F\u65B9\u6CD5\u3067\u3059\u3002"
+    - key: skibidi_random_phrase_15
+      text: "\u3055\u3042\u3001\u6D88\u9632\u30DB\u30FC\u30B9\u3092\u53D6\u3063\u3066\u304D\u3066\uFF01\u3044\u3044\u3048\u3001\u4ECA\u65E5\u306F\u30C0\u30E1\u3067\u3059\u3002"
+    - key: skibidi_random_phrase_16
+      text: "\u79C1\u305F\u3061\u306F\u3042\u308C\u3053\u308C\u3092\u58F2\u308B\u4EE3\u308F\u308A\u306B\u30AB\u30C3\u30D7\u30B1\u30FC\u30AD\u3092\u58F2\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002"
+    - key: skibidi_random_phrase_17
+      text: "\u3059\u3050\u306B\u541B\u306F\u5C3F\u30C6\u30B9\u30BF\u30FC\u306E\u79F0\u53F7\u3092\u6301\u3064\u3053\u3068\u306B\u306A\u308B\u3060\u308D\u3046\u3002"
+    - key: skibidi_random_phrase_18
+      text: "\u3042\u308B\u65E5\u76EE\u304C\u899A\u3081\u3066\u300C\u5C3F\u3092\u58F2\u308A\u305F\u3044\u300D\u3068\u8A00\u3044\u307E\u3057\u305F\u304B\uFF1F\u5FC3\u3092\u58CA\u3057\u305F\u5973\u306E\u5B50\u306E\u540D\u524D\u306F\u4F55\u3067\u3057\u305F\u304B\uFF1F"
+    - key: skibidi_random_phrase_19
+      text: "\u541B\u306E\u4ED5\u4E8B\u306F\u307E\u3060\u30DE\u30FC\u30B1\u30BF\u30FC\u306E\u4ED5\u4E8B\u3088\u308A\u5F79\u306B\u7ACB\u3063\u3066\u3044\u307E\u3059"
+    - key: room_name_1
+      text: "\u30B4\u30DF"
+    - key: room_description_1
+      text: "<b>4</b> \u30DC\u30A4\u30E9\u30FC\n<b>11</b> \u5834\u6240\n<b>100</b>
+        \u5E73\u65B9\u30E1\u30FC\u30C8\u30EB."
+    - key: room_price_pattern
+      text: "\u5BB6\u8CC3 {0}$"
+    - key: check_name_1
+      text: "\u7F70\u91D1\uFF1A\u5229\u5C3F\u691C\u67FB"
+    - key: check_description_1
+      text: "\u5C3F\u306E\u8272\u304C\u6307\u5B9A\u3055\u308C\u305F\u57FA\u6E96\u306B\u5408\u3063\u3066\u3044\u307E\u305B\u3093"
+    - key: check_price_pattern
+      text: "\u652F\u6255\u3046 {0}$"
+    - key: check_term_pattern
+      text: "\u671F\u9593\uFF1A<b>{0}</b> \u65E5\u9593"
+  - langKey: french
+    localization:
+    - key: trump_name
+      text: L'Homme Orange
+    - key: trump_description
+      text: "Presque Canard P\xE9kinois"
+    - key: borat_name
+      text: Le Super Bon du Kazakhstan
+    - key: borat_description
+      text: "Sais-tu o\xF9 se trouve le Kazakhstan ?"
+    - key: eva_name
+      text: Actrice de film maison
+    - key: eva_description
+      text: Vend aussi de l'eau de sa baignoire
+    - key: hideo_name
+      text: "G\xE9nie du Metal"
+    - key: hideo_description
+      text: Nous boirons chaque goutte de ce qu'il offre
+    - key: skibididopdop_name
+      text: Trr Stibidi
+    - key: skibididopdop_description
+      text: Dob dob oui oui
+    - key: maddison_name
+      text: Stinky Letsplayer
+    - key: maddison_description
+      text: "Parfum\xE9 \xE0 la bi\xE8re et \xE0 la d\xE9ception"
+    - key: musk_name
+      text: UrineX
+    - key: musk_description
+      text: "Innovant (selon le go\xFBt du cr\xE9ateur)"
+    - key: gosling_name
+      text: "Un vrai h\xE9ros humain"
+    - key: gosling_description
+      text: "Il peut pisser \xE0 ta place et \xE0 la mienne !"
+    - key: hunter_name
+      text: Fille de Netflix
+    - key: hunter_description
+      text: "Si elle est m\xEAme une fille..."
+    - key: mrbeast_name
+      text: Mr.Peest
+    - key: mrbeast_description
+      text: C'est un don du YouTuber le plus riche du monde
+    - key: pepe_name
+      text: Le Pipi de Pepe
+    - key: pepe_description
+      text: Au fait, les grenouilles ne peuvent pas pisser
+    - key: gnom_name
+      text: Enfant Nepo Suicidaire
+    - key: gnom_description
+      text: "Amer comme sa future d\xE9pendance \xE0 la drogue"
+    - key: supplier_characteristics_pattern
+      text: "Satisfaction : <b>{0}</b>\nAcidit\xE9 : <b>{1}</b>\nSaturation : <b>{2}</b>"
+    - key: supplier_price_pattern
+      text: ACHETER {0}$
+    - key: ui_satisfaction
+      text: Plaisir
+    - key: ui_saturation
+      text: Saturation
+    - key: ui_causticity
+      text: "Causticit\xE9"
+    - key: ui_suppliers
+      text: Fournisseurs
+    - key: ui_quests
+      text: "D\xE9fis"
+    - key: ui_checks
+      text: Factures
+    - key: ui_rent
+      text: Loyer
+    - key: ui_buy
+      text: Acheter
+    - key: ui_pay
+      text: Payer
+    - key: ui_rent_button
+      text: Loyer
+    - key: ui_main_menu_new_game
+      text: Nouveau jeu
+    - key: ui_main_menu_continue_game
+      text: Continuer
+    - key: ui_main_menu_options
+      text: Options
+    - key: ui_main_menu_exit
+      text: Quitter
+    - key: ui_lang_russian
+      text: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
+    - key: ui_lang_english
+      text: English
+    - key: ui_lang_chinese
+      text: Chinese
+    - key: ui_lang_spanish
+      text: Spanish
+    - key: ui_lang_portuguese
+      text: Portuguese
+    - key: ui_lang_german
+      text: German
+    - key: ui_lang_japanese
+      text: Japanese
+    - key: ui_lang_french
+      text: French
+    - key: ui_drone_name
+      text: "Drone Diur\xE9tique"
+    - key: ui_polivalka_name
+      text: "Arroseur \xE0 Urine"
+    - key: ui_fountain_name
+      text: "Fontaine Dor\xE9e"
+    - key: ui_rails_name
+      text: Rails Urinants
+    - key: quest_run_name
+      text: Cours, pissou! Cours!
+    - key: quest_run_description
+      text: "Court <b>{0}</b> kilom\xE8tres"
+    - key: quest_allyourself_name
+      text: Tout seul!
+    - key: quest_allyourself_description
+      text: Pisse <b>{0}</b> litres
+    - key: quest_fullbottle_name
+      text: "Pourquoi as-tu fait \xE7a?"
+    - key: quest_fullbottle_description
+      text: Jette <b>{0}</b> bouteilles pleines
+    - key: skibidi_random_phrase_1
+      text: "Allez! Ach\xE8te!"
+    - key: skibidi_random_phrase_2
+      text: "Ne te plains pas. Il n'y a pas de r\xE9ductions"
+    - key: skibidi_random_phrase_3
+      text: Seule l'urine d'aujourd'hui est en vente
+    - key: skibidi_random_phrase_4
+      text: Pisser, c'est pisser, mais c'est du bon pisser!
+    - key: skibidi_random_phrase_5
+      text: "C'est une urine d\xE9licieusement d\xE9licieuse!"
+    - key: skibidi_random_phrase_6
+      text: "Tu pues la pisse, mec! Ach\xE8te-la et d\xE9gage"
+    - key: skibidi_random_phrase_7
+      text: "Nous avons tous fait pipi dans notre pantalon quand nous \xE9tions enfants.
+        Mais tous ne le feront pas quand nous serons vieux. R\xE9fl\xE9chis-y."
+    - key: skibidi_random_phrase_8
+      text: "Tu ressembles \xE0 un type dont la maman disait \u201Cpsst, psst, psst\u201D
+        et maintenant tu ne peux pas pisser sans \xE7a"
+    - key: skibidi_random_phrase_9
+      text: Tu as fait pipi dans ton pantalon, mec
+    - key: skibidi_random_phrase_10
+      text: "Ha-ha. C'est une ligne de pisse super dr\xF4le. Maintenant va te faire
+        foutre"
+    - key: skibidi_random_phrase_11
+      text: Prenons aussi un verre! Comment oses-tu me refuser?
+    - key: skibidi_random_phrase_12
+      text: Pourquoi ne mettons-nous pas le Petit Moine Pissant devant?
+    - key: skibidi_random_phrase_13
+      text: Urine. Il y a tant de choses dans ce mot.
+    - key: skibidi_random_phrase_14
+      text: "Aimerais-tu ta copine si elle faisait pipi dans son pantalon? C'est
+        comme \xE7a que j'ai rencontr\xE9 ma femme."
+    - key: skibidi_random_phrase_15
+      text: Allez, prends ton tuyau d'incendie! D'accord, pas aujourd'hui.
+    - key: skibidi_random_phrase_16
+      text: Nous pourrions vendre des cupcakes au lieu de toutes ces choses.
+    - key: skibidi_random_phrase_17
+      text: "Bient\xF4t, tu auras le titre de testeur d'urine."
+    - key: skibidi_random_phrase_18
+      text: "T'es-tu r\xE9veill\xE9 un jour en disant, \u201CJe veux vendre de l'urine\u201D?
+        Quel \xE9tait le nom de la fille qui t'a bris\xE9 le c\u0153ur?"
+    - key: skibidi_random_phrase_19
+      text: Ton travail est toujours plus utile que celui d'un marketeur
+    - key: room_name_1
+      text: Ordures
+    - key: room_description_1
+      text: "<b>4</b> chaudi\xE8res\n<b>11</b> lieux\n<b>100</b> m\xB2."
+    - key: room_price_pattern
+      text: Louer {0}$
+    - key: check_name_1
+      text: "AMENDE : INSPECTION DIUR\xC9TIQUE"
+    - key: check_description_1
+      text: "La couleur de l'urine ne correspond pas \xE0 la norme sp\xE9cifi\xE9e"
+    - key: check_price_pattern
+      text: PAYER {0}$
+    - key: check_term_pattern
+      text: "D\xE9lai : <b>{0}</b> jours"

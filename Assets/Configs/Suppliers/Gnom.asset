@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16e94e8a6ac43844a4cd039db595f9a, type: 3}
   m_Name: Gnom
   m_EditorClassIdentifier: 
-  iconSprite: {fileID: 21300000, guid: 019489b12b05ac84b82007ae4e9a7b6c, type: 3}
-  title: gnom_name
-  description: gnom_description
-  price: 96
-  satisfaction: 3
-  causticity: 4
-  saturation: 2
+  Data:
+    iconSpriteId: ba0bcf46-dedb-4274-86f9-7cd5c5aa2e9f
+    title: gnom_name
+    description: gnom_description
+    price: 96
+    satisfaction: 3
+    causticity: 4
+    saturation: 1

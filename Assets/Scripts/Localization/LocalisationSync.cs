@@ -57,9 +57,9 @@ namespace Common.Editor
 	            Debug.Log("<color=yellow>Localization synchronization was canceled.</color>");
 	            _isActive = false;
             }
-            catch (Exception)
+            catch (Exception e)
             {
-	            Debug.Log("<color=red>Localization synchronization failed.</color>");
+	            Debug.Log("<color=red>Localization synchronization failed.</color>\n" + e.Message);
 	            _isActive = false;
             }
         }

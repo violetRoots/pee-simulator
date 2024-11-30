@@ -15,11 +15,20 @@ public class DebugManager : SingletonMonoBehaviourBase<DebugManager>
             }
             if (Input.GetKeyDown(KeyCode.Z))
         {
-                GameManager.Instance.Data.ChangeMoney(-50);
+                SavesManager.Instance.PlayerStats.Value.ChangeMoney(-50);
             }
-            if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.X))
+            if (Input.GetKeyDown(KeyCode.X))
             {
-                GameManager.Instance.Data.ChangeMoney(50);
+                SavesManager.Instance.PlayerStats.Value.ChangeMoney(50);
+            }
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                DayManager.Instance.DebugSkipDay();
+            }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                SavesManager.Instance.PlayerStats.Clear();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
     }

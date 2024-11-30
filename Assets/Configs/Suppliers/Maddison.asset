@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16e94e8a6ac43844a4cd039db595f9a, type: 3}
   m_Name: Maddison
   m_EditorClassIdentifier: 
-  iconSprite: {fileID: 21300000, guid: b570c09fdcd37044bbb57db99f461d5b, type: 3}
-  title: maddison_name
-  description: maddison_description
-  price: 156
-  satisfaction: 0
-  causticity: 10
-  saturation: 5
+  Data:
+    iconSpriteId: fc78168d-9804-4241-ab86-6a1bb606a740
+    title: maddison_name
+    description: maddison_description
+    price: 156
+    satisfaction: 0
+    causticity: 10
+    saturation: 5

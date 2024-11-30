@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16e94e8a6ac43844a4cd039db595f9a, type: 3}
   m_Name: Trump
   m_EditorClassIdentifier: 
-  iconSprite: {fileID: 21300000, guid: 27469e72b739b8746ab41c84a1d49c05, type: 3}
-  title: trump_name
-  description: trump_description
-  price: 101
-  satisfaction: 3
-  causticity: 6
-  saturation: 4
+  Data:
+    iconSpriteId: fa8916b1-2cdc-4167-8206-432e11259a74
+    title: trump_name
+    description: trump_description
+    price: 101
+    satisfaction: 3
+    causticity: 6
+    saturation: 6

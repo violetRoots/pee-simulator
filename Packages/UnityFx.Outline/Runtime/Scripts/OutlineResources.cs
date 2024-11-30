@@ -507,7 +507,7 @@ namespace UnityFx.Outline
 		[Conditional("UNITY_POST_PROCESSING_STACK_V2")]
 		public static void LogPpNotSupported(UnityEngine.Object obj)
 		{
-			UnityEngine.Debug.LogWarningFormat(obj, PpNotSupported, obj.GetType().Name);
+			//UnityEngine.Debug.LogWarningFormat(obj, PpNotSupported, obj.GetType().Name);
 		}
 
 		#endregion

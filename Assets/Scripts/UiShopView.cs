@@ -24,16 +24,8 @@ public class UiShopView : MonoBehaviour
     [SerializeField] private GameObject roomsPanel;
 
     [Header("Suppliers")]
-    [SerializeField] private UiPeeSupplierCell peeSupplierCell;
+    [SerializeField] private UiSupplierCell peeSupplierCell;
     [SerializeField] private RectTransform suppliersContentObj;
-
-    [Header("Quests")]
-    [SerializeField] private UiQuestCell questCell;
-    [SerializeField] private RectTransform questsContentObj;
-
-    [Header("Checks")]
-    [SerializeField] private UiCheckCell checkCell;
-    [SerializeField] RectTransform checksContentObj;
 
     [Header("Rooms")]
     [SerializeField] private UiRoomCell roomCell;
@@ -41,25 +33,15 @@ public class UiShopView : MonoBehaviour
 
     private GameManager _gameManager;
     private SuppliersManager _suppliersManager;
-    private QuestsManager _questsManager;
-    private ChecksManager _checksManager;
     private RoomsManager _roomsManager;
-
-    private List<UiCheckCell> _checkCells = new();
-
-    private IDisposable _checksAddSubscription;
-    private IDisposable _checksRemoveSubscription;
 
     private void Awake()
     {
         _gameManager = GameManager.Instance;
         _suppliersManager = _gameManager.SuppliersManager;
-        _questsManager = _gameManager.QuestManager;
-        _checksManager = _gameManager.ChecksManager;
         _roomsManager = _gameManager.RoomsManager;
 
         InitSuppliers();
-        InitQuests();
         InitRooms();
 
         suppliersButton.Subscribe(ShowSuppliers);
@@ -68,9 +50,6 @@ public class UiShopView : MonoBehaviour
         roomsButton.Subscribe(ShowRooms);
 
         exitButton.onClick.AddListener(OnExitButton);
-
-        _checksAddSubscription = _checksManager.runtimeChecks.ObserveAdd().Subscribe(OnNewCheckAdded);
-        _checksRemoveSubscription = _checksManager.runtimeChecks.ObserveRemove().Subscribe(OnNewCheckRemoved);
     }
 
     private void OnEnable()
@@ -91,17 +70,7 @@ public class UiShopView : MonoBehaviour
         foreach (var supplier in suppliers)
         {
             var cell = Instantiate(peeSupplierCell, suppliersContentObj);
-            cell.SetContext(supplier.config);
-        }
-    }
-
-    private void InitQuests()
-    {
-        var quests = _questsManager.GetQuests();
-        foreach (var quest in quests)
-        {
-            var cell = Instantiate(questCell, questsContentObj);
-            cell.SetContext(quest.config);
+            cell.SetContext(supplier);
         }
     }
 
@@ -170,23 +139,5 @@ public class UiShopView : MonoBehaviour
     private void OnExitButton()
     {
         gameObject.SetActive(false);
-    }
-
-    private void OnNewCheckAdded(CollectionAddEvent<ChecksManager.CheckRuntimeInfo> e)
-    {
-        var cell = Instantiate(checkCell, checksContentObj);
-        cell.SetContext(e.Value.config);
-
-        _checkCells.Add(cell);
-    }
-
-    private void OnNewCheckRemoved(CollectionRemoveEvent<ChecksManager.CheckRuntimeInfo> e)
-    {
-        var cellToRemove = _checkCells.Where(cell => cell.CheckConfig == e.Value.config).FirstOrDefault();
-
-        if (cellToRemove == null) return;
-
-        _checkCells.Remove(cellToRemove);
-        Destroy(cellToRemove.gameObject);
     }
 }

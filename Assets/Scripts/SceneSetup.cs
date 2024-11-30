@@ -6,6 +6,7 @@ public class SceneSetup : MonoBehaviour
 {
     private void Awake()
     {
-        LanguageManager.Instance.SetEnglishLanguage();
+        if(!LanguageManager.IsInited)
+            LanguageManager.Instance.SetEnglishLanguage();
     }
 }

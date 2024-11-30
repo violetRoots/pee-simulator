@@ -247,6 +247,7 @@ MonoBehaviour:
   description: {fileID: 9146021519296261346}
   term: {fileID: 6796886625679567578}
   price: {fileID: 8059360323442372127}
+  payButton: {fileID: 3188603780862324038}
   background: {fileID: 5572267089153261664}
   pricePattern: check_price_pattern
   termPattern: check_term_pattern
@@ -826,7 +827,7 @@ GameObject:
   - component: {fileID: 1692928936222035200}
   - component: {fileID: 3188603780862324038}
   m_Layer: 5
-  m_Name: BuyButton
+  m_Name: PayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

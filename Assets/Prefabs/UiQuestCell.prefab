@@ -303,7 +303,8 @@ MonoBehaviour:
   title: {fileID: 5029912594879541134}
   description: {fileID: 9139597817040053779}
   progress: {fileID: 5694392616977736833}
-  progressPattern: 0/{0}
+  progressFiller: {fileID: 2212584590783081802}
+  progressPattern: '{0}/{1}'
 --- !u!1 &6383317041950659447
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,34 +6,34 @@ using UnityEngine;
 [Serializable]
 public class SuppliersManager
 {
-    public class PeeSupplierRuntimeInfo
+    public class SupplierRuntimeInfo
     {
-        public PeeSupplierConfig config;
+        public SupplierConfig.SupplierConfigData configData;
     }
 
-    [SerializeField] private PeeSupplierConfig[] suppliers;
+    [SerializeField] private SupplierConfig[] suppliers;
 
-    private readonly List<PeeSupplierRuntimeInfo> suppliersInfo = new List<PeeSupplierRuntimeInfo>();
+    private readonly List<SupplierRuntimeInfo> suppliersInfo = new List<SupplierRuntimeInfo>();
 
     public void Init()
     {
         foreach (var supplier in suppliers)
         {
-            var supplierInfo = new PeeSupplierRuntimeInfo()
+            var supplierInfo = new SupplierRuntimeInfo()
             {
-                config = supplier
+                configData = supplier.Data
             };
 
             suppliersInfo.Add(supplierInfo);
         }
     }
 
-    public PeeSupplierRuntimeInfo[] GetAvailableSuppliers()
+    public SupplierRuntimeInfo[] GetAvailableSuppliers()
     {
         return suppliersInfo.ToArray();
     }
 
-    public PeeSupplierRuntimeInfo GetRandomavailableSupplier()
+    public SupplierRuntimeInfo GetRandomavailableSupplier()
     {
         return suppliersInfo[UnityEngine.Random.Range(0, suppliersInfo.Count)];
     }

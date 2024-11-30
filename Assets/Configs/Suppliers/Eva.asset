@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16e94e8a6ac43844a4cd039db595f9a, type: 3}
   m_Name: Eva
   m_EditorClassIdentifier: 
-  iconSprite: {fileID: 21300000, guid: 9cf9710e8b0e9844995de070c523bea9, type: 3}
-  title: eva_name
-  description: eva_description
-  price: 27
-  satisfaction: 8
-  causticity: 2
-  saturation: 1
+  Data:
+    iconSpriteId: 73083587-6345-4263-842e-8278983cdf46
+    title: eva_name
+    description: eva_description
+    price: 27
+    satisfaction: 8
+    causticity: 2
+    saturation: 1

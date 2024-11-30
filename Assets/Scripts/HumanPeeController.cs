@@ -41,10 +41,11 @@ public class HumanPeeController : MonoBehaviour
     private HumanContentController _contentController;
 
     private GameManager _gameManager;
+    private PlayerStats _playerStats;
 
     public readonly ReactiveProperty<PeeState> state = new ReactiveProperty<PeeState>();
 
-    private SuppliersManager.PeeSupplierRuntimeInfo _preferSupplier;
+    private SuppliersManager.SupplierRuntimeInfo _preferSupplier;
 
     private Renderer[] _renderers;
     private readonly List<Material> _defaultMaterials = new();
@@ -68,6 +69,7 @@ public class HumanPeeController : MonoBehaviour
     private void Awake()
     {
         _gameManager = GameManager.Instance;
+        _playerStats = SavesManager.Instance.PlayerStats.Value;
 
         _contentController = _humanProvider.ContentController;
 
@@ -153,7 +155,7 @@ public class HumanPeeController : MonoBehaviour
     {
         if (Time.time - _lastAddMoneyTime < addMoneyCooldown) return;
 
-        _gameManager.Data.ChangeMoney((int)(1 * mult));
+        _playerStats.ChangeMoney((int)(1 * mult));
 
         _lastAddMoneyTime = Time.time;
     }

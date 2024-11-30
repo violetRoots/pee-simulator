@@ -32,6 +32,7 @@ public class CharacterBuildController : MonoBehaviour
 
     private GameManager _gameManager;
     private InputManager _inputManager;
+    private PlayerStats _playerStats;
     private CharacterInteractionController _characterInteractionController;
 
     private bool _canBuild;
@@ -54,6 +55,7 @@ public class CharacterBuildController : MonoBehaviour
     {
         _gameManager = GameManager.Instance;
         _inputManager = InputManager.Instance;
+        _playerStats = SavesManager.Instance.PlayerStats.Value;
         _characterInteractionController = GameManager.Instance.CharacterProvider.InteractionController;
 
         _layerMask = LayerMask.GetMask(layerMaskName);
@@ -123,7 +125,7 @@ public class CharacterBuildController : MonoBehaviour
 
         if (_characterInteractionController.interactionMode.Value != CharacterInteractionController.CharacterInteractionMode.Build) return;
 
-        if (_currentItemToBuild == null || _gameManager.Data.Money < _currentItemToBuild.price) return;
+        if (_currentItemToBuild == null || _playerStats.money < _currentItemToBuild.price) return;
 
         if (!_canBuild || !_canPlace) return;
 
@@ -131,7 +133,7 @@ public class CharacterBuildController : MonoBehaviour
         _content.Activate(sector, _currentItemToBuild);
         _content = null;
 
-        _gameManager.Data.ChangeMoney(-_currentItemToBuild.price);
+        _playerStats.ChangeMoney(-_currentItemToBuild.price);
 
         SetContent();
     }
@@ -157,7 +159,7 @@ public class CharacterBuildController : MonoBehaviour
     private void UpdateCantPlaceMarker()
     {
         _content.SetPlaceMarkerActive(_canPlace);
-        _content.SetPlaceMarkerMaterial(_currentItemToBuild != null && _gameManager.Data.Money >= _currentItemToBuild.price);
+        _content.SetPlaceMarkerMaterial(_currentItemToBuild != null && _playerStats.money >= _currentItemToBuild.price);
     }
 
     private GameplaySector GetGameplaySector(Vector3 pos)

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4220868826205110}
+  - component: {fileID: 5423204242148538897}
   m_Layer: 0
   m_Name: kitchen_burgers_ready
   m_TagString: Untagged
@@ -30,8 +31,29 @@ Transform:
   m_Children:
   - {fileID: 6819879764545629805}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5423204242148538897
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686734783768132}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3279295, y: 2.0278037, z: 0.7954459}
+  m_Center: {x: 0.0011610985, y: 0.71286404, z: 0.027458906}
 --- !u!1 &1809228713330333586
 GameObject:
   m_ObjectHideFlags: 0

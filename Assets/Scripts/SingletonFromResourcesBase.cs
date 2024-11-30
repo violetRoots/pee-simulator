@@ -2,6 +2,8 @@
 
 public abstract class SingletonFromResourcesBase<T> : SingletonMonoBehaviourBase<T> where T : SingletonFromResourcesBase<T>
 {
+    public static bool IsInited { get; set; }
+
     private static readonly object InstanceLock = new object();
     private static ResourceRequest _loadingOperation;
 
@@ -13,6 +15,8 @@ public abstract class SingletonFromResourcesBase<T> : SingletonMonoBehaviourBase
             {
                 if (_instance == null && !ApplicationState.isQuitting)
                     CreateInstanceSyncLegacy();
+
+                IsInited = true;
 
                 return _instance;
             }
@@ -48,7 +52,7 @@ public abstract class SingletonFromResourcesBase<T> : SingletonMonoBehaviourBase
     private static void CreateInstanceSyncLegacy()
     {
         var name = typeof(T).Name;
-        Debug.LogWarning($"Please, use Async Loader for accessing {name}");
+        //Debug.LogWarning($"Please, use Async Loader for accessing {name}");
         Factory(Instantiate(Resources.Load<T>(name)));
     }
 }

@@ -14,25 +14,25 @@ public class BottleManager
 
     [SerializeField] private Bottle bottlePrefab;
 
-    private GameplayDataContainer _data;
+    private PlayerStats _playerStats;
 
     public void Init()
     {
-        _data = GameManager.Instance.Data;
+        _playerStats = SavesManager.Instance.PlayerStats.Value;
     }
 
-    public void TryBuyBottle(PeeSupplierConfig supplier)
+    public void TryBuyBottle(SuppliersManager.SupplierRuntimeInfo info)
     {
-        if (_data.Money < supplier.price) return;
+        if (_playerStats.money < info.configData.price) return;
 
-        _data.ChangeMoney(-supplier.price);
-        SpawnBottle(supplier);
+        _playerStats.ChangeMoney(-info.configData.price);
+        SpawnBottle(info);
     }
 
-    public void SpawnBottle(PeeSupplierConfig supplier)
+    public void SpawnBottle(SuppliersManager.SupplierRuntimeInfo info)
     {
         var pos = spawnOrigin.position + UnityEngine.Random.insideUnitSphere * spawnRadius;
         var bottle = GameObject.Instantiate(bottlePrefab, pos, Quaternion.identity, bottlesContainer);
-        bottle.SetSupplier(supplier);
+        bottle.SetContext(info);
     }
 }

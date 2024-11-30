@@ -7,11 +7,11 @@ public class UiScorePanel : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreText;
 
-    private GameManager _gameManager;
+    private PlayerStats _playerStats;
 
     private void Awake()
     {
-        _gameManager = GameManager.Instance;
+        _playerStats = SavesManager.Instance.PlayerStats.Value;
     }
 
     private void Update()
@@ -21,6 +21,6 @@ public class UiScorePanel : MonoBehaviour
 
     private void UpdateText()
     {
-        scoreText.text = $"YOUR SCORE: {_gameManager.Data.Score}";
+        scoreText.text = $"YOUR SCORE: {_playerStats.score}";
     }
 }
