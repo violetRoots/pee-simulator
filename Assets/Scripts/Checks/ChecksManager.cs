@@ -8,13 +8,6 @@ using UnityEngine;
 [Serializable]
 public class ChecksManager
 {
-    [Serializable]
-    public class CheckRuntimeInfo
-    {
-        public CheckConfig.CheckConfigData configData;
-        public int term;
-    }
-
     [SerializeField] private CheckConfig[] checkConfigs;
 
     public ReactiveCollection<CheckRuntimeInfo> runtimeChecks;
@@ -88,4 +81,11 @@ public class ChecksManager
             _playerStats.ChangeMoney(-(checkInfo.configData.price + checkInfo.configData.surcharge));
         }
     }
+}
+
+[Serializable]
+public class CheckRuntimeInfo
+{
+    public CheckConfig.CheckConfigData configData;
+    public int term;
 }

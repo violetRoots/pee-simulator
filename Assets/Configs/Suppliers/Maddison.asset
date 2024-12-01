@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Maddison
   m_EditorClassIdentifier: 
   Data:
-    iconSpriteId: fc78168d-9804-4241-ab86-6a1bb606a740
+    visualId: d91c72e4-f812-4700-bb9f-c638fe4f918f
     title: maddison_name
     description: maddison_description
     price: 156
     satisfaction: 0
     causticity: 10
     saturation: 5
+    unlockQuestType: 0
+    isAvailableOnStart: 1

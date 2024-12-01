@@ -23,25 +23,18 @@ public class UiShopView : MonoBehaviour
     [SerializeField] private GameObject checksPanel;
     [SerializeField] private GameObject roomsPanel;
 
-    [Header("Suppliers")]
-    [SerializeField] private UiSupplierCell peeSupplierCell;
-    [SerializeField] private RectTransform suppliersContentObj;
-
     [Header("Rooms")]
     [SerializeField] private UiRoomCell roomCell;
     [SerializeField] RectTransform roomsContentObj;
 
     private GameManager _gameManager;
-    private SuppliersManager _suppliersManager;
     private RoomsManager _roomsManager;
 
     private void Awake()
     {
         _gameManager = GameManager.Instance;
-        _suppliersManager = _gameManager.SuppliersManager;
         _roomsManager = _gameManager.RoomsManager;
 
-        InitSuppliers();
         InitRooms();
 
         suppliersButton.Subscribe(ShowSuppliers);
@@ -62,16 +55,6 @@ public class UiShopView : MonoBehaviour
     private void OnDisable()
     {
         _gameManager.RemoveLock(this);
-    }
-
-    private void InitSuppliers()
-    {
-        var suppliers = _suppliersManager.GetAvailableSuppliers();
-        foreach (var supplier in suppliers)
-        {
-            var cell = Instantiate(peeSupplierCell, suppliersContentObj);
-            cell.SetContext(supplier);
-        }
     }
 
     private void InitRooms()

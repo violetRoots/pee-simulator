@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Trump
   m_EditorClassIdentifier: 
   Data:
-    iconSpriteId: fa8916b1-2cdc-4167-8206-432e11259a74
+    visualId: 00c184fd-e774-4e91-a38e-95452862f8ba
     title: trump_name
     description: trump_description
     price: 101
     satisfaction: 3
     causticity: 6
     saturation: 6
+    unlockQuestType: 0
+    isAvailableOnStart: 1

@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Gnom
   m_EditorClassIdentifier: 
   Data:
-    iconSpriteId: ba0bcf46-dedb-4274-86f9-7cd5c5aa2e9f
+    visualId: a1af7de6-c8e0-4559-9ee8-6edcd915121e
     title: gnom_name
     description: gnom_description
     price: 96
     satisfaction: 3
     causticity: 4
     saturation: 1
+    unlockQuestType: 0
+    isAvailableOnStart: 1

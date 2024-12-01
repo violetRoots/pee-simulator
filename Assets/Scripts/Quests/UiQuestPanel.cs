@@ -9,12 +9,14 @@ public class UiQuestPanel : MonoBehaviour
     [SerializeField] private UiQuestCell questCell;
     [SerializeField] private RectTransform questsContentObj;
 
+    private SuppliersManager _suppliersManager;
     private QuestsManager _questsManager;
 
     private readonly List<UiQuestCell> _questCells = new();
 
     private void Awake()
     {
+        _suppliersManager = GameManager.Instance.SuppliersManager;
         _questsManager = GameManager.Instance.QuestsManager;
 
         _questsManager.onQuestProgressUpdated += UpdateQuestCells;
@@ -27,23 +29,23 @@ public class UiQuestPanel : MonoBehaviour
         _questsManager.onQuestProgressUpdated -= UpdateQuestCells;
     }
 
-    private void UpdateQuestCells(QuestConfig.QuestType questType)
+    private void UpdateQuestCells(QuestRuntimeInfo questInfo)
     {
-        var questCell = _questCells.Where(cell => cell.RuntimeInfo.configData.type == questType).FirstOrDefault();
+        var questCell = _questCells.Where(cell => cell.RuntimeInfo == questInfo).FirstOrDefault();
 
         questCell?.UpdateProgressValue();
-
-        if (questCell.RuntimeInfo.isFinished)
-            Destroy(questCell.gameObject);
     }
 
     private void InitQuests()
     {
-        var quests = _questsManager.GetUnfinishedQuests();
+        var quests = _questsManager.GetQuests();
         foreach (var quest in quests)
         {
             var cell = Instantiate(questCell, questsContentObj);
-            cell.SetContext(quest);
+            cell.SetContext(quest, () =>
+            {
+                _suppliersManager.SetAvailableByQuest(quest);
+            });
 
             _questCells.Add(cell);
         }

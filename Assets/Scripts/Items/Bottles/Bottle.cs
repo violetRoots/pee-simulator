@@ -5,7 +5,7 @@ using UnityFx.Outline;
 
 public class Bottle : Item
 {
-    public SuppliersManager.SupplierRuntimeInfo RuntimeInfo { get; private set; }
+    public SupplierRuntimeInfo RuntimeInfo { get; private set; }
 
     public float FillAmount => Mathf.Clamp01(_currentFillCount / _allFillCount);
     public bool IsEmpty => Mathf.Approximately(FillAmount, 0.0f);
@@ -44,7 +44,7 @@ public class Bottle : Item
         zombieProvider.ExplosionController.Exlode(collider.ClosestPoint(transform.position));
     }
 
-    public void SetContext(SuppliersManager.SupplierRuntimeInfo info)
+    public void SetContext(SupplierRuntimeInfo info)
     {
         RuntimeInfo = info;
 
@@ -58,12 +58,12 @@ public class Bottle : Item
         _currentFillCount -= peeTickValue;
     }
 
-    private void UpdateVisual(SuppliersManager.SupplierRuntimeInfo info)
+    private void UpdateVisual(SupplierRuntimeInfo info)
     {
         foreach (var sticker in stickers)
         {
             var material = sticker.material;
-            //material.SetTexture("_MainTex", info.configData.iconSprite.texture);
+            material.SetTexture("_MainTex", info.VisualInfo.icon.texture);
             sticker.sharedMaterial = material;
         }
     }

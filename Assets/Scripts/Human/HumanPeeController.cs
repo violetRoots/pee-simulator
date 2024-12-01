@@ -45,7 +45,7 @@ public class HumanPeeController : MonoBehaviour
 
     public readonly ReactiveProperty<PeeState> state = new ReactiveProperty<PeeState>();
 
-    private SuppliersManager.SupplierRuntimeInfo _preferSupplier;
+    private SupplierRuntimeInfo _preferSupplier;
 
     private Renderer[] _renderers;
     private readonly List<Material> _defaultMaterials = new();

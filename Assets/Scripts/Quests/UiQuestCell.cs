@@ -2,10 +2,11 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Common.Localisation;
+using System;
 
 public class UiQuestCell : MonoBehaviour
 {
-    public QuestsManager.QuestRuntimeInfo RuntimeInfo { get; private set; }
+    public QuestRuntimeInfo RuntimeInfo { get; private set; }
 
     [SerializeField] private Image icon;
     [SerializeField] private TranslatedTextMeshPro title;
@@ -13,24 +14,55 @@ public class UiQuestCell : MonoBehaviour
     [SerializeField] private TextMeshProUGUI progress;
     [SerializeField] private Image progressFiller;
 
-    [TextArea]
+    [SerializeField] private CanvasGroup finsihedGroup;
+    [SerializeField] private CanvasGroup lockGroup;
+    [SerializeField] private CanvasGroup openedGroup;
+
+    [SerializeField] private LockEffect lockEffect;
+
+    [SerializeField] private Button openButton;
+
     [SerializeField] private string progressPattern;
 
-    public void SetContext(QuestsManager.QuestRuntimeInfo questnfo)
+    public void SetContext(QuestRuntimeInfo questnfo, Action onOpenButtonAction)
     {
         RuntimeInfo = questnfo;
 
-        var spriteId = RuntimeInfo.configData.supplierData.iconSpriteId;
-        icon.sprite = DatabaseManager.Instance.GetSprite(spriteId);
         title.SetKey(RuntimeInfo.configData.title);
         description.SetKey(RuntimeInfo.configData.description, RuntimeInfo.configData.maxProgress);
 
+        openButton.onClick.AddListener(() =>
+        {
+            OnOpenButtonClicked();
+
+            onOpenButtonAction?.Invoke();
+        });
+
         UpdateProgressValue();
+    }
+
+    private void OnDestroy()
+    {
+        openButton.onClick.RemoveAllListeners();
     }
 
     public void UpdateProgressValue()
     {
         progressFiller.fillAmount = RuntimeInfo.progressValue / RuntimeInfo.configData.maxProgress;
         progress.text = string.Format(progressPattern, (int) RuntimeInfo.progressValue, RuntimeInfo.configData.maxProgress);
+
+        finsihedGroup.gameObject.SetActive(RuntimeInfo.isFinished);
+        lockGroup.gameObject.SetActive(!RuntimeInfo.isOpened);
+        lockEffect.SetIsActive(RuntimeInfo.isFinished);
+        openedGroup.gameObject.SetActive(RuntimeInfo.isOpened);
+
+        icon.sprite = RuntimeInfo.isOpened ? RuntimeInfo.VisualInfo.icon : RuntimeInfo.VisualInfo.unknownIcon;
+    }
+
+    private void OnOpenButtonClicked()
+    {
+        RuntimeInfo.isOpened = true;
+
+        UpdateProgressValue();
     }
 }

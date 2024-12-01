@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6787655149405912946
 MonoBehaviour:
@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e49f88a70ece1674a93cf153f30514c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteDatabase: {fileID: 11400000, guid: bf3cb1c6f8f4f794086ef2d508be6573, type: 2}
+  supplierVisualDatabase: {fileID: 11400000, guid: 035514f168af5e243a212b549ebb10d9, type: 2}

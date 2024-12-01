@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Hideo
   m_EditorClassIdentifier: 
   Data:
-    iconSpriteId: 3c43979d-7544-48b9-9ad9-de0a2fdabed5
+    visualId: b4e214a2-69f2-4868-a693-eb7bf09fa969
     title: hideo_name
     description: hideo_description
     price: 42
     satisfaction: 5
     causticity: 1
     saturation: 5
+    unlockQuestType: 0
+    isAvailableOnStart: 1

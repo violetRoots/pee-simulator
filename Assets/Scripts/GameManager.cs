@@ -56,6 +56,7 @@ public partial class GameManager : SingletonMonoBehaviourBase<GameManager>
 
     private void OnDestroy()
     {
+        suppliersManager.Dispose();
         questManager.Dispose();
         checksManager.Dispose();
 

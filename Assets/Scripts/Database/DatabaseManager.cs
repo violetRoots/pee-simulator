@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class DatabaseManager : SingletonFromResourcesBase<DatabaseManager>
 {
-    [SerializeField] private SpriteDatabase spriteDatabase;
+    [SerializeField] private SupplierVisualDatabase supplierVisualDatabase;
 
-    public Sprite GetSprite(string guid)
+    public SupplierVisualInfo GetSupplierVisual(string guid)
     {
-        var res = spriteDatabase.objects.Where(kvp => kvp.Key == guid).FirstOrDefault();
+        var res = supplierVisualDatabase.objects.Where(kvp => kvp.Key == guid).FirstOrDefault();
 
         if (res == null) return null;
 

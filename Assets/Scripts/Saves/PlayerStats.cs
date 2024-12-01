@@ -8,8 +8,9 @@ public class PlayerStats
     public int score = 0;
     public int daysCount = 0;
 
-    public List<ChecksManager.CheckRuntimeInfo> runtimeChecks = new();
-    public List<QuestsManager.QuestRuntimeInfo> runtimeQuests = new();
+    public List<SupplierRuntimeInfo> runtimeSuppliers = new();
+    public List<CheckRuntimeInfo> runtimeChecks = new();
+    public List<QuestRuntimeInfo> runtimeQuests = new();
 }
 
 

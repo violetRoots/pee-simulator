@@ -1,20 +1,13 @@
 using System;
 using System.Linq;
+using System.Xml.Serialization;
 using UniRx;
 using UnityEngine;
 
 [Serializable]
 public class QuestsManager
 {
-    [Serializable]
-    public class QuestRuntimeInfo
-    {
-        public QuestConfig.QuestConfigData configData;
-        public float progressValue = 0;
-        public bool isFinished;
-    }
-
-    public event Action<QuestConfig.QuestType> onQuestProgressUpdated;
+    public event Action<QuestRuntimeInfo> onQuestProgressUpdated;
 
     [SerializeField] private QuestConfig[] questConfigs;
 
@@ -43,9 +36,9 @@ public class QuestsManager
         _dayManager.onPastDay -= OnPastDay;
     }
 
-    public QuestRuntimeInfo[] GetUnfinishedQuests()
+    public QuestRuntimeInfo[] GetQuests()
     {
-        return runtimeQuests.Where(info => !info.isFinished).ToArray();
+        return runtimeQuests.ToArray();
     }
 
     public bool IsQuestFinished(QuestConfig.QuestType type)
@@ -64,7 +57,7 @@ public class QuestsManager
         if (questInfo.progressValue >= questInfo.configData.maxProgress)
             questInfo.isFinished = true;
 
-        onQuestProgressUpdated?.Invoke(type);
+        onQuestProgressUpdated?.Invoke(questInfo);
     }
 
     private void OnPastDay()

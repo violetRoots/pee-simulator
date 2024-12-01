@@ -1,4 +1,5 @@
 using Common.Localisation;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -7,7 +8,7 @@ using UnityEngine.UI;
 
 public class UiSupplierCell : MonoBehaviour
 {
-    public SuppliersManager.SupplierRuntimeInfo RuntimeInfo { get; private set; }
+    public SupplierRuntimeInfo RuntimeInfo { get; private set; }
 
     [SerializeField] private Image icon;
     [SerializeField] private TranslatedTextMeshPro title;
@@ -36,12 +37,11 @@ public class UiSupplierCell : MonoBehaviour
         buyButton.onClick.RemoveAllListeners();
     }
 
-    public void SetContext(SuppliersManager.SupplierRuntimeInfo info)
+    public void SetContext(SupplierRuntimeInfo info)
     {
         RuntimeInfo = info;
 
-        var spriteId = RuntimeInfo.configData.iconSpriteId;
-        icon.sprite = DatabaseManager.Instance.GetSprite(spriteId);
+        icon.sprite = RuntimeInfo.VisualInfo.icon;
         title.SetKey(RuntimeInfo.configData.title);
         description.SetKey(RuntimeInfo.configData.description);
         characteristics.SetKey(characteristicsPattern, RuntimeInfo.configData.satisfaction, RuntimeInfo.configData.causticity, RuntimeInfo.configData.satisfaction);

@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Musk
   m_EditorClassIdentifier: 
   Data:
-    iconSpriteId: 53e8664f-5c0a-4111-912f-d2f86c25eaac
+    visualId: c946f037-0f46-42f9-90ee-688792c64a44
     title: musk_name
     description: musk_description
     price: 70
     satisfaction: 6
     causticity: 3
     saturation: 4
+    unlockQuestType: 0
+    isAvailableOnStart: 1

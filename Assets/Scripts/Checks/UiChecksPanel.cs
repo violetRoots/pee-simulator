@@ -42,12 +42,12 @@ public class UiChecksPanel : MonoBehaviour
         }
     }
 
-    private void OnNewCheckAdded(CollectionAddEvent<ChecksManager.CheckRuntimeInfo> e)
+    private void OnNewCheckAdded(CollectionAddEvent<CheckRuntimeInfo> e)
     {
         AddCheckCell(e.Value);
     }
 
-    private void OnNewCheckRemoved(CollectionRemoveEvent<ChecksManager.CheckRuntimeInfo> e)
+    private void OnNewCheckRemoved(CollectionRemoveEvent<CheckRuntimeInfo> e)
     {
         var cellToRemove = _checkCells.Where(cell => cell.RuntimeInfo.configData == e.Value.configData).FirstOrDefault();
 
@@ -57,7 +57,7 @@ public class UiChecksPanel : MonoBehaviour
         Destroy(cellToRemove.gameObject);
     }
 
-    private void AddCheckCell(ChecksManager.CheckRuntimeInfo info)
+    private void AddCheckCell(CheckRuntimeInfo info)
     {
         var cell = Instantiate(checkCell, checksContentObj);
 

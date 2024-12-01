@@ -21,7 +21,7 @@ public class BottleManager
         _playerStats = SavesManager.Instance.PlayerStats.Value;
     }
 
-    public void TryBuyBottle(SuppliersManager.SupplierRuntimeInfo info)
+    public void TryBuyBottle(SupplierRuntimeInfo info)
     {
         if (_playerStats.money < info.configData.price) return;
 
@@ -29,7 +29,7 @@ public class BottleManager
         SpawnBottle(info);
     }
 
-    public void SpawnBottle(SuppliersManager.SupplierRuntimeInfo info)
+    public void SpawnBottle(SupplierRuntimeInfo info)
     {
         var pos = spawnOrigin.position + UnityEngine.Random.insideUnitSphere * spawnRadius;
         var bottle = GameObject.Instantiate(bottlePrefab, pos, Quaternion.identity, bottlesContainer);

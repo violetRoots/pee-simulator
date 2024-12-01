@@ -10,22 +10,18 @@ public class QuestConfig : ScriptableObject
     public class QuestConfigData
     {
         public QuestType type;
-        public SupplierConfig.SupplierConfigData supplierData;
         public string title;
         public string description;
         public int maxProgress = 1;
+        public string supplierVisualId;
     }
 
     public enum QuestType
     {
-        Run = 0
+        None = 0,
+        Run = 1
     }
 
     public QuestConfigData Data;
     public SupplierConfig supplier;
-
-    private void OnValidate()
-    {
-        Data.supplierData = supplier.Data;
-    }
 }

@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Gosling
   m_EditorClassIdentifier: 
   Data:
-    iconSpriteId: 9ca9bf90-669c-4167-abf7-2aef6503f358
+    visualId: c644702d-f0e1-4ce7-a628-6d2b79c82b6b
     title: gosling_name
     description: gosling_description
     price: 10
     satisfaction: 3
     causticity: 3
     saturation: 8
+    unlockQuestType: 0
+    isAvailableOnStart: 1

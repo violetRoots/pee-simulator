@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Borat
   m_EditorClassIdentifier: 
   Data:
-    iconSpriteId: 6662f601-97cd-408e-a345-9717b4a802e7
+    visualId: baf7bc80-c4a4-4fa4-9df4-8686b7584142
     title: borat_name
     description: borat_description
     price: 53
     satisfaction: 2
     causticity: 3
     saturation: 5
+    unlockQuestType: 0
+    isAvailableOnStart: 1

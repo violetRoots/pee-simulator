@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using UnityEngine;
 
-public abstract class ScriptableDatabase<T> : ScriptableObject where T : UnityEngine.Object
+public abstract class ScriptableDatabase<T> : ScriptableObject
 {
     [Serializable]
     public class KeyValueDatabase

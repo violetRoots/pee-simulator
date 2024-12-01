@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Hunter
   m_EditorClassIdentifier: 
   Data:
-    iconSpriteId: 159e3c90-2406-4927-b759-41c3a9129718
+    visualId: 414f24ac-0123-4f73-9fab-24f92563f6f3
     title: hunter_name
     description: hunter_description
     price: 91
     satisfaction: 3
     causticity: 3
     saturation: 4
+    unlockQuestType: 0
+    isAvailableOnStart: 1

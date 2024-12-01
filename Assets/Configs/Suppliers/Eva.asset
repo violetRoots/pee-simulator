@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Eva
   m_EditorClassIdentifier: 
   Data:
-    iconSpriteId: 73083587-6345-4263-842e-8278983cdf46
+    visualId: f15dbc59-563d-4e00-875f-b0cce6704f30
     title: eva_name
     description: eva_description
     price: 27
     satisfaction: 8
     causticity: 2
     saturation: 1
+    unlockQuestType: 1
+    isAvailableOnStart: 0

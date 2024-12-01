@@ -10,7 +10,7 @@ public class SupplierConfig : ScriptableObject
     [Serializable]
     public class SupplierConfigData
     {
-        public string iconSpriteId;
+        public string visualId;
         public string title;
         public string description;
 
@@ -19,6 +19,9 @@ public class SupplierConfig : ScriptableObject
         public int satisfaction = 1;
         public int causticity = 1;
         public int saturation = 1;
+
+        public QuestConfig.QuestType unlockQuestType;
+        public bool isAvailableOnStart;
     }
 
     public SupplierConfigData Data;
