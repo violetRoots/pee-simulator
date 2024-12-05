@@ -11,15 +11,21 @@ public class Spawner : MonoBehaviour
     [SerializeField] private AnimationCurve zombieCurve;
     [SerializeField] private bool spawnOnStart = true;
 
-    [SerializeField] private Door[] doors;
     [SerializeField] private Transform npcContainer;
 
     [SerializeField] private GameObject[] humans;
     [SerializeField] private GameObject zombie;
 
+    private DoorsManager _doorsManager;
+
     private float _normalizedDayValue;
 
     private bool _canSpawn = true;
+
+    private void Awake()
+    {
+        _doorsManager = GameManager.Instance.DoorsManager;
+    }
 
     private void Start()
     {
@@ -48,9 +54,9 @@ public class Spawner : MonoBehaviour
     {
         while (_canSpawn)
         {
-            var openedDoors = doors.Where(door => door.State == Door.DoorState.Opened).ToArray();
+            var openedDoors = _doorsManager.Doors.Where(door => door.State == Door.DoorState.Opened).ToArray();
 
-            if(openedDoors.Length > 0)
+            if (openedDoors.Length > 0)
             {
                 var spawnPoints = openedDoors.Select(door => door.GetEntrancePoint()).ToArray();
                 var spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];

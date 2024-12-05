@@ -144,6 +144,10 @@ MonoBehaviour:
       text: "\u0417\u043E\u043B\u043E\u0442\u043E\u0439 \u0424\u043E\u043D\u0442\u0430\u043D"
     - key: ui_rails_name
       text: "\u0420\u0435\u043B\u044C\u0441\u044B \u0421\u0441\u0430\u043D\u044C\u044F"
+    - key: ui_door_controls_hint
+      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
+    - key: ui_toilet_controls_hint
+      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0413\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
     - key: quest_run_name
       text: "\u0411\u0435\u0433\u0438, \u043E\u0431\u0441\u0441\u044B\u0445\u0430,
         \u0431\u0435\u0433\u0438!"
@@ -365,6 +369,10 @@ MonoBehaviour:
       text: Golden Fountain
     - key: ui_rails_name
       text: Peeing Rails
+    - key: ui_door_controls_hint
+      text: 
+    - key: ui_toilet_controls_hint
+      text: 
     - key: quest_run_name
       text: Run, PissBoy! Run!
     - key: quest_run_description
@@ -547,6 +555,10 @@ MonoBehaviour:
       text: 
     - key: ui_rails_name
       text: 
+    - key: ui_door_controls_hint
+      text: 
+    - key: ui_toilet_controls_hint
+      text: 
     - key: quest_run_name
       text: Run, pisser! Run!
     - key: quest_run_description
@@ -721,6 +733,10 @@ MonoBehaviour:
       text: "\u91D1\u8272\u55B7\u6CC9"
     - key: ui_rails_name
       text: "\u6492\u5C3F\u94C1\u8F68"
+    - key: ui_door_controls_hint
+      text: 
+    - key: ui_toilet_controls_hint
+      text: 
     - key: quest_run_name
       text: "\u8DD1\uFF0C\u6492\u5C3F\u8005\uFF01\u5FEB\u8DD1\uFF01"
     - key: quest_run_description
@@ -891,6 +907,10 @@ MonoBehaviour:
       text: Fuente Dorada
     - key: ui_rails_name
       text: Rieles Orinando
+    - key: ui_door_controls_hint
+      text: 
+    - key: ui_toilet_controls_hint
+      text: 
     - key: quest_run_name
       text: "\xA1Corre, meador! \xA1Corre!"
     - key: quest_run_description
@@ -1066,6 +1086,10 @@ MonoBehaviour:
       text: Fonte Dourada
     - key: ui_rails_name
       text: Trilhos Urinando
+    - key: ui_door_controls_hint
+      text: 
+    - key: ui_toilet_controls_hint
+      text: 
     - key: quest_run_name
       text: Corra, mijador! Corra!
     - key: quest_run_description
@@ -1243,6 +1267,10 @@ MonoBehaviour:
       text: Goldener Brunnen
     - key: ui_rails_name
       text: Urinierende Schienen
+    - key: ui_door_controls_hint
+      text: 
+    - key: ui_toilet_controls_hint
+      text: 
     - key: quest_run_name
       text: Lauf, Pisser! Lauf!
     - key: quest_run_description
@@ -1423,6 +1451,10 @@ MonoBehaviour:
       text: "\u9EC4\u91D1\u306E\u5674\u6C34"
     - key: ui_rails_name
       text: "\u5C3F\u3092\u5782\u3089\u3059\u30EC\u30FC\u30EB"
+    - key: ui_door_controls_hint
+      text: 
+    - key: ui_toilet_controls_hint
+      text: 
     - key: quest_run_name
       text: "\u8D70\u308C\u3001\u6392\u5C3F\u8005\uFF01\u8D70\u308C\uFF01"
     - key: quest_run_description
@@ -1594,6 +1626,10 @@ MonoBehaviour:
       text: "Fontaine Dor\xE9e"
     - key: ui_rails_name
       text: Rails Urinants
+    - key: ui_door_controls_hint
+      text: 
+    - key: ui_toilet_controls_hint
+      text: 
     - key: quest_run_name
       text: Cours, pissou! Cours!
     - key: quest_run_description

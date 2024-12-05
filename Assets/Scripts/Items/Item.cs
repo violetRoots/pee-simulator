@@ -33,7 +33,7 @@ public abstract class Item : MonoBehaviour
     {
         _characterItemController = GameManager.Instance.CharacterProvider.ItemController;
 
-        lookInteraction.CustomInteration = OnItemInteract;
+        lookInteraction.onInteract = OnItemInteract;
     }
 
     private void OnTriggerEnter(Collider collider)

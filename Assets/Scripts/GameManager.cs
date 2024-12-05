@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public partial class GameManager : SingletonMonoBehaviourBase<GameManager>
@@ -39,6 +37,9 @@ public partial class GameManager : SingletonMonoBehaviourBase<GameManager>
 
     public LightManager LightManager => lightManager;
     [SerializeField] private LightManager lightManager;
+
+    public HumanFightManager HumanFightManager => humanFightManager;
+    [SerializeField] private HumanFightManager humanFightManager;
 
     private void Awake()
     {

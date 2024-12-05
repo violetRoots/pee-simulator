@@ -30,6 +30,27 @@ public class DebugManager : SingletonMonoBehaviourBase<DebugManager>
                 SavesManager.Instance.PlayerStats.Clear();
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
+
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                Time.timeScale = 1.0f;
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                Time.timeScale = 2.0f;
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                Time.timeScale = 3.0f;
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                Time.timeScale = 4.0f;
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha5))
+            {
+                Time.timeScale = 5.0f;
+            }
         }
     }
 }

@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4971764152350536}
+  - component: {fileID: 7043287675210980251}
   - component: {fileID: 33654182215582298}
   - component: {fileID: 23532551731767664}
+  - component: {fileID: 5890269057582925204}
   m_Layer: 0
   m_Name: indoor_plant
   m_TagString: Untagged
@@ -31,8 +33,26 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7043287675210980251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567884509077960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1924e89e1b760974ca6cd6ae0fbd4dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpCount: 100
+  hpPeeMultiplier: 1
+  hpTimeMultiplier: 1
+  greenColor: {r: 1, g: 1, b: 1, a: 1}
+  yellowColor: {r: 1, g: 0.9141344, b: 0, a: 1}
+  meshRenderer: {fileID: 23532551731767664}
 --- !u!33 &33654182215582298
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -84,3 +104,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5890269057582925204
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567884509077960}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.29463744, y: 1.6316372, z: 0.29495186}
+  m_Center: {x: 0.017406583, y: 0.81581324, z: 0.000000029802308}

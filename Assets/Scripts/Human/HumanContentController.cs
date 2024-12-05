@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class HumanContentController : MonoBehaviour
 {
-    public Action<GameObject> ContentSpawned;
-    [SerializeField] private GameObject[] humans;
+    public HumanType HumanType => _content.HumanType;
+    public Collider FightCollider => _content.FightCollider;
 
-    private GameObject _content;
+    public Action<HumanContent> ContentSpawned;
+    [SerializeField] private HumanContent[] humans;
+
+    private HumanContent _content;
 
     private void Start()
     {
@@ -16,5 +19,7 @@ public class HumanContentController : MonoBehaviour
         _content = Instantiate(humans[randomHuman], transform.position, transform.rotation, transform);
 
         ContentSpawned?.Invoke(_content);
+
+        _content.FightCollider.gameObject.SetActive(false);
     }
 }

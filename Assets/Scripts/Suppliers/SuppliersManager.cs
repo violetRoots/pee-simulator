@@ -59,7 +59,8 @@ public class SuppliersManager
 
     public SupplierRuntimeInfo GetRandomavailableSupplier()
     {
-        return runtimeSuppliers[UnityEngine.Random.Range(0, runtimeSuppliers.Count)];
+        var availableSuppliers = runtimeSuppliers.Where(info => info.isAvailable).ToArray();
+        return availableSuppliers[UnityEngine.Random.Range(0, availableSuppliers.Length)];
     }
 
     public void SetAvailableByQuest(QuestRuntimeInfo questInfo)

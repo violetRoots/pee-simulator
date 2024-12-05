@@ -24,4 +24,7 @@ public class HumanProvider : MonoBehaviour
 
     public HumanEmotionController EmotionController => emotionController;
     [SerializeField] private HumanEmotionController emotionController;
+
+    public HumanDetectionController DetectionController => detectionController;
+    [SerializeField] private HumanDetectionController detectionController;
 }

@@ -7,6 +7,7 @@ public class HumanAnimationController : MonoBehaviour
 {
     [SerializeField] private string walkStateName;
     [SerializeField] private string idleStateName;
+    [SerializeField] private string fightStateName;
     [SerializeField] private string sitStateName;
 
 
@@ -40,7 +41,7 @@ public class HumanAnimationController : MonoBehaviour
         _contentController.ContentSpawned -= InitAnimator;
     }
 
-    private void InitAnimator(GameObject content)
+    private void InitAnimator(HumanContent content)
     {
         _animator = content.GetComponent<Animator>();
     }
@@ -53,6 +54,11 @@ public class HumanAnimationController : MonoBehaviour
     public void PlayIdleAnimation()
     {
         PlayAnimation(idleStateName);
+    }
+
+    public void PlayFightAnimation()
+    {
+        PlayAnimation(fightStateName);
     }
 
     public void PlaySitAnimation()

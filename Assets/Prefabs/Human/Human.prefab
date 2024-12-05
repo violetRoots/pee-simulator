@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 6580173010176530599}
   - component: {fileID: 9185089189383402363}
   - component: {fileID: 7209551458180713894}
+  - component: {fileID: 2430110821743739343}
   - component: {fileID: 8505418032560154157}
   - component: {fileID: 6224630250175807679}
   - component: {fileID: -2861812845216075412}
@@ -118,6 +119,7 @@ MonoBehaviour:
   runAwayChecker: {fileID: 6580173010176530599}
   peeController: {fileID: 9185089189383402363}
   emotionController: {fileID: 7209551458180713894}
+  detectionController: {fileID: 2430110821743739343}
 --- !u!114 &6942081585292143206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,11 +132,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afe556fde35339043bede74c53a7fe16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  makesOrederTimeBounds: {x: 1.5, y: 4}
+  makesOrederTimeBounds: {x: 5, y: 8}
   sitsTimeBounds: {x: 30, y: 65}
   timeToRunAwayForeverBounds: {x: 1, y: 5}
   idleTimeBounds: {x: 2.5, y: 5}
+  fightTimeBounds: {x: 5, y: 7}
   leaveTimeBounds: {x: 240, y: 300}
+  fightPositionOffset: 1
   leaveTimerPanel: {fileID: 3429568288717416280}
 --- !u!114 &1387505944819949601
 MonoBehaviour:
@@ -164,23 +168,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   humans:
-  - {fileID: 1000010944471926, guid: db93bf5f9ce976e4ba668c14135bb8f6, type: 3}
-  - {fileID: 1000014212573276, guid: 82ea9e0996ae85c4ebc58090974ec070, type: 3}
-  - {fileID: 1000013291390644, guid: d2bf4b6d587594142b7b978571348ef7, type: 3}
-  - {fileID: 1000013641846194, guid: 4c83085828c924840a2cff2c8dfebe82, type: 3}
-  - {fileID: 1000012231665878, guid: 609daa7779af4824fba67a37114a6c9f, type: 3}
-  - {fileID: 1000013142441716, guid: 306066b596d6c4442a31ab62794ee157, type: 3}
-  - {fileID: 1000012363206886, guid: 9b3d6d64e815fdc4ca3fcb38061a532a, type: 3}
-  - {fileID: 1000013554754566, guid: e74c7464169ae2f4084e2098ac75f3d7, type: 3}
-  - {fileID: 168396, guid: 49462aae9ad21654892ec5329f3f2775, type: 3}
-  - {fileID: 181480, guid: 1b107e2855c849c48aac232312bf9fee, type: 3}
-  - {fileID: 1743306973163590, guid: 977d1f156e87ec647842854804af6bac, type: 3}
-  - {fileID: 196990, guid: 2d77f91e2990e2445951a8b987aa7128, type: 3}
-  - {fileID: 144184, guid: 4a6c1f07e3e222a4bbd13177f5fcb918, type: 3}
-  - {fileID: 1000013299257962, guid: 0229e7b9eba2fab478407640d04aad17, type: 3}
-  - {fileID: 1000014223298564, guid: 5ef8c4063e4dfb24b925981b1fe2e798, type: 3}
-  - {fileID: 1000012794479712, guid: b6e2e9135f1dbce42b58c12d33f1ef15, type: 3}
-  - {fileID: 1000012484785498, guid: ae1b050c97e65d54b8421f4a10a35bf4, type: 3}
+  - {fileID: 6820850015929712826, guid: db93bf5f9ce976e4ba668c14135bb8f6, type: 3}
+  - {fileID: 7555042738047995982, guid: 82ea9e0996ae85c4ebc58090974ec070, type: 3}
+  - {fileID: 7194340112156836308, guid: d2bf4b6d587594142b7b978571348ef7, type: 3}
+  - {fileID: 3690219319870619924, guid: 4c83085828c924840a2cff2c8dfebe82, type: 3}
+  - {fileID: 3554158525411477337, guid: 609daa7779af4824fba67a37114a6c9f, type: 3}
+  - {fileID: 7550239000289791574, guid: 306066b596d6c4442a31ab62794ee157, type: 3}
+  - {fileID: 5570502637952359924, guid: 9b3d6d64e815fdc4ca3fcb38061a532a, type: 3}
+  - {fileID: 4854028198361868846, guid: e74c7464169ae2f4084e2098ac75f3d7, type: 3}
+  - {fileID: 4537793877675970171, guid: 49462aae9ad21654892ec5329f3f2775, type: 3}
+  - {fileID: 3297595106708514144, guid: 1b107e2855c849c48aac232312bf9fee, type: 3}
+  - {fileID: 8082017626845817132, guid: 977d1f156e87ec647842854804af6bac, type: 3}
+  - {fileID: 4393872450109379078, guid: 2d77f91e2990e2445951a8b987aa7128, type: 3}
+  - {fileID: 7086872147189091829, guid: 4a6c1f07e3e222a4bbd13177f5fcb918, type: 3}
+  - {fileID: 7286486999799110188, guid: 0229e7b9eba2fab478407640d04aad17, type: 3}
+  - {fileID: 914187672268715753, guid: 5ef8c4063e4dfb24b925981b1fe2e798, type: 3}
+  - {fileID: 956954608052170975, guid: b6e2e9135f1dbce42b58c12d33f1ef15, type: 3}
+  - {fileID: 5207516966699865002, guid: ae1b050c97e65d54b8421f4a10a35bf4, type: 3}
 --- !u!114 &3473168095222709955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,6 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkStateName: walk
   idleStateName: idle1
+  fightStateName: attack
   sitStateName: sitidle
   _humanProvider: {fileID: 3665256715144687942}
 --- !u!114 &6580173010176530599
@@ -258,6 +263,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   emotionPanel: {fileID: 2881004750737017367}
   _humanProvider: {fileID: 3665256715144687942}
+--- !u!114 &2430110821743739343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3132843717587737891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5dc4eed339f01446a94fca71f7ea82d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  humanLayer: HumanCollider
+  castOriginOffset: {x: 0, y: 1, z: 0}
+  castRadius: 1
+  castTimeInterval: 0.01
 --- !u!136 &8505418032560154157
 CapsuleCollider:
   m_ObjectHideFlags: 0

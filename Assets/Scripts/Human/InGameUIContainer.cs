@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HumanUIContainer : MonoBehaviour
+public class InGameUIContainer : MonoBehaviour
 {
     private GameManager _gameManager;
 

@@ -12,7 +12,7 @@ public class TrashBox : MonoBehaviour
     {
         _characterItemController = GameManager.Instance.CharacterProvider.ItemController;
 
-        lookInteractionController.CustomInteration = OnInteract;
+        lookInteractionController.onInteract = OnInteract;
     }
 
     private void OnInteract()

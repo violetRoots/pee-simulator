@@ -57,6 +57,11 @@ namespace Common.Localisation
             if (string.IsNullOrEmpty(lang))
                 return;
 
+            UpdateText();
+        }
+
+        private void UpdateText()
+        {
             var newText = values.Length == 0 ? key.Translate() : string.Format(key.Translate(), values.Select(x => x.ToString()).ToArray());
 
             //var needsRebuild = newText.Length != textfield.text.Length;
@@ -73,8 +78,7 @@ namespace Common.Localisation
             key = value;
             this.values = values;
 
-            if (_languageChangeSubscription != null)
-                OnLanguageChange(LocalisationManager.Instance.currentLanguage.Value);
+            UpdateText();
         }
     }
 }

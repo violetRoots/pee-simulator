@@ -291,7 +291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_RootOrder
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -325,6 +325,10 @@ PrefabInstance:
       propertyPath: field of view
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 114620730111555832, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
+      propertyPath: colliderThickness
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 114824084839813896, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: lowerVerticalLimit
       value: 85
@@ -332,6 +336,10 @@ PrefabInstance:
     - target: {fileID: 136958806423733192, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_Height
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 136958806423733192, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
+      propertyPath: m_Radius
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 136958806423733192, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_Center.y
@@ -454,8 +462,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalSpeed: 7
+  runSpeed: 10
   injuredSpeed: 1.5
   walker: {fileID: 5471249255055231060}
+  _characterProvider: {fileID: 5528933123390752341}
 --- !u!114 &4219458088026235739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,6 +559,7 @@ MonoBehaviour:
   castRadius: 0.01
   castDistance: 2.5
   raycastOrigin: {fileID: 6379053241486624288}
+  peeLayer: Pee
 --- !u!114 &7944526435237428083
 MonoBehaviour:
   m_ObjectHideFlags: 0

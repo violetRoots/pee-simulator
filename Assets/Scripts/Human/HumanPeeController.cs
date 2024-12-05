@@ -89,7 +89,7 @@ public class HumanPeeController : MonoBehaviour
         _contentController.ContentSpawned -= InitMeshRenderers;
     }
 
-    private void InitMeshRenderers(GameObject content)
+    private void InitMeshRenderers(HumanContent content)
     {
         _renderers = content.GetComponentsInChildren<Renderer>();
         

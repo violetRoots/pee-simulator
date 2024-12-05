@@ -16,8 +16,8 @@ public class Toilet : MonoBehaviour
         _dayManager = DayManager.Instance;
         _uiManager = UiGameplayManager.Instance;
 
-        lookInteractionController.CustomInteration = OnInteract;
-        lookInteractionController.TalkInteration = OnTalk;
+        lookInteractionController.onInteract = OnInteract;
+        lookInteractionController.onTalk = OnTalk;
     }
 
     private void OnInteract()

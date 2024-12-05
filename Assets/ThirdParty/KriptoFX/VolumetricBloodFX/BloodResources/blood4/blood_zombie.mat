@@ -7,16 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: decal
-  m_Shader: {fileID: 4800000, guid: bd420104d99485e45b901bffcc31e6dd, type: 3}
+  m_Name: blood_zombie
+  m_Shader: {fileID: 4800000, guid: 178af239732bb6042a96790731226ce2, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - USE_CUTOUT
-  - USE_CUTOUT_TEX
-  - USE_WORLD_SPACE_UV
-  - _BLENDMODE_BLEND
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -31,8 +27,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _CutoutTex:
-        m_Texture: {fileID: 2800000, guid: d5f62793e2632d64a9e826acc30827f1, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -51,27 +51,11 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Flowmap:
-        m_Texture: {fileID: 2800000, guid: 728424fb0402108489c779a64938802f, type: 3}
-        m_Scale: {x: 20, y: 10}
-        m_Offset: {x: 0, y: 0}
-    - _LookupFade:
-        m_Texture: {fileID: 2800000, guid: 9129d5611471ff949b0a50c65aeb5bd3, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: fa90bb370a731d544b1bee7cb2f78cc6, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: b33bbd68d9803d04f942fdd5d8e7cc36, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NoiseTex:
+    - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -83,45 +67,51 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _colorTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _nTex:
+        m_Texture: {fileID: 2800000, guid: 91cdd74135b7a1349b55e45bf81285eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _posTex:
+        m_Texture: {fileID: 2800000, guid: 84dc73e2ef77a9e478c292de9b48cbdc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaPow: 1
-    - _AlphaSwap: 0
-    - _BlendMode: 1
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _Cutout: 0
-    - _CutoutAlphaMul: 20
-    - _DepthMul: 3
     - _DetailNormalMapScale: 1
-    - _DistortScale: 0.1
-    - _DistortSpeed: 1
     - _DstBlend: 0
-    - _DstMode: 10
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0.677
     - _GlossyReflections: 1
+    - _HeightLimit: 3.55
+    - _HeightLimitMax: -18.5
+    - _HeightLimitMin: 0.1
+    - _HeightOffset: -0.19
     - _Metallic: 0
     - _Mode: 0
+    - _NoiseStr: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _ReflectionStr: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SrcMode: 5
     - _UVSec: 0
-    - _UseAlphaPow: 0
-    - _UseCutout: 1
-    - _UseCutoutTex: 1
-    - _UseFrameBlending: 0
-    - _UseNoiseDistortion: 0
-    - _UseSimpleDistortion: 0
-    - _UseWorldSpaceUV: 1
-    - _ZTest1: 5
+    - _UseHDRFix: 0
     - _ZWrite: 1
+    - _boundingMax: 144
+    - _boundingMin: -116
+    - _numOfFrames: 95
+    - _pack_normal: 0
+    - _speed: 35
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.18039216, g: 0.8784314, b: 0.26666668, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SunPos: {r: -0.58, g: 1.12, b: 0.16, a: 0}
-    - _TintColor: {r: 0, g: 0.4433962, b: 0.049739763, a: 1}
+    - _HeightOffset: {r: -48.6, g: -58.9, b: -6.4, a: 1}
+    - _SunPos: {r: 0.56, g: 1.07, b: -0.09, a: 0.42}
   m_BuildTextureStacks: []

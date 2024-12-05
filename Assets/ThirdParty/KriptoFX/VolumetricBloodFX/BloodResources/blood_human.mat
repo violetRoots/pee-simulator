@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: blood
+  m_Name: blood_human
   m_Shader: {fileID: 4800000, guid: 178af239732bb6042a96790731226ce2, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -110,7 +110,7 @@ Material:
     - _pack_normal: 0
     - _speed: 35
     m_Colors:
-    - _Color: {r: 0.18039216, g: 0.8784314, b: 0.26666668, a: 1}
+    - _Color: {r: 1, g: 0.10627015, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HeightOffset: {r: -48.6, g: -58.9, b: -6.4, a: 1}
     - _SunPos: {r: 0.56, g: 1.07, b: -0.09, a: 0.42}

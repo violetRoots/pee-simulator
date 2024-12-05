@@ -7,17 +7,31 @@ using UnityEngine;
 [Serializable]
 public class DoorsManager
 {
-    private Door[] _doors;
+    public Door[] Doors => _doors;
+
+    [SerializeField] private Door[] _doors;
 
     public void Init()
     {
-        _doors = GameObject.FindObjectsOfType<Door>();
+        //_doors = GameObject.FindObjectsOfType<Door>();
     }
 
     public Door GetRandomDoor()
     {
         return _doors[UnityEngine.Random.Range(0, _doors.Length)];
     }
+    public Door GetRandomOpenedDoor()
+    {
+        var openDoors = _doors.Where(door => door.State == Door.DoorState.Opened).ToArray();
+
+        if(openDoors.Length == 0)
+        {
+            return _doors.FirstOrDefault();
+        }
+
+        return openDoors[UnityEngine.Random.Range(0, openDoors.Length)];
+    }
+
 
     public void SetDoorsInteractable(bool isInteractable)
     {

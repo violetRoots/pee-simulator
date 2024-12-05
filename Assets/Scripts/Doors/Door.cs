@@ -18,13 +18,15 @@ public class Door : MonoBehaviour
     [SerializeField] private Transform entrancePoint;
 
     [SerializeField] private BasicLookInteractionController interactionHandler;
+    [SerializeField] private DayStateMarker openDoorMarker;
+    [SerializeField] private DayStateMarker closeDoorMarker;
 
     private DoorState _state = DoorState.Closed;
 
 
     private void Awake()
     {
-        interactionHandler.CustomInteration = OnInteract;
+        interactionHandler.onInteract = OnInteract;
     }
 
     private void OnInteract()
@@ -39,6 +41,8 @@ public class Door : MonoBehaviour
         }
 
         interactionHandler.SetInteractable(false);
+        openDoorMarker.SetIsActive(false);
+        closeDoorMarker.SetIsActive(false);
     }
 
     private void Open()

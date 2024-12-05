@@ -6,8 +6,10 @@ using UnityFx.Outline;
 
 public class BasicLookInteractionController : MonoBehaviour
 {
-    public Action CustomInteration;
-    public Action TalkInteration;
+    public Action onSelect;
+    public Action onDeselect;
+    public Action onInteract;
+    public Action onTalk;
 
     [SerializeField] private OutlineBehaviour outline;
 
@@ -28,11 +30,15 @@ public class BasicLookInteractionController : MonoBehaviour
     public void Select()
     {
         outline.enabled = true;
+
+        onSelect?.Invoke();
     }
 
     public void Deselect()
     {
         outline.enabled = false;
+
+        onDeselect?.Invoke();
     }
 
     public void SetInteractable(bool canInteract)
@@ -44,13 +50,13 @@ public class BasicLookInteractionController : MonoBehaviour
     {
         if (!_canInteract) return;
 
-        CustomInteration?.Invoke();
+        onInteract?.Invoke();
     }
 
     public void OnTalk()
     {
         if (!_canInteract) return;
 
-        TalkInteration?.Invoke();
+        onTalk?.Invoke();
     }
 }

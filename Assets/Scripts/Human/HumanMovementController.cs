@@ -93,9 +93,19 @@ public class HumanMovementController : MonoBehaviour
 
     public void HardMoveToPoint(Transform point)
     {
-        NavMeshUtility.GetNavMeshPoint(point.position, out Vector3 navMeshPoint);
+        SetPosition(point.position);
+        SetRotation(point.rotation);
+    }
+
+    public void SetPosition(Vector3 pos)
+    {
+        NavMeshUtility.GetNavMeshPoint(pos, out Vector3 navMeshPoint);
 
         _transform.position = navMeshPoint;
-        _transform.rotation = point.rotation;
+    }
+
+    public void SetRotation(Quaternion rotation)
+    {
+        _transform.rotation = rotation;
     }
 }

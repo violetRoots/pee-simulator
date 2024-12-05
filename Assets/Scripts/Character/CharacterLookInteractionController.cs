@@ -10,16 +10,22 @@ public class CharacterLookInteractionController : MonoBehaviour
 
     [SerializeField] private Transform raycastOrigin;
 
+    [Layer]
+    [SerializeField] private string peeLayer;
+
     private GameManager _gameManager;
     private InputManager _inputManager;
 
     private BasicLookInteractionController _selectedLookInteraction;
 
+    private LayerMask _layerMask;
 
     private void Awake()
     {
         _gameManager = GameManager.Instance;
         _inputManager = InputManager.Instance;
+
+        _layerMask = ~LayerMask.GetMask(peeLayer);
     }
 
     private void OnEnable()
@@ -36,7 +42,7 @@ public class CharacterLookInteractionController : MonoBehaviour
 
     private void Update()
     {
-        if (Physics.SphereCast(raycastOrigin.position, castRadius, raycastOrigin.forward, out RaycastHit hitInfo, castDistance))
+        if (Physics.SphereCast(raycastOrigin.position, castRadius, raycastOrigin.forward, out RaycastHit hitInfo, castDistance, _layerMask))
         {
             if (hitInfo.collider.TryGetComponent(out BasicLookInteractionController lookInteraction))
             {

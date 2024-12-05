@@ -16,6 +16,8 @@ public class HumanStateController : MonoBehaviour
         RunsAway = 5,
         RunsAwayForever = 6,
         Idle = 7,
+        WantsToFight = 8,
+        Fight = 9
     }
 
     [MinMaxSlider(0, 25)]
@@ -26,18 +28,26 @@ public class HumanStateController : MonoBehaviour
     [SerializeField] private Vector2 timeToRunAwayForeverBounds;
     [MinMaxSlider(0, 25)]
     [SerializeField] private Vector2 idleTimeBounds;
+    [MinMaxSlider(0, 25)]
+    [SerializeField] private Vector2 fightTimeBounds;
     [MinMaxSlider(0, 60 * 5)]
     [SerializeField] private Vector2 leaveTimeBounds;
+
+    [SerializeField] private float fightPositionOffset = 1.0f;
 
     [SerializeField] private HumanLeaveTimerPanel leaveTimerPanel;
 
     private GameManager _gameManager;
     private SitPlaceManager _sitPlaceManager;
+    private HumanFightManager _humanFightManager;
+
     private HumanProvider _humanProvider;
     private HumanMovementController _humanMovementController;
     private HumanAnimationController _humanAnimationController;
     private HumanRunAwayChecker _humanRunAwayChecker;
     private HumanPeeController _humanPeeController;
+    private HumanContentController _humanContentController;
+    private HumanDetectionController _humanDetectionController;
 
     public readonly ReactiveProperty<HumanState> state = new ReactiveProperty<HumanState>(HumanState.WantsToOrder);
 
@@ -56,12 +66,15 @@ public class HumanStateController : MonoBehaviour
     {
         _gameManager = GameManager.Instance;
         _sitPlaceManager = _gameManager.SitPlaceManager;
+        _humanFightManager = _gameManager.HumanFightManager;
 
         _humanProvider = GetComponent<HumanProvider>();
         _humanMovementController = _humanProvider.MovementController;
         _humanAnimationController = _humanProvider.AnimationController;
         _humanRunAwayChecker = _humanProvider.RunAwayChecker;
         _humanPeeController = _humanProvider.PeeController;
+        _humanContentController = _humanProvider.ContentController;
+        _humanDetectionController = _humanProvider.DetectionController;
 
         _initTime = Time.time;
         _timeToRunAwayForever = UnityEngine.Random.Range(timeToRunAwayForeverBounds.x, timeToRunAwayForeverBounds.y);
@@ -85,9 +98,36 @@ public class HumanStateController : MonoBehaviour
 
         if (state.Value == HumanState.RunsAwayForever) return;
 
+        UpdateHumanDetectionLogic();
         UpdateLeaveTimerLogic();
         UpdatePeeLogic();
         UpdateZombieLogic();
+    }
+
+    public void SaveState()
+    {
+        _savedState = state.Value;
+    }
+
+    private void UpdateHumanDetectionLogic()
+    {
+        if (state.Value == HumanState.RunsAway) return;
+
+        if (_humanDetectionController.IsTargetHumanDetected())
+        {
+            var targetHuman = _humanDetectionController.GetTargetHuman();
+            var targetHumanStateController = targetHuman.StateController;
+
+            if (targetHumanStateController.state.Value == HumanState.WantsToFight ||
+                targetHumanStateController.state.Value == HumanState.Fight) return;
+
+            if(state.Value != HumanState.Fight && _humanFightManager.IsTypeStartsFight(_humanContentController.HumanType, targetHuman.ContentController.HumanType))
+            {
+                state.Value = HumanState.WantsToFight;
+
+                targetHumanStateController.state.Value = HumanState.Fight;
+            }
+        }
     }
 
     private void UpdateZombieLogic()
@@ -184,7 +224,7 @@ public class HumanStateController : MonoBehaviour
         }
         else if (newState == HumanState.WantsToLeave)
         {
-            var exitPoint = _gameManager.DoorsManager.GetRandomDoor().GetEntrancePoint();
+            var exitPoint = _gameManager.DoorsManager.GetRandomOpenedDoor().GetEntrancePoint();
             _humanMovementController.SetDestination(exitPoint.position, () => Destroy(gameObject));
             _humanAnimationController.PlayWalkAnimation();
         }
@@ -194,7 +234,7 @@ public class HumanStateController : MonoBehaviour
         }
         else if (newState == HumanState.RunsAwayForever)
         {
-            var exitPoint = _gameManager.DoorsManager.GetRandomDoor().GetEntrancePoint();
+            var exitPoint = _gameManager.DoorsManager.GetRandomOpenedDoor().GetEntrancePoint();
             _humanMovementController.SetDestination(exitPoint.position, () => Destroy(gameObject));
             _humanAnimationController.PlayWalkAnimation();
         }
@@ -202,6 +242,31 @@ public class HumanStateController : MonoBehaviour
         {
             DelayedAction(UnityEngine.Random.Range(idleTimeBounds.x, idleTimeBounds.y), () => state.Value = _savedState);
             _humanAnimationController.PlayIdleAnimation();
+        }
+        else if (newState == HumanState.WantsToFight)
+        {
+            var humanPos = _humanDetectionController.GetTargetHuman().transform.position;
+            var fightDir = humanPos - transform.position;
+            var fightPos = humanPos - fightDir.normalized * fightPositionOffset;
+
+            _humanMovementController.SetPosition(fightPos);
+            _humanMovementController.SetRotation(Quaternion.LookRotation(fightDir));
+
+            state.Value = HumanState.Fight;
+
+            //_humanMovementController.SetDestination(fightPos, () =>
+            //{
+            //    state.Value = HumanState.Fight;
+            //});
+        }
+        else if (newState == HumanState.Fight)
+        {
+            _humanMovementController.Stop();
+
+            _humanContentController.FightCollider.gameObject.SetActive(true);
+
+            DelayedAction(UnityEngine.Random.Range(fightTimeBounds.x, fightTimeBounds.y), () => state.Value = HumanState.RunsAwayForever);
+            _humanAnimationController.PlayFightAnimation();
         }
     }
 
