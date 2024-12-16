@@ -11,7 +11,7 @@ public class PeeAutomate : MonoBehaviour
     [SerializeField] private Material redPlaceMaterial;
 
     [SerializeField] private Collider placeMarker;
-    [SerializeField] private BaseAutomatePart[] automateParts;
+    [SerializeField] private BasePeePart[] automateParts;
 
     [SerializeField] private PeeAutomateTimerPanel automateTimerPanel;
 
@@ -60,7 +60,7 @@ public class PeeAutomate : MonoBehaviour
     {
         if (!_isActivated) return;
 
-        SetCanPee(_sector.BoilerSystem.HasBottles());
+        SetCanPee(!_config.needBoiler || _sector.BoilerSystem.HasBottles());
 
         UpdateTimerLogic();
 

@@ -126,12 +126,13 @@ public class HumanPeeController : MonoBehaviour
     {
         if (!collider.TryGetComponent(out PeeBox peeBox)) return;
 
-        _peeCount = Mathf.Clamp(_peeCount + 1, 0, _maxPeeCount);
+        var typeMultiplier = peeBox.GetTypeMultiplier();
+        _peeCount = Mathf.Clamp(_peeCount + (int) (1 * typeMultiplier), 0, _maxPeeCount);
         _lastPeeTime = Time.time;
         var preferMult = peeBox.GetSupplier() == _preferSupplier ? 1.0f : preferSupplierPeeMultiplier;
         var stateMult = state.Value.moneyMultiplier;
 
-        AddMoney(preferMult * stateMult);
+        AddMoney(preferMult * stateMult * typeMultiplier);
     }
 
     private void UpdatePeeState()

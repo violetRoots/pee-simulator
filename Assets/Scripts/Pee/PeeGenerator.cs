@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PeeGenerator : BaseAutomatePart
+public class PeeGenerator : BasePeePart
 {
     [SerializeField] private float peeStrength = 1.0f;
     [SerializeField] private float spawnPeeInterval = 0.1f;

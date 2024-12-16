@@ -12,6 +12,15 @@ public class PeeBox : MonoBehaviour
         public float radius = 1.0f;
     }
 
+    public enum PeeType
+    {
+        Box = 0,
+        Bubble = 1,
+        Ray = 2
+    }
+
+    public PeeType Type => type;
+    [SerializeField] private PeeType type;
     [SerializeField] private ExplosionIfno explosionInfo;
     [SerializeField] private int scoreAddiction = 10;
 
@@ -34,6 +43,8 @@ public class PeeBox : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (type == PeeType.Ray) return;
+
         Destroy(gameObject);
 
         var contact = collision.contacts[0];
@@ -50,5 +61,21 @@ public class PeeBox : MonoBehaviour
     public ExplosionIfno GetExplosionIfno()
     {
         return explosionInfo;
+    }
+
+    public void SetDestroyTimer(float delay)
+    {
+        Destroy(gameObject, delay);
+    }
+
+    public float GetTypeMultiplier()
+    {
+        if (type == PeeType.Box)
+            return 1.0f;
+        else if (type == PeeType.Bubble)
+            return 2.0f;
+        else if (type == PeeType.Ray)
+            return 250.0f;
+        else return 1.0f;
     }
 }

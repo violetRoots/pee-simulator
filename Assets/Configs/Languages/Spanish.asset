@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Spanish
   m_EditorClassIdentifier: 
   languageName: spanish
+  font: {fileID: 11400000, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}

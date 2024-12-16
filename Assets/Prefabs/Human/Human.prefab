@@ -241,6 +241,7 @@ MonoBehaviour:
     moneyMultiplier: 2
     emotion: 1
   preferSupplierPeeMultiplier: 1.5
+  peeBubblePeeMultiplier: 2
   maxPeeCountBounds: {x: 1, y: 2}
   maxPeeMultiplier: 500
   changeMaterialCooldown: 1

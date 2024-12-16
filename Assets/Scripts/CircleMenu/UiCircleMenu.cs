@@ -11,7 +11,8 @@ public class UiCircleMenu : MonoBehaviour
     [Serializable]
     public class CircleSegmentInfo
     {
-        public UiCircleSegment segment;
+        public CircleItemConfig config;
+        public Image selectImage;
         public float targetAngle;
     }
 
@@ -22,18 +23,24 @@ public class UiCircleMenu : MonoBehaviour
 
     private GameManager _gameManager;
     private PlayerStats _playerStats;
+
+    private CharacterProvider _characterProvider;
     private CharacterInteractionController _characterInteractionController;
     private CharacterBuildController _characterBuildController;
+    private CharacterWeaponController _characterWeaponController;
 
-    UiCircleSegment _targetSegment;
+    CircleSegmentInfo _targetSegmentInfo;
     private Vector2 _centerPos;
 
     private void Awake()
     {
         _gameManager = GameManager.Instance;
         _playerStats = SavesManager.Instance.PlayerStats.Value;
-        _characterBuildController = GameManager.Instance.CharacterProvider.BuildController;
-        _characterInteractionController = GameManager.Instance.CharacterProvider.InteractionController;
+
+        _characterProvider = GameManager.Instance.CharacterProvider;
+        _characterBuildController = _characterProvider.BuildController;
+        _characterInteractionController = _characterProvider.InteractionController;
+        _characterWeaponController = _characterProvider.WeaponController;
 
         _centerPos = new Vector2(Screen.width / 2, Screen.height / 2);
     }
@@ -61,9 +68,7 @@ public class UiCircleMenu : MonoBehaviour
         {
             CircleSegmentInfo segmentInfo = segmentInfos[i];
 
-            if (!segmentInfo.segment.CanSelect()) continue;
-
-            segmentInfo.segment.Deselect();
+            segmentInfo.selectImage.gameObject.SetActive(false);
 
             var offset = -60.0f;
             var diff = Mathf.Abs(angle - segmentInfo.targetAngle + offset);
@@ -72,22 +77,29 @@ public class UiCircleMenu : MonoBehaviour
             {
                 minAngleDiff = diff;
 
-                _targetSegment = segmentInfo.segment;
+                _targetSegmentInfo = segmentInfo;
             }
         }
 
-        _targetSegment.Select();
+        _targetSegmentInfo.selectImage.gameObject.SetActive(true);
 
-        title.SetKey(_targetSegment.ItemConfig.title);
-        price.text = $"{_targetSegment.ItemConfig.price}";
-        price.color = _playerStats.money < _targetSegment.ItemConfig.price ? Color.red : Color.green;
+        title.SetKey(_targetSegmentInfo.config.title);
+        price.text = $"{_targetSegmentInfo.config.price}";
+        price.color = _playerStats.money < _targetSegmentInfo.config.price ? Color.red : Color.green;
     }
 
-    public void ApplySelectedAutomate()
+    public void ApplySelectedCircleItem()
     {
-        if (_targetSegment == null) return;
+        if (_targetSegmentInfo == null) return;
 
-        _characterBuildController.SetItem(_targetSegment.ItemConfig);
-        _characterInteractionController.SetInteractionMode(CharacterInteractionController.CharacterInteractionMode.Build);
+        if(_targetSegmentInfo.config.type == CircleItemConfig.CircleType.Automate)
+        {
+            _characterBuildController.SetItem(_targetSegmentInfo.config);
+            _characterInteractionController.SetInteractionMode(CharacterInteractionController.CharacterInteractionMode.Build);
+        }
+        else if (_targetSegmentInfo.config.type == CircleItemConfig.CircleType.Weapon)
+        {
+            _characterWeaponController.EnableWeapon(_targetSegmentInfo.config);
+        }
     }
 }

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Chinese
   m_EditorClassIdentifier: 
   languageName: chinese
+  font: {fileID: 11400000, guid: bc0b1d5be57588243b1c0aa401b6789b, type: 2}

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterPeeGenerator : BaseAutomatePart
+public class CharacterPeeGenerator : BasePeePart
 {
     [SerializeField] private float boilerTickValue = 0.0001f;
     [SerializeField] private float peeStrength = 1.0f;
@@ -14,7 +14,7 @@ public class CharacterPeeGenerator : BaseAutomatePart
 
     private float _lastSpawnPeeTime;
 
-    private void Update()
+    private void LateUpdate()
     {
         if (!IsActive) return;
 
@@ -28,6 +28,8 @@ public class CharacterPeeGenerator : BaseAutomatePart
     {
         foreach (var peeOrigin in peeOrigins)
         {
+            if (!peeOrigin.gameObject.activeInHierarchy) continue;
+
             PeeBox peeBox = Instantiate(peeBoxPrefab, peeOrigin.position, Quaternion.LookRotation(transform.forward));
             peeBox.PeeForward(peeOrigin.forward, peeStrength);
         }

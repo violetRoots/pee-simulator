@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SimpleLoopMove : BaseAutomatePart
+public class SimpleLoopMove : BasePeePart
 {
     [SerializeField] private float speed = 1.0f;
 

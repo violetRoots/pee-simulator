@@ -26,6 +26,9 @@ public class CharacterProvider : MonoBehaviour
     public CharacterItemController ItemController => itemController;
     [SerializeField] private CharacterItemController itemController;
 
+    public CharacterWeaponController WeaponController => weaponController;
+    [SerializeField] CharacterWeaponController weaponController;
+
 #if UNITY_EDITOR
     private void OnValidate()
     {

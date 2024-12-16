@@ -13,10 +13,11 @@ public class Spawner : MonoBehaviour
 
     [SerializeField] private Transform npcContainer;
 
-    [SerializeField] private GameObject[] humans;
-    [SerializeField] private GameObject zombie;
+    [SerializeField] private HumanProvider human;
+    [SerializeField] private ZombieProvider zombie;
 
     private DoorsManager _doorsManager;
+    private KassaManager _kassaManager;
 
     private float _normalizedDayValue;
 
@@ -25,6 +26,7 @@ public class Spawner : MonoBehaviour
     private void Awake()
     {
         _doorsManager = GameManager.Instance.DoorsManager;
+        _kassaManager = GameManager.Instance.KassaManager;
     }
 
     private void Start()
@@ -58,14 +60,23 @@ public class Spawner : MonoBehaviour
 
             if (openedDoors.Length > 0)
             {
-                var spawnPoints = openedDoors.Select(door => door.GetEntrancePoint()).ToArray();
-                var spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+                var door = openedDoors[Random.Range(0, openedDoors.Length)];
+                var kassa = _kassaManager.GetKassaByDoor(door);
+                var spawnPoint = door.GetEntrancePoint();
 
                 var zombieChance = zombieCurve.Evaluate(_normalizedDayValue);
-                var spawnObj = Random.value <= zombieChance ? zombie : humans[Random.Range(0, humans.Length)];
+                if(Random.value <= zombieChance)
+                {
+                    NavMeshUtility.GetNavMeshPoint(spawnPoint.position, out Vector3 zombieSpawnPos);
+                    Instantiate(zombie, zombieSpawnPos, spawnPoint.rotation, npcContainer);
+                }
+                else
+                {
+                    NavMeshUtility.GetNavMeshPoint(spawnPoint.position, out Vector3 HumanSpawnPos);
+                    HumanProvider newHuman = Instantiate(human, HumanSpawnPos, spawnPoint.rotation, npcContainer);
 
-                NavMeshUtility.GetNavMeshPoint(spawnPoint.position, out Vector3 spawnPosition);
-                Instantiate(spawnObj, spawnPosition, spawnPoint.rotation, npcContainer);
+                    newHuman.StateController.SetBehaviourData(door, kassa);
+                }
             }
 
             var randTime = Random.Range(spawnTimeBounds.x, spawnTimeBounds.y);

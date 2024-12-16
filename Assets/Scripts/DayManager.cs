@@ -14,7 +14,27 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
         NeedEndDay = 3
     }
 
+    [Range(0f, 1f)]
+    [SerializeField] private float dayProgressValue = 0.0f;
     [SerializeField] private float allDayDuration = 60 * 10;
+
+    [Header("SkyBox")]
+    [Range(0f, 1f)]
+    [SerializeField] private float skyboxChangeValue;
+    [SerializeField] AnimationCurve skyboxExposureCurve;
+    [SerializeField] private AnimationCurve skyboxIntensityCurve;
+    [SerializeField] private Gradient skyboxTintColorGradient;
+    [Space]
+    [SerializeField] private Material daySkybox;
+    [SerializeField] private Material nightSkybox;
+
+    [Header("Light")]
+    [SerializeField] private AnimationCurve lightIntensityCurve;
+    [SerializeField] private Gradient lightColorGradient;
+    [Space]
+    [SerializeField] private Light sunLight;
+    [SerializeField] private GameObject dayReflectionProbesContainer;
+    [SerializeField] private GameObject nightReflectionProbesContainer;
 
     [Space]
     [SerializeField] private Spawner spawner;
@@ -25,9 +45,15 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
     private SavesManager _dataManager;
     private DoorsManager _doorsManager;
 
-    private float _currentDayTime;
-
     private IDisposable _stateSubscrition;
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        UpdateSkybox();
+        UpdateLight();
+    }
+#endif
 
     private void Awake()
     {
@@ -37,30 +63,9 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
 
     private void Update()
     {
-        if(state.Value == DayState.NeedOpenDoors)
-        {
-            if (_doorsManager.IsAnyDoorHasState(Door.DoorState.Opened))
-            {
-                state.Value = DayState.SpawnProcess;
-            }
-        }
-        else if(state.Value == DayState.SpawnProcess)
-        {
-            _currentDayTime = Mathf.Clamp(_currentDayTime + Time.deltaTime, 0.0f, allDayDuration);
-            spawner.SetDayValue(_currentDayTime / allDayDuration);
-
-            if(_currentDayTime >= allDayDuration)
-            {
-                state.Value = DayState.NeedCloseDoors;
-            }
-        }
-        else if(state.Value == DayState.NeedCloseDoors)
-        {
-            if (_doorsManager.IsAllDoorHasState(Door.DoorState.Closed))
-            {
-                state.Value = DayState.NeedEndDay;
-            }
-        }
+        UpdateState();
+        UpdateSkybox();
+        UpdateLight();
     }
 
     private void OnEnable()
@@ -80,8 +85,8 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
 
         if(newState == DayState.NeedOpenDoors)
         {
-            _currentDayTime = 0;
-            _doorsManager.SetDoorsInteractable(true);
+            dayProgressValue = 0;
+            _doorsManager.SetDoorsInteractable(true, Door.DoorState.Opened);
 
             onPastDay?.Invoke();
 
@@ -93,7 +98,7 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
         }
         else if(newState == DayState.NeedCloseDoors)
         {
-            _doorsManager.SetDoorsInteractable(true);
+            _doorsManager.SetDoorsInteractable(true, Door.DoorState.Closed);
         }
         else if (newState == DayState.NeedEndDay)
         {
@@ -105,5 +110,52 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
     {
         state.Value = DayState.NeedEndDay;
         state.Value = DayState.NeedOpenDoors;
+    }
+
+    private void UpdateState()
+    {
+        if (state.Value == DayState.NeedOpenDoors)
+        {
+            if (_doorsManager.IsAnyDoorHasState(Door.DoorState.Opened))
+            {
+                state.Value = DayState.SpawnProcess;
+            }
+        }
+        else if (state.Value == DayState.SpawnProcess)
+        {
+            dayProgressValue = Mathf.Clamp01((dayProgressValue * allDayDuration + Time.deltaTime) / allDayDuration);
+            spawner.SetDayValue(dayProgressValue);
+
+            if (dayProgressValue >= 1.0f)
+            {
+                state.Value = DayState.NeedCloseDoors;
+            }
+        }
+        else if (state.Value == DayState.NeedCloseDoors)
+        {
+            if (_doorsManager.IsAllDoorHasState(Door.DoorState.Closed))
+            {
+                state.Value = DayState.NeedEndDay;
+            }
+        }
+    }
+
+    private void UpdateSkybox()
+    {
+        RenderSettings.skybox = dayProgressValue <= skyboxChangeValue ? daySkybox : nightSkybox;
+        RenderSettings.skybox.SetColor("_TintColor", skyboxTintColorGradient.Evaluate(dayProgressValue));
+        RenderSettings.skybox.SetFloat("_Exposure", skyboxExposureCurve.Evaluate(dayProgressValue));
+        //RenderSettings.ambientIntensity = skyboxIntensityCurve.Evaluate(dayProgressValue);
+        DynamicGI.UpdateEnvironment();
+    }
+
+    private void UpdateLight()
+    {
+        sunLight.intensity = lightIntensityCurve.Evaluate(dayProgressValue);
+        sunLight.color = lightColorGradient.Evaluate(dayProgressValue);
+        sunLight.transform.localRotation = Quaternion.Euler(Mathf.Lerp(0.0f, 180.0f, dayProgressValue), 90.0f, 0.0f);
+
+        //dayReflectionProbesContainer.SetActive(dayProgressValue <= skyboxChangeValue);
+        //nightReflectionProbesContainer.SetActive(dayProgressValue > skyboxChangeValue);
     }
 }

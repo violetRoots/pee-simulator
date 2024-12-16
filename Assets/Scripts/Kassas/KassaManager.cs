@@ -1,6 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [Serializable]
@@ -8,9 +7,9 @@ public class KassaManager
 {
     [SerializeField] private Kassa[] kassas;
 
-    public Kassa GetRandomKassa()
+    public Kassa GetKassaByDoor(Door door)
     {
-        var index = UnityEngine.Random.Range(0, kassas.Length); 
-        return kassas[index];
+        var kassasAttachedToDoor = kassas.Where(kassa => kassa.IsAttachedToDoor(door)).ToArray();
+        return kassasAttachedToDoor[UnityEngine.Random.Range(0, kassasAttachedToDoor.Length)];
     }
 }

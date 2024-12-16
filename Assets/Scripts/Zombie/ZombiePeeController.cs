@@ -52,14 +52,15 @@ public class ZombiePeeController : MonoBehaviour
 
         _lastPeeTime = Time.time;
 
-        _HP -= peeBoxDamage;
+        _HP -= (int) (peeBoxDamage * peeBox.GetTypeMultiplier());
 
         if (_HP < 0)
         {
             _explosionController.Exlode(collider.ClosestPoint(peeBox.transform.position));
         }
 
-        Destroy(peeBox.gameObject);
+        if(peeBox.Type != PeeBox.PeeType.Ray)
+            Destroy(peeBox.gameObject);
     }
 
     private void UpdatePeeEffect()

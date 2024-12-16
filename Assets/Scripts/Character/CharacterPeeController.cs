@@ -6,17 +6,21 @@ using UnityEngine;
 
 public class CharacterPeeController : MonoBehaviour
 {
-    [SerializeField] private CharacterPeeGenerator peeGenerator;
-
     private InputManager _inputManager;
+
+    private CharacterProvider _characterProvider;
     private CharacterInteractionController _characterInteractionController;
+    private CharacterWeaponController _characterWeaponController;
 
     private IDisposable _characterInteractionSubscription;
 
     private void Awake()
     {
         _inputManager = InputManager.Instance;
-        _characterInteractionController = GameManager.Instance.CharacterProvider.InteractionController;
+
+        _characterProvider = GameManager.Instance.CharacterProvider;
+        _characterInteractionController = _characterProvider.InteractionController;
+        _characterWeaponController = _characterProvider.WeaponController;
     }
 
     private void OnEnable()
@@ -43,12 +47,12 @@ public class CharacterPeeController : MonoBehaviour
     {
         if (_characterInteractionController.interactionMode.Value != CharacterInteractionController.CharacterInteractionMode.Gameplay) return;
 
-        peeGenerator.Activate();
+        _characterWeaponController.ActivateWeaponFire();
     }
 
     private void DeactivatePee()
     {
-        peeGenerator.Deactivate();
+        _characterWeaponController.DeactivateWeaponFire();
     }
 
     private void OnInteractionModeChanged(CharacterInteractionController.CharacterInteractionMode mode)

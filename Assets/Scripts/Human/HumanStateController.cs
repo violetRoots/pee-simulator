@@ -8,6 +8,7 @@ public class HumanStateController : MonoBehaviour
 {
     public enum HumanState
     {
+        None = -1,
         WantsToOrder = 0,
         MakesOrder = 1,
         WantsToSit = 2,
@@ -49,7 +50,7 @@ public class HumanStateController : MonoBehaviour
     private HumanContentController _humanContentController;
     private HumanDetectionController _humanDetectionController;
 
-    public readonly ReactiveProperty<HumanState> state = new ReactiveProperty<HumanState>(HumanState.WantsToOrder);
+    public readonly ReactiveProperty<HumanState> state = new ReactiveProperty<HumanState>(HumanState.None);
 
     private HumanState _savedState;
 
@@ -60,9 +61,11 @@ public class HumanStateController : MonoBehaviour
 
     private bool _isSitting;
 
+    private HumanStateBehaviourData _behaviourData;
+
     private IDisposable _humanStateSubscription;
 
-    private void Awake()
+    private void Start()
     {
         _gameManager = GameManager.Instance;
         _sitPlaceManager = _gameManager.SitPlaceManager;
@@ -79,11 +82,13 @@ public class HumanStateController : MonoBehaviour
         _initTime = Time.time;
         _timeToRunAwayForever = UnityEngine.Random.Range(timeToRunAwayForeverBounds.x, timeToRunAwayForeverBounds.y);
         _leaveTime = UnityEngine.Random.Range(leaveTimeBounds.x, leaveTimeBounds.y);
+
+        state.Value = HumanState.WantsToOrder;
     }
 
     private void OnEnable()
     {
-        _humanStateSubscription = state.Subscribe(OnStateChanged);        
+        _humanStateSubscription = state.Subscribe(OnStateChanged);      
     }
 
     private void OnDisable()
@@ -104,6 +109,15 @@ public class HumanStateController : MonoBehaviour
         UpdateZombieLogic();
     }
 
+    public void SetBehaviourData(Door door, Kassa kassa)
+    {
+        _behaviourData = new HumanStateBehaviourData
+        {
+            door = door,
+            kassa = kassa
+        };
+    }
+
     public void SaveState()
     {
         _savedState = state.Value;
@@ -111,7 +125,7 @@ public class HumanStateController : MonoBehaviour
 
     private void UpdateHumanDetectionLogic()
     {
-        if (state.Value == HumanState.RunsAway) return;
+        if (state.Value == HumanState.RunsAway || state.Value == HumanState.Sits) return;
 
         if (_humanDetectionController.IsTargetHumanDetected())
         {
@@ -176,7 +190,7 @@ public class HumanStateController : MonoBehaviour
 
     private void UpdateUI()
     {
-        var leaveTimerValue = Mathf.Clamp01((_leaveTime - Time.time - _initTime) / _leaveTime);
+        var leaveTimerValue = 1.0f - Mathf.Clamp01((Time.time - _initTime) / _leaveTime);
         leaveTimerPanel.UpdateValue(leaveTimerValue);
     }
 
@@ -192,7 +206,7 @@ public class HumanStateController : MonoBehaviour
 
         if(newState == HumanState.WantsToOrder)
         {
-            _humanMovementController.SetDestination(_gameManager.KassaManager.GetRandomKassa().GetPositionForOrder(), () => state.Value = HumanState.MakesOrder);
+            _humanMovementController.SetDestination(_behaviourData.kassa.GetPositionForOrder(), () => state.Value = HumanState.MakesOrder);
             _humanAnimationController.PlayWalkAnimation();
         }
         else if (newState == HumanState.MakesOrder)
@@ -224,7 +238,7 @@ public class HumanStateController : MonoBehaviour
         }
         else if (newState == HumanState.WantsToLeave)
         {
-            var exitPoint = _gameManager.DoorsManager.GetRandomOpenedDoor().GetEntrancePoint();
+            var exitPoint = _behaviourData.door.GetEntrancePoint();
             _humanMovementController.SetDestination(exitPoint.position, () => Destroy(gameObject));
             _humanAnimationController.PlayWalkAnimation();
         }
@@ -234,7 +248,7 @@ public class HumanStateController : MonoBehaviour
         }
         else if (newState == HumanState.RunsAwayForever)
         {
-            var exitPoint = _gameManager.DoorsManager.GetRandomOpenedDoor().GetEntrancePoint();
+            var exitPoint = _behaviourData.door.GetEntrancePoint();
             _humanMovementController.SetDestination(exitPoint.position, () => Destroy(gameObject));
             _humanAnimationController.PlayWalkAnimation();
         }
@@ -299,4 +313,10 @@ public class HumanStateController : MonoBehaviour
 
         _isSitting = false;
     }
+}
+
+public class HumanStateBehaviourData
+{
+    public Door door;
+    public Kassa kassa;
 }

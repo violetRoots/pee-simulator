@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: French
   m_EditorClassIdentifier: 
   languageName: french
+  font: {fileID: 11400000, guid: b27a6123b2d8f814aaffbf4cbc2a7157, type: 2}

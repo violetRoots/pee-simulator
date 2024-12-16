@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Japanese
   m_EditorClassIdentifier: 
   languageName: japanese
+  font: {fileID: 11400000, guid: 9d99ee710196a5541ad94e7d95ac04b9, type: 2}

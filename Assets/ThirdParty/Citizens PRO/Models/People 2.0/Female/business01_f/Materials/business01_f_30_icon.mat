@@ -42,6 +42,7 @@ Material:
     - _DstBlend: 0
     - _GlossMapScale: 0.312
     - _Glossiness: 0
+    - _Metallic: 0.95
     - _Mode: 0
     - _SrcBlend: 1
     - _ZWrite: 1

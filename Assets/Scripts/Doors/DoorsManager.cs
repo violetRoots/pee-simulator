@@ -33,11 +33,12 @@ public class DoorsManager
     }
 
 
-    public void SetDoorsInteractable(bool isInteractable)
+    public void SetDoorsInteractable(bool isInteractable, Door.DoorState exceptDoorState)
     {
         foreach (Door door in _doors)
         {
-            door.InteractionHandler.SetInteractable(isInteractable);
+            var isExceptDoor = door.State == exceptDoorState;
+            door.InteractionHandler.SetInteractable(isInteractable && !isExceptDoor);
         }
     }
 

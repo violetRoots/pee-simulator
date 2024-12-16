@@ -68,7 +68,7 @@ public class UiGameplayManager : SingletonMonoBehaviourBase<UiGameplayManager>
 
     private void HideCircleMenu()
     {
-        circleMenu.ApplySelectedAutomate();
+        circleMenu.ApplySelectedCircleItem();
         circleMenu.gameObject.SetActive(false);
     }
 
