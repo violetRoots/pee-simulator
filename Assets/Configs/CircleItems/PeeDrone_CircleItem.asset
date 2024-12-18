@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   title: ui_drone_name
-  price: 50
+  price: 25
   duration: 10
   cooldown: 5
   automate: {fileID: 5149983721916730565, guid: c059a7ba7d4c21447a09f430bac0745a, type: 3}

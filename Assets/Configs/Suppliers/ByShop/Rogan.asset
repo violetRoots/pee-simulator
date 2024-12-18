@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 8cc8506f-0dff-4619-b909-9c50c05e9731
     title: rogan_name
     description: rogan_description
-    price: 101
-    satisfaction: 3
-    causticity: 6
-    saturation: 6
+    price: 350
+    satisfaction: 7
+    causticity: 7
+    saturation: 7
     visabilityType: 2
     unlockQuestType: 0
-    suppliersShopPrice: 10
+    suppliersShopPrice: 1000

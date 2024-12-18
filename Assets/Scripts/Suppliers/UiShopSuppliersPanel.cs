@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class UiShopSuppliersPanel : MonoBehaviour
@@ -28,7 +29,8 @@ public class UiShopSuppliersPanel : MonoBehaviour
 
     private void InitSuppliers()
     {
-        var suppliers = _suppliersManager.GetShopSuppliers();
+        var suppliers = _suppliersManager.GetShopSuppliers()
+                                         .OrderBy(s => s.configData.suppliersShopPrice);
 
         foreach (var supplier in suppliers)
         {

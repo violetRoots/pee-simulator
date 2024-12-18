@@ -58,8 +58,6 @@ public class QuestStateMarker : MonoBehaviour
     {
         if (!_isActive || !IsMarkerVisible()) return;
 
-        Debug.Log(_isActive);
-
         UpdateMarkerPos();
     }
 

@@ -45,4 +45,17 @@ public class CharacterPeeGenerator : BasePeePart
 
         _lastSpawnPeeTime = Time.time;
     }
+
+    protected override void OnActivated()
+    {
+        base.OnActivated();
+        var type = Random.value < 0.5f ? SfxType.PissLoop1 : SfxType.PissLoop2;
+        gameObject.Play3DSound(type, 3.0f, true);
+    }
+
+    protected override void OnDeactivated()
+    {
+        base.OnDeactivated();
+        gameObject.Stop3DSound();
+    }
 }

@@ -12,6 +12,7 @@ public class EmotionPanel : MonoBehaviour
     {
         public HumanEmotionController.HumanEmotion emotion;
         public Sprite[] rzhumanSprites;
+        public SfxType sfx;
     }
 
     [SerializeField] private EmotionInfo[] emotionsInfo;
@@ -34,6 +35,11 @@ public class EmotionPanel : MonoBehaviour
         if (emotionInfo == null) return;
 
         rzhuman.sprite = emotionInfo.rzhumanSprites[UnityEngine.Random.Range(0, emotionInfo.rzhumanSprites.Length)];
+
+        if(emotionInfo.sfx != SfxType.None)
+        {
+            gameObject.Play3DSound(emotionInfo.sfx);
+        }
 
         emotionObj.gameObject.SetActive(true);
 

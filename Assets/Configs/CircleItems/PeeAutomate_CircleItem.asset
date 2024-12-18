@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   title: ui_polivalka_name
-  price: 30
+  price: 80
   duration: 10
-  cooldown: 5
+  cooldown: 7
   automate: {fileID: 7938455433468244784, guid: c1505fb4a7dc3824eb099f85e4a1efec, type: 3}
   needBoiler: 1

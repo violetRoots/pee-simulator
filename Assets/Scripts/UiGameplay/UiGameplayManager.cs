@@ -112,6 +112,8 @@ public class UiGameplayManager : SingletonMonoBehaviourBase<UiGameplayManager>
 
     private void OnPauseButtonDown()
     {
+        if (shopView.gameObject.activeInHierarchy) return;
+
         pauseMenu.gameObject.SetActive(!pauseMenu.gameObject.activeSelf);
     }
 }

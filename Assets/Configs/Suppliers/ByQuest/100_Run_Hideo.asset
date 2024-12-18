@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: b4e214a2-69f2-4868-a693-eb7bf09fa969
     title: hideo_name
     description: hideo_description
-    price: 42
-    satisfaction: 5
-    causticity: 1
-    saturation: 5
+    price: 5
+    satisfaction: 1
+    causticity: 0
+    saturation: 1
     visabilityType: 1
     unlockQuestType: 1
     suppliersShopPrice: 0

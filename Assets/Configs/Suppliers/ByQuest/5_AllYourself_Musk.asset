@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: c946f037-0f46-42f9-90ee-688792c64a44
     title: musk_name
     description: musk_description
-    price: 70
-    satisfaction: 6
+    price: 40
+    satisfaction: 2
     causticity: 3
-    saturation: 4
+    saturation: 2
     visabilityType: 1
     unlockQuestType: 2
     suppliersShopPrice: 0

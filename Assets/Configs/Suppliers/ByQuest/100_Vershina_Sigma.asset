@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 86f495e7-e2f5-45c5-a5c4-d39f70f8daa3
     title: sigma_name
     description: sigma_description
-    price: 101
+    price: 400
     satisfaction: 3
     causticity: 6
-    saturation: 6
+    saturation: 9
     visabilityType: 1
     unlockQuestType: 10
     suppliersShopPrice: 0

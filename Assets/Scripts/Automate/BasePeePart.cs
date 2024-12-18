@@ -10,10 +10,18 @@ public abstract class BasePeePart : MonoBehaviour
     public void Activate()
     {
         IsActive = true;
+
+        OnActivated();
     }
+
+    protected virtual void OnActivated() { }
 
     public void Deactivate()
     {
         IsActive = false;
+
+        OnDeactivated();
     }
+
+    protected virtual void OnDeactivated() { }
 }

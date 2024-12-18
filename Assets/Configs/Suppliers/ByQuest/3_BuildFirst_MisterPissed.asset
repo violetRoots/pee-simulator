@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 91e94463-f86d-4ff7-97f2-cc8f9daf5504
     title: mister_pissed_name
     description: mister_pissed_description
-    price: 156
-    satisfaction: 0
-    causticity: 10
-    saturation: 5
+    price: 480
+    satisfaction: 9
+    causticity: 6
+    saturation: 4
     visabilityType: 1
     unlockQuestType: 5
-    suppliersShopPrice: 10
+    suppliersShopPrice: 0

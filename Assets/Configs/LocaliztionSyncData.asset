@@ -67,17 +67,17 @@ MonoBehaviour:
     - key: ui_lang_english
       text: English
     - key: ui_lang_chinese
-      text: Chinese
+      text: "\u4E2D\u6587 (\u7B80\u4F53)"
     - key: ui_lang_spanish
-      text: Spanish
+      text: "Espa\xF1ol"
     - key: ui_lang_portuguese
-      text: Portuguese
+      text: "Portugu\xEAs"
     - key: ui_lang_german
-      text: German
+      text: Deutsch
     - key: ui_lang_japanese
-      text: Japanese
+      text: "\u65E5\u672C\u8A9E"
     - key: ui_lang_french
-      text: French
+      text: "Fran\xE7ais"
     - key: ui_drone_name
       text: "\u041C\u043E\u0447\u0435\u0433\u043E\u043D\u043D\u044B\u0439 \u0434\u0440\u043E\u043D"
     - key: ui_polivalka_name
@@ -110,13 +110,16 @@ MonoBehaviour:
         \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
         \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
         \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
-        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
+        (\u0431\u0443\u0434\u044C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
         \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
         \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
         \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
         \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
         \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
         \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
+    - key: ui_automate_bottle_hint
+      text: "\u041D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0432\u0441\u0442\u0430\u0432\u0438\u0442\u044C
+        \u0431\u0443\u0442\u044B\u043B\u044C"
     - key: ui_door_controls_hint
       text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
     - key: ui_toilet_controls_hint
@@ -130,6 +133,213 @@ MonoBehaviour:
         \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
     - key: ui_build_controls_minihint
       text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
+    - key: trump_name
+      text: "\u041E\u0440\u0430\u043D\u0436\u0435\u0432\u044B\u0439 \u0441\u043B\u043E\u043D"
+    - key: trump_description
+      text: "\u041E\u0431\u043E\u0433\u0430\u0449\u0435\u043D\u0430 \u0432\u0438\u0442\u0430\u043C\u0438\u043D\u043E\u043C
+        \u041A"
+    - key: borat_name
+      text: "\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D \u0441\u0443\u043F\u0435\u0440
+        \u0433\u0443\u0434"
+    - key: borat_description
+      text: "\u042F \u0437\u0430\u043A\u0443\u043F\u0430\u0439 \u043C\u043D\u043E\u0433\u043E
+        \u0431\u0443\u0442\u044B\u043B\u0435\u0439, \u043E\u043D \u043D\u0435 \u043D\u0430\u043A\u043E\u043F\u0438\u043B.
+        \u0420\u0430\u0434\u043E\u0441\u0442\u043D\u043E!"
+    - key: eva_name
+      text: "\u041F\u043E\u043B\u0443\u044D\u043B\u044C\u0444 \u041F\u043E\u043B\u0443\u043A\u0442\u043E"
+    - key: eva_description
+      text: "\u0418\u0442\u0441 \u0433\u0435\u0442\u0442\u0438\u043D\u0433 \u0432\u0435\u0442\u0442\u0435\u0440"
+    - key: hideo_name
+      text: "\u0413\u0415\u041D\u0418\u0410\u041B\u042C\u041D\u0410\u042F"
+    - key: hideo_description
+      text: BY HIT!NEO KOTZIMA
+    - key: biser_fez_name
+      text: "\u0422\u0440\u0440\u0440 \u0421\u043A\u0438\u0431\u0438\u0434\u0438"
+    - key: biser_fez_description
+      text: "\u0414\u043E\u0431 \u0434\u043E\u0431 \u0435\u0441 \u0435\u0441\u0441\u0441"
+    - key: maddison_name
+      text: "\u041C\u0443\u0434\u0434\u0438\u0431\u0430\u0442\u044F"
+    - key: maddison_description
+      text: "\u0421 \u043F\u0440\u0438\u0432\u043A\u0443\u0441\u043E\u043C \u043F\u0438\u0432\u0430
+        \u0438 \u0440\u0430\u0437\u043E\u0447\u0430\u0440\u043E\u0432\u0430\u043D\u0438\u044F"
+    - key: musk_name
+      text: "\u0423\u0440\u0438\u043D\u0430X"
+    - key: musk_description
+      text: "\u041A\u0430\u043A \u0442\u0435\u0431\u0435 \u0442\u0430\u043A\u043E\u0435?
+        \u0445\u0430\u0445\u0430 \u043E\u0444\u0438\u0433\u0435\u043D\u043D\u043E"
+    - key: gosling_name
+      text: "\u0414\u0440\u0430\u0439\u0432\u043E\u0432\u044B\u0439 \u041F\u0438\u043F\u043A\u0430"
+    - key: gosling_description
+      text: "\u0417\u0430\u0442\u043A\u043D\u0438 \u0441\u0432\u043E\u044E \u043F\u0430\u0441\u0442\u044C
+        \u0438\u043B\u0438 \u044F \u0437\u0430\u043B\u044C\u044E \u044D\u0442\u043E
+        \u0442\u0435\u0431\u0435 \u0432 \u0433\u043B\u043E\u0442\u043A\u0443"
+    - key: hunter_name
+      text: "\u042D\u0439\u0444\u043E\u0440\u0438\u0447\u043D\u0430\u044F \u0434\u0435\u0432\u043A\u0430"
+    - key: hunter_description
+      text: "\u041E\u0434\u0438\u043D \u0440\u0430\u0437 \u043D\u0435, \u0431\u0440\u0430\u0442"
+    - key: mister_pissed_name
+      text: "\u041C\u0438\u0441\u0442\u043E\u0440 \u041F\u0441-\u041F\u0441-\u041F\u0441\u0441\u0442"
+    - key: mister_pissed_description
+      text: "\u0412\u0441\u0442\u0430\u0432\u0438\u0442 \u0440\u0435\u043A\u043B\u0430\u043C\u043D\u0443\u044E
+        \u0438\u043D\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044E \u044D\u0442\u043E\u0433\u043E
+        \u043D\u0435\u043A\u0442\u0430\u0440\u0430 \u0432 \u0431\u0443\u0434\u0443\u0449\u0438\u0439
+        \u0440\u043E\u043B\u0438\u043A"
+    - key: pepe_name
+      text: "\u041F\u0438\u043F\u0438 \u043E\u0442 \u041F\u0435\u043F\u0435"
+    - key: pepe_description
+      text: "\u041B\u044F\u0433\u0443\u0448\u043A\u0438 \u043D\u0435 \u0443\u043C\u0435\u044E\u0442
+        \u043F\u0438\u0441\u0430\u0442\u044C. \u0414\u0443\u043C\u0430\u0439\u0442\u0435."
+    - key: gnom_name
+      text: "\u041F\u0438\u0441 \u041F\u0438\u0441\u044B\u0447"
+    - key: gnom_description
+      text: "\u0413\u043E\u0440\u044C\u043A\u0430\u044F, \u043A\u0430\u043A \u0438
+        \u0435\u0433\u043E \u0443\u043B\u044B\u0431\u043A\u0430"
+    - key: alt_name
+      text: "\u0410\u043B\u044C\u0442\u0443\u0448\u043A\u0430."
+    - key: alt_description
+      text: "\u0421\u043B\u0430\u0432\u0430 \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439,
+        \u0434\u0435\u0432\u043E\u0447\u043A\u0438 \u0442\u043E\u0436\u0435 \u043F\u0438\u0441\u0430\u044E\u0442!"
+    - key: asuka_name
+      text: "\u041F\u0430\u043A\u0435\u0442\u0438\u043A (\u043C\u043E\u0447\u0438)"
+    - key: asuka_description
+      text: "\u041F\u043E\u043B\u0435\u0437\u0430\u0439 \u0432 \u0435\u0431\u0430\u043D\u044B\u0439
+        \u0442\u0443\u0430\u043B\u0435\u0442, \u0421\u0438\u043D\u0434\u0437\u0438"
+    - key: bu_name
+      text: "\u0411\u0443!"
+    - key: bu_description
+      text: "\u0418\u0441\u043F\u0443\u0433\u0430\u043B\u0438\u0441\u044C? \u041E\u0431\u043E\u0441\u0441\u0430\u043B\u0441\u044F"
+    - key: doomer_name
+      text: Depressive 4chan
+    - key: doomer_description
+      text: "\u041C\u043C\u043C... \u0422\u0443\u0448\u0438\u0442\u044C \u0432 \u043D\u0435\u0439
+        \u0441\u0438\u0433\u0430\u0440\u0435\u0442\u0443 \u0441 \u0448\u0438\u043F\u044F\u0449\u0438\u043C
+        \u0437\u0432\u0443\u043A\u043E\u043C..."
+    - key: gandalf_name
+      text: "\u041F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0447\u0435\u0441\u043A\u0430\u044F"
+    - key: gandalf_description
+      text: "\u0422\u044B \u043D\u0435 \u043F\u0440\u043E\u0441\u0441\u044B\u0448\u044C!"
+    - key: jinx_name
+      text: "\u041F\u0438\u043D\u043A\u0441"
+    - key: jinx_description
+      text: "\u0414\u043E\u043B\u0436\u043D\u0430 \u0431\u044B\u0442\u044C \u0433\u043E\u043B\u0443\u0431\u043E\u0439,
+        \u043D\u043E \u043D\u0430\u043C \u043D\u0435 \u0445\u0432\u0430\u0442\u0438\u043B\u043E
+        \u043D\u0430 \u044D\u0442\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0438."
+    - key: markaryan_name
+      text: "\u041C\u0438\u0437\u043E\u0433\u0438\u043C\u043B\u0438"
+    - key: markaryan_description
+      text: "\u042F \u0433\u043D\u043E\u043C, \u0438 \u044F \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044E
+        \u0441\u0435\u0431\u044F \u043E\u0431\u0441\u0441\u044B\u0432\u0430\u0442\u044C!
+        \u0422\u043E\u043B\u044C\u043A\u043E \u043D\u0435 \u0431\u043E\u0440\u043E\u0434\u0443!"
+    - key: goblin_name
+      text: "\u0413\u043E\u0431\u043B\u0438\u043D\u043A\u043E\u0440"
+    - key: goblin_description
+      text: "\u0422\u0430\u043A \u043F\u0430\u0445\u043D\u0435\u0442 \u0431\u0430\u0442\u0438\u043D
+        \u0430\u043D\u0435\u043A\u0434\u043E\u0442"
+    - key: president_name
+      text: "\u0414\u0432\u043E\u0439\u043D\u0438\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
+    - key: president_description
+      text: 
+    - key: queen_name
+      text: "\u041E\u043B\u0434 \u0431\u0430\u0442 \u0433\u043E\u043B\u0434"
+    - key: gueen_description
+      text: "\u0413\u043E\u0434 \u0441\u044D\u0439\u0432 \u0437\u0435 \u043F\u0438"
+    - key: shrek_name
+      text: "\u0428\u0440\u0435\u043A\u0441\u0443\u0430\u043B\u044C\u043D\u0430\u044F"
+    - key: shrek_description
+      text: "\u041D\u0435 \u0434\u0435\u0440\u0436\u0438 \u0432 \u0441\u0435\u0431\u0435!"
+    - key: sigma_name
+      text: "\u03A3"
+    - key: sigma_description
+      text: "\u0421\u0438\u0433\u043C\u0430 \u043E\u0442 \u043D\u043E\u0441\u0430
+        \u0434\u043E \u043A\u043E\u043D\u0446\u0430"
+    - key: snoop_name
+      text: "\u0421\u043E\u0431\u0430\u0447\u044C\u044F"
+    - key: snoop_description
+      text: "\u041A\u0430\u043F\u043B\u0438 \u043A\u0430\u043A \u0437\u043E\u043B\u043E\u0442\u0430\u044F
+        \u0446\u0435\u043F\u044C \u043D\u0430 \u0435\u0433\u043E \u0433\u0440\u0443\u0434\u0438"
+    - key: substance_name
+      text: Piss It Up
+    - key: substance_description
+      text: "\u041D\u0430 \u0442\u043E\u0439 \u0432\u0435\u0447\u0435\u0440\u0438\u043D\u043A\u0435
+        \u043E\u0431\u043E\u0441\u0441\u0430\u043B\u0441\u044F \u0414\u0440\u0443\u0433\u043E\u0439
+        \u0422\u044B"
+    - key: dicktator_name
+      text: "Dick\u0442\u0430\u0442\u043E\u0440"
+    - key: dicktator_description
+      text: "\u041F\u0440\u0438\u043A\u0430\u0437\u044B\u0432\u0430\u044E \u0441\u0446\u0430\u0442\u044C!"
+    - key: ramzi_name
+      text: "\u041C\u043E\u0447\u0435\u0432\u043E\u0439 \u0440\u043E\u0442"
+    - key: ramzi_description
+      text: "\u042D\u0442\u0430 \u043C\u043E\u0447\u0430 \u043F\u043E\u0434\u0433\u043E\u0440\u0435\u043B\u0430!"
+    - key: remy_name
+      text: The Paris mouse
+    - key: remy_description
+      text: "\u0427\u0442\u043E \u0433\u043E\u0432\u043E\u0440\u0438\u0442 \u043A\u0440\u044B\u0441\u0430?
+        \xAB\u041F\u0441\u0441, \u043F\u0430\u0440\u0435\u043D\u044C\xBB."
+    - key: shef_name
+      text: "\u0428\u0435\u0444 \u0434\u0430 \u0448\u0435\u0444"
+    - key: shef_description
+      text: "\u041E\u0433\u0443\u0437\u043E\u043A, \u0442\u044B \u043D\u0430\u0445\u0440\u0435\u043D\u0430
+        \u0441\u0443\u043F \u043C\u043E\u0447\u043E\u0439 \u0437\u0430\u043F\u0440\u0430\u0432\u0438\u043B?"
+    - key: peterson_name
+      text: "\u0414\u0436. \u041F\u0438\u0441\u0441\u0442\u0435\u0440\u0441\u043E\u043D"
+    - key: peterson_description
+      text: "13 \u043F\u0440\u0430\u0432\u0438\u043B\u043E \u0436\u0438\u0437\u043D\u0438:
+        \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u0441\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0439\u0441\u044F,
+        \u0435\u0441\u043B\u0438 \u043F\u0440\u0438\u043F\u0451\u0440\u043B\u043E
+        \u043F\u043E-\u043C\u0430\u043B\u0435\u043D\u044C\u043A\u043E\u043C\u0443"
+    - key: pie_name
+      text: "\u041F\u044C\u044E\u0434\u0438\u043F\u0438"
+    - key: pie_description
+      text: "\u0414\u0435\u043B\u0430\u0435\u0442 \u043F\u0438-\u043F\u0438"
+    - key: rogan_name
+      text: NONE
+    - key: rogan_description
+      text: NONE
+    - key: tucker_name
+      text: NONE
+    - key: tucker_description
+      text: NONE
+    - key: anya_description
+      text: NONE
+    - key: anya_name
+      text: NONE
+    - key: rin_name
+      text: NONE
+    - key: rin_description
+      text: NONE
+    - key: biser_king_name
+      text: NONE
+    - key: biser_king_description
+      text: NONE
+    - key: gaga_name
+      text: NONE
+    - key: gaga_description
+      text: NONE
+    - key: gigachad_name
+      text: NONE
+    - key: gigachad_description
+      text: NONE
+    - key: hermione_name
+      text: NONE
+    - key: hermione_description
+      text: NONE
+    - key: kim_name
+      text: NONE
+    - key: kim_description
+      text: NONE
+    - key: shalame_name
+      text: NONE
+    - key: shalame_description
+      text: NONE
+    - key: supplier_characteristics_pattern
+      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0435\u043D\u0438\u0435:
+        <b>{0}</b>\n\u0415\u0434\u043A\u043E\u0441\u0442\u044C: <b>{1}</b>\n\u041D\u0430\u0441\u044B\u0449\u0435\u043D\u043D\u043E\u0441\u0442\u044C:
+        <b>{2}</b>"
+    - key: supplier_price_pattern
+      text: "\u041A\u0423\u041F\u0418\u0422\u042C {0}$"
+    - key: suppliershop_price_pattern
+      text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
     - key: quest_run_name
       text: "\u0411\u0435\u0433\u0438, \u043E\u0431\u0441\u0441\u044B\u0445\u0430,
         \u0431\u0435\u0433\u0438!"
@@ -273,216 +483,6 @@ MonoBehaviour:
     - key: skibidi_random_phrase_19
       text: "\u0420\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u043C\u0430\u0440\u043A\u0435\u0442\u043E\u043B\u043E\u0433\u043E\u043C
         \u0437\u0430\u0448\u043A\u0432\u0430\u0440\u043D\u0435\u0435"
-    - key: trump_name
-      text: "\u041E\u0440\u0430\u043D\u0436\u0435\u0432\u044B\u0439 \u0441\u043B\u043E\u043D"
-    - key: trump_description
-      text: "\u041E\u0431\u043E\u0433\u0430\u0449\u0435\u043D\u0430 \u0432\u0438\u0442\u0430\u043C\u0438\u043D\u043E\u043C
-        \u041A"
-    - key: borat_name
-      text: "\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D \u0441\u0443\u043F\u0435\u0440
-        \u0433\u0443\u0434"
-    - key: borat_description
-      text: "\u042F \u0437\u0430\u043A\u0443\u043F\u0430\u0439 \u043C\u043D\u043E\u0433\u043E
-        \u0431\u0443\u0442\u044B\u043B\u0435\u0439, \u043E\u043D \u043D\u0435 \u043D\u0430\u043A\u043E\u043F\u0438\u043B.
-        \u0420\u0430\u0434\u043E\u0441\u0442\u043D\u043E!"
-    - key: eva_name
-      text: "\u041F\u043E\u043B\u0443\u044D\u043B\u044C\u0444 \u041F\u043E\u043B\u0443\u043A\u0442\u043E"
-    - key: eva_description
-      text: "\u0418\u0442\u0441 \u0433\u0435\u0442\u0442\u0438\u043D\u0433 \u0432\u0435\u0442\u0442\u0435\u0440"
-    - key: hideo_name
-      text: "\u0413\u0415\u041D\u0418\u0410\u041B\u042C\u041D\u0410\u042F"
-    - key: hideo_description
-      text: BY HIT!NEO KOTZIMA
-    - key: biser_fez_name
-      text: "\u0422\u0440\u0440\u0440 \u0421\u043A\u0438\u0431\u0438\u0434\u0438"
-    - key: biser_fez_description
-      text: "\u0414\u043E\u0431 \u0434\u043E\u0431 \u0435\u0441 \u0435\u0441\u0441\u0441"
-    - key: maddison_name
-      text: "\u041C\u0443\u0434\u0434\u0438\u0431\u0430\u0442\u044F"
-    - key: maddison_description
-      text: "\u0421 \u043F\u0440\u0438\u0432\u043A\u0443\u0441\u043E\u043C \u043F\u0438\u0432\u0430
-        \u0438 \u0440\u0430\u0437\u043E\u0447\u0430\u0440\u043E\u0432\u0430\u043D\u0438\u044F"
-    - key: musk_name
-      text: "\u0423\u0440\u0438\u043D\u0430X"
-    - key: musk_description
-      text: "\u041A\u0430\u043A \u0442\u0435\u0431\u0435 \u0442\u0430\u043A\u043E\u0435?
-        \u0445\u0430\u0445\u0430 \u043E\u0444\u0438\u0433\u0435\u043D\u043D\u043E"
-    - key: gosling_name
-      text: "\u0414\u0440\u0430\u0439\u0432\u043E\u0432\u044B\u0439 \u041F\u0438\u043F\u043A\u0430"
-    - key: gosling_description
-      text: "\u0417\u0430\u0442\u043A\u043D\u0438 \u0441\u0432\u043E\u044E \u043F\u0430\u0441\u0442\u044C
-        \u0438\u043B\u0438 \u044F \u0437\u0430\u043B\u044C\u044E \u044D\u0442\u043E
-        \u0442\u0435\u0431\u0435 \u0432 \u0433\u043B\u043E\u0442\u043A\u0443"
-    - key: hunter_name
-      text: "\u042D\u0439\u0444\u043E\u0440\u0438\u0447\u043D\u0430\u044F \u0434\u0435\u0432\u043A\u0430"
-    - key: hunter_description
-      text: "\u041E\u0434\u0438\u043D \u0440\u0430\u0437 \u043D\u0435, \u0431\u0440\u0430\u0442"
-    - key: mister_pissed_name
-      text: "\u041C\u0438\u0441\u0442\u043E\u0440 \u041F\u0441-\u041F\u0441-\u041F\u0441\u0441\u0442"
-    - key: mister_pissed_description
-      text: "\u0412\u0441\u0442\u0430\u0432\u0438\u0442 \u0440\u0435\u043A\u043B\u0430\u043C\u043D\u0443\u044E
-        \u0438\u043D\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044E \u044D\u0442\u043E\u0433\u043E
-        \u043D\u0435\u043A\u0442\u0430\u0440\u0430 \u0432 \u0431\u0443\u0434\u0443\u0449\u0438\u0439
-        \u0440\u043E\u043B\u0438\u043A"
-    - key: pepe_name
-      text: "\u041F\u0438\u043F\u0438 \u043E\u0442 \u041F\u0435\u043F\u0435"
-    - key: pepe_description
-      text: "\u041B\u044F\u0433\u0443\u0448\u043A\u0438 \u043D\u0435 \u0443\u043C\u0435\u044E\u0442
-        \u043F\u0438\u0441\u0430\u0442\u044C. \u0414\u0443\u043C\u0430\u0439\u0442\u0435."
-    - key: gnom_name
-      text: "\u041F\u0438\u0441 \u041F\u0438\u0441\u044B\u0447"
-    - key: gnom_description
-      text: "\u0413\u043E\u0440\u044C\u043A\u0430\u044F, \u043A\u0430\u043A \u0438
-        \u0435\u0433\u043E \u0443\u043B\u044B\u0431\u043A\u0430"
-    - key: alt_name
-      text: "\u0410\u043B\u044C\u0442\u0443\u0448\u043A\u0430."
-    - key: alt_description
-      text: "\u0421\u043B\u0430\u0432\u0430 \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439,
-        \u0434\u0435\u0432\u043E\u0447\u043A\u0438 \u0442\u043E\u0436\u0435 \u043F\u0438\u0441\u0430\u044E\u0442!"
-    - key: asuka_name
-      text: "\u041F\u0430\u043A\u0435\u0442\u0438\u043A (\u043C\u043E\u0447\u0438)"
-    - key: asuka_description
-      text: "\u041F\u043E\u043B\u0435\u0437\u0430\u0439 \u0432 \u0435\u0431\u0430\u043D\u044B\u0439
-        \u0442\u0443\u0430\u043B\u0435\u0442, \u0421\u0438\u043D\u0434\u0437\u0438"
-    - key: bu_name
-      text: "\u0411\u0443!"
-    - key: bu_description
-      text: "\u0418\u0441\u043F\u0443\u0433\u0430\u043B\u0438\u0441\u044C? \u041E\u0431\u043E\u0441\u0441\u0430\u043B\u0441\u044F"
-    - key: doomer_name
-      text: Depressive 4chan
-    - key: doomer_description
-      text: "\u041C\u043C\u043C... \u0422\u0443\u0448\u0438\u0442\u044C \u0432 \u043D\u0435\u0439
-        \u0441\u0438\u0433\u0430\u0440\u0435\u0442\u0443 \u0441 \u0448\u0438\u043F\u044F\u0449\u0438\u043C
-        \u0437\u0432\u0443\u043A\u043E\u043C..."
-    - key: gandalf_name
-      text: "\u041F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0447\u0435\u0441\u043A\u0430\u044F"
-    - key: gandalf_description
-      text: "\u0422\u044B \u043D\u0435 \u043F\u0440\u043E\u0441\u0441\u044B\u0448\u044C!"
-    - key: jinx_name
-      text: "\u041F\u0438\u043D\u043A\u0441"
-    - key: Jinx_description
-      text: "\u0414\u043E\u043B\u0436\u043D\u0430 \u0431\u044B\u0442\u044C \u0433\u043E\u043B\u0443\u0431\u043E\u0439,
-        \u043D\u043E \u043D\u0430\u043C \u043D\u0435 \u0445\u0432\u0430\u0442\u0438\u043B\u043E
-        \u043D\u0430 \u044D\u0442\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0438."
-    - key: markaryan_name
-      text: "\u041C\u0438\u0437\u043E\u0433\u0438\u043C\u043B\u0438"
-    - key: markaryan_description
-      text: "\u042F \u0433\u043D\u043E\u043C, \u0438 \u044F \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044E
-        \u0441\u0435\u0431\u044F \u043E\u0431\u0441\u0441\u044B\u0432\u0430\u0442\u044C!
-        \u0422\u043E\u043B\u044C\u043A\u043E \u043D\u0435 \u0431\u043E\u0440\u043E\u0434\u0443!"
-    - key: goblin_name
-      text: "\u0413\u043E\u0431\u043B\u0438\u043D\u043A\u043E\u0440"
-    - key: goblin_description
-      text: "\u0422\u0430\u043A \u043F\u0430\u0445\u043D\u0435\u0442 \u0431\u0430\u0442\u0438\u043D
-        \u0430\u043D\u0435\u043A\u0434\u043E\u0442"
-    - key: president_name
-      text: "\u0414\u0432\u043E\u0439\u043D\u0438\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
-    - key: president_description
-      text: 
-    - key: queen_name
-      text: "\u041E\u043B\u0434 \u0431\u0430\u0442 \u0433\u043E\u043B\u0434"
-    - key: gueen_description
-      text: "\u0413\u043E\u0434 \u0441\u044D\u0439\u0432 \u0437\u0435 \u043F\u0438"
-    - key: shrek_name
-      text: "\u0428\u0440\u0435\u043A\u0441\u0443\u0430\u043B\u044C\u043D\u0430\u044F"
-    - key: shrek_description
-      text: "\u041D\u0435 \u0434\u0435\u0440\u0436\u0438 \u0432 \u0441\u0435\u0431\u0435!"
-    - key: sigma_name
-      text: "\u03A3"
-    - key: sigma_description
-      text: "\u0421\u0438\u0433\u043C\u0430 \u043E\u0442 \u043D\u043E\u0441\u0430
-        \u0434\u043E \u043A\u043E\u043D\u0446\u0430"
-    - key: snoop_name
-      text: "\u0421\u043E\u0431\u0430\u0447\u044C\u044F"
-    - key: snoop_description
-      text: "\u041A\u0430\u043F\u043B\u0438 \u043A\u0430\u043A \u0437\u043E\u043B\u043E\u0442\u0430\u044F
-        \u0446\u0435\u043F\u044C \u043D\u0430 \u0435\u0433\u043E \u0433\u0440\u0443\u0434\u0438"
-    - key: substance_name
-      text: Piss It Up
-    - key: substance_description
-      text: "\u041D\u0430 \u0442\u043E\u0439 \u0432\u0435\u0447\u0435\u0440\u0438\u043D\u043A\u0435
-        \u043E\u0431\u043E\u0441\u0441\u0430\u043B\u0441\u044F \u0414\u0440\u0443\u0433\u043E\u0439
-        \u0422\u044B"
-    - key: dicktator_name
-      text: "Dick\u0442\u0430\u0442\u043E\u0440"
-    - key: dicktator_description
-      text: 
-    - key: ramzi_name
-      text: 
-    - key: ramzi_description
-      text: 
-    - key: remy_name
-      text: 
-    - key: remy_description
-      text: 
-    - key: shef_name
-      text: 
-    - key: shef_description
-      text: 
-    - key: peterson_name
-      text: 
-    - key: peterson_description
-      text: 
-    - key: pie_name
-      text: 
-    - key: pie_description
-      text: 
-    - key: rogan_name
-      text: 
-    - key: rogan_description
-      text: 
-    - key: tucker_name
-      text: 
-    - key: tucker_description
-      text: 
-    - key: biser_fez_name
-      text: NONE
-    - key: biser_fez_description
-      text: NONE
-    - key: mister_pissed_name
-      text: NONE
-    - key: mister_pissed_description
-      text: NONE
-    - key: anya_description
-      text: NONE
-    - key: anya_name
-      text: NONE
-    - key: rin_name
-      text: NONE
-    - key: rin_description
-      text: NONE
-    - key: biser_king_name
-      text: NONE
-    - key: biser_king_description
-      text: NONE
-    - key: gaga_name
-      text: NONE
-    - key: gaga_description
-      text: NONE
-    - key: gigachad_name
-      text: NONE
-    - key: gigachad_description
-      text: NONE
-    - key: hermione_name
-      text: NONE
-    - key: hermione_description
-      text: NONE
-    - key: kim_name
-      text: NONE
-    - key: kim_description
-      text: NONE
-    - key: shalame_name
-      text: NONE
-    - key: shalame_description
-      text: NONE
-    - key: supplier_characteristics_pattern
-      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0435\u043D\u0438\u0435:
-        <b>{0}</b>\n\u0415\u0434\u043A\u043E\u0441\u0442\u044C: <b>{1}</b>\n\u041D\u0430\u0441\u044B\u0449\u0435\u043D\u043D\u043E\u0441\u0442\u044C:
-        <b>{2}</b>"
-    - key: supplier_price_pattern
-      text: "\u041A\u0423\u041F\u0418\u0422\u042C {0}$"
-    - key: suppliershop_price_pattern
-      text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
     - key: check_name_1
       text: "\u0428\u0422\u0420\u0410\u0424: \u041C\u041E\u0427\u0415\u0413\u041E\u041D\u041D\u0410\u042F
         \u0418\u041D\u0421\u041F\u0415\u041A\u0426\u0418\u042F"
@@ -509,7 +509,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: Causticity
     - key: ui_suppliers
-      text: "\u0421\u0441\u0430\u043A\u0438"
+      text: Urine
     - key: ui_quests
       text: Challenges
     - key: ui_checks
@@ -521,16 +521,15 @@ MonoBehaviour:
     - key: ui_pay
       text: Pay
     - key: ui_suppliers_shop
-      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
+      text: Shop
     - key: ui_rent_button
       text: Rent
     - key: ui_open
-      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+      text: Open
     - key: ui_pause_menu_continue
       text: Continue
     - key: ui_pause_menu_return
-      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
-        \u043C\u0435\u043D\u044E"
+      text: To main menu
     - key: ui_main_menu_new_game
       text: New game
     - key: ui_main_menu_continue_game
@@ -544,17 +543,17 @@ MonoBehaviour:
     - key: ui_lang_english
       text: English
     - key: ui_lang_chinese
-      text: Chinese
+      text: "\u4E2D\u6587 (\u7B80\u4F53)"
     - key: ui_lang_spanish
-      text: Spanish
+      text: "Espa\xF1ol"
     - key: ui_lang_portuguese
-      text: Portuguese
+      text: "Portugu\xEAs"
     - key: ui_lang_german
-      text: German
+      text: Deutsch
     - key: ui_lang_japanese
-      text: Japanese
+      text: "\u65E5\u672C\u8A9E"
     - key: ui_lang_french
-      text: French
+      text: "Fran\xE7ais"
     - key: ui_drone_name
       text: Diuretic Drone
     - key: ui_polivalka_name
@@ -564,152 +563,54 @@ MonoBehaviour:
     - key: ui_rails_name
       text: Peeing Rails
     - key: ui_cats_name
-      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+      text: Best Assistants
     - key: ui_bubbles_name
-      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+      text: Piss-machine
     - key: ui_gun_name
-      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F65"
+      text: RP64 Attachment
     - key: ui_rays_name
-      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+      text: Beam Generator
     - key: ui_tutorial_title
-      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
-        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
-        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+      text: WELCOME TO THE TOILET DONK CORPORATION!!!
     - key: ui_tutorial_message
-      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
-        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
-        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
-        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
-        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
-        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
-        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
-        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
-        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
-        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
-        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
-        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
-        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
-        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
-        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
-        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
-        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
-        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
+      text: 'Your task is to make people happy.
+
+        
+
+        1. Rely only
+        on yourself. Use all the bubble reserves to make us even richer:
+
+        <b>[LMB]
+        - stream.</b>
+
+        2. Buy only the freshest goods from our representative
+        (be careful with his teeth):
+
+        <b>[E] - interact.</b>.
+
+        3.
+        Use our entire arsenal when you save up some money:
+
+        <b>[Tab] -
+        build.</b>.
+
+        4. And finally. <b>CLOSE THE CAFE BEFORE DARKNESS!!!!!</b>
+
+'
+    - key: ui_automate_bottle_hint
+      text: 'You need to insert a bottle
+
+'
     - key: ui_door_controls_hint
-      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
+      text: '[E] Open/Close'
     - key: ui_toilet_controls_hint
-      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
-        \u0441\u043C\u0435\u043D\u0443"
+      text: '[E] Shop [T] Close Shift'
     - key: ui_build_controls_hint
-      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
-        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+      text: '[LMB] Build [RMB] Cancel [MMB] Rotate'
     - key: ui_item_controls_hint
-      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
-        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+      text: '[Q] Put [LMB] Throw [E] Use'
     - key: ui_build_controls_minihint
-      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
-    - key: quest_run_name
-      text: Run, PissBoy! Run!
-    - key: quest_run_description
-      text: Runs <b>{0}</b> kilometers
-    - key: quest_allyourself_name
-      text: All by yourself!
-    - key: quest_allyourself_description
-      text: Piss <b>{0}</b> liters
-    - key: quest_fullbottle_name
-      text: Why'd you do that?
-    - key: quest_fullbottle_description
-      text: Throw away <b>{0}</b> full bottles
-    - key: quest_earn100_name
-      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
-    - key: quest_earn100_description
-      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
-    - key: quest_buildfirst_name
-      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
-    - key: quest_buildfirst_description
-      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
-    - key: quest_buysupplier_name
-      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
-    - key: quest_buysupplier_description
-      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
-        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
-    - key: quest_zomdiedie_name
-      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
-    - key: quest_zomdiedie_description
-      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
-        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
-    - key: quest_day1_name
-      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
-    - key: quest_day1_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
-        \u043C\u0435\u0447\u0442\u044B"
-    - key: quest_day10_name
-      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
-        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
-    - key: quest_day10_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
-        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
-    - key: quest_vershina_name
-      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
-    - key: quest_vershina_description
-      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
-    - key: quest_toilettalk_name
-      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
-    - key: quest_toilettalk_description
-      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
-        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
-    - key: quest_plants_name
-      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
-    - key: quest_plants_description
-      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
-        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
-    - key: quest_opendoors_name
-      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
-    - key: quest_opendoors_description
-      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
-        \u043C\u0430\u043B\u044B\u0448"
-    - key: skibidi_random_phrase_1
-      text: Come on! Buy!
-    - key: skibidi_random_phrase_2
-      text: Don't whine. There's no discounts
-    - key: skibidi_random_phrase_3
-      text: Only today's urine is on sale
-    - key: skibidi_random_phrase_4
-      text: Piss is piss, but it's good piss!
-    - key: skibidi_random_phrase_5
-      text: This is a deliciously delicious piss!
-    - key: skibidi_random_phrase_6
-      text: You smell like piss, bro! Buy it and get out
-    - key: skibidi_random_phrase_7
-      text: "Death Grips \u2014 \xABPss Pss\xBB starts playing"
-    - key: skibidi_random_phrase_8
-      text: "You look like a guy whose mommmy told \u201Cpsst, psst, psst\u201D and
-        now you can't take a piss without it"
-    - key: skibidi_random_phrase_9
-      text: You peed your pants, bro
-    - key: skibidi_random_phrase_10
-      text: Ha-ha. That's a pissing funny line. Now piss off
-    - key: skibidi_random_phrase_11
-      text: Lets have a drink after finals. No? Why not?
-    - key: skibidi_random_phrase_12
-      text: Why did the urine sample join a band? It had great pee-rhythm!
-    - key: skibidi_random_phrase_13
-      text: Urine. There are so many things in that word.
-    - key: skibidi_random_phrase_14
-      text: My suppliers are pissing like a race horse
-    - key: skibidi_random_phrase_15
-      text: This pee is great for pissy moods!
-    - key: skibidi_random_phrase_16
-      text: How do you make a bathroom laugh? Just flush out some hilarious pee jokes!
-    - key: skibidi_random_phrase_17
-      text: Tell your PEEps this sim is out. Breaking the fourth wall for sales!
-        Capitalism!
-    - key: skibidi_random_phrase_18
-      text: "Did you wake up one day and say: \u201CI want to sell piss\u201D? What
-        was her name?"
-    - key: skibidi_random_phrase_19
-      text: Your job is still more useful than a marketer's job
+      text: '[TAB] BUILD'
     - key: trump_name
       text: Orange asf
     - key: trump_description
@@ -780,7 +681,7 @@ MonoBehaviour:
       text: You shall not piss!
     - key: jinx_name
       text: Peenx
-    - key: Jinx_description
+    - key: jinx_description
       text: It's supposed to be blue, but we didn't have time for that.
     - key: markaryan_name
       text: Misogimli
@@ -815,44 +716,36 @@ MonoBehaviour:
     - key: substance_description
       text: The Other You pissed yourself at that party
     - key: dicktator_name
-      text: 
+      text: Dic(k)tator
     - key: dicktator_description
-      text: 
+      text: I order you to piss!
     - key: ramzi_name
-      text: 
+      text: Urinary Mouth
     - key: ramzi_description
-      text: 
+      text: This piss is burnt!
     - key: remy_name
-      text: 
+      text: The Paris mouse
     - key: remy_description
-      text: 
+      text: What can a rat say? Psst.
     - key: shef_name
-      text: 
+      text: Chef Urinary
     - key: shef_description
-      text: 
+      text: It's running down your mustache.
     - key: peterson_name
-      text: 
+      text: J. Pissterson
     - key: peterson_description
-      text: 
+      text: 'The 13th rule of life: never hold back if you want to take a piss.'
     - key: pie_name
-      text: 
+      text: Pew Die Pee
     - key: pie_description
-      text: 
+      text: I don't want to joke about him, he's a good man
     - key: rogan_name
-      text: 
+      text: NONE
     - key: rogan_description
-      text: 
+      text: NONE
     - key: tucker_name
-      text: 
+      text: NONE
     - key: tucker_description
-      text: 
-    - key: biser_fez_name
-      text: NONE
-    - key: biser_fez_description
-      text: NONE
-    - key: mister_pissed_name
-      text: NONE
-    - key: mister_pissed_description
       text: NONE
     - key: anya_description
       text: NONE
@@ -897,6 +790,99 @@ MonoBehaviour:
       text: BUY {0}$
     - key: suppliershop_price_pattern
       text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
+    - key: quest_run_name
+      text: Run, PissBoy! Run!
+    - key: quest_run_description
+      text: Runs <b>{0}</b> kilometers
+    - key: quest_allyourself_name
+      text: All by yourself!
+    - key: quest_allyourself_description
+      text: Piss <b>{0}</b> liters
+    - key: quest_fullbottle_name
+      text: Why'd you do that?
+    - key: quest_fullbottle_description
+      text: Throw away <b>{0}</b> full bottles
+    - key: quest_earn100_name
+      text: Mom's Businessman
+    - key: quest_earn100_description
+      text: Earn <b>{0}</b> Mom's Bucks
+    - key: quest_buildfirst_name
+      text: Foreman is satisfied
+    - key: quest_buildfirst_description
+      text: Build the first urinary mechanism
+    - key: quest_buysupplier_name
+      text: Anything else?
+    - key: quest_buysupplier_description
+      text: Acquire <b>{0}</b> new suppliers
+    - key: quest_zomdiedie_name
+      text: Work with the union
+    - key: quest_zomdiedie_description
+      text: Satisfy <b>{0}</b> dissatisfied
+    - key: quest_day1_name
+      text: Dream destroyed
+    - key: quest_day1_description
+      text: Spend the first day at your dream job
+    - key: quest_day10_name
+      text: Humanity lost
+    - key: quest_day10_description
+      text: Spend <b>{0}</b> days at work
+    - key: quest_vershina_name
+      text: Not a link!
+    - key: quest_vershina_description
+      text: Climb higher
+    - key: quest_toilettalk_name
+      text: Straight to the ears
+    - key: quest_toilettalk_description
+      text: Listen to your colleague
+    - key: quest_plants_name
+      text: Greenpeace Member
+    - key: quest_plants_description
+      text: Help green <b>{0}</b> bushes
+    - key: quest_opendoors_name
+      text: We have opened!
+    - key: quest_opendoors_description
+      text: Open all doors, baby
+    - key: skibidi_random_phrase_1
+      text: Come on! Buy!
+    - key: skibidi_random_phrase_2
+      text: Don't whine. There's no discounts
+    - key: skibidi_random_phrase_3
+      text: Only today's urine is on sale
+    - key: skibidi_random_phrase_4
+      text: Piss is piss, but it's good piss!
+    - key: skibidi_random_phrase_5
+      text: This is a deliciously delicious piss!
+    - key: skibidi_random_phrase_6
+      text: You smell like piss, bro! Buy it and get out
+    - key: skibidi_random_phrase_7
+      text: "Death Grips \u2014 \xABPss Pss\xBB starts playing"
+    - key: skibidi_random_phrase_8
+      text: "You look like a guy whose mommmy told \u201Cpsst, psst, psst\u201D and
+        now you can't take a piss without it"
+    - key: skibidi_random_phrase_9
+      text: You peed your pants, bro
+    - key: skibidi_random_phrase_10
+      text: Ha-ha. That's a pissing funny line. Now piss off
+    - key: skibidi_random_phrase_11
+      text: Lets have a drink after finals. No? Why not?
+    - key: skibidi_random_phrase_12
+      text: Why did the urine sample join a band? It had great pee-rhythm!
+    - key: skibidi_random_phrase_13
+      text: Urine. There are so many things in that word.
+    - key: skibidi_random_phrase_14
+      text: My suppliers are pissing like a race horse
+    - key: skibidi_random_phrase_15
+      text: This pee is great for pissy moods!
+    - key: skibidi_random_phrase_16
+      text: How do you make a bathroom laugh? Just flush out some hilarious pee jokes!
+    - key: skibidi_random_phrase_17
+      text: Tell your PEEps this sim is out. Breaking the fourth wall for sales!
+        Capitalism!
+    - key: skibidi_random_phrase_18
+      text: "Did you wake up one day and say: \u201CI want to sell piss\u201D? What
+        was her name?"
+    - key: skibidi_random_phrase_19
+      text: Your job is still more useful than a marketer's job
     - key: check_name_1
       text: 'FINE: DIURETIC INSPECTION'
     - key: check_description_1
@@ -924,7 +910,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: 
     - key: ui_suppliers
-      text: "\u0421\u0441\u0430\u043A\u0438"
+      text: 
     - key: ui_quests
       text: 
     - key: ui_checks
@@ -936,16 +922,15 @@ MonoBehaviour:
     - key: ui_pay
       text: 
     - key: ui_suppliers_shop
-      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
+      text: 
     - key: ui_rent_button
       text: 
     - key: ui_open
-      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+      text: 
     - key: ui_pause_menu_continue
       text: 
     - key: ui_pause_menu_return
-      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
-        \u043C\u0435\u043D\u044E"
+      text: 
     - key: ui_main_menu_new_game
       text: 
     - key: ui_main_menu_continue_game
@@ -979,153 +964,29 @@ MonoBehaviour:
     - key: ui_rails_name
       text: 
     - key: ui_cats_name
-      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+      text: 
     - key: ui_bubbles_name
-      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+      text: 
     - key: ui_gun_name
-      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F66"
+      text: 
     - key: ui_rays_name
-      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+      text: 
     - key: ui_tutorial_title
-      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
-        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
-        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+      text: 
     - key: ui_tutorial_message
-      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
-        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
-        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
-        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
-        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
-        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
-        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
-        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
-        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
-        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
-        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
-        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
-        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
-        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
-        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
-        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
-        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
-        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
+      text: 
+    - key: ui_automate_bottle_hint
+      text: 
     - key: ui_door_controls_hint
-      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
+      text: 
     - key: ui_toilet_controls_hint
-      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
-        \u0441\u043C\u0435\u043D\u0443"
+      text: 
     - key: ui_build_controls_hint
-      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
-        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+      text: 
     - key: ui_item_controls_hint
-      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
-        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+      text: 
     - key: ui_build_controls_minihint
-      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
-    - key: quest_run_name
-      text: Run, pisser! Run!
-    - key: quest_run_description
-      text: Runs <b>{0}</b> kilometers
-    - key: quest_allyourself_name
-      text: All by yourself!
-    - key: quest_allyourself_description
-      text: Piss <b>{0}</b> liters
-    - key: quest_fullbottle_name
-      text: Why'd you do that?
-    - key: quest_fullbottle_description
-      text: Throw away <b>{0}</b> full bottles
-    - key: quest_earn100_name
-      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
-    - key: quest_earn100_description
-      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
-    - key: quest_buildfirst_name
-      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
-    - key: quest_buildfirst_description
-      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
-    - key: quest_buysupplier_name
-      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
-    - key: quest_buysupplier_description
-      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
-        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
-    - key: quest_zomdiedie_name
-      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
-    - key: quest_zomdiedie_description
-      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
-        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
-    - key: quest_day1_name
-      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
-    - key: quest_day1_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
-        \u043C\u0435\u0447\u0442\u044B"
-    - key: quest_day10_name
-      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
-        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
-    - key: quest_day10_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
-        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
-    - key: quest_vershina_name
-      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
-    - key: quest_vershina_description
-      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
-    - key: quest_toilettalk_name
-      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
-    - key: quest_toilettalk_description
-      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
-        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
-    - key: quest_plants_name
-      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
-    - key: quest_plants_description
-      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
-        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
-    - key: quest_opendoors_name
-      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
-    - key: quest_opendoors_description
-      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
-        \u043C\u0430\u043B\u044B\u0448"
-    - key: skibidi_random_phrase_1
-      text: Come on! Buy!
-    - key: skibidi_random_phrase_2
-      text: Don't whine. There's no discounts
-    - key: skibidi_random_phrase_3
-      text: Only today's urine is on sale
-    - key: skibidi_random_phrase_4
-      text: Piss is piss, but it's good piss!
-    - key: skibidi_random_phrase_5
-      text: This is a deliciously delicious piss!
-    - key: skibidi_random_phrase_6
-      text: You smell like piss, bro! Buy it and get out
-    - key: skibidi_random_phrase_7
-      text: We all peed our pants when we were kids. But not all of us will pee our
-        pants when we're old. Think about it.
-    - key: skibidi_random_phrase_8
-      text: "You look like a guy whose mommmy told \u201Cpsst, psst, psst\u201D and
-        now you can't take a piss without it"
-    - key: skibidi_random_phrase_9
-      text: You peed your pants, bro
-    - key: skibidi_random_phrase_10
-      text: Ha-ha. That's a pissing funny line. Now piss off
-    - key: skibidi_random_phrase_11
-      text: Let's have a drink too! How dare you refuse me?
-    - key: skibidi_random_phrase_12
-      text: Why don't we put Little Peeing Monk out front?
-    - key: skibidi_random_phrase_13
-      text: Urine. There are so many things in that word.
-    - key: skibidi_random_phrase_14
-      text: Would you love your girlfriend if she peed her pants? That's how I met
-        my wife.
-    - key: skibidi_random_phrase_15
-      text: Come on, get your fire hose! Okay, not today.
-    - key: skibidi_random_phrase_16
-      text: We could sell cupcakes instead of all that stuff.
-    - key: skibidi_random_phrase_17
-      text: Soon you'll have the title of urine tester.
-    - key: skibidi_random_phrase_18
-      text: "Did you wake up one day and say, \u201CI want to sell urine\u201D? What
-        was the name of the girl who broke your heart?"
-    - key: skibidi_random_phrase_19
-      text: Your job is still more useful than a marketer's job
+      text: 
     - key: trump_name
       text: The Orange Man
     - key: trump_description
@@ -1196,7 +1057,7 @@ MonoBehaviour:
       text: You shall not piss!
     - key: jinx_name
       text: Peenx
-    - key: Jinx_description
+    - key: jinx_description
       text: It's supposed to be blue, but we didn't have time for that.
     - key: markaryan_name
       text: Misogimli
@@ -1231,44 +1092,36 @@ MonoBehaviour:
     - key: substance_description
       text: The Other You pissed yourself at that party
     - key: dicktator_name
-      text: 
+      text: Dic(k)tator
     - key: dicktator_description
-      text: 
+      text: I order you to piss!
     - key: ramzi_name
-      text: 
+      text: Urinary Mouth
     - key: ramzi_description
-      text: 
+      text: This piss is burnt!
     - key: remy_name
-      text: 
+      text: The Paris mouse
     - key: remy_description
-      text: 
+      text: What can a rat say? Psst.
     - key: shef_name
-      text: 
+      text: Chef Urinary
     - key: shef_description
-      text: 
+      text: It's running down your mustache.
     - key: peterson_name
-      text: 
+      text: J. Pissterson
     - key: peterson_description
-      text: 
+      text: 'The 13th rule of life: never hold back if you want to take a piss.'
     - key: pie_name
-      text: 
+      text: Pew Die Pee
     - key: pie_description
-      text: 
+      text: I don't want to joke about him, he's a good man
     - key: rogan_name
-      text: 
+      text: NONE
     - key: rogan_description
-      text: 
+      text: NONE
     - key: tucker_name
-      text: 
+      text: NONE
     - key: tucker_description
-      text: 
-    - key: biser_fez_name
-      text: NONE
-    - key: biser_fez_description
-      text: NONE
-    - key: mister_pissed_name
-      text: NONE
-    - key: mister_pissed_description
       text: NONE
     - key: anya_description
       text: NONE
@@ -1313,6 +1166,101 @@ MonoBehaviour:
       text: BUY {0}$
     - key: suppliershop_price_pattern
       text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
+    - key: quest_run_name
+      text: Run, pisser! Run!
+    - key: quest_run_description
+      text: Runs <b>{0}</b> kilometers
+    - key: quest_allyourself_name
+      text: All by yourself!
+    - key: quest_allyourself_description
+      text: Piss <b>{0}</b> liters
+    - key: quest_fullbottle_name
+      text: Why'd you do that?
+    - key: quest_fullbottle_description
+      text: Throw away <b>{0}</b> full bottles
+    - key: quest_earn100_name
+      text: Mom's Businessman
+    - key: quest_earn100_description
+      text: Earn <b>{0}</b> Mom's Bucks
+    - key: quest_buildfirst_name
+      text: Foreman is satisfied
+    - key: quest_buildfirst_description
+      text: Build the first urinary mechanism
+    - key: quest_buysupplier_name
+      text: Anything else?
+    - key: quest_buysupplier_description
+      text: Acquire <b>{0}</b> new suppliers
+    - key: quest_zomdiedie_name
+      text: Work with the union
+    - key: quest_zomdiedie_description
+      text: Satisfy <b>{0}</b> dissatisfied
+    - key: quest_day1_name
+      text: Dream destroyed
+    - key: quest_day1_description
+      text: Spend the first day at your dream job
+    - key: quest_day10_name
+      text: Humanity lost
+    - key: quest_day10_description
+      text: Spend <b>{0}</b> days at work
+    - key: quest_vershina_name
+      text: Not a link!
+    - key: quest_vershina_description
+      text: Climb higher
+    - key: quest_toilettalk_name
+      text: Straight to the ears
+    - key: quest_toilettalk_description
+      text: Listen to your colleague
+    - key: quest_plants_name
+      text: Greenpeace Member
+    - key: quest_plants_description
+      text: Help green <b>{0}</b> bushes
+    - key: quest_opendoors_name
+      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
+    - key: quest_opendoors_description
+      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
+        \u043C\u0430\u043B\u044B\u0448"
+    - key: skibidi_random_phrase_1
+      text: Come on! Buy!
+    - key: skibidi_random_phrase_2
+      text: Don't whine. There's no discounts
+    - key: skibidi_random_phrase_3
+      text: Only today's urine is on sale
+    - key: skibidi_random_phrase_4
+      text: Piss is piss, but it's good piss!
+    - key: skibidi_random_phrase_5
+      text: This is a deliciously delicious piss!
+    - key: skibidi_random_phrase_6
+      text: You smell like piss, bro! Buy it and get out
+    - key: skibidi_random_phrase_7
+      text: We all peed our pants when we were kids. But not all of us will pee our
+        pants when we're old. Think about it.
+    - key: skibidi_random_phrase_8
+      text: "You look like a guy whose mommmy told \u201Cpsst, psst, psst\u201D and
+        now you can't take a piss without it"
+    - key: skibidi_random_phrase_9
+      text: You peed your pants, bro
+    - key: skibidi_random_phrase_10
+      text: Ha-ha. That's a pissing funny line. Now piss off
+    - key: skibidi_random_phrase_11
+      text: Let's have a drink too! How dare you refuse me?
+    - key: skibidi_random_phrase_12
+      text: Why don't we put Little Peeing Monk out front?
+    - key: skibidi_random_phrase_13
+      text: Urine. There are so many things in that word.
+    - key: skibidi_random_phrase_14
+      text: Would you love your girlfriend if she peed her pants? That's how I met
+        my wife.
+    - key: skibidi_random_phrase_15
+      text: Come on, get your fire hose! Okay, not today.
+    - key: skibidi_random_phrase_16
+      text: We could sell cupcakes instead of all that stuff.
+    - key: skibidi_random_phrase_17
+      text: Soon you'll have the title of urine tester.
+    - key: skibidi_random_phrase_18
+      text: "Did you wake up one day and say, \u201CI want to sell urine\u201D? What
+        was the name of the girl who broke your heart?"
+    - key: skibidi_random_phrase_19
+      text: Your job is still more useful than a marketer's job
     - key: check_name_1
       text: 
     - key: check_description_1
@@ -1336,7 +1284,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: "\u8150\u8680\u6027"
     - key: ui_suppliers
-      text: "\u0421\u0441\u0430\u043A\u0438"
+      text: "\u5C3F\u6DB2"
     - key: ui_quests
       text: "\u6311\u6218"
     - key: ui_checks
@@ -1348,16 +1296,15 @@ MonoBehaviour:
     - key: ui_pay
       text: "\u652F\u4ED8"
     - key: ui_suppliers_shop
-      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
+      text: "\u5546\u5E97"
     - key: ui_rent_button
       text: "\u79DF\u91D1"
     - key: ui_open
-      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+      text: "\u6253\u5F00"
     - key: ui_pause_menu_continue
       text: "\u7EE7\u7EED"
     - key: ui_pause_menu_return
-      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
-        \u043C\u0435\u043D\u044E"
+      text: "\u9000\u51FA\u4E3B\u83DC\u5355\n"
     - key: ui_main_menu_new_game
       text: "\u65B0\u6E38\u620F"
     - key: ui_main_menu_continue_game
@@ -1371,17 +1318,17 @@ MonoBehaviour:
     - key: ui_lang_english
       text: English
     - key: ui_lang_chinese
-      text: Chinese
+      text: "\u4E2D\u6587 (\u7B80\u4F53)"
     - key: ui_lang_spanish
-      text: Spanish
+      text: "Espa\xF1ol"
     - key: ui_lang_portuguese
-      text: Portuguese
+      text: "Portugu\xEAs"
     - key: ui_lang_german
-      text: German
+      text: Deutsch
     - key: ui_lang_japanese
-      text: Japanese
+      text: "\u65E5\u672C\u8A9E"
     - key: ui_lang_french
-      text: French
+      text: "Fran\xE7ais"
     - key: ui_drone_name
       text: "\u5229\u5C3F\u65E0\u4EBA\u673A"
     - key: ui_polivalka_name
@@ -1391,149 +1338,34 @@ MonoBehaviour:
     - key: ui_rails_name
       text: "\u6492\u5C3F\u94C1\u8F68"
     - key: ui_cats_name
-      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+      text: "\u6700\u4F73\u52A9\u624B"
     - key: ui_bubbles_name
-      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+      text: "\u5C0F\u4FBF\u673A"
     - key: ui_gun_name
-      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F67"
+      text: "RP64 \u9644\u4EF6"
     - key: ui_rays_name
-      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+      text: "\u5149\u675F\u53D1\u751F\u5668"
     - key: ui_tutorial_title
-      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
-        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
-        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+      text: "\u6B22\u8FCE\u6765\u5230\u201C\u5395\u6240\u7533\u5C14\u201D\u516C\u53F8!!!"
     - key: ui_tutorial_message
-      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
-        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
-        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
-        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
-        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
-        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
-        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
-        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
-        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
-        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
-        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
-        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
-        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
-        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
-        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
-        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
-        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
-        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
+      text: "\u4F60\u7684\u4EFB\u52A1\u662F\u8BA9\u4EBA\u4EEC\u5FEB\u4E50\u3002\n\n1.
+        \u53EA\u4F9D\u9760\u81EA\u5DF1\u3002\u5229\u7528\u6240\u6709\u7684\u6CE1\u6CAB\u50A8\u5907\u8BA9\u6211\u4EEC\u53D8\u5F97\u66F4\u5BCC\u6709\uFF1A\n<b>[\u5DE6\u952E]
+        - \u6D41\u3002</b>\n2. \u53EA\u4ECE\u6211\u4EEC\u7684\u4EE3\u8868\u90A3\u91CC\u8D2D\u4E70\u6700\u65B0\u9C9C\u7684\u5546\u54C1\uFF08\u5C0F\u5FC3\u4ED6\u7684\u7259\u9F7F\uFF09\uFF1A\n<b>[E]
+        - \u4E92\u52A8\u3002</b>\u3002\n3. \u5F53\u4F60\u79EF\u6512\u4E86\u4E00\u4E9B\u94B1\u65F6\uFF0C\u4F7F\u7528\u6211\u4EEC\u6240\u6709\u7684\u6B66\u5668\u5E93\uFF1A\n<b>[Tab]
+        - \u5EFA\u9020\u3002</b>\u3002\n4. \u6700\u540E\u3002<b>\u5728\u5929\u9ED1\u4E4B\u524D\u5173\u95ED\u5496\u5561\u9986!!!!!</b>\n"
+    - key: ui_automate_bottle_hint
+      text: "\u9700\u8981\u63D2\u5165\u74F6\u5B50\n"
     - key: ui_door_controls_hint
-      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
+      text: "[E] \u6253\u5F00/\u5173\u95ED"
     - key: ui_toilet_controls_hint
-      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
-        \u0441\u043C\u0435\u043D\u0443"
+      text: "[E] \u5546\u5E97 [T] \u5173\u95ED\u73ED\u6B21"
     - key: ui_build_controls_hint
-      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
-        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+      text: "[\u5DE6\u952E] \u5EFA\u9020 [\u53F3\u952E] \u53D6\u6D88 [\u4E2D\u952E]
+        \u65CB\u8F6C"
     - key: ui_item_controls_hint
-      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
-        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+      text: "[Q] \u653E\u7F6E [\u5DE6\u952E] \u6295\u63B7 [E] \u4F7F\u7528"
     - key: ui_build_controls_minihint
-      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
-    - key: quest_run_name
-      text: "\u8DD1\uFF0C\u6492\u5C3F\u8005\uFF01\u5FEB\u8DD1\uFF01"
-    - key: quest_run_description
-      text: "\u8DD1\u4E86 <b>{0}</b> \u516C\u91CC"
-    - key: quest_allyourself_name
-      text: "\u5168\u9760\u4F60\u81EA\u5DF1\uFF01"
-    - key: quest_allyourself_description
-      text: "\u6492\u5C3F <b>{0}</b> \u5347"
-    - key: quest_fullbottle_name
-      text: "\u4F60\u4E3A\u4EC0\u4E48\u8FD9\u4E48\u505A\uFF1F"
-    - key: quest_fullbottle_description
-      text: "\u6254\u6389 <b>{0}</b> \u74F6\u6EE1\u74F6\u5B50"
-    - key: quest_earn100_name
-      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
-    - key: quest_earn100_description
-      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
-    - key: quest_buildfirst_name
-      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
-    - key: quest_buildfirst_description
-      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
-    - key: quest_buysupplier_name
-      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
-    - key: quest_buysupplier_description
-      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
-        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
-    - key: quest_zomdiedie_name
-      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
-    - key: quest_zomdiedie_description
-      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
-        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
-    - key: quest_day1_name
-      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
-    - key: quest_day1_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
-        \u043C\u0435\u0447\u0442\u044B"
-    - key: quest_day10_name
-      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
-        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
-    - key: quest_day10_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
-        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
-    - key: quest_vershina_name
-      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
-    - key: quest_vershina_description
-      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
-    - key: quest_toilettalk_name
-      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
-    - key: quest_toilettalk_description
-      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
-        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
-    - key: quest_plants_name
-      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
-    - key: quest_plants_description
-      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
-        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
-    - key: quest_opendoors_name
-      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
-    - key: quest_opendoors_description
-      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
-        \u043C\u0430\u043B\u044B\u0448"
-    - key: skibidi_random_phrase_1
-      text: "\u5FEB\u70B9\uFF01\u4E70\u5427\uFF01"
-    - key: skibidi_random_phrase_2
-      text: "\u522B\u62B1\u6028\u3002\u6CA1\u6709\u6298\u6263"
-    - key: skibidi_random_phrase_3
-      text: "\u53EA\u6709\u4ECA\u5929\u7684\u5C3F\u6DB2\u5728\u552E"
-    - key: skibidi_random_phrase_4
-      text: "\u5C3F\u5C31\u662F\u5C3F\uFF0C\u4F46\u8FD9\u662F\u597D\u5C3F\uFF01"
-    - key: skibidi_random_phrase_5
-      text: "\u8FD9\u662F\u7F8E\u5473\u53EF\u53E3\u7684\u5C3F\uFF01"
-    - key: skibidi_random_phrase_6
-      text: "\u4F60\u95FB\u8D77\u6765\u50CF\u5C3F\uFF0C\u5144\u5F1F\uFF01\u4E70\u4E86\u7136\u540E\u8D70"
-    - key: skibidi_random_phrase_7
-      text: "\u6211\u4EEC\u5C0F\u65F6\u5019\u90FD\u5C3F\u88E4\u5B50\u3002\u4F46\u5E76\u4E0D\u662F\u6240\u6709\u4EBA\u8001\u4E86\u90FD\u4F1A\u5C3F\u88E4\u5B50\u3002\u60F3\u60F3\u5427\u3002"
-    - key: skibidi_random_phrase_8
-      text: "\u4F60\u770B\u8D77\u6765\u50CF\u4E00\u4E2A\u5988\u5988\u544A\u8BC9\u201C\u5618\uFF0C\u5618\uFF0C\u5618\u201D\u7684\u5BB6\u4F19\uFF0C\u73B0\u5728\u6CA1\u6709\u5B83\u4F60\u5C31\u4E0D\u80FD\u6492\u5C3F"
-    - key: skibidi_random_phrase_9
-      text: "\u4F60\u5C3F\u88E4\u5B50\u4E86\uFF0C\u5144\u5F1F"
-    - key: skibidi_random_phrase_10
-      text: "\u54C8\u54C8\u3002\u8FD9\u662F\u4E00\u4E2A\u8D85\u7EA7\u641E\u7B11\u7684\u53F0\u8BCD\u3002\u73B0\u5728\u6EDA\u5F00"
-    - key: skibidi_random_phrase_11
-      text: "\u6211\u4EEC\u4E5F\u6765\u559D\u4E00\u676F\u5427\uFF01\u4F60\u600E\u4E48\u6562\u62D2\u7EDD\u6211\uFF1F"
-    - key: skibidi_random_phrase_12
-      text: "\u4E3A\u4EC0\u4E48\u6211\u4EEC\u4E0D\u628A\u5C0F\u6492\u5C3F\u548C\u5C1A\u653E\u5728\u524D\u9762\uFF1F"
-    - key: skibidi_random_phrase_13
-      text: "\u5C3F\u3002\u8FD9\u4E2A\u8BCD\u91CC\u6709\u8FD9\u4E48\u591A\u4E1C\u897F\u3002"
-    - key: skibidi_random_phrase_14
-      text: "\u5982\u679C\u4F60\u7684\u5973\u670B\u53CB\u5C3F\u88E4\u5B50\uFF0C\u4F60\u8FD8\u4F1A\u7231\u5979\u5417\uFF1F\u90A3\u662F\u6211\u9047\u89C1\u6211\u59BB\u5B50\u7684\u65B9\u5F0F\u3002"
-    - key: skibidi_random_phrase_15
-      text: "\u5FEB\u70B9\uFF0C\u62FF\u4F60\u7684\u6D88\u9632\u6C34\u5E26\uFF01\u597D\u5427\uFF0C\u4ECA\u5929\u4E0D\u884C\u3002"
-    - key: skibidi_random_phrase_16
-      text: "\u6211\u4EEC\u53EF\u4EE5\u5356\u676F\u5B50\u86CB\u7CD5\u800C\u4E0D\u662F\u90A3\u4E9B\u4E1C\u897F\u3002"
-    - key: skibidi_random_phrase_17
-      text: "\u5F88\u5FEB\u4F60\u5C31\u4F1A\u6709\u5C3F\u6DB2\u6D4B\u8BD5\u5458\u7684\u5934\u8854\u3002"
-    - key: skibidi_random_phrase_18
-      text: "\u4F60\u6709\u4E00\u5929\u9192\u6765\u8BF4\uFF0C\u201C\u6211\u60F3\u5356\u5C3F\u201D\uFF1F\u90A3\u4E2A\u4F24\u4E86\u4F60\u5FC3\u7684\u5973\u5B69\u53EB\u4EC0\u4E48\u540D\u5B57\uFF1F"
-    - key: skibidi_random_phrase_19
-      text: "\u4F60\u7684\u5DE5\u4F5C\u4ECD\u7136\u6BD4\u5E02\u573A\u8425\u9500\u4EBA\u5458\u7684\u5DE5\u4F5C\u66F4\u6709\u7528"
+      text: "[TAB] \u5EFA\u9020"
     - key: trump_name
       text: "\u6A59\u8272\u7684\u4EBA"
     - key: trump_description
@@ -1583,100 +1415,92 @@ MonoBehaviour:
     - key: gnom_description
       text: "\u50CF\u4ED6\u672A\u6765\u7684\u836F\u7269\u6210\u763E\u4E00\u6837\u82E6\u6DA9"
     - key: alt_name
-      text: 
+      text: Alt-pee
     - key: alt_description
-      text: 
+      text: "\u611F\u8C22\u5B87\u5B99\uFF0C\u5973\u5B69\u4EEC\u4E5F\u4F1A\u5C0F\u4FBF\uFF01"
     - key: asuka_name
-      text: 
+      text: "\u53EF\u60B2\u7684\u5C0F\u4FBF"
     - key: asuka_description
-      text: 
+      text: "\u8FDB\u5395\u6240\u5427\uFF0C\u771F\u55E3"
     - key: bu_name
-      text: 
+      text: "\u5618\uFF01"
     - key: bu_description
-      text: 
+      text: "\u5BB3\u6015\uFF1F\u751F\u6C14\u4E86\u3002"
     - key: doomer_name
-      text: 
+      text: "\u6291\u90C1\u76844chan"
     - key: doomer_description
-      text: 
+      text: "\u55EF\u3002\u7528\u5636\u5636\u58F0\u5728\u5C3F\u6DB2\u4E2D\u7184\u706D\u70DF\u8482..."
     - key: gandalf_name
-      text: 
+      text: "\u5192\u9669"
     - key: gandalf_description
-      text: 
+      text: "\u4F60\u4E0D\u5F97\u5C0F\u4FBF\uFF01"
     - key: jinx_name
-      text: 
-    - key: Jinx_description
-      text: 
+      text: Peenx
+    - key: jinx_description
+      text: "\u5B83\u5E94\u8BE5\u662F\u84DD\u8272\u7684\uFF0C\u4F46\u6211\u4EEC\u6CA1\u6709\u65F6\u95F4\u505A\u5230\u3002"
     - key: markaryan_name
-      text: 
+      text: "\u538C\u5973\u57FA\u59C6\u5229"
     - key: markaryan_description
-      text: 
+      text: "\u538C\u5973\u7684\u91D1\u59C6\u5229\uFF1F\u4ED6\u5728\u4ED6\u90A3\u4E2A\u9AD8\u5EA6\u80FD\u5BF9\u8C01\u6492\u5C3F\uFF1F"
     - key: goblin_name
-      text: 
+      text: "\u8001\u6D3E"
     - key: goblin_description
-      text: 
+      text: "\u79C3\u5934\u7237\u7237\u548C\u611A\u8822\u7B11\u8BDD\u7684\u5473\u9053\u3002"
     - key: president_name
-      text: 
+      text: "\u53CC\u751F\u5F71\u7684"
     - key: president_description
       text: 
     - key: queen_name
-      text: 
+      text: "\u65E7\u7684\u4E0D\u574F\u7684"
     - key: gueen_description
-      text: 
+      text: "\u4E0A\u5E1D\u4FDD\u4F51\u5C0F\u4FBF"
     - key: shrek_name
-      text: 
+      text: "\u53F2\u83B1\u514B\u897F"
     - key: shrek_description
-      text: 
+      text: "\u76F4\u6765\u81EA\u6CBC\u6CFD"
     - key: sigma_name
-      text: 
+      text: "\u03A3"
     - key: sigma_description
-      text: 
+      text: "\u897F\u683C\u739B\u5C3F\u6DB2\u5230\u897F\u683C\u739B\u8138"
     - key: snoop_name
-      text: 
+      text: "\u5C0F\u72D7"
     - key: snoop_description
-      text: 
+      text: "\u50CF\u4ED6\u80F8\u524D\u7684\u91D1\u94FE"
     - key: substance_name
-      text: 
+      text: "\u5C0F\u4FBF\u8D77\u6765"
     - key: substance_description
-      text: 
+      text: "\u53E6\u4E00\u4E2A\u4F60\u5728\u90A3\u4E2A\u6D3E\u5BF9\u4E0A\u5C3F\u6E7F\u4E86\u81EA\u5DF1"
     - key: dicktator_name
-      text: 
+      text: Dic(k)tator
     - key: dicktator_description
-      text: 
+      text: "\u6211\u547D\u4EE4\u4F60\u6492\u5C3F\uFF01"
     - key: ramzi_name
-      text: 
+      text: "\u5C3F\u9053\u4E4B\u53E3"
     - key: ramzi_description
-      text: 
+      text: "\u8FD9\u5C3F\u88AB\u70E7\u7126\u4E86\uFF01"
     - key: remy_name
-      text: 
+      text: "\u5DF4\u9ECE\u8001\u9F20"
     - key: remy_description
-      text: 
+      text: "\u8001\u9F20\u80FD\u8BF4\u4EC0\u4E48\uFF1F\u5618\u3002"
     - key: shef_name
-      text: 
+      text: "\u53A8\u5E08\u5C3F\u9053"
     - key: shef_description
-      text: 
+      text: "\u5B83\u987A\u7740\u4F60\u7684\u80E1\u987B\u6D41\u4E0B\u3002"
     - key: peterson_name
-      text: 
+      text: J. Pissterson
     - key: peterson_description
-      text: 
+      text: "\u4EBA\u751F\u7684\u7B2C13\u6761\u89C4\u5219\uFF1A\u5982\u679C\u4F60\u60F3\u6492\u5C3F\uFF0C\u6C38\u8FDC\u4E0D\u8981\u5FCD\u4F4F\u3002"
     - key: pie_name
-      text: 
+      text: Pew Die Pee
     - key: pie_description
-      text: 
+      text: "\u6211\u4E0D\u60F3\u5F00\u4ED6\u7684\u73A9\u7B11\uFF0C\u4ED6\u662F\u4E2A\u597D\u4EBA"
     - key: rogan_name
-      text: 
+      text: NONE
     - key: rogan_description
-      text: 
+      text: NONE
     - key: tucker_name
-      text: 
+      text: NONE
     - key: tucker_description
-      text: 
-    - key: biser_fez_name
-      text: NONE
-    - key: biser_fez_description
-      text: NONE
-    - key: mister_pissed_name
-      text: NONE
-    - key: mister_pissed_description
       text: NONE
     - key: anya_description
       text: NONE
@@ -1716,6 +1540,96 @@ MonoBehaviour:
       text: "\u8D2D\u4E70 {0}$"
     - key: suppliershop_price_pattern
       text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
+    - key: quest_run_name
+      text: "\u8DD1\uFF0C\u6492\u5C3F\u8005\uFF01\u5FEB\u8DD1\uFF01"
+    - key: quest_run_description
+      text: "\u8DD1\u4E86 <b>{0}</b> \u516C\u91CC"
+    - key: quest_allyourself_name
+      text: "\u5168\u9760\u4F60\u81EA\u5DF1\uFF01"
+    - key: quest_allyourself_description
+      text: "\u6492\u5C3F <b>{0}</b> \u5347"
+    - key: quest_fullbottle_name
+      text: "\u4F60\u4E3A\u4EC0\u4E48\u8FD9\u4E48\u505A\uFF1F"
+    - key: quest_fullbottle_description
+      text: "\u6254\u6389 <b>{0}</b> \u74F6\u6EE1\u74F6\u5B50"
+    - key: quest_earn100_name
+      text: "\u5988\u5988\u7684\u5546\u4EBA"
+    - key: quest_earn100_description
+      text: "\u8D5A\u53D6 <b>{0}</b> \u5988\u5988\u7684\u94B1"
+    - key: quest_buildfirst_name
+      text: "\u5DE5\u5934\u6EE1\u610F"
+    - key: quest_buildfirst_description
+      text: "\u5EFA\u9020\u7B2C\u4E00\u4E2A\u6CCC\u5C3F\u673A\u5236"
+    - key: quest_buysupplier_name
+      text: "\u8FD8\u6709\u4EC0\u4E48\u5417\uFF1F"
+    - key: quest_buysupplier_description
+      text: "\u83B7\u53D6 <b>{0}</b> \u4E2A\u65B0\u4F9B\u5E94\u5546"
+    - key: quest_zomdiedie_name
+      text: "\u4E0E\u5DE5\u4F1A\u5408\u4F5C"
+    - key: quest_zomdiedie_description
+      text: "\u6EE1\u8DB3 <b>{0}</b> \u4E2A\u4E0D\u6EE1\u8005"
+    - key: quest_day1_name
+      text: "\u68A6\u60F3\u7834\u706D"
+    - key: quest_day1_description
+      text: "\u5728\u68A6\u60F3\u7684\u5DE5\u4F5C\u4E2D\u5EA6\u8FC7\u7B2C\u4E00\u5929"
+    - key: quest_day10_name
+      text: "\u4EBA\u6027\u4E27\u5931"
+    - key: quest_day10_description
+      text: "\u5728\u5DE5\u4F5C\u4E2D\u5EA6\u8FC7 <b>{0}</b> \u5929"
+    - key: quest_vershina_name
+      text: "\u4E0D\u662F\u94FE\u63A5\uFF01"
+    - key: quest_vershina_description
+      text: "\u722C\u5F97\u66F4\u9AD8"
+    - key: quest_toilettalk_name
+      text: "\u76F4\u5165\u8033\u4E2D"
+    - key: quest_toilettalk_description
+      text: "\u503E\u542C\u4F60\u7684\u540C\u4E8B"
+    - key: quest_plants_name
+      text: "\u7EFF\u8272\u548C\u5E73\u6210\u5458"
+    - key: quest_plants_description
+      text: "\u5E2E\u52A9\u7EFF\u5316 <b>{0}</b> \u6811\u4E1B"
+    - key: quest_opendoors_name
+      text: "\u6211\u4EEC\u5F00\u4E1A\u4E86\uFF01"
+    - key: quest_opendoors_description
+      text: "\u6253\u5F00\u6240\u6709\u95E8\uFF0C\u5B9D\u8D1D"
+    - key: skibidi_random_phrase_1
+      text: "\u5FEB\u70B9\uFF01\u4E70\u5427\uFF01"
+    - key: skibidi_random_phrase_2
+      text: "\u522B\u62B1\u6028\u3002\u6CA1\u6709\u6298\u6263"
+    - key: skibidi_random_phrase_3
+      text: "\u53EA\u6709\u4ECA\u5929\u7684\u5C3F\u6DB2\u5728\u552E"
+    - key: skibidi_random_phrase_4
+      text: "\u5C3F\u5C31\u662F\u5C3F\uFF0C\u4F46\u8FD9\u662F\u597D\u5C3F\uFF01"
+    - key: skibidi_random_phrase_5
+      text: "\u8FD9\u662F\u7F8E\u5473\u53EF\u53E3\u7684\u5C3F\uFF01"
+    - key: skibidi_random_phrase_6
+      text: "\u4F60\u95FB\u8D77\u6765\u50CF\u5C3F\uFF0C\u5144\u5F1F\uFF01\u4E70\u4E86\u7136\u540E\u8D70"
+    - key: skibidi_random_phrase_7
+      text: "\u6211\u4EEC\u5C0F\u65F6\u5019\u90FD\u5C3F\u88E4\u5B50\u3002\u4F46\u5E76\u4E0D\u662F\u6240\u6709\u4EBA\u8001\u4E86\u90FD\u4F1A\u5C3F\u88E4\u5B50\u3002\u60F3\u60F3\u5427\u3002"
+    - key: skibidi_random_phrase_8
+      text: "\u4F60\u770B\u8D77\u6765\u50CF\u4E00\u4E2A\u5988\u5988\u544A\u8BC9\u201C\u5618\uFF0C\u5618\uFF0C\u5618\u201D\u7684\u5BB6\u4F19\uFF0C\u73B0\u5728\u6CA1\u6709\u5B83\u4F60\u5C31\u4E0D\u80FD\u6492\u5C3F"
+    - key: skibidi_random_phrase_9
+      text: "\u4F60\u5C3F\u88E4\u5B50\u4E86\uFF0C\u5144\u5F1F"
+    - key: skibidi_random_phrase_10
+      text: "\u54C8\u54C8\u3002\u8FD9\u662F\u4E00\u4E2A\u8D85\u7EA7\u641E\u7B11\u7684\u53F0\u8BCD\u3002\u73B0\u5728\u6EDA\u5F00"
+    - key: skibidi_random_phrase_11
+      text: "\u6211\u4EEC\u4E5F\u6765\u559D\u4E00\u676F\u5427\uFF01\u4F60\u600E\u4E48\u6562\u62D2\u7EDD\u6211\uFF1F"
+    - key: skibidi_random_phrase_12
+      text: "\u4E3A\u4EC0\u4E48\u6211\u4EEC\u4E0D\u628A\u5C0F\u6492\u5C3F\u548C\u5C1A\u653E\u5728\u524D\u9762\uFF1F"
+    - key: skibidi_random_phrase_13
+      text: "\u5C3F\u3002\u8FD9\u4E2A\u8BCD\u91CC\u6709\u8FD9\u4E48\u591A\u4E1C\u897F\u3002"
+    - key: skibidi_random_phrase_14
+      text: "\u5982\u679C\u4F60\u7684\u5973\u670B\u53CB\u5C3F\u88E4\u5B50\uFF0C\u4F60\u8FD8\u4F1A\u7231\u5979\u5417\uFF1F\u90A3\u662F\u6211\u9047\u89C1\u6211\u59BB\u5B50\u7684\u65B9\u5F0F\u3002"
+    - key: skibidi_random_phrase_15
+      text: "\u5FEB\u70B9\uFF0C\u62FF\u4F60\u7684\u6D88\u9632\u6C34\u5E26\uFF01\u597D\u5427\uFF0C\u4ECA\u5929\u4E0D\u884C\u3002"
+    - key: skibidi_random_phrase_16
+      text: "\u6211\u4EEC\u53EF\u4EE5\u5356\u676F\u5B50\u86CB\u7CD5\u800C\u4E0D\u662F\u90A3\u4E9B\u4E1C\u897F\u3002"
+    - key: skibidi_random_phrase_17
+      text: "\u5F88\u5FEB\u4F60\u5C31\u4F1A\u6709\u5C3F\u6DB2\u6D4B\u8BD5\u5458\u7684\u5934\u8854\u3002"
+    - key: skibidi_random_phrase_18
+      text: "\u4F60\u6709\u4E00\u5929\u9192\u6765\u8BF4\uFF0C\u201C\u6211\u60F3\u5356\u5C3F\u201D\uFF1F\u90A3\u4E2A\u4F24\u4E86\u4F60\u5FC3\u7684\u5973\u5B69\u53EB\u4EC0\u4E48\u540D\u5B57\uFF1F"
+    - key: skibidi_random_phrase_19
+      text: "\u4F60\u7684\u5DE5\u4F5C\u4ECD\u7136\u6BD4\u5E02\u573A\u8425\u9500\u4EBA\u5458\u7684\u5DE5\u4F5C\u66F4\u6709\u7528"
     - key: check_name_1
       text: "\u7F5A\u6B3E\uFF1A\u5229\u5C3F\u68C0\u67E5"
     - key: check_description_1
@@ -1739,7 +1653,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: "C\xE1usticidad"
     - key: ui_suppliers
-      text: "\u0421\u0441\u0430\u043A\u0438"
+      text: Orina
     - key: ui_quests
       text: "Desaf\xEDos"
     - key: ui_checks
@@ -1751,16 +1665,15 @@ MonoBehaviour:
     - key: ui_pay
       text: Pagar
     - key: ui_suppliers_shop
-      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
+      text: Tienda
     - key: ui_rent_button
       text: Alquiler
     - key: ui_open
-      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+      text: Abrir
     - key: ui_pause_menu_continue
       text: Continuar
     - key: ui_pause_menu_return
-      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
-        \u043C\u0435\u043D\u044E"
+      text: "Salir al men\xFA principal\n"
     - key: ui_main_menu_new_game
       text: Nuevo juego
     - key: ui_main_menu_continue_game
@@ -1774,17 +1687,17 @@ MonoBehaviour:
     - key: ui_lang_english
       text: English
     - key: ui_lang_chinese
-      text: Chinese
+      text: "\u4E2D\u6587 (\u7B80\u4F53)"
     - key: ui_lang_spanish
-      text: Spanish
+      text: "Espa\xF1ol"
     - key: ui_lang_portuguese
-      text: Portuguese
+      text: "Portugu\xEAs"
     - key: ui_lang_german
-      text: German
+      text: Deutsch
     - key: ui_lang_japanese
-      text: Japanese
+      text: "\u65E5\u672C\u8A9E"
     - key: ui_lang_french
-      text: French
+      text: "Fran\xE7ais"
     - key: ui_drone_name
       text: "Dron Diur\xE9tico"
     - key: ui_polivalka_name
@@ -1794,154 +1707,36 @@ MonoBehaviour:
     - key: ui_rails_name
       text: Rieles Orinando
     - key: ui_cats_name
-      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+      text: Mejores Ayudantes
     - key: ui_bubbles_name
-      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+      text: "M\xE1quina de Mear"
     - key: ui_gun_name
-      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F68"
+      text: Accesorio RP64
     - key: ui_rays_name
-      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+      text: Generador de Rayos
     - key: ui_tutorial_title
-      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
-        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
-        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+      text: "\xA1\xA1\xA1BIENVENIDO A LA CORPORACI\xD3N TOILET DICK!!!"
     - key: ui_tutorial_message
-      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
-        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
-        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
-        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
-        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
-        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
-        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
-        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
-        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
-        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
-        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
-        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
-        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
-        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
-        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
-        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
-        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
-        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
+      text: "Tu tarea es hacer felices a las personas.\r\n\r\n1. Conf\xEDa solo en
+        ti mismo. Usa todas las reservas de burbuja para hacernos a\xFAn m\xE1s ricos:\r\n<b>[CMB]
+        - corriente.</b>\r\n2. Compra solo los productos m\xE1s frescos de nuestro
+        representante (ten cuidado con sus dientes):\r\n<b>[E] - interactuar.</b>.\r\n3.
+        Usa todo nuestro arsenal cuando ahorres algo de dinero:\r\n<b>[Tab] - construir.</b>.\r\n4.
+        Y por \xFAltimo. <b>\xA1\xA1\xA1CIERRA EL CAF\xC9 ANTES DEL OSCURIDAD!!!!!</b>\r\n"
+    - key: ui_automate_bottle_hint
+      text: 'Es necesario insertar una botella
+
+'
     - key: ui_door_controls_hint
-      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
+      text: '[E] Abrir/Cerrar'
     - key: ui_toilet_controls_hint
-      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
-        \u0441\u043C\u0435\u043D\u0443"
+      text: '[E] Tienda [T] Cerrar Turno'
     - key: ui_build_controls_hint
-      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
-        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+      text: '[LMB] Construir [RMB] Cancelar [MMB] Rotar'
     - key: ui_item_controls_hint
-      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
-        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+      text: '[Q] Poner [LMB] Lanzar [E] Usar'
     - key: ui_build_controls_minihint
-      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
-    - key: quest_run_name
-      text: "\xA1Corre, meador! \xA1Corre!"
-    - key: quest_run_description
-      text: "Corre <b>{0}</b> kil\xF3metros"
-    - key: quest_allyourself_name
-      text: "\xA1Todo por ti mismo!"
-    - key: quest_allyourself_description
-      text: Orina <b>{0}</b> litros
-    - key: quest_fullbottle_name
-      text: "\xBFPor qu\xE9 hiciste eso?"
-    - key: quest_fullbottle_description
-      text: Tira <b>{0}</b> botellas llenas
-    - key: quest_earn100_name
-      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
-    - key: quest_earn100_description
-      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
-    - key: quest_buildfirst_name
-      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
-    - key: quest_buildfirst_description
-      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
-    - key: quest_buysupplier_name
-      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
-    - key: quest_buysupplier_description
-      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
-        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
-    - key: quest_zomdiedie_name
-      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
-    - key: quest_zomdiedie_description
-      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
-        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
-    - key: quest_day1_name
-      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
-    - key: quest_day1_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
-        \u043C\u0435\u0447\u0442\u044B"
-    - key: quest_day10_name
-      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
-        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
-    - key: quest_day10_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
-        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
-    - key: quest_vershina_name
-      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
-    - key: quest_vershina_description
-      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
-    - key: quest_toilettalk_name
-      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
-    - key: quest_toilettalk_description
-      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
-        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
-    - key: quest_plants_name
-      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
-    - key: quest_plants_description
-      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
-        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
-    - key: quest_opendoors_name
-      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
-    - key: quest_opendoors_description
-      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
-        \u043C\u0430\u043B\u044B\u0448"
-    - key: skibidi_random_phrase_1
-      text: "\xA1Vamos! \xA1Compra!"
-    - key: skibidi_random_phrase_2
-      text: No te quejes. No hay descuentos
-    - key: skibidi_random_phrase_3
-      text: "Solo la orina de hoy est\xE1 en venta"
-    - key: skibidi_random_phrase_4
-      text: "\xA1El pis es pis, pero es buen pis!"
-    - key: skibidi_random_phrase_5
-      text: "\xA1Este es un pis deliciosamente delicioso!"
-    - key: skibidi_random_phrase_6
-      text: "\xA1Hueles a pis, hermano! C\xF3mpralo y l\xE1rgate"
-    - key: skibidi_random_phrase_7
-      text: "Todos nos mojamos los pantalones cuando \xE9ramos ni\xF1os. Pero no
-        todos nos mojaremos los pantalones cuando seamos mayores. Pi\xE9nsalo."
-    - key: skibidi_random_phrase_8
-      text: "Te pareces a un tipo cuya mam\xE1 le dec\xEDa \u201Cpsst, psst, psst\u201D
-        y ahora no puedes orinar sin eso"
-    - key: skibidi_random_phrase_9
-      text: Te mojaste los pantalones, hermano
-    - key: skibidi_random_phrase_10
-      text: "Ja-ja. Esa es una l\xEDnea de pis s\xFAper graciosa. Ahora vete a la
-        mierda"
-    - key: skibidi_random_phrase_11
-      text: "\xA1Vamos a tomar una copa tambi\xE9n! \xBFC\xF3mo te atreves a rechazarme?"
-    - key: skibidi_random_phrase_12
-      text: "\xBFPor qu\xE9 no ponemos al Peque\xF1o Monje Orinando al frente?"
-    - key: skibidi_random_phrase_13
-      text: Orina. Hay tantas cosas en esa palabra.
-    - key: skibidi_random_phrase_14
-      text: "\xBFAmar\xEDas a tu novia si se mojara los pantalones? As\xED es como
-        conoc\xED a mi esposa."
-    - key: skibidi_random_phrase_15
-      text: "\xA1Vamos, consigue tu manguera contra incendios! Est\xE1 bien, no hoy."
-    - key: skibidi_random_phrase_16
-      text: "Podr\xEDamos vender cupcakes en lugar de todas esas cosas."
-    - key: skibidi_random_phrase_17
-      text: "Pronto tendr\xE1s el t\xEDtulo de tester de orina."
-    - key: skibidi_random_phrase_18
-      text: "\xBFTe despertaste un d\xEDa y dijiste, \u201CQuiero vender orina\u201D?
-        \xBFCu\xE1l era el nombre de la chica que te rompi\xF3 el coraz\xF3n?"
-    - key: skibidi_random_phrase_19
-      text: "Tu trabajo todav\xEDa es m\xE1s \xFAtil que el de un comercializador"
+      text: '[TAB] CONSTRUIR'
     - key: trump_name
       text: El Hombre Naranja
     - key: trump_description
@@ -1991,100 +1786,92 @@ MonoBehaviour:
     - key: gnom_description
       text: "Amargo como su futura adicci\xF3n a las drogas"
     - key: alt_name
-      text: 
+      text: Alt-pee
     - key: alt_description
-      text: 
+      text: "\xA1Gracias al universo, las chicas tambi\xE9n orinan!"
     - key: asuka_name
-      text: 
+      text: "Orina Pat\xE9tica"
     - key: asuka_description
-      text: 
+      text: "Entra al ba\xF1o, Shinji"
     - key: bu_name
-      text: 
+      text: "\xA1B\xFA!"
     - key: bu_description
-      text: 
+      text: "\xBFAsustado? Enojado."
     - key: doomer_name
-      text: 
+      text: 4chan Depresivo
     - key: doomer_description
-      text: 
+      text: Mmm. Apagando colillas de cigarrillos en orina con un siseo...
     - key: gandalf_name
-      text: 
+      text: Aventurero
     - key: gandalf_description
-      text: 
+      text: "\xA1No vas a orinar!"
     - key: jinx_name
-      text: 
-    - key: Jinx_description
-      text: 
+      text: Peenx
+    - key: jinx_description
+      text: Se supone que debe ser azul, pero no tuvimos tiempo para eso.
     - key: markaryan_name
-      text: 
+      text: Misogimli
     - key: markaryan_description
-      text: 
+      text: "\xBFGimli mis\xF3gino? \xBFA qui\xE9n puede orinar \xE9l a su altura?"
     - key: goblin_name
-      text: 
+      text: A la antigua
     - key: goblin_description
-      text: 
+      text: El olor del abuelo calvo y chistes tontos.
     - key: president_name
-      text: 
+      text: Doppelganger's
     - key: president_description
       text: 
     - key: queen_name
-      text: 
+      text: Viejo pero Oro
     - key: gueen_description
-      text: 
+      text: Dios Salve La Orina
     - key: shrek_name
-      text: 
+      text: Shreksy
     - key: shrek_description
-      text: 
+      text: Directo de los pantanos
     - key: sigma_name
-      text: 
+      text: "\u03A3"
     - key: sigma_description
-      text: 
+      text: Orina sigma a cara sigma
     - key: snoop_name
-      text: 
+      text: Perrito
     - key: snoop_description
-      text: 
+      text: Como las cadenas doradas en su pecho
     - key: substance_name
-      text: 
+      text: Orina Arriba
     - key: substance_description
-      text: 
+      text: "El Otro T\xFA te orinaste en esa fiesta"
     - key: dicktator_name
-      text: 
+      text: Dic(k)tador
     - key: dicktator_description
-      text: 
+      text: "\xA1Te ordeno que orines!"
     - key: ramzi_name
-      text: 
+      text: Boca Urinaria
     - key: ramzi_description
-      text: 
+      text: "\xA1Esta orina est\xE1 quemada!"
     - key: remy_name
-      text: 
+      text: "El rat\xF3n de Par\xEDs"
     - key: remy_description
-      text: 
+      text: "\xBFQu\xE9 puede decir una rata? Psst."
     - key: shef_name
-      text: 
+      text: Chef Urinario
     - key: shef_description
-      text: 
+      text: "Est\xE1 corriendo por tu bigote."
     - key: peterson_name
-      text: 
+      text: J. Pissterson
     - key: peterson_description
-      text: 
+      text: 'La regla 13 de la vida: nunca te contengas si quieres orinar.'
     - key: pie_name
-      text: 
+      text: Pew Die Pee
     - key: pie_description
-      text: 
+      text: "No quiero bromear sobre \xE9l, es un buen hombre"
     - key: rogan_name
-      text: 
+      text: NONE
     - key: rogan_description
-      text: 
+      text: NONE
     - key: tucker_name
-      text: 
+      text: NONE
     - key: tucker_description
-      text: 
-    - key: biser_fez_name
-      text: NONE
-    - key: biser_fez_description
-      text: NONE
-    - key: mister_pissed_name
-      text: NONE
-    - key: mister_pissed_description
       text: NONE
     - key: anya_description
       text: NONE
@@ -2124,6 +1911,101 @@ MonoBehaviour:
       text: COMPRAR {0}$
     - key: suppliershop_price_pattern
       text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
+    - key: quest_run_name
+      text: "\xA1Corre, meador! \xA1Corre!"
+    - key: quest_run_description
+      text: "Corre <b>{0}</b> kil\xF3metros"
+    - key: quest_allyourself_name
+      text: "\xA1Todo por ti mismo!"
+    - key: quest_allyourself_description
+      text: Orina <b>{0}</b> litros
+    - key: quest_fullbottle_name
+      text: "\xBFPor qu\xE9 hiciste eso?"
+    - key: quest_fullbottle_description
+      text: Tira <b>{0}</b> botellas llenas
+    - key: quest_earn100_name
+      text: "Empresario de Mam\xE1s"
+    - key: quest_earn100_description
+      text: "Gana <b>{0}</b> Bucks de Mam\xE1s"
+    - key: quest_buildfirst_name
+      text: "El capataz est\xE1 satisfecho"
+    - key: quest_buildfirst_description
+      text: Construye el primer mecanismo urinario
+    - key: quest_buysupplier_name
+      text: "\xBFAlgo m\xE1s?"
+    - key: quest_buysupplier_description
+      text: Adquiere <b>{0}</b> nuevos proveedores
+    - key: quest_zomdiedie_name
+      text: Trabaja con el sindicato
+    - key: quest_zomdiedie_description
+      text: Satisface a <b>{0}</b> insatisfechos
+    - key: quest_day1_name
+      text: "Sue\xF1o destruido"
+    - key: quest_day1_description
+      text: "Pasa el primer d\xEDa en tu trabajo so\xF1ado"
+    - key: quest_day10_name
+      text: Humanidad perdida
+    - key: quest_day10_description
+      text: "Pasa <b>{0}</b> d\xEDas en el trabajo"
+    - key: quest_vershina_name
+      text: "\xA1No es un enlace!"
+    - key: quest_vershina_description
+      text: "Sube m\xE1s alto"
+    - key: quest_toilettalk_name
+      text: "Directo a los o\xEDdos"
+    - key: quest_toilettalk_description
+      text: Escucha a tu colega
+    - key: quest_plants_name
+      text: Miembro de Greenpeace
+    - key: quest_plants_description
+      text: Ayuda a plantar <b>{0}</b> arbustos
+    - key: quest_opendoors_name
+      text: "\xA1Hemos abierto!"
+    - key: quest_opendoors_description
+      text: "Abre todas las puertas, beb\xE9"
+    - key: skibidi_random_phrase_1
+      text: "\xA1Vamos! \xA1Compra!"
+    - key: skibidi_random_phrase_2
+      text: No te quejes. No hay descuentos
+    - key: skibidi_random_phrase_3
+      text: "Solo la orina de hoy est\xE1 en venta"
+    - key: skibidi_random_phrase_4
+      text: "\xA1El pis es pis, pero es buen pis!"
+    - key: skibidi_random_phrase_5
+      text: "\xA1Este es un pis deliciosamente delicioso!"
+    - key: skibidi_random_phrase_6
+      text: "\xA1Hueles a pis, hermano! C\xF3mpralo y l\xE1rgate"
+    - key: skibidi_random_phrase_7
+      text: "Todos nos mojamos los pantalones cuando \xE9ramos ni\xF1os. Pero no
+        todos nos mojaremos los pantalones cuando seamos mayores. Pi\xE9nsalo."
+    - key: skibidi_random_phrase_8
+      text: "Te pareces a un tipo cuya mam\xE1 le dec\xEDa \u201Cpsst, psst, psst\u201D
+        y ahora no puedes orinar sin eso"
+    - key: skibidi_random_phrase_9
+      text: Te mojaste los pantalones, hermano
+    - key: skibidi_random_phrase_10
+      text: "Ja-ja. Esa es una l\xEDnea de pis s\xFAper graciosa. Ahora vete a la
+        mierda"
+    - key: skibidi_random_phrase_11
+      text: "\xA1Vamos a tomar una copa tambi\xE9n! \xBFC\xF3mo te atreves a rechazarme?"
+    - key: skibidi_random_phrase_12
+      text: "\xBFPor qu\xE9 no ponemos al Peque\xF1o Monje Orinando al frente?"
+    - key: skibidi_random_phrase_13
+      text: Orina. Hay tantas cosas en esa palabra.
+    - key: skibidi_random_phrase_14
+      text: "\xBFAmar\xEDas a tu novia si se mojara los pantalones? As\xED es como
+        conoc\xED a mi esposa."
+    - key: skibidi_random_phrase_15
+      text: "\xA1Vamos, consigue tu manguera contra incendios! Est\xE1 bien, no hoy."
+    - key: skibidi_random_phrase_16
+      text: "Podr\xEDamos vender cupcakes en lugar de todas esas cosas."
+    - key: skibidi_random_phrase_17
+      text: "Pronto tendr\xE1s el t\xEDtulo de tester de orina."
+    - key: skibidi_random_phrase_18
+      text: "\xBFTe despertaste un d\xEDa y dijiste, \u201CQuiero vender orina\u201D?
+        \xBFCu\xE1l era el nombre de la chica que te rompi\xF3 el coraz\xF3n?"
+    - key: skibidi_random_phrase_19
+      text: "Tu trabajo todav\xEDa es m\xE1s \xFAtil que el de un comercializador"
     - key: check_name_1
       text: "MULTA: INSPECCI\xD3N DIUR\xC9TICA"
     - key: check_description_1
@@ -2147,7 +2029,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: Causticidade
     - key: ui_suppliers
-      text: "\u0421\u0441\u0430\u043A\u0438"
+      text: Urina
     - key: ui_quests
       text: Desafios
     - key: ui_checks
@@ -2159,16 +2041,17 @@ MonoBehaviour:
     - key: ui_pay
       text: Pagar
     - key: ui_suppliers_shop
-      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
+      text: Loja
     - key: ui_rent_button
       text: Aluguel
     - key: ui_open
-      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+      text: Abrir
     - key: ui_pause_menu_continue
       text: Continuar
     - key: ui_pause_menu_return
-      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
-        \u043C\u0435\u043D\u044E"
+      text: 'Sair para o menu principal
+
+'
     - key: ui_main_menu_new_game
       text: Novo jogo
     - key: ui_main_menu_continue_game
@@ -2182,17 +2065,17 @@ MonoBehaviour:
     - key: ui_lang_english
       text: English
     - key: ui_lang_chinese
-      text: Chinese
+      text: "\u4E2D\u6587 (\u7B80\u4F53)"
     - key: ui_lang_spanish
-      text: Spanish
+      text: "Espa\xF1ol"
     - key: ui_lang_portuguese
-      text: Portuguese
+      text: "Portugu\xEAs"
     - key: ui_lang_german
-      text: German
+      text: Deutsch
     - key: ui_lang_japanese
-      text: Japanese
+      text: "\u65E5\u672C\u8A9E"
     - key: ui_lang_french
-      text: French
+      text: "Fran\xE7ais"
     - key: ui_drone_name
       text: "Drone Diur\xE9tico"
     - key: ui_polivalka_name
@@ -2202,155 +2085,34 @@ MonoBehaviour:
     - key: ui_rails_name
       text: Trilhos Urinando
     - key: ui_cats_name
-      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+      text: Melhores Assistentes
     - key: ui_bubbles_name
-      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+      text: "M\xE1quina de Xixi"
     - key: ui_gun_name
-      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F69"
+      text: "Acess\xF3rio RP64"
     - key: ui_rays_name
-      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+      text: Gerador de Feixes
     - key: ui_tutorial_title
-      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
-        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
-        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+      text: "BEM-VINDO \xC0 CORPORA\xC7\xC3O TOILET SHNYR!!!"
     - key: ui_tutorial_message
-      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
-        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
-        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
-        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
-        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
-        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
-        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
-        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
-        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
-        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
-        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
-        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
-        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
-        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
-        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
-        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
-        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
-        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
+      text: "Sua tarefa \xE9 fazer as pessoas felizes.\r\n\r\n1. Confie apenas em
+        si mesmo. Use todas as reservas de bolha para nos tornar ainda mais ricos:\r\n<b>[CMB]
+        - corrente.</b>\r\n2. Compre apenas os produtos mais frescos do nosso representante
+        (cuidado com os dentes dele):\r\n<b>[E] - interagir.</b>.\r\n3. Use todo
+        o nosso arsenal quando economizar algum dinheiro:\r\n<b>[Tab] - construir.</b>.\r\n4.
+        E por \xFAltimo. <b>FECHA O CAF\xC9 ANTES DA ESCURID\xC3O!!!!!</b>\r\n"
+    - key: ui_automate_bottle_hint
+      text: "\xC9 necess\xE1rio inserir uma garrafa\n"
     - key: ui_door_controls_hint
-      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
+      text: '[E] Abrir/Fechar'
     - key: ui_toilet_controls_hint
-      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
-        \u0441\u043C\u0435\u043D\u0443"
+      text: '[E] Loja [T] Fechar Turno'
     - key: ui_build_controls_hint
-      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
-        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+      text: '[LMB] Construir [RMB] Cancelar [MMB] Rotacionar'
     - key: ui_item_controls_hint
-      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
-        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+      text: '[Q] Colocar [LMB] Jogar [E] Usar'
     - key: ui_build_controls_minihint
-      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
-    - key: quest_run_name
-      text: Corra, mijador! Corra!
-    - key: quest_run_description
-      text: "Corre <b>{0}</b> quil\xF4metros"
-    - key: quest_allyourself_name
-      text: Tudo sozinho!
-    - key: quest_allyourself_description
-      text: Mija <b>{0}</b> litros
-    - key: quest_fullbottle_name
-      text: "Por que voc\xEA fez isso?"
-    - key: quest_fullbottle_description
-      text: Jogue fora <b>{0}</b> garrafas cheias
-    - key: quest_earn100_name
-      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
-    - key: quest_earn100_description
-      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
-    - key: quest_buildfirst_name
-      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
-    - key: quest_buildfirst_description
-      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
-    - key: quest_buysupplier_name
-      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
-    - key: quest_buysupplier_description
-      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
-        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
-    - key: quest_zomdiedie_name
-      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
-    - key: quest_zomdiedie_description
-      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
-        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
-    - key: quest_day1_name
-      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
-    - key: quest_day1_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
-        \u043C\u0435\u0447\u0442\u044B"
-    - key: quest_day10_name
-      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
-        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
-    - key: quest_day10_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
-        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
-    - key: quest_vershina_name
-      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
-    - key: quest_vershina_description
-      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
-    - key: quest_toilettalk_name
-      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
-    - key: quest_toilettalk_description
-      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
-        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
-    - key: quest_plants_name
-      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
-    - key: quest_plants_description
-      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
-        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
-    - key: quest_opendoors_name
-      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
-    - key: quest_opendoors_description
-      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
-        \u043C\u0430\u043B\u044B\u0448"
-    - key: skibidi_random_phrase_1
-      text: "Vamos l\xE1! Compre!"
-    - key: skibidi_random_phrase_2
-      text: "N\xE3o reclame. N\xE3o h\xE1 descontos"
-    - key: skibidi_random_phrase_3
-      text: "S\xF3 a urina de hoje est\xE1 \xE0 venda"
-    - key: skibidi_random_phrase_4
-      text: "Mijar \xE9 mijar, mas \xE9 bom mijar!"
-    - key: skibidi_random_phrase_5
-      text: "Esta \xE9 uma urina deliciosamente deliciosa!"
-    - key: skibidi_random_phrase_6
-      text: "Voc\xEA cheira a urina, mano! Compre e saia"
-    - key: skibidi_random_phrase_7
-      text: "Todos n\xF3s molhamos as cal\xE7as quando \xE9ramos crian\xE7as. Mas
-        nem todos n\xF3s molharemos as cal\xE7as quando envelhecermos. Pense nisso."
-    - key: skibidi_random_phrase_8
-      text: "Voc\xEA parece um cara cuja m\xE3e dizia \u201Cpsst, psst, psst\u201D
-        e agora voc\xEA n\xE3o consegue fazer xixi sem isso"
-    - key: skibidi_random_phrase_9
-      text: "Voc\xEA molhou as cal\xE7as, mano"
-    - key: skibidi_random_phrase_10
-      text: "Ha-ha. Essa \xE9 uma linha de xixi super engra\xE7ada. Agora vai se
-        ferrar"
-    - key: skibidi_random_phrase_11
-      text: "Vamos tomar uma bebida tamb\xE9m! Como voc\xEA ousa me recusar?"
-    - key: skibidi_random_phrase_12
-      text: "Por que n\xE3o colocamos o Pequeno Monge Mijando na frente?"
-    - key: skibidi_random_phrase_13
-      text: "Urina. H\xE1 tantas coisas nessa palavra."
-    - key: skibidi_random_phrase_14
-      text: "Voc\xEA amaria sua namorada se ela molhasse as cal\xE7as? Foi assim
-        que conheci minha esposa."
-    - key: skibidi_random_phrase_15
-      text: "Vamos l\xE1, pegue sua mangueira de inc\xEAndio! Ok, n\xE3o hoje."
-    - key: skibidi_random_phrase_16
-      text: "Poder\xEDamos vender cupcakes em vez de todas essas coisas."
-    - key: skibidi_random_phrase_17
-      text: "Em breve voc\xEA ter\xE1 o t\xEDtulo de testador de urina."
-    - key: skibidi_random_phrase_18
-      text: "Voc\xEA acordou um dia e disse: \u201CQuero vender urina\u201D? Qual
-        era o nome da garota que partiu seu cora\xE7\xE3o?"
-    - key: skibidi_random_phrase_19
-      text: "Seu trabalho ainda \xE9 mais \xFAtil do que o de um profissional de
-        marketing"
+      text: '[TAB] CONSTRUIR'
     - key: trump_name
       text: O Homem Laranja
     - key: trump_description
@@ -2400,100 +2162,92 @@ MonoBehaviour:
     - key: gnom_description
       text: "Amargo como seu futura v\xEDcio em drogas"
     - key: alt_name
-      text: 
+      text: Alt-pee
     - key: alt_description
-      text: 
+      text: "Agrade\xE7a ao universo, as meninas tamb\xE9m fazem xixi!"
     - key: asuka_name
-      text: 
+      text: "Xixi Pat\xE9tico"
     - key: asuka_description
-      text: 
+      text: Entre no banheiro, Shinji
     - key: bu_name
-      text: 
+      text: Buu!
     - key: bu_description
-      text: 
+      text: Assustado? Irritado.
     - key: doomer_name
-      text: 
+      text: 4chan Depressivo
     - key: doomer_description
-      text: 
+      text: Mmm. Apagando bitucas de cigarro na urina com um chiado...
     - key: gandalf_name
-      text: 
+      text: Aventureiro
     - key: gandalf_description
-      text: 
+      text: "Voc\xEA n\xE3o vai fazer xixi!"
     - key: jinx_name
-      text: 
-    - key: Jinx_description
-      text: 
+      text: Peenx
+    - key: jinx_description
+      text: "Deveria ser azul, mas n\xE3o tivemos tempo para isso."
     - key: markaryan_name
-      text: 
+      text: Misogimli
     - key: markaryan_description
-      text: 
+      text: "Gimli mis\xF3gino? Em quem ele pode fazer xixi nessa altura?"
     - key: goblin_name
-      text: 
+      text: Old-school
     - key: goblin_description
-      text: 
+      text: "O cheiro do av\xF4 careca e piadas est\xFApidas."
     - key: president_name
-      text: 
+      text: Doppelganger's
     - key: president_description
       text: 
     - key: queen_name
-      text: 
+      text: Velho Mas Ouro
     - key: gueen_description
-      text: 
+      text: Deus Salve o Xixi
     - key: shrek_name
-      text: 
+      text: Shreksy
     - key: shrek_description
-      text: 
+      text: "Direto dos p\xE2ntanos"
     - key: sigma_name
-      text: 
+      text: "\u03A3"
     - key: sigma_description
-      text: 
+      text: Urina sigma para rosto sigma
     - key: snoop_name
-      text: 
+      text: "C\xE3ozinho"
     - key: snoop_description
-      text: 
+      text: Como as correntes douradas no peito dele
     - key: substance_name
-      text: 
+      text: Faz Xixi
     - key: substance_description
-      text: 
+      text: "O Outro Voc\xEA se fez xixi naquela festa"
     - key: dicktator_name
-      text: 
+      text: Dic(k)tador
     - key: dicktator_description
-      text: 
+      text: "Eu ordeno que voc\xEA fa\xE7a xixi!"
     - key: ramzi_name
-      text: 
+      text: "Boca Urin\xE1ria"
     - key: ramzi_description
-      text: 
+      text: "Este xixi est\xE1 queimado!"
     - key: remy_name
-      text: 
+      text: O rato de Paris
     - key: remy_description
-      text: 
+      text: O que um rato pode dizer? Psst.
     - key: shef_name
-      text: 
+      text: "Chef Urin\xE1rio"
     - key: shef_description
-      text: 
+      text: "Est\xE1 escorrendo pelo seu bigode."
     - key: peterson_name
-      text: 
+      text: J. Pissterson
     - key: peterson_description
-      text: 
+      text: "A 13\xAA regra da vida: nunca se segure se quiser fazer xixi."
     - key: pie_name
-      text: 
+      text: Pew Die Pee
     - key: pie_description
-      text: 
+      text: "Eu n\xE3o quero brincar sobre ele, ele \xE9 um bom homem"
     - key: rogan_name
-      text: 
+      text: NONE
     - key: rogan_description
-      text: 
+      text: NONE
     - key: tucker_name
-      text: 
+      text: NONE
     - key: tucker_description
-      text: 
-    - key: biser_fez_name
-      text: NONE
-    - key: biser_fez_description
-      text: NONE
-    - key: mister_pissed_name
-      text: NONE
-    - key: mister_pissed_description
       text: NONE
     - key: anya_description
       text: NONE
@@ -2533,6 +2287,102 @@ MonoBehaviour:
       text: COMPRAR {0}$
     - key: suppliershop_price_pattern
       text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
+    - key: quest_run_name
+      text: Corra, mijador! Corra!
+    - key: quest_run_description
+      text: "Corre <b>{0}</b> quil\xF4metros"
+    - key: quest_allyourself_name
+      text: Tudo sozinho!
+    - key: quest_allyourself_description
+      text: Mija <b>{0}</b> litros
+    - key: quest_fullbottle_name
+      text: "Por que voc\xEA fez isso?"
+    - key: quest_fullbottle_description
+      text: Jogue fora <b>{0}</b> garrafas cheias
+    - key: quest_earn100_name
+      text: "Empres\xE1rio de M\xE3es"
+    - key: quest_earn100_description
+      text: "Ganhe <b>{0}</b> Bucks de M\xE3es"
+    - key: quest_buildfirst_name
+      text: "O capataz est\xE1 satisfeito"
+    - key: quest_buildfirst_description
+      text: "Construa o primeiro mecanismo urin\xE1rio"
+    - key: quest_buysupplier_name
+      text: Algo mais?
+    - key: quest_buysupplier_description
+      text: Adquira <b>{0}</b> novos fornecedores
+    - key: quest_zomdiedie_name
+      text: Trabalhe com o sindicato
+    - key: quest_zomdiedie_description
+      text: "Satisfa\xE7a <b>{0}</b> insatisfeitos"
+    - key: quest_day1_name
+      text: "Sonho destru\xEDdo"
+    - key: quest_day1_description
+      text: Passe o primeiro dia no trabalho dos sonhos
+    - key: quest_day10_name
+      text: Humanidade perdida
+    - key: quest_day10_description
+      text: Passe <b>{0}</b> dias no trabalho
+    - key: quest_vershina_name
+      text: "N\xE3o \xE9 um link!"
+    - key: quest_vershina_description
+      text: Suba mais alto
+    - key: quest_toilettalk_name
+      text: Direto para os ouvidos
+    - key: quest_toilettalk_description
+      text: "Ou\xE7a seu colega"
+    - key: quest_plants_name
+      text: Membro do Greenpeace
+    - key: quest_plants_description
+      text: Ajude a verdejar <b>{0}</b> arbustos
+    - key: quest_opendoors_name
+      text: "N\xF3s abrimos!"
+    - key: quest_opendoors_description
+      text: "Abra todas as portas, beb\xEA"
+    - key: skibidi_random_phrase_1
+      text: "Vamos l\xE1! Compre!"
+    - key: skibidi_random_phrase_2
+      text: "N\xE3o reclame. N\xE3o h\xE1 descontos"
+    - key: skibidi_random_phrase_3
+      text: "S\xF3 a urina de hoje est\xE1 \xE0 venda"
+    - key: skibidi_random_phrase_4
+      text: "Mijar \xE9 mijar, mas \xE9 bom mijar!"
+    - key: skibidi_random_phrase_5
+      text: "Esta \xE9 uma urina deliciosamente deliciosa!"
+    - key: skibidi_random_phrase_6
+      text: "Voc\xEA cheira a urina, mano! Compre e saia"
+    - key: skibidi_random_phrase_7
+      text: "Todos n\xF3s molhamos as cal\xE7as quando \xE9ramos crian\xE7as. Mas
+        nem todos n\xF3s molharemos as cal\xE7as quando envelhecermos. Pense nisso."
+    - key: skibidi_random_phrase_8
+      text: "Voc\xEA parece um cara cuja m\xE3e dizia \u201Cpsst, psst, psst\u201D
+        e agora voc\xEA n\xE3o consegue fazer xixi sem isso"
+    - key: skibidi_random_phrase_9
+      text: "Voc\xEA molhou as cal\xE7as, mano"
+    - key: skibidi_random_phrase_10
+      text: "Ha-ha. Essa \xE9 uma linha de xixi super engra\xE7ada. Agora vai se
+        ferrar"
+    - key: skibidi_random_phrase_11
+      text: "Vamos tomar uma bebida tamb\xE9m! Como voc\xEA ousa me recusar?"
+    - key: skibidi_random_phrase_12
+      text: "Por que n\xE3o colocamos o Pequeno Monge Mijando na frente?"
+    - key: skibidi_random_phrase_13
+      text: "Urina. H\xE1 tantas coisas nessa palavra."
+    - key: skibidi_random_phrase_14
+      text: "Voc\xEA amaria sua namorada se ela molhasse as cal\xE7as? Foi assim
+        que conheci minha esposa."
+    - key: skibidi_random_phrase_15
+      text: "Vamos l\xE1, pegue sua mangueira de inc\xEAndio! Ok, n\xE3o hoje."
+    - key: skibidi_random_phrase_16
+      text: "Poder\xEDamos vender cupcakes em vez de todas essas coisas."
+    - key: skibidi_random_phrase_17
+      text: "Em breve voc\xEA ter\xE1 o t\xEDtulo de testador de urina."
+    - key: skibidi_random_phrase_18
+      text: "Voc\xEA acordou um dia e disse: \u201CQuero vender urina\u201D? Qual
+        era o nome da garota que partiu seu cora\xE7\xE3o?"
+    - key: skibidi_random_phrase_19
+      text: "Seu trabalho ainda \xE9 mais \xFAtil do que o de um profissional de
+        marketing"
     - key: check_name_1
       text: "MULTA: INSPE\xC7\xC3O DIUR\xC9TICA"
     - key: check_description_1
@@ -2556,7 +2406,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: "\xC4tzwirkung"
     - key: ui_suppliers
-      text: "\u0421\u0441\u0430\u043A\u0438"
+      text: Urin
     - key: ui_quests
       text: Herausforderungen
     - key: ui_checks
@@ -2568,16 +2418,15 @@ MonoBehaviour:
     - key: ui_pay
       text: Bezahlen
     - key: ui_suppliers_shop
-      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
+      text: "Gesch\xE4ft"
     - key: ui_rent_button
       text: Miete
     - key: ui_open
-      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+      text: "\xD6ffnen"
     - key: ui_pause_menu_continue
       text: Fortsetzen
     - key: ui_pause_menu_return
-      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
-        \u043C\u0435\u043D\u044E"
+      text: "Zum Hauptmen\xFC wechseln\n"
     - key: ui_main_menu_new_game
       text: Neues Spiel
     - key: ui_main_menu_continue_game
@@ -2591,17 +2440,17 @@ MonoBehaviour:
     - key: ui_lang_english
       text: English
     - key: ui_lang_chinese
-      text: Chinese
+      text: "\u4E2D\u6587 (\u7B80\u4F53)"
     - key: ui_lang_spanish
-      text: Spanish
+      text: "Espa\xF1ol"
     - key: ui_lang_portuguese
-      text: Portuguese
+      text: "Portugu\xEAs"
     - key: ui_lang_german
-      text: German
+      text: Deutsch
     - key: ui_lang_japanese
-      text: Japanese
+      text: "\u65E5\u672C\u8A9E"
     - key: ui_lang_french
-      text: French
+      text: "Fran\xE7ais"
     - key: ui_drone_name
       text: Diuretische Drohne
     - key: ui_polivalka_name
@@ -2611,154 +2460,34 @@ MonoBehaviour:
     - key: ui_rails_name
       text: Urinierende Schienen
     - key: ui_cats_name
-      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+      text: Beste Assistenten
     - key: ui_bubbles_name
-      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+      text: Pissmaschine
     - key: ui_gun_name
-      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F70"
+      text: RP64-Anhang
     - key: ui_rays_name
-      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+      text: Strahlengenerator
     - key: ui_tutorial_title
-      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
-        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
-        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+      text: WILLKOMMEN BEI DER TOILET SHNYR CORPORATION!!!
     - key: ui_tutorial_message
-      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
-        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
-        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
-        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
-        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
-        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
-        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
-        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
-        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
-        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
-        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
-        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
-        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
-        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
-        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
-        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
-        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
-        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
+      text: "Deine Aufgabe ist es, die Menschen gl\xFCcklich zu machen.\n\n1. Vertraue
+        nur auf dich selbst. Nutze alle Bubble-Reserven, um uns noch reicher zu machen:\n<b>[LMB]
+        - Strom.</b>\n2. Kaufe nur die frischesten Waren bei unserem Vertreter (pass
+        auf seine Z\xE4hne auf):\n<b>[E] - interagieren.</b>.\n3. Nutze unser gesamtes
+        Arsenal, wenn du etwas Geld gespart hast:\n<b>[Tab] - bauen.</b>.\n4. Und
+        schlie\xDFlich. <b>SCHLIE\xDFE DAS CAF\xC9 BEVOR ES DUNKEL WIRD!!!!!</b>\n"
+    - key: ui_automate_bottle_hint
+      text: "Es ist notwendig, eine Flasche einzuf\xFCgen\n"
     - key: ui_door_controls_hint
-      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
+      text: "[E] \xD6ffnen/Schlie\xDFen"
     - key: ui_toilet_controls_hint
-      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
-        \u0441\u043C\u0435\u043D\u0443"
+      text: "[E] Laden [T] Schicht Schlie\xDFen"
     - key: ui_build_controls_hint
-      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
-        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+      text: '[LMB] Bauen [RMB] Abbrechen [MMB] Drehen'
     - key: ui_item_controls_hint
-      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
-        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+      text: '[Q] Platzieren [LMB] Werfen [E] Benutzen'
     - key: ui_build_controls_minihint
-      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
-    - key: quest_run_name
-      text: Lauf, Pisser! Lauf!
-    - key: quest_run_description
-      text: "L\xE4uft <b>{0}</b> Kilometer"
-    - key: quest_allyourself_name
-      text: Ganz allein!
-    - key: quest_allyourself_description
-      text: Pinkel <b>{0}</b> Liter
-    - key: quest_fullbottle_name
-      text: Warum hast du das getan?
-    - key: quest_fullbottle_description
-      text: Wirf <b>{0}</b> volle Flaschen weg
-    - key: quest_earn100_name
-      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
-    - key: quest_earn100_description
-      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
-    - key: quest_buildfirst_name
-      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
-    - key: quest_buildfirst_description
-      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
-    - key: quest_buysupplier_name
-      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
-    - key: quest_buysupplier_description
-      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
-        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
-    - key: quest_zomdiedie_name
-      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
-    - key: quest_zomdiedie_description
-      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
-        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
-    - key: quest_day1_name
-      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
-    - key: quest_day1_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
-        \u043C\u0435\u0447\u0442\u044B"
-    - key: quest_day10_name
-      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
-        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
-    - key: quest_day10_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
-        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
-    - key: quest_vershina_name
-      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
-    - key: quest_vershina_description
-      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
-    - key: quest_toilettalk_name
-      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
-    - key: quest_toilettalk_description
-      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
-        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
-    - key: quest_plants_name
-      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
-    - key: quest_plants_description
-      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
-        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
-    - key: quest_opendoors_name
-      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
-    - key: quest_opendoors_description
-      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
-        \u043C\u0430\u043B\u044B\u0448"
-    - key: skibidi_random_phrase_1
-      text: Komm schon! Kauf!
-    - key: skibidi_random_phrase_2
-      text: Jammer nicht. Es gibt keine Rabatte
-    - key: skibidi_random_phrase_3
-      text: Nur die heutige Urin ist im Verkauf
-    - key: skibidi_random_phrase_4
-      text: Pissen ist pissen, aber es ist gutes Pissen!
-    - key: skibidi_random_phrase_5
-      text: "Das ist ein k\xF6stlich leckeres Pissen!"
-    - key: skibidi_random_phrase_6
-      text: Du riechst nach Pisse, Bro! Kauf es und hau ab
-    - key: skibidi_random_phrase_7
-      text: "Wir haben alle in die Hose gemacht, als wir Kinder waren. Aber nicht
-        alle von uns werden in die Hose machen, wenn wir alt sind. Denk dar\xFCber
-        nach."
-    - key: skibidi_random_phrase_8
-      text: "Du siehst aus wie ein Typ, dessen Mama \u201Cpsst, psst, psst\u201D
-        gesagt hat und jetzt kannst du nicht pissen ohne es"
-    - key: skibidi_random_phrase_9
-      text: Du hast in die Hose gemacht, Bro
-    - key: skibidi_random_phrase_10
-      text: Haha. Das ist eine super witzige Pissen-Linie. Jetzt verpiss dich
-    - key: skibidi_random_phrase_11
-      text: Lass uns auch einen Drink nehmen! Wie wagst du es, mich abzulehnen?
-    - key: skibidi_random_phrase_12
-      text: "Warum setzen wir nicht den Kleinen Pissenden M\xF6nch nach vorne?"
-    - key: skibidi_random_phrase_13
-      text: Urin. Es gibt so viele Dinge in diesem Wort.
-    - key: skibidi_random_phrase_14
-      text: "W\xFCrdest du deine Freundin lieben, wenn sie in die Hose machen w\xFCrde?
-        So habe ich meine Frau kennengelernt."
-    - key: skibidi_random_phrase_15
-      text: Komm schon, hol deinen Feuerwehrschlauch! Okay, nicht heute.
-    - key: skibidi_random_phrase_16
-      text: "Wir k\xF6nnten Cupcakes statt all dem Zeug verkaufen."
-    - key: skibidi_random_phrase_17
-      text: Bald wirst du den Titel eines Urintesters haben.
-    - key: skibidi_random_phrase_18
-      text: "Bist du eines Tages aufgewacht und hast gesagt: \u201CIch will Urin
-        verkaufen\u201D? Wie hie\xDF das M\xE4dchen, das dir das Herz gebrochen hat?"
-    - key: skibidi_random_phrase_19
-      text: "Dein Job ist immer noch n\xFCtzlicher als der eines Vermarkters"
+      text: '[TAB] BAUEN'
     - key: trump_name
       text: Der Orange Mann
     - key: trump_description
@@ -2808,100 +2537,92 @@ MonoBehaviour:
     - key: gnom_description
       text: "Bitter wie seine zuk\xFCnftige Drogenabh\xE4ngigkeit"
     - key: alt_name
-      text: 
+      text: Alt-pee
     - key: alt_description
-      text: 
+      text: "Danke dem Universum, M\xE4dchen machen auch Pipi!"
     - key: asuka_name
-      text: 
+      text: Pathetisches Pipi
     - key: asuka_description
-      text: 
+      text: Geh in die Toilette, Shinji
     - key: bu_name
-      text: 
+      text: Buh!
     - key: bu_description
-      text: 
+      text: "Angst? Ver\xE4rgert."
     - key: doomer_name
-      text: 
+      text: Depressives 4chan
     - key: doomer_description
-      text: 
+      text: Mmm. Zigarettenkippen in Urin mit einem Zischen ausputzen...
     - key: gandalf_name
-      text: 
+      text: Abenteuerlich
     - key: gandalf_description
-      text: 
+      text: Du sollst nicht pissen!
     - key: jinx_name
-      text: 
-    - key: Jinx_description
-      text: 
+      text: Peenx
+    - key: jinx_description
+      text: "Es sollte blau sein, aber wir hatten daf\xFCr keine Zeit."
     - key: markaryan_name
-      text: 
+      text: Misogimli
     - key: markaryan_description
-      text: 
+      text: "Misogynistischer Gimli? Auf wen kann er auf seiner H\xF6he pissen?"
     - key: goblin_name
-      text: 
+      text: Old-school
     - key: goblin_description
-      text: 
+      text: "Der Geruch von glatzk\xF6pfigem Opa und dummen Witzen."
     - key: president_name
-      text: 
+      text: Doppelganger's
     - key: president_description
       text: 
     - key: queen_name
-      text: 
+      text: Old But Gold
     - key: gueen_description
-      text: 
+      text: "Gott sch\xFCtze das Pipi"
     - key: shrek_name
-      text: 
+      text: Shreksy
     - key: shrek_description
-      text: 
+      text: "Direkt aus den S\xFCmpfen"
     - key: sigma_name
-      text: 
+      text: "\u03A3"
     - key: sigma_description
-      text: 
+      text: Sigma Urin zu Sigma Gesicht
     - key: snoop_name
-      text: 
+      text: "H\xFCndchen"
     - key: snoop_description
-      text: 
+      text: Wie die goldenen Ketten an seiner Brust
     - key: substance_name
-      text: 
+      text: Piss It Up
     - key: substance_description
-      text: 
+      text: Das Andere Du hast dich auf dieser Party angepinkelt
     - key: dicktator_name
-      text: 
+      text: Dic(k)tator
     - key: dicktator_description
-      text: 
+      text: Ich befehle dir zu pissen!
     - key: ramzi_name
-      text: 
+      text: "Urin\xE4re Mund"
     - key: ramzi_description
-      text: 
+      text: Dieses Pipi ist verbrannt!
     - key: remy_name
-      text: 
+      text: Die Pariser Maus
     - key: remy_description
-      text: 
+      text: Was kann eine Ratte sagen? Psst.
     - key: shef_name
-      text: 
+      text: "Chef Urin\xE4r"
     - key: shef_description
-      text: 
+      text: "Es l\xE4uft an deiner Schnurrbart herunter."
     - key: peterson_name
-      text: 
+      text: J. Pissterson
     - key: peterson_description
-      text: 
+      text: "Die 13. Lebensregel: Halte nie zur\xFCck, wenn du pissen gehen willst."
     - key: pie_name
-      text: 
+      text: Pew Die Pee
     - key: pie_description
-      text: 
+      text: "Ich m\xF6chte keinen Witz \xFCber ihn machen, er ist ein guter Mann"
     - key: rogan_name
-      text: 
+      text: NONE
     - key: rogan_description
-      text: 
+      text: NONE
     - key: tucker_name
-      text: 
+      text: NONE
     - key: tucker_description
-      text: 
-    - key: biser_fez_name
-      text: NONE
-    - key: biser_fez_description
-      text: NONE
-    - key: mister_pissed_name
-      text: NONE
-    - key: mister_pissed_description
       text: NONE
     - key: anya_description
       text: NONE
@@ -2942,6 +2663,101 @@ MonoBehaviour:
       text: KAUFEN {0}$
     - key: suppliershop_price_pattern
       text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
+    - key: quest_run_name
+      text: Lauf, Pisser! Lauf!
+    - key: quest_run_description
+      text: "L\xE4uft <b>{0}</b> Kilometer"
+    - key: quest_allyourself_name
+      text: Ganz allein!
+    - key: quest_allyourself_description
+      text: Pinkel <b>{0}</b> Liter
+    - key: quest_fullbottle_name
+      text: Warum hast du das getan?
+    - key: quest_fullbottle_description
+      text: Wirf <b>{0}</b> volle Flaschen weg
+    - key: quest_earn100_name
+      text: "Mama's Gesch\xE4ftsmann"
+    - key: quest_earn100_description
+      text: Verdiene <b>{0}</b> Mama-Bucks
+    - key: quest_buildfirst_name
+      text: Der Vorarbeiter ist zufrieden
+    - key: quest_buildfirst_description
+      text: "Baue den ersten urin\xE4ren Mechanismus"
+    - key: quest_buysupplier_name
+      text: Noch etwas?
+    - key: quest_buysupplier_description
+      text: Erwirb <b>{0}</b> neue Lieferanten
+    - key: quest_zomdiedie_name
+      text: Arbeiten Sie mit der Gewerkschaft
+    - key: quest_zomdiedie_description
+      text: Befriedige <b>{0}</b> Unzufriedene
+    - key: quest_day1_name
+      text: "Traum zerst\xF6rt"
+    - key: quest_day1_description
+      text: Verbringe den ersten Tag in deinem Traumberuf
+    - key: quest_day10_name
+      text: Menschlichkeit verloren
+    - key: quest_day10_description
+      text: Verbringe <b>{0}</b> Tage bei der Arbeit
+    - key: quest_vershina_name
+      text: Kein Link!
+    - key: quest_vershina_description
+      text: "Kletter h\xF6her"
+    - key: quest_toilettalk_name
+      text: Direkt in die Ohren
+    - key: quest_toilettalk_description
+      text: "H\xF6re deinem Kollegen zu"
+    - key: quest_plants_name
+      text: Greenpeace-Mitglied
+    - key: quest_plants_description
+      text: "Hilf dabei, <b>{0}</b> B\xFCsche zu begr\xFCnen"
+    - key: quest_opendoors_name
+      text: "Wir haben ge\xF6ffnet!"
+    - key: quest_opendoors_description
+      text: "\xD6ffne alle T\xFCren, Baby"
+    - key: skibidi_random_phrase_1
+      text: Komm schon! Kauf!
+    - key: skibidi_random_phrase_2
+      text: Jammer nicht. Es gibt keine Rabatte
+    - key: skibidi_random_phrase_3
+      text: Nur die heutige Urin ist im Verkauf
+    - key: skibidi_random_phrase_4
+      text: Pissen ist pissen, aber es ist gutes Pissen!
+    - key: skibidi_random_phrase_5
+      text: "Das ist ein k\xF6stlich leckeres Pissen!"
+    - key: skibidi_random_phrase_6
+      text: Du riechst nach Pisse, Bro! Kauf es und hau ab
+    - key: skibidi_random_phrase_7
+      text: "Wir haben alle in die Hose gemacht, als wir Kinder waren. Aber nicht
+        alle von uns werden in die Hose machen, wenn wir alt sind. Denk dar\xFCber
+        nach."
+    - key: skibidi_random_phrase_8
+      text: "Du siehst aus wie ein Typ, dessen Mama \u201Cpsst, psst, psst\u201D
+        gesagt hat und jetzt kannst du nicht pissen ohne es"
+    - key: skibidi_random_phrase_9
+      text: Du hast in die Hose gemacht, Bro
+    - key: skibidi_random_phrase_10
+      text: Haha. Das ist eine super witzige Pissen-Linie. Jetzt verpiss dich
+    - key: skibidi_random_phrase_11
+      text: Lass uns auch einen Drink nehmen! Wie wagst du es, mich abzulehnen?
+    - key: skibidi_random_phrase_12
+      text: "Warum setzen wir nicht den Kleinen Pissenden M\xF6nch nach vorne?"
+    - key: skibidi_random_phrase_13
+      text: Urin. Es gibt so viele Dinge in diesem Wort.
+    - key: skibidi_random_phrase_14
+      text: "W\xFCrdest du deine Freundin lieben, wenn sie in die Hose machen w\xFCrde?
+        So habe ich meine Frau kennengelernt."
+    - key: skibidi_random_phrase_15
+      text: Komm schon, hol deinen Feuerwehrschlauch! Okay, nicht heute.
+    - key: skibidi_random_phrase_16
+      text: "Wir k\xF6nnten Cupcakes statt all dem Zeug verkaufen."
+    - key: skibidi_random_phrase_17
+      text: Bald wirst du den Titel eines Urintesters haben.
+    - key: skibidi_random_phrase_18
+      text: "Bist du eines Tages aufgewacht und hast gesagt: \u201CIch will Urin
+        verkaufen\u201D? Wie hie\xDF das M\xE4dchen, das dir das Herz gebrochen hat?"
+    - key: skibidi_random_phrase_19
+      text: "Dein Job ist immer noch n\xFCtzlicher als der eines Vermarkters"
     - key: check_name_1
       text: 'STRAFE: DIURETISCHE INSPEKTION'
     - key: check_description_1
@@ -2965,7 +2781,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: "\u8150\u98DF\u6027"
     - key: ui_suppliers
-      text: "\u0421\u0441\u0430\u043A\u0438"
+      text: "\u5C3F (\u306B\u3087\u3046)"
     - key: ui_quests
       text: "\u30C1\u30E3\u30EC\u30F3\u30B8"
     - key: ui_checks
@@ -2977,16 +2793,15 @@ MonoBehaviour:
     - key: ui_pay
       text: "\u652F\u6255\u3046"
     - key: ui_suppliers_shop
-      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
+      text: "\u30B7\u30E7\u30C3\u30D7"
     - key: ui_rent_button
       text: "\u5BB6\u8CC3"
     - key: ui_open
-      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+      text: "\u958B\u304F"
     - key: ui_pause_menu_continue
       text: "\u7D9A\u884C"
     - key: ui_pause_menu_return
-      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
-        \u043C\u0435\u043D\u044E"
+      text: "\u30E1\u30A4\u30F3\u30E1\u30CB\u30E5\u30FC\u306B\u623B\u308B\n"
     - key: ui_main_menu_new_game
       text: "\u65B0\u3057\u3044\u30B2\u30FC\u30E0"
     - key: ui_main_menu_continue_game
@@ -3000,17 +2815,17 @@ MonoBehaviour:
     - key: ui_lang_english
       text: English
     - key: ui_lang_chinese
-      text: Chinese
+      text: "\u4E2D\u6587 (\u7B80\u4F53)"
     - key: ui_lang_spanish
-      text: Spanish
+      text: "Espa\xF1ol"
     - key: ui_lang_portuguese
-      text: Portuguese
+      text: "Portugu\xEAs"
     - key: ui_lang_german
-      text: German
+      text: Deutsch
     - key: ui_lang_japanese
-      text: Japanese
+      text: "\u65E5\u672C\u8A9E"
     - key: ui_lang_french
-      text: French
+      text: "Fran\xE7ais"
     - key: ui_drone_name
       text: "\u5229\u5C3F\u30C9\u30ED\u30FC\u30F3"
     - key: ui_polivalka_name
@@ -3020,149 +2835,35 @@ MonoBehaviour:
     - key: ui_rails_name
       text: "\u5C3F\u3092\u5782\u3089\u3059\u30EC\u30FC\u30EB"
     - key: ui_cats_name
-      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+      text: "\u6700\u9AD8\u306E\u30A2\u30B7\u30B9\u30BF\u30F3\u30C8"
     - key: ui_bubbles_name
-      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+      text: "\u304A\u3057\u3063\u3053\u30DE\u30B7\u30F3"
     - key: ui_gun_name
-      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F71"
+      text: "RP64\u30A2\u30BF\u30C3\u30C1\u30E1\u30F3\u30C8"
     - key: ui_rays_name
-      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+      text: "\u30D3\u30FC\u30E0\u30B8\u30A7\u30CD\u30EC\u30FC\u30BF\u30FC"
     - key: ui_tutorial_title
-      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
-        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
-        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+      text: "\u300C\u30C8\u30A4\u30EC\u30B7\u30E5\u30CB\u30E3\u30FC\u300D\u30B3\u30FC\u30DD\u30EC\u30FC\u30B7\u30E7\u30F3\u3078\u3088\u3046\u3053\u305D!!!"
     - key: ui_tutorial_message
-      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
-        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
-        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
-        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
-        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
-        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
-        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
-        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
-        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
-        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
-        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
-        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
-        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
-        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
-        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
-        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
-        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
-        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
+      text: "\u3042\u306A\u305F\u306E\u4F7F\u547D\u306F\u4EBA\u3005\u3092\u5E78\u305B\u306B\u3059\u308B\u3053\u3068\u3067\u3059\u3002\n\n1.
+        \u81EA\u5206\u81EA\u8EAB\u306E\u307F\u306B\u983C\u308A\u307E\u3057\u3087\u3046\u3002\u3059\u3079\u3066\u306E\u30D0\u30D6\u30EB\u306E\u5099\u84C4\u3092\u4F7F\u3063\u3066\u79C1\u305F\u3061\u3092\u3055\u3089\u306B\u8C4A\u304B\u306B\u3057\u3066\u304F\u3060\u3055\u3044\uFF1A\n<b>[\u5DE6\u30AF\u30EA\u30C3\u30AF]
+        - \u30B9\u30C8\u30EA\u30FC\u30E0\u3002</b>\n2. \u79C1\u305F\u3061\u306E\u4EE3\u8868\u304B\u3089\u306E\u307F\u6700\u3082\u65B0\u9BAE\u306A\u5546\u54C1\u3092\u8CFC\u5165\u3057\u3066\u304F\u3060\u3055\u3044\uFF08\u5F7C\u306E\u6B6F\u306B\u6CE8\u610F\uFF09\uFF1A\n<b>[E]
+        - \u30A4\u30F3\u30BF\u30E9\u30AF\u30C8\u3002</b>\u3002\n3. \u304A\u91D1\u3092\u8CAF\u3081\u305F\u3089\u3001\u79C1\u305F\u3061\u306E\u5168\u3066\u306E\u5175\u5668\u5EAB\u3092\u4F7F\u3044\u307E\u3057\u3087\u3046\uFF1A\n<b>[Tab]
+        - \u5EFA\u7BC9\u3002</b>\u3002\n4. \u6700\u5F8C\u306B\u3002<b>\u6697\u304F\u306A\u308B\u524D\u306B\u30AB\u30D5\u30A7\u3092\u9589\u3081\u3066\u304F\u3060\u3055\u3044!!!!!</b>"
+    - key: ui_automate_bottle_hint
+      text: "\u30DC\u30C8\u30EB\u3092\u633F\u5165\u3059\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\n"
     - key: ui_door_controls_hint
-      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
+      text: "[E] \u958B\u304F/\u9589\u3058\u308B"
     - key: ui_toilet_controls_hint
-      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
-        \u0441\u043C\u0435\u043D\u0443"
+      text: "[E] \u5E97\u8217 [T] \u30B7\u30D5\u30C8\u3092\u9589\u3081\u308B"
     - key: ui_build_controls_hint
-      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
-        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+      text: "[\u5DE6\u30AF\u30EA\u30C3\u30AF] \u5EFA\u7BC9 [\u53F3\u30AF\u30EA\u30C3\u30AF]
+        \u30AD\u30E3\u30F3\u30BB\u30EB [\u4E2D\u30AF\u30EA\u30C3\u30AF] \u56DE\u8EE2"
     - key: ui_item_controls_hint
-      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
-        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+      text: "[Q] \u7F6E\u304F [\u5DE6\u30AF\u30EA\u30C3\u30AF] \u6295\u3052\u308B
+        [E] \u4F7F\u7528\u3059\u308B"
     - key: ui_build_controls_minihint
-      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
-    - key: quest_run_name
-      text: "\u8D70\u308C\u3001\u6392\u5C3F\u8005\uFF01\u8D70\u308C\uFF01"
-    - key: quest_run_description
-      text: "<b>{0}</b>\u30AD\u30ED\u8D70\u308B"
-    - key: quest_allyourself_name
-      text: "\u3059\u3079\u3066\u81EA\u5206\u3067\uFF01"
-    - key: quest_allyourself_description
-      text: "<b>{0}</b>\u30EA\u30C3\u30C8\u30EB\u6492\u5C3F"
-    - key: quest_fullbottle_name
-      text: "\u3069\u3046\u3057\u3066\u305D\u3093\u306A\u3053\u3068\u3092\u3057\u305F\u306E\uFF1F"
-    - key: quest_fullbottle_description
-      text: "<b>{0}</b>\u672C\u306E\u6E80\u30BF\u30F3\u306E\u30DC\u30C8\u30EB\u3092\u6368\u3066\u308B"
-    - key: quest_earn100_name
-      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
-    - key: quest_earn100_description
-      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
-    - key: quest_buildfirst_name
-      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
-    - key: quest_buildfirst_description
-      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
-    - key: quest_buysupplier_name
-      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
-    - key: quest_buysupplier_description
-      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
-        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
-    - key: quest_zomdiedie_name
-      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
-    - key: quest_zomdiedie_description
-      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
-        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
-    - key: quest_day1_name
-      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
-    - key: quest_day1_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
-        \u043C\u0435\u0447\u0442\u044B"
-    - key: quest_day10_name
-      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
-        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
-    - key: quest_day10_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
-        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
-    - key: quest_vershina_name
-      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
-    - key: quest_vershina_description
-      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
-    - key: quest_toilettalk_name
-      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
-    - key: quest_toilettalk_description
-      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
-        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
-    - key: quest_plants_name
-      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
-    - key: quest_plants_description
-      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
-        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
-    - key: quest_opendoors_name
-      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
-    - key: quest_opendoors_description
-      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
-        \u043C\u0430\u043B\u044B\u0448"
-    - key: skibidi_random_phrase_1
-      text: "\u3055\u3042\uFF01\u8CB7\u3048\uFF01"
-    - key: skibidi_random_phrase_2
-      text: "\u6CE3\u304B\u306A\u3044\u3067\u3002\u5272\u5F15\u306F\u3042\u308A\u307E\u305B\u3093"
-    - key: skibidi_random_phrase_3
-      text: "\u4ECA\u65E5\u306E\u5C3F\u3060\u3051\u304C\u8CA9\u58F2\u4E2D\u3067\u3059"
-    - key: skibidi_random_phrase_4
-      text: "\u304A\u3057\u3063\u3053\u306F\u304A\u3057\u3063\u3053\u3001\u3067\u3082\u826F\u3044\u304A\u3057\u3063\u3053\u3067\u3059\uFF01"
-    - key: skibidi_random_phrase_5
-      text: "\u3053\u308C\u306F\u3068\u3066\u3082\u7F8E\u5473\u3057\u3044\u304A\u3057\u3063\u3053\u3067\u3059\uFF01"
-    - key: skibidi_random_phrase_6
-      text: "\u304A\u3057\u3063\u3053\u306E\u5302\u3044\u304C\u3059\u308B\u306D\u3001\u5144\u5F1F\uFF01\u8CB7\u3063\u3066\u51FA\u3066\u884C\u3051"
-    - key: skibidi_random_phrase_7
-      text: "\u5B50\u4F9B\u306E\u9803\u3001\u307F\u3093\u306A\u304A\u3057\u3063\u3053\u3092\u6F0F\u3089\u3057\u305F\u3002\u3067\u3082\u3001\u307F\u3093\u306A\u304C\u5E74\u3092\u53D6\u3063\u3066\u304B\u3089\u3082\u6F0F\u3089\u3059\u308F\u3051\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u3002\u8003\u3048\u3066\u307F\u3066\u3002"
-    - key: skibidi_random_phrase_8
-      text: "\u541B\u306F\u201C\u3077\u3059\u3063\u3001\u3077\u3059\u3063\u3001\u3077\u3059\u3063\u201D\u3068\u8A00\u308F\u308C\u3066\u3001\u304A\u3057\u3063\u3053\u3092\u3059\u308B\u305F\u3073\u306B\u305D\u308C\u304C\u5FC5\u8981\u306A\u7537\u306B\u898B\u3048\u308B"
-    - key: skibidi_random_phrase_9
-      text: "\u541B\u306F\u30D1\u30F3\u30C4\u306B\u304A\u3057\u3063\u3053\u3092\u3057\u305F\u3088\u3001\u5144\u5F1F"
-    - key: skibidi_random_phrase_10
-      text: "\u306F\u306F\u3002\u305D\u308C\u306F\u8D85\u9762\u767D\u3044\u304A\u3057\u3063\u3053\u30E9\u30A4\u30F3\u3060\u3002\u4ECA\u3059\u3050\u6D88\u3048\u308D"
-    - key: skibidi_random_phrase_11
-      text: "\u79C1\u305F\u3061\u3082\u98F2\u307F\u7269\u3092\u98F2\u3082\u3046\uFF01\u3069\u3046\u3057\u3066\u79C1\u3092\u62D2\u3080\u306E\uFF1F"
-    - key: skibidi_random_phrase_12
-      text: "\u306A\u305C\u5C0F\u3055\u306A\u304A\u3057\u3063\u3053\u50E7\u3092\u524D\u306B\u51FA\u3055\u306A\u3044\u306E\uFF1F"
-    - key: skibidi_random_phrase_13
-      text: "\u5C3F\u3002\u3042\u306E\u8A00\u8449\u306B\u306F\u305F\u304F\u3055\u3093\u306E\u610F\u5473\u304C\u3042\u308A\u307E\u3059\u3002"
-    - key: skibidi_random_phrase_14
-      text: "\u5F7C\u5973\u304C\u30D1\u30F3\u30C4\u306B\u304A\u3057\u3063\u3053\u3092\u3057\u305F\u3089\u5F7C\u5973\u3092\u611B\u3057\u307E\u3059\u304B\uFF1F\u305D\u308C\u304C\u79C1\u304C\u59BB\u3068\u51FA\u4F1A\u3063\u305F\u65B9\u6CD5\u3067\u3059\u3002"
-    - key: skibidi_random_phrase_15
-      text: "\u3055\u3042\u3001\u6D88\u9632\u30DB\u30FC\u30B9\u3092\u53D6\u3063\u3066\u304D\u3066\uFF01\u3044\u3044\u3048\u3001\u4ECA\u65E5\u306F\u30C0\u30E1\u3067\u3059\u3002"
-    - key: skibidi_random_phrase_16
-      text: "\u79C1\u305F\u3061\u306F\u3042\u308C\u3053\u308C\u3092\u58F2\u308B\u4EE3\u308F\u308A\u306B\u30AB\u30C3\u30D7\u30B1\u30FC\u30AD\u3092\u58F2\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002"
-    - key: skibidi_random_phrase_17
-      text: "\u3059\u3050\u306B\u541B\u306F\u5C3F\u30C6\u30B9\u30BF\u30FC\u306E\u79F0\u53F7\u3092\u6301\u3064\u3053\u3068\u306B\u306A\u308B\u3060\u308D\u3046\u3002"
-    - key: skibidi_random_phrase_18
-      text: "\u3042\u308B\u65E5\u76EE\u304C\u899A\u3081\u3066\u300C\u5C3F\u3092\u58F2\u308A\u305F\u3044\u300D\u3068\u8A00\u3044\u307E\u3057\u305F\u304B\uFF1F\u5FC3\u3092\u58CA\u3057\u305F\u5973\u306E\u5B50\u306E\u540D\u524D\u306F\u4F55\u3067\u3057\u305F\u304B\uFF1F"
-    - key: skibidi_random_phrase_19
-      text: "\u541B\u306E\u4ED5\u4E8B\u306F\u307E\u3060\u30DE\u30FC\u30B1\u30BF\u30FC\u306E\u4ED5\u4E8B\u3088\u308A\u5F79\u306B\u7ACB\u3063\u3066\u3044\u307E\u3059"
+      text: "[TAB] \u5EFA\u7BC9"
     - key: trump_name
       text: "\u6A59\u8272\u306E\u7537"
     - key: trump_description
@@ -3212,100 +2913,92 @@ MonoBehaviour:
     - key: gnom_description
       text: "\u5F7C\u306E\u5C06\u6765\u306E\u85AC\u7269\u4F9D\u5B58\u306E\u3088\u3046\u306B\u82E6\u3044"
     - key: alt_name
-      text: 
+      text: Alt-pee
     - key: alt_description
-      text: 
+      text: "\u5B87\u5B99\u306B\u611F\u8B1D\u3001\u5973\u306E\u5B50\u3082\u304A\u3057\u3063\u3053\u3092\u3057\u307E\u3059\uFF01"
     - key: asuka_name
-      text: 
+      text: "\u54C0\u308C\u306A\u304A\u3057\u3063\u3053"
     - key: asuka_description
-      text: 
+      text: "\u30C8\u30A4\u30EC\u306B\u5165\u308C\u3001\u30B7\u30F3\u30B8"
     - key: bu_name
-      text: 
+      text: "\u30D6\u30FC\uFF01"
     - key: bu_description
-      text: 
+      text: "\u6016\u3044\uFF1F\u6012\u3063\u3066\u308B\u3002"
     - key: doomer_name
-      text: 
+      text: "\u3046\u3064\u75C5\u306E4chan"
     - key: doomer_description
-      text: 
+      text: "\u3093\u30FC\u3002\u30B7\u30E5\u30FC\u97F3\u3068\u3068\u3082\u306B\u5C3F\u3067\u30BF\u30D0\u30B3\u306E\u5438\u3044\u6BBB\u3092\u6D88\u3059..."
     - key: gandalf_name
-      text: 
+      text: "\u5192\u967A\u597D\u304D"
     - key: gandalf_description
-      text: 
+      text: "\u304A\u3057\u3063\u3053\u3059\u308B\u306A\uFF01"
     - key: jinx_name
-      text: 
-    - key: Jinx_description
-      text: 
+      text: Peenx
+    - key: jinx_description
+      text: "\u9752\u8272\u3067\u3042\u308B\u306F\u305A\u3060\u3063\u305F\u304C\u3001\u6642\u9593\u304C\u306A\u304B\u3063\u305F\u3002"
     - key: markaryan_name
-      text: 
+      text: "\u30DF\u30BD\u30AE\u30E0\u30EA"
     - key: markaryan_description
-      text: 
+      text: "\u30DF\u30BD\u30B8\u30CB\u30B9\u30C8\u306E\u30AE\u30E0\u30EA\uFF1F\u305D\u306E\u9AD8\u3055\u3067\u8AB0\u306B\u304A\u3057\u3063\u3053\u3067\u304D\u308B\u306E\u304B\uFF1F"
     - key: goblin_name
-      text: 
+      text: "\u30AA\u30FC\u30EB\u30C9\u30B9\u30AF\u30FC\u30EB"
     - key: goblin_description
-      text: 
+      text: "\u79BF\u3052\u305F\u304A\u3058\u3044\u3061\u3083\u3093\u3068\u611A\u304B\u306A\u30B8\u30E7\u30FC\u30AF\u306E\u5302\u3044\u3002"
     - key: president_name
-      text: 
+      text: "\u30C9\u30C3\u30DA\u30EB\u30B2\u30F3\u30AC\u30FC\u306E"
     - key: president_description
       text: 
     - key: queen_name
-      text: 
+      text: Old But Gold
     - key: gueen_description
-      text: 
+      text: "\u795E\u3088\u3001\u304A\u3057\u3063\u3053\u3092\u5B88\u3063\u3066\u304F\u3060\u3055\u3044"
     - key: shrek_name
-      text: 
+      text: "\u30B7\u30E5\u30EC\u30AF\u30B7\u30FC"
     - key: shrek_description
-      text: 
+      text: "\u6CBC\u5730\u304B\u3089\u307E\u3063\u3059\u3050"
     - key: sigma_name
-      text: 
+      text: "\u03A3"
     - key: sigma_description
-      text: 
+      text: "\u30B7\u30B0\u30DE\u5C3F\u304B\u3089\u30B7\u30B0\u30DE\u9854\u3078"
     - key: snoop_name
-      text: 
+      text: "\u30C9\u30AE\u30FC"
     - key: snoop_description
-      text: 
+      text: "\u5F7C\u306E\u80F8\u306E\u9EC4\u91D1\u306E\u9396\u306E\u3088\u3046\u306B"
     - key: substance_name
-      text: 
+      text: "\u304A\u3057\u3063\u3053\u30A2\u30C3\u30D7"
     - key: substance_description
-      text: 
+      text: "\u3042\u306E\u30D1\u30FC\u30C6\u30A3\u30FC\u3067\u81EA\u5206\u81EA\u8EAB\u3092\u304A\u3057\u3063\u3053\u3057\u305F\u4ED6\u306E\u3042\u306A\u305F"
     - key: dicktator_name
-      text: 
+      text: Dic(k)tator
     - key: dicktator_description
-      text: 
+      text: "\u304A\u3057\u3063\u3053\u3059\u308B\u3088\u3046\u547D\u3058\u307E\u3059\uFF01"
     - key: ramzi_name
-      text: 
+      text: "\u5C3F\u9053\u306E\u53E3"
     - key: ramzi_description
-      text: 
+      text: "\u3053\u306E\u304A\u3057\u3063\u3053\u306F\u7126\u3052\u3066\u3044\u308B\uFF01"
     - key: remy_name
-      text: 
+      text: "\u30D1\u30EA\u306E\u30CD\u30BA\u30DF"
     - key: remy_description
-      text: 
+      text: "\u30CD\u30BA\u30DF\u306F\u4F55\u3068\u8A00\u3048\u308B\uFF1F\u30D7\u30C3\u3002"
     - key: shef_name
-      text: 
+      text: "\u30B7\u30A7\u30D5\u5C3F\u9053"
     - key: shef_description
-      text: 
+      text: "\u3042\u306A\u305F\u306E\u53E3\u3072\u3052\u3092\u6D41\u308C\u4E0B\u3063\u3066\u3044\u308B\u3002"
     - key: peterson_name
-      text: 
+      text: J. Pissterson
     - key: peterson_description
-      text: 
+      text: "\u4EBA\u751F\u306E\u7B2C13\u306E\u30EB\u30FC\u30EB\uFF1A\u304A\u3057\u3063\u3053\u3057\u305F\u3044\u306A\u3089\u6C7A\u3057\u3066\u6211\u6162\u3057\u306A\u3044\u3002"
     - key: pie_name
-      text: 
+      text: Pew Die Pee
     - key: pie_description
-      text: 
+      text: "\u5F7C\u306B\u3064\u3044\u3066\u5197\u8AC7\u3092\u8A00\u3044\u305F\u304F\u306A\u3044\u3001\u5F7C\u306F\u826F\u3044\u4EBA\u3067\u3059"
     - key: rogan_name
-      text: 
+      text: NONE
     - key: rogan_description
-      text: 
+      text: NONE
     - key: tucker_name
-      text: 
+      text: NONE
     - key: tucker_description
-      text: 
-    - key: biser_fez_name
-      text: NONE
-    - key: biser_fez_description
-      text: NONE
-    - key: mister_pissed_name
-      text: NONE
-    - key: mister_pissed_description
       text: NONE
     - key: anya_description
       text: NONE
@@ -3350,6 +3043,96 @@ MonoBehaviour:
       text: "\u8CFC\u5165 {0}$"
     - key: suppliershop_price_pattern
       text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
+    - key: quest_run_name
+      text: "\u8D70\u308C\u3001\u6392\u5C3F\u8005\uFF01\u8D70\u308C\uFF01"
+    - key: quest_run_description
+      text: "<b>{0}</b>\u30AD\u30ED\u8D70\u308B"
+    - key: quest_allyourself_name
+      text: "\u3059\u3079\u3066\u81EA\u5206\u3067\uFF01"
+    - key: quest_allyourself_description
+      text: "<b>{0}</b>\u30EA\u30C3\u30C8\u30EB\u6492\u5C3F"
+    - key: quest_fullbottle_name
+      text: "\u3069\u3046\u3057\u3066\u305D\u3093\u306A\u3053\u3068\u3092\u3057\u305F\u306E\uFF1F"
+    - key: quest_fullbottle_description
+      text: "<b>{0}</b>\u672C\u306E\u6E80\u30BF\u30F3\u306E\u30DC\u30C8\u30EB\u3092\u6368\u3066\u308B"
+    - key: quest_earn100_name
+      text: "\u30DE\u30DE\u306E\u30D3\u30B8\u30CD\u30B9\u30DE\u30F3"
+    - key: quest_earn100_description
+      text: "<b>{0}</b> \u30DE\u30DE\u30D0\u30C3\u30AF\u30B9\u3092\u7A3C\u3050"
+    - key: quest_buildfirst_name
+      text: "\u5DE5\u9577\u306F\u6E80\u8DB3\u3057\u3066\u3044\u308B"
+    - key: quest_buildfirst_description
+      text: "\u6700\u521D\u306E\u5C3F\u6A5F\u69CB\u3092\u5EFA\u8A2D\u3059\u308B"
+    - key: quest_buysupplier_name
+      text: "\u4ED6\u306B\u4F55\u304B\uFF1F"
+    - key: quest_buysupplier_description
+      text: "<b>{0}</b>\u306E\u65B0\u3057\u3044\u30B5\u30D7\u30E9\u30A4\u30E4\u30FC\u3092\u53D6\u5F97\u3059\u308B"
+    - key: quest_zomdiedie_name
+      text: "\u52B4\u50CD\u7D44\u5408\u3068\u5354\u529B\u3059\u308B"
+    - key: quest_zomdiedie_description
+      text: "<b>{0}</b>\u306E\u4E0D\u6E80\u3092\u6E80\u305F\u3059"
+    - key: quest_day1_name
+      text: "\u5922\u304C\u7834\u58CA\u3055\u308C\u305F"
+    - key: quest_day1_description
+      text: "\u5922\u306E\u4ED5\u4E8B\u3067\u521D\u65E5\u3092\u904E\u3054\u3059"
+    - key: quest_day10_name
+      text: "\u4EBA\u9593\u6027\u304C\u5931\u308F\u308C\u305F"
+    - key: quest_day10_description
+      text: "\u4ED5\u4E8B\u3067<b>{0}</b>\u65E5\u3092\u904E\u3054\u3059"
+    - key: quest_vershina_name
+      text: "\u30EA\u30F3\u30AF\u3067\u306F\u306A\u3044\uFF01"
+    - key: quest_vershina_description
+      text: "\u3082\u3063\u3068\u9AD8\u304F\u767B\u308B"
+    - key: quest_toilettalk_name
+      text: "\u307E\u3063\u3059\u3050\u8033\u306B"
+    - key: quest_toilettalk_description
+      text: "\u540C\u50DA\u306E\u8A71\u3092\u805E\u304F"
+    - key: quest_plants_name
+      text: "\u30B0\u30EA\u30FC\u30F3\u30D4\u30FC\u30B9\u30E1\u30F3\u30D0\u30FC"
+    - key: quest_plants_description
+      text: "<b>{0}</b>\u306E\u8302\u307F\u3092\u7DD1\u5316\u3059\u308B\u306E\u3092\u624B\u4F1D\u3046"
+    - key: quest_opendoors_name
+      text: "\u79C1\u305F\u3061\u306F\u30AA\u30FC\u30D7\u30F3\u3057\u307E\u3057\u305F\uFF01"
+    - key: quest_opendoors_description
+      text: "\u3059\u3079\u3066\u306E\u30C9\u30A2\u3092\u958B\u3051\u3066\u3001\u30D9\u30A4\u30D3\u30FC"
+    - key: skibidi_random_phrase_1
+      text: "\u3055\u3042\uFF01\u8CB7\u3048\uFF01"
+    - key: skibidi_random_phrase_2
+      text: "\u6CE3\u304B\u306A\u3044\u3067\u3002\u5272\u5F15\u306F\u3042\u308A\u307E\u305B\u3093"
+    - key: skibidi_random_phrase_3
+      text: "\u4ECA\u65E5\u306E\u5C3F\u3060\u3051\u304C\u8CA9\u58F2\u4E2D\u3067\u3059"
+    - key: skibidi_random_phrase_4
+      text: "\u304A\u3057\u3063\u3053\u306F\u304A\u3057\u3063\u3053\u3001\u3067\u3082\u826F\u3044\u304A\u3057\u3063\u3053\u3067\u3059\uFF01"
+    - key: skibidi_random_phrase_5
+      text: "\u3053\u308C\u306F\u3068\u3066\u3082\u7F8E\u5473\u3057\u3044\u304A\u3057\u3063\u3053\u3067\u3059\uFF01"
+    - key: skibidi_random_phrase_6
+      text: "\u304A\u3057\u3063\u3053\u306E\u5302\u3044\u304C\u3059\u308B\u306D\u3001\u5144\u5F1F\uFF01\u8CB7\u3063\u3066\u51FA\u3066\u884C\u3051"
+    - key: skibidi_random_phrase_7
+      text: "\u5B50\u4F9B\u306E\u9803\u3001\u307F\u3093\u306A\u304A\u3057\u3063\u3053\u3092\u6F0F\u3089\u3057\u305F\u3002\u3067\u3082\u3001\u307F\u3093\u306A\u304C\u5E74\u3092\u53D6\u3063\u3066\u304B\u3089\u3082\u6F0F\u3089\u3059\u308F\u3051\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u3002\u8003\u3048\u3066\u307F\u3066\u3002"
+    - key: skibidi_random_phrase_8
+      text: "\u541B\u306F\u201C\u3077\u3059\u3063\u3001\u3077\u3059\u3063\u3001\u3077\u3059\u3063\u201D\u3068\u8A00\u308F\u308C\u3066\u3001\u304A\u3057\u3063\u3053\u3092\u3059\u308B\u305F\u3073\u306B\u305D\u308C\u304C\u5FC5\u8981\u306A\u7537\u306B\u898B\u3048\u308B"
+    - key: skibidi_random_phrase_9
+      text: "\u541B\u306F\u30D1\u30F3\u30C4\u306B\u304A\u3057\u3063\u3053\u3092\u3057\u305F\u3088\u3001\u5144\u5F1F"
+    - key: skibidi_random_phrase_10
+      text: "\u306F\u306F\u3002\u305D\u308C\u306F\u8D85\u9762\u767D\u3044\u304A\u3057\u3063\u3053\u30E9\u30A4\u30F3\u3060\u3002\u4ECA\u3059\u3050\u6D88\u3048\u308D"
+    - key: skibidi_random_phrase_11
+      text: "\u79C1\u305F\u3061\u3082\u98F2\u307F\u7269\u3092\u98F2\u3082\u3046\uFF01\u3069\u3046\u3057\u3066\u79C1\u3092\u62D2\u3080\u306E\uFF1F"
+    - key: skibidi_random_phrase_12
+      text: "\u306A\u305C\u5C0F\u3055\u306A\u304A\u3057\u3063\u3053\u50E7\u3092\u524D\u306B\u51FA\u3055\u306A\u3044\u306E\uFF1F"
+    - key: skibidi_random_phrase_13
+      text: "\u5C3F\u3002\u3042\u306E\u8A00\u8449\u306B\u306F\u305F\u304F\u3055\u3093\u306E\u610F\u5473\u304C\u3042\u308A\u307E\u3059\u3002"
+    - key: skibidi_random_phrase_14
+      text: "\u5F7C\u5973\u304C\u30D1\u30F3\u30C4\u306B\u304A\u3057\u3063\u3053\u3092\u3057\u305F\u3089\u5F7C\u5973\u3092\u611B\u3057\u307E\u3059\u304B\uFF1F\u305D\u308C\u304C\u79C1\u304C\u59BB\u3068\u51FA\u4F1A\u3063\u305F\u65B9\u6CD5\u3067\u3059\u3002"
+    - key: skibidi_random_phrase_15
+      text: "\u3055\u3042\u3001\u6D88\u9632\u30DB\u30FC\u30B9\u3092\u53D6\u3063\u3066\u304D\u3066\uFF01\u3044\u3044\u3048\u3001\u4ECA\u65E5\u306F\u30C0\u30E1\u3067\u3059\u3002"
+    - key: skibidi_random_phrase_16
+      text: "\u79C1\u305F\u3061\u306F\u3042\u308C\u3053\u308C\u3092\u58F2\u308B\u4EE3\u308F\u308A\u306B\u30AB\u30C3\u30D7\u30B1\u30FC\u30AD\u3092\u58F2\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002"
+    - key: skibidi_random_phrase_17
+      text: "\u3059\u3050\u306B\u541B\u306F\u5C3F\u30C6\u30B9\u30BF\u30FC\u306E\u79F0\u53F7\u3092\u6301\u3064\u3053\u3068\u306B\u306A\u308B\u3060\u308D\u3046\u3002"
+    - key: skibidi_random_phrase_18
+      text: "\u3042\u308B\u65E5\u76EE\u304C\u899A\u3081\u3066\u300C\u5C3F\u3092\u58F2\u308A\u305F\u3044\u300D\u3068\u8A00\u3044\u307E\u3057\u305F\u304B\uFF1F\u5FC3\u3092\u58CA\u3057\u305F\u5973\u306E\u5B50\u306E\u540D\u524D\u306F\u4F55\u3067\u3057\u305F\u304B\uFF1F"
+    - key: skibidi_random_phrase_19
+      text: "\u541B\u306E\u4ED5\u4E8B\u306F\u307E\u3060\u30DE\u30FC\u30B1\u30BF\u30FC\u306E\u4ED5\u4E8B\u3088\u308A\u5F79\u306B\u7ACB\u3063\u3066\u3044\u307E\u3059"
     - key: check_name_1
       text: "\u7F70\u91D1\uFF1A\u5229\u5C3F\u691C\u67FB"
     - key: check_description_1
@@ -3374,7 +3157,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: "Causticit\xE9"
     - key: ui_suppliers
-      text: "\u0421\u0441\u0430\u043A\u0438"
+      text: Urine
     - key: ui_quests
       text: "D\xE9fis"
     - key: ui_checks
@@ -3386,16 +3169,17 @@ MonoBehaviour:
     - key: ui_pay
       text: Payer
     - key: ui_suppliers_shop
-      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
+      text: Magasin
     - key: ui_rent_button
       text: Loyer
     - key: ui_open
-      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+      text: Ouvrir
     - key: ui_pause_menu_continue
       text: Continuer
     - key: ui_pause_menu_return
-      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
-        \u043C\u0435\u043D\u044E"
+      text: 'Quitter vers le menu principal
+
+'
     - key: ui_main_menu_new_game
       text: Nouveau jeu
     - key: ui_main_menu_continue_game
@@ -3409,17 +3193,17 @@ MonoBehaviour:
     - key: ui_lang_english
       text: English
     - key: ui_lang_chinese
-      text: Chinese
+      text: "\u4E2D\u6587 (\u7B80\u4F53)"
     - key: ui_lang_spanish
-      text: Spanish
+      text: "Espa\xF1ol"
     - key: ui_lang_portuguese
-      text: Portuguese
+      text: "Portugu\xEAs"
     - key: ui_lang_german
-      text: German
+      text: Deutsch
     - key: ui_lang_japanese
-      text: Japanese
+      text: "\u65E5\u672C\u8A9E"
     - key: ui_lang_french
-      text: French
+      text: "Fran\xE7ais"
     - key: ui_drone_name
       text: "Drone Diur\xE9tique"
     - key: ui_polivalka_name
@@ -3429,154 +3213,35 @@ MonoBehaviour:
     - key: ui_rails_name
       text: Rails Urinants
     - key: ui_cats_name
-      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+      text: Meilleurs Assistants
     - key: ui_bubbles_name
-      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+      text: "Machine \xE0 Pipi"
     - key: ui_gun_name
-      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F72"
+      text: Accessoire RP64
     - key: ui_rays_name
-      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+      text: "G\xE9n\xE9rateur de Faisceaux"
     - key: ui_tutorial_title
-      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
-        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
-        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+      text: "BIENVENUE DANS LA SOCI\xC9T\xC9 TOILET SHNYR!!!"
     - key: ui_tutorial_message
-      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
-        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
-        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
-        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
-        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
-        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
-        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
-        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
-        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
-        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
-        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
-        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
-        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
-        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
-        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
-        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
-        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
-        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
+      text: "Ta t\xE2che est de rendre les gens heureux.\r\n\r\n1. Ne compte que
+        sur toi-m\xEAme. Utilise toutes les r\xE9serves de bulles pour nous rendre
+        encore plus riches :\r\n<b>[CMB] - flux.</b>\r\n2. Ach\xE8te uniquement les
+        produits les plus frais aupr\xE8s de notre repr\xE9sentant (sois prudent
+        avec ses dents) :\r\n<b>[E] - interagir.</b>.\r\n3. Utilise tout notre arsenal
+        lorsque tu \xE9conomises de l'argent :\r\n<b>[Tab] - construire.</b>.\r\n4.
+        Et enfin. <b>FERME LE CAF\xC9 AVANT LA NUIT!!!!!</b>\r\n"
+    - key: ui_automate_bottle_hint
+      text: "Il est n\xE9cessaire d'ins\xE9rer une bouteille\n"
     - key: ui_door_controls_hint
-      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
+      text: '[E] Ouvrir/Fermer'
     - key: ui_toilet_controls_hint
-      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
-        \u0441\u043C\u0435\u043D\u0443"
+      text: '[E] Boutique [T] Fermer le Quart'
     - key: ui_build_controls_hint
-      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
-        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+      text: '[LMB] Construire [RMB] Annuler [MMB] Faire Pivoter'
     - key: ui_item_controls_hint
-      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
-        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+      text: '[Q] Poser [LMB] Jeter [E] Utiliser'
     - key: ui_build_controls_minihint
-      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
-    - key: quest_run_name
-      text: Cours, pissou! Cours!
-    - key: quest_run_description
-      text: "Court <b>{0}</b> kilom\xE8tres"
-    - key: quest_allyourself_name
-      text: Tout seul!
-    - key: quest_allyourself_description
-      text: Pisse <b>{0}</b> litres
-    - key: quest_fullbottle_name
-      text: "Pourquoi as-tu fait \xE7a?"
-    - key: quest_fullbottle_description
-      text: Jette <b>{0}</b> bouteilles pleines
-    - key: quest_earn100_name
-      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
-    - key: quest_earn100_description
-      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
-    - key: quest_buildfirst_name
-      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
-    - key: quest_buildfirst_description
-      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
-    - key: quest_buysupplier_name
-      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
-    - key: quest_buysupplier_description
-      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
-        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
-    - key: quest_zomdiedie_name
-      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
-    - key: quest_zomdiedie_description
-      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
-        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
-    - key: quest_day1_name
-      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
-    - key: quest_day1_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
-        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
-        \u043C\u0435\u0447\u0442\u044B"
-    - key: quest_day10_name
-      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
-        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
-    - key: quest_day10_description
-      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
-        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
-    - key: quest_vershina_name
-      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
-    - key: quest_vershina_description
-      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
-    - key: quest_toilettalk_name
-      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
-    - key: quest_toilettalk_description
-      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
-        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
-    - key: quest_plants_name
-      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
-    - key: quest_plants_description
-      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
-        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
-    - key: quest_opendoors_name
-      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
-    - key: quest_opendoors_description
-      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
-        \u043C\u0430\u043B\u044B\u0448"
-    - key: skibidi_random_phrase_1
-      text: "Allez! Ach\xE8te!"
-    - key: skibidi_random_phrase_2
-      text: "Ne te plains pas. Il n'y a pas de r\xE9ductions"
-    - key: skibidi_random_phrase_3
-      text: Seule l'urine d'aujourd'hui est en vente
-    - key: skibidi_random_phrase_4
-      text: Pisser, c'est pisser, mais c'est du bon pisser!
-    - key: skibidi_random_phrase_5
-      text: "C'est une urine d\xE9licieusement d\xE9licieuse!"
-    - key: skibidi_random_phrase_6
-      text: "Tu pues la pisse, mec! Ach\xE8te-la et d\xE9gage"
-    - key: skibidi_random_phrase_7
-      text: "Nous avons tous fait pipi dans notre pantalon quand nous \xE9tions enfants.
-        Mais tous ne le feront pas quand nous serons vieux. R\xE9fl\xE9chis-y."
-    - key: skibidi_random_phrase_8
-      text: "Tu ressembles \xE0 un type dont la maman disait \u201Cpsst, psst, psst\u201D
-        et maintenant tu ne peux pas pisser sans \xE7a"
-    - key: skibidi_random_phrase_9
-      text: Tu as fait pipi dans ton pantalon, mec
-    - key: skibidi_random_phrase_10
-      text: "Ha-ha. C'est une ligne de pisse super dr\xF4le. Maintenant va te faire
-        foutre"
-    - key: skibidi_random_phrase_11
-      text: Prenons aussi un verre! Comment oses-tu me refuser?
-    - key: skibidi_random_phrase_12
-      text: Pourquoi ne mettons-nous pas le Petit Moine Pissant devant?
-    - key: skibidi_random_phrase_13
-      text: Urine. Il y a tant de choses dans ce mot.
-    - key: skibidi_random_phrase_14
-      text: "Aimerais-tu ta copine si elle faisait pipi dans son pantalon? C'est
-        comme \xE7a que j'ai rencontr\xE9 ma femme."
-    - key: skibidi_random_phrase_15
-      text: Allez, prends ton tuyau d'incendie! D'accord, pas aujourd'hui.
-    - key: skibidi_random_phrase_16
-      text: Nous pourrions vendre des cupcakes au lieu de toutes ces choses.
-    - key: skibidi_random_phrase_17
-      text: "Bient\xF4t, tu auras le titre de testeur d'urine."
-    - key: skibidi_random_phrase_18
-      text: "T'es-tu r\xE9veill\xE9 un jour en disant, \u201CJe veux vendre de l'urine\u201D?
-        Quel \xE9tait le nom de la fille qui t'a bris\xE9 le c\u0153ur?"
-    - key: skibidi_random_phrase_19
-      text: Ton travail est toujours plus utile que celui d'un marketeur
+      text: '[TAB] CONSTRUIRE'
     - key: trump_name
       text: L'Homme Orange
     - key: trump_description
@@ -3626,100 +3291,92 @@ MonoBehaviour:
     - key: gnom_description
       text: "Amer comme sa future d\xE9pendance \xE0 la drogue"
     - key: alt_name
-      text: 
+      text: Alt-pee
     - key: alt_description
-      text: 
+      text: Remercie l'univers, les filles font aussi pipi !
     - key: asuka_name
-      text: 
+      text: "Pipi Path\xE9tique"
     - key: asuka_description
-      text: 
+      text: Va aux toilettes, Shinji
     - key: bu_name
-      text: 
+      text: Boo !
     - key: bu_description
-      text: 
+      text: "Effray\xE9 ? Enerv\xE9."
     - key: doomer_name
-      text: 
+      text: "4chan D\xE9pressif"
     - key: doomer_description
-      text: 
+      text: "Mmm. \xC9teindre les m\xE9gots de cigarette dans l'urine avec un sifflement..."
     - key: gandalf_name
-      text: 
+      text: Aventurier
     - key: gandalf_description
-      text: 
+      text: Tu ne vas pas pisser !
     - key: jinx_name
-      text: 
-    - key: Jinx_description
-      text: 
+      text: Peenx
+    - key: jinx_description
+      text: "\xC7a devrait \xEAtre bleu, mais nous n'avons pas eu le temps pour \xE7a."
     - key: markaryan_name
-      text: 
+      text: Misogimli
     - key: markaryan_description
-      text: 
+      text: "Gimli misogyne ? Sur qui peut-il pisser \xE0 sa hauteur ?"
     - key: goblin_name
-      text: 
+      text: Old-school
     - key: goblin_description
-      text: 
+      text: "L'odeur du grand-p\xE8re chauve et des blagues stupides."
     - key: president_name
-      text: 
+      text: Doppelganger's
     - key: president_description
       text: 
     - key: queen_name
-      text: 
+      text: Old But Gold
     - key: gueen_description
-      text: 
+      text: Dieu Sauve Le Pipi
     - key: shrek_name
-      text: 
+      text: Shreksy
     - key: shrek_description
-      text: 
+      text: Directement des marais
     - key: sigma_name
-      text: 
+      text: "\u03A3"
     - key: sigma_description
-      text: 
+      text: Urine sigma au visage sigma
     - key: snoop_name
-      text: 
+      text: Chiennet
     - key: snoop_description
-      text: 
+      text: "Comme les cha\xEEnes dor\xE9es sur sa poitrine"
     - key: substance_name
-      text: 
+      text: Piss It Up
     - key: substance_description
-      text: 
+      text: "L'Autre Toi t'es piss\xE9 \xE0 cette f\xEAte"
     - key: dicktator_name
-      text: 
+      text: Dic(k)tator
     - key: dicktator_description
-      text: 
+      text: Je t'ordonne de pisser !
     - key: ramzi_name
-      text: 
+      text: Bouche Urinaire
     - key: ramzi_description
-      text: 
+      text: "Ce pipi est br\xFBl\xE9 !"
     - key: remy_name
-      text: 
+      text: La souris de Paris
     - key: remy_description
-      text: 
+      text: Que peut dire un rat ? Chut.
     - key: shef_name
-      text: 
+      text: Chef Urinaire
     - key: shef_description
-      text: 
+      text: "\xC7a coule sur ta moustache."
     - key: peterson_name
-      text: 
+      text: J. Pissterson
     - key: peterson_description
-      text: 
+      text: "La 13\xE8me r\xE8gle de la vie : ne jamais se retenir si tu veux pisser."
     - key: pie_name
-      text: 
+      text: Pew Die Pee
     - key: pie_description
-      text: 
+      text: "Je ne veux pas plaisanter \xE0 son sujet, c'est un homme bien"
     - key: rogan_name
-      text: 
+      text: NONE
     - key: rogan_description
-      text: 
+      text: NONE
     - key: tucker_name
-      text: 
+      text: NONE
     - key: tucker_description
-      text: 
-    - key: biser_fez_name
-      text: NONE
-    - key: biser_fez_description
-      text: NONE
-    - key: mister_pissed_name
-      text: NONE
-    - key: mister_pissed_description
       text: NONE
     - key: anya_description
       text: NONE
@@ -3759,6 +3416,101 @@ MonoBehaviour:
       text: ACHETER {0}$
     - key: suppliershop_price_pattern
       text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
+    - key: quest_run_name
+      text: Cours, pissou! Cours!
+    - key: quest_run_description
+      text: "Court <b>{0}</b> kilom\xE8tres"
+    - key: quest_allyourself_name
+      text: Tout seul!
+    - key: quest_allyourself_description
+      text: Pisse <b>{0}</b> litres
+    - key: quest_fullbottle_name
+      text: "Pourquoi as-tu fait \xE7a?"
+    - key: quest_fullbottle_description
+      text: Jette <b>{0}</b> bouteilles pleines
+    - key: quest_earn100_name
+      text: Homme d'affaires des Mamans
+    - key: quest_earn100_description
+      text: Gagnez <b>{0}</b> Bucks des Mamans
+    - key: quest_buildfirst_name
+      text: "Le contrema\xEEtre est satisfait"
+    - key: quest_buildfirst_description
+      text: "Construisez le premier m\xE9canisme urinaire"
+    - key: quest_buysupplier_name
+      text: Quelque chose de plus ?
+    - key: quest_buysupplier_description
+      text: "Acqu\xE9rez <b>{0}</b> nouveaux fournisseurs"
+    - key: quest_zomdiedie_name
+      text: Travaillez avec le syndicat
+    - key: quest_zomdiedie_description
+      text: Satisfaites <b>{0}</b> insatisfaits
+    - key: quest_day1_name
+      text: "R\xEAve d\xE9truit"
+    - key: quest_day1_description
+      text: "Passez le premier jour dans votre emploi de r\xEAve"
+    - key: quest_day10_name
+      text: "Humanit\xE9 perdue"
+    - key: quest_day10_description
+      text: Passez <b>{0}</b> jours au travail
+    - key: quest_vershina_name
+      text: Ce n'est pas un lien !
+    - key: quest_vershina_description
+      text: Grimpez plus haut
+    - key: quest_toilettalk_name
+      text: Directement dans les oreilles
+    - key: quest_toilettalk_description
+      text: "\xC9coutez votre coll\xE8gue"
+    - key: quest_plants_name
+      text: Membre de Greenpeace
+    - key: quest_plants_description
+      text: "Aidez \xE0 verdir <b>{0}</b> buissons"
+    - key: quest_opendoors_name
+      text: Nous avons ouvert !
+    - key: quest_opendoors_description
+      text: "Ouvre toutes les portes, b\xE9b\xE9"
+    - key: skibidi_random_phrase_1
+      text: "Allez! Ach\xE8te!"
+    - key: skibidi_random_phrase_2
+      text: "Ne te plains pas. Il n'y a pas de r\xE9ductions"
+    - key: skibidi_random_phrase_3
+      text: Seule l'urine d'aujourd'hui est en vente
+    - key: skibidi_random_phrase_4
+      text: Pisser, c'est pisser, mais c'est du bon pisser!
+    - key: skibidi_random_phrase_5
+      text: "C'est une urine d\xE9licieusement d\xE9licieuse!"
+    - key: skibidi_random_phrase_6
+      text: "Tu pues la pisse, mec! Ach\xE8te-la et d\xE9gage"
+    - key: skibidi_random_phrase_7
+      text: "Nous avons tous fait pipi dans notre pantalon quand nous \xE9tions enfants.
+        Mais tous ne le feront pas quand nous serons vieux. R\xE9fl\xE9chis-y."
+    - key: skibidi_random_phrase_8
+      text: "Tu ressembles \xE0 un type dont la maman disait \u201Cpsst, psst, psst\u201D
+        et maintenant tu ne peux pas pisser sans \xE7a"
+    - key: skibidi_random_phrase_9
+      text: Tu as fait pipi dans ton pantalon, mec
+    - key: skibidi_random_phrase_10
+      text: "Ha-ha. C'est une ligne de pisse super dr\xF4le. Maintenant va te faire
+        foutre"
+    - key: skibidi_random_phrase_11
+      text: Prenons aussi un verre! Comment oses-tu me refuser?
+    - key: skibidi_random_phrase_12
+      text: Pourquoi ne mettons-nous pas le Petit Moine Pissant devant?
+    - key: skibidi_random_phrase_13
+      text: Urine. Il y a tant de choses dans ce mot.
+    - key: skibidi_random_phrase_14
+      text: "Aimerais-tu ta copine si elle faisait pipi dans son pantalon? C'est
+        comme \xE7a que j'ai rencontr\xE9 ma femme."
+    - key: skibidi_random_phrase_15
+      text: Allez, prends ton tuyau d'incendie! D'accord, pas aujourd'hui.
+    - key: skibidi_random_phrase_16
+      text: Nous pourrions vendre des cupcakes au lieu de toutes ces choses.
+    - key: skibidi_random_phrase_17
+      text: "Bient\xF4t, tu auras le titre de testeur d'urine."
+    - key: skibidi_random_phrase_18
+      text: "T'es-tu r\xE9veill\xE9 un jour en disant, \u201CJe veux vendre de l'urine\u201D?
+        Quel \xE9tait le nom de la fille qui t'a bris\xE9 le c\u0153ur?"
+    - key: skibidi_random_phrase_19
+      text: Ton travail est toujours plus utile que celui d'un marketeur
     - key: check_name_1
       text: "AMENDE : INSPECTION DIUR\xC9TIQUE"
     - key: check_description_1

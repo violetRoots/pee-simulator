@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 2538872a-d312-42eb-9d3b-a78d57b091e8
     title: doomer_name
     description: doomer_description
-    price: 101
-    satisfaction: 3
-    causticity: 6
-    saturation: 6
+    price: 130
+    satisfaction: 5
+    causticity: 2
+    saturation: 2
     visabilityType: 1
     unlockQuestType: 13
     suppliersShopPrice: 0

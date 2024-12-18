@@ -129,7 +129,6 @@ public class ZombieStateController : MonoBehaviour
             _movementController.Stop();
             _animationController.PlayAttackAnimation();
             DelayedAction(attackTime, () => state.Value = ZombieState.Walk);
-
         }
         else if (newState == ZombieState.Dead)
         {

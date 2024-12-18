@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 4af6e031-a52b-4823-996b-5f57ccc91ecc
     title: bu_name
     description: bu_description
-    price: 101
+    price: 25
     satisfaction: 3
-    causticity: 6
-    saturation: 6
+    causticity: 1
+    saturation: 1
     visabilityType: 1
     unlockQuestType: 7
     suppliersShopPrice: 0

@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: a6a8869a-3967-4065-829e-5aefa2e3246c
     title: pepe_name
     description: pepe_description
-    price: 156
-    satisfaction: 0
-    causticity: 10
-    saturation: 5
+    price: 5
+    satisfaction: 1
+    causticity: 0
+    saturation: 2
     visabilityType: 1
     unlockQuestType: 12
     suppliersShopPrice: 10

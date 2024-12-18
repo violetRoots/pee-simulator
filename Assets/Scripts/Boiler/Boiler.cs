@@ -28,6 +28,8 @@ public class Boiler : MonoBehaviour
             _characterItemController.PopItem();
             bottle.Attach(bottleOrigin);
             _attachedBottle = bottle;
+
+            gameObject.Play3DSound(SfxType.BottleLoad);
         }
         else if (!_characterItemController.HasItem() && _attachedBottle != null)
         {

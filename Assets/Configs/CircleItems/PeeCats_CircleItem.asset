@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   title: ui_cats_name
-  price: 0
+  price: 70
   duration: 20
-  cooldown: 5
+  cooldown: 25
   automate: {fileID: 8206282974585324324, guid: ec443b531a1f8944586c643a207bfac3, type: 3}
   needBoiler: 1

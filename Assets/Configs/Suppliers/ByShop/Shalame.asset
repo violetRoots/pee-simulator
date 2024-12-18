@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: d5064862-f575-494b-9376-3fd56065397d
     title: shalame_name
     description: shalame_description
-    price: 101
-    satisfaction: 3
-    causticity: 6
-    saturation: 6
+    price: 110
+    satisfaction: 5
+    causticity: 0
+    saturation: 5
     visabilityType: 2
     unlockQuestType: 0
-    suppliersShopPrice: 10
+    suppliersShopPrice: 550

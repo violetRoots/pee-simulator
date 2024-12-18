@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 9f37925b-8203-4049-b829-f8d42ce11ea8
     title: goblin_name
     description: goblin_description
-    price: 101
-    satisfaction: 3
-    causticity: 6
-    saturation: 6
+    price: 120
+    satisfaction: 5
+    causticity: 2
+    saturation: 2
     visabilityType: 1
     unlockQuestType: 11
     suppliersShopPrice: 0

@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 6a7391dd-1ad7-4427-a373-a5ffa8588682
     title: peterson_name
     description: peterson_description
-    price: 156
+    price: 180
     satisfaction: 0
     causticity: 10
     saturation: 5
     visabilityType: 2
     unlockQuestType: 0
-    suppliersShopPrice: 10
+    suppliersShopPrice: 400

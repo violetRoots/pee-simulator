@@ -16,9 +16,9 @@ MonoBehaviour:
     visualId: a1af7de6-c8e0-4559-9ee8-6edcd915121e
     title: gnom_name
     description: gnom_description
-    price: 96
-    satisfaction: 3
-    causticity: 4
+    price: 10
+    satisfaction: 1
+    causticity: 1
     saturation: 1
     visabilityType: 1
     unlockQuestType: 3

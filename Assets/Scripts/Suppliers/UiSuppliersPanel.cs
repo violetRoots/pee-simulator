@@ -29,7 +29,9 @@ public class UiSuppliersPanel : MonoBehaviour
 
     private void InitSuppliers()
     {
-        var suppliers = _suppliersManager.GetSuppliers();
+        var suppliers = _suppliersManager.GetSuppliers()
+                                         .OrderBy(s => s.configData.price);
+
         foreach (var supplier in suppliers)
         {
             var cell = Instantiate(peeSupplierCell, suppliersContentObj);

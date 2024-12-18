@@ -68,6 +68,7 @@ public class ZombieExplosionController : MonoBehaviour
         }
 
         _questsManager.ChangeProgressQuest(QuestConfig.QuestType.ZombieDie, 1);
+        gameObject.Play3DSound(SfxType.ZombieExplosion);
     }
 
     private void BloodEffectActivate(Vector3 pos)

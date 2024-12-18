@@ -55,7 +55,10 @@ public class QuestsManager
             questInfo.progressValue += amount;
 
             if (questInfo.progressValue >= questInfo.configData.maxProgress)
+            {
                 questInfo.isFinished = true;
+                AudioManager.StaticPlaySound(SfxType.TaskComplete, 0.45f);
+            }
 
             onQuestProgressUpdated?.Invoke(questInfo);
         }

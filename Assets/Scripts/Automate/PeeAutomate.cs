@@ -14,6 +14,7 @@ public class PeeAutomate : MonoBehaviour
     [SerializeField] private BasePeePart[] automateParts;
 
     [SerializeField] private PeeAutomateTimerPanel automateTimerPanel;
+    [SerializeField] private GameObject bottleHint;
 
     private GameManager _gameManager;
     private GameplaySector _sector;
@@ -36,6 +37,8 @@ public class PeeAutomate : MonoBehaviour
 
     public void Activate(GameplaySector sector, CircleItemConfig circleItemConfig)
     {
+        if (sector == null) return;
+
         _config = circleItemConfig;
         _sector = sector;
 
@@ -110,5 +113,7 @@ public class PeeAutomate : MonoBehaviour
             else
                 part.Deactivate();
         }
+
+        automateTimerPanel.UpdateHint(!value);
     }
 }

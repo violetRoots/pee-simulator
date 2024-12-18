@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   title: ui_fountain_name
-  price: 10
+  price: 50
   duration: 10
   cooldown: 5
   automate: {fileID: 7913420000253184615, guid: d285c9790699cea4ca684fa8d7732043, type: 3}

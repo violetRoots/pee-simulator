@@ -23,6 +23,7 @@ public class UiMainMenuManager : SingletonFromResourcesBase<UiMainMenuManager>
     private SavesManager _dataManager;
     private LoadManager _loadManager;
     private LanguageManager _languageManager;
+    private AudioManager _audioManager;
 
     private void Awake()
     {
@@ -43,6 +44,9 @@ public class UiMainMenuManager : SingletonFromResourcesBase<UiMainMenuManager>
         germanButton.Subscribe(OnGermanLanguageButtonClicked);
         japaneseButton.Subscribe(OnJapaneseLanguageButtonClicked);
         frenchButton.Subscribe(OnFrenchLanguageButtonClicked);
+
+        _audioManager = AudioManager.Instance;
+        _audioManager.PlayCalmMusic();
     }
 
     private void OnNewGameButtonClicked()

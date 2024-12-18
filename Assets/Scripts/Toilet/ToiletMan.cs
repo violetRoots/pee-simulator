@@ -38,6 +38,6 @@ public class ToiletMan : MonoBehaviour
         talkPanel.Show(randomPhraseKey);
 
         _questsManager.ChangeProgressQuest(QuestConfig.QuestType.ToiletTalk, 1);
-
+        transform.parent.gameObject.Play3DSound(SfxType.SkibidiEnter);
     }
 }

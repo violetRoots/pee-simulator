@@ -55,12 +55,15 @@ MonoBehaviour:
   - emotion: 1
     rzhumanSprites:
     - {fileID: 21300000, guid: 62b8fa17d4ce1a14bac8340cab84103a, type: 3}
+    sfx: 11
   - emotion: 2
     rzhumanSprites:
     - {fileID: 21300000, guid: f7e0ec3deecfc30479d3f1b42d833a14, type: 3}
+    sfx: 10
   - emotion: 3
     rzhumanSprites:
     - {fileID: 21300000, guid: ca5d563b7a2ed3f4fbf2a5cc96dd91d8, type: 3}
+    sfx: 0
   emotionDuration: 3
   emotionObj: {fileID: 6090467676911793640}
   rzhuman: {fileID: 3321057274058368057}
@@ -153,7 +156,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &4370816007759397258
 MonoBehaviour:
   m_ObjectHideFlags: 0

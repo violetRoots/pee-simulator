@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: bb873f40-896c-4e66-88d7-c229c42ef43d
     title: pie_name
     description: pie_description
-    price: 156
-    satisfaction: 0
-    causticity: 10
-    saturation: 5
+    price: 240
+    satisfaction: 7
+    causticity: 6
+    saturation: 2
     visabilityType: 2
     unlockQuestType: 0
-    suppliersShopPrice: 10
+    suppliersShopPrice: 600

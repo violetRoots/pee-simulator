@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 91842cd6-2947-4bb2-b437-1a6dddc68dae
     title: hermione_name
     description: hermione_description
-    price: 101
-    satisfaction: 3
-    causticity: 6
-    saturation: 6
+    price: 145
+    satisfaction: 6
+    causticity: 4
+    saturation: 2
     visabilityType: 2
     unlockQuestType: 0
-    suppliersShopPrice: 10
+    suppliersShopPrice: 320

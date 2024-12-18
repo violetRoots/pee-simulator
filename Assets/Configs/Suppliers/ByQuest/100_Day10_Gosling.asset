@@ -16,9 +16,9 @@ MonoBehaviour:
     visualId: c644702d-f0e1-4ce7-a628-6d2b79c82b6b
     title: gosling_name
     description: gosling_description
-    price: 10
-    satisfaction: 3
-    causticity: 3
+    price: 130
+    satisfaction: 1
+    causticity: 1
     saturation: 8
     visabilityType: 1
     unlockQuestType: 9

@@ -198,6 +198,7 @@ public class HumanStateController : MonoBehaviour
     {
         //Debug.Log(newState);
         StopAllCoroutines();
+        gameObject.Stop3DSound();
 
         if(newState != HumanState.Sits && _isSitting)
         {
@@ -281,6 +282,8 @@ public class HumanStateController : MonoBehaviour
 
             DelayedAction(UnityEngine.Random.Range(fightTimeBounds.x, fightTimeBounds.y), () => state.Value = HumanState.RunsAwayForever);
             _humanAnimationController.PlayFightAnimation();
+
+            gameObject.Play3DSound(SfxType.PeopleFight, 0.5f);
         }
     }
 

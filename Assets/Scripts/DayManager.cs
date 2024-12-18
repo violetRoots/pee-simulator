@@ -14,6 +14,8 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
         NeedEndDay = 3
     }
 
+    public float DayProgressValue => dayProgressValue;
+
     [Range(0f, 1f)]
     [SerializeField] private float dayProgressValue = 0.0f;
     [SerializeField] private float allDayDuration = 60 * 10;
@@ -46,6 +48,7 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
     private QuestsManager _questsManager;
     private SavesManager _savesManager;
     private DoorsManager _doorsManager;
+    private AudioManager _audioManager;
 
     private int _daysCount = 0;
 
@@ -66,6 +69,8 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
         _gameManager = GameManager.Instance;
         _doorsManager = _gameManager.DoorsManager;
         _questsManager = _gameManager.QuestsManager;
+
+        _audioManager = AudioManager.Instance;
     }
 
     private void Update()
@@ -106,6 +111,8 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
             onPastDay?.Invoke(_daysCount);
 
             _savesManager.PlayerStats.Save();
+
+            _audioManager.PlayCalmMusic();
         }
         else if(newState == DayState.SpawnProcess)
         {
@@ -114,6 +121,8 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
         else if(newState == DayState.NeedCloseDoors)
         {
             _doorsManager.SetDoorsInteractable(true, Door.DoorState.Closed);
+
+            _audioManager.PlayActionMusic();
         }
         else if (newState == DayState.NeedEndDay)
         {

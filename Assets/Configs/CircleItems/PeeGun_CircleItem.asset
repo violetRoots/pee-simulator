@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   title: ui_gun_name
-  price: 50
+  price: 250
   duration: 20
-  cooldown: 5
+  cooldown: 30
   automate: {fileID: 8206282974585324324, guid: ec443b531a1f8944586c643a207bfac3, type: 3}
   needBoiler: 1

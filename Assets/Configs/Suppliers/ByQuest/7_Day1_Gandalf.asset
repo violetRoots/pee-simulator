@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 01ad3f40-3eb9-4dca-8d3f-cd66100de36a
     title: gandalf_name
     description: gandalf_description
-    price: 101
-    satisfaction: 3
-    causticity: 6
-    saturation: 6
+    price: 40
+    satisfaction: 2
+    causticity: 2
+    saturation: 4
     visabilityType: 1
     unlockQuestType: 8
     suppliersShopPrice: 0

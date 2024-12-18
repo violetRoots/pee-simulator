@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 610e2f92-3821-4d09-a9de-7e4a04177c9c
     title: biser_fez_name
     description: biser_fez_description
-    price: 101
-    satisfaction: 3
-    causticity: 6
-    saturation: 6
+    price: 270
+    satisfaction: 5
+    causticity: 5
+    saturation: 4
     visabilityType: 2
     unlockQuestType: 0
-    suppliersShopPrice: 10
+    suppliersShopPrice: 600

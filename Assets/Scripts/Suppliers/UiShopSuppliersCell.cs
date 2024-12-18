@@ -46,5 +46,7 @@ public class UiShopSuppliersCell : MonoBehaviour
         _playerStats.ChangeMoney(-RuntimeInfo.configData.suppliersShopPrice);
 
         _suppliersManager.SetAvailableByShop(RuntimeInfo);
+
+        AudioManager.StaticPlaySound(SfxType.ItemBought, 0.075f);
     }
 }

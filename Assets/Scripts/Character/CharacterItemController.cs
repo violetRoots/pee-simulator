@@ -80,7 +80,10 @@ public class CharacterItemController : MonoBehaviour
 
     public void DropItem()
     {
-        PopItem();
+        if(!HasItem()) return;
+
+        var item = PopItem();
+        item.gameObject.Play3DSound(SfxType.BottleFail);
     }
 
     public void ThrowItem()
@@ -92,8 +95,7 @@ public class CharacterItemController : MonoBehaviour
         var item = PopItem();
 
         item.Throw(itemThrowContainer.forward, throwForce);
-
-        
+        item.gameObject.Play3DSound(SfxType.BottleFail);
     }
 
     public bool HasItem()

@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 82976163-ee3a-4a6e-b301-130809c06626
     title: tucker_name
     description: tucker_description
-    price: 101
-    satisfaction: 3
-    causticity: 6
-    saturation: 6
+    price: 700
+    satisfaction: 4
+    causticity: 2
+    saturation: 12
     visabilityType: 2
     unlockQuestType: 0
-    suppliersShopPrice: 10
+    suppliersShopPrice: 1200

@@ -108,6 +108,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3252d2fc1ff17947926e56e23413c50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &3442816822142542483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4797688193238504987}
+  m_Layer: 9
+  m_Name: AudioSourcePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4797688193238504987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442816822142542483}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.52, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5772362810429236196}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4558542829711654625
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,6 +181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5772362810429236196}
   - component: {fileID: 8356712618236647409}
+  - component: {fileID: 4656084052715933752}
   - component: {fileID: 6175745162276111684}
   - component: {fileID: 7531395024425771212}
   - component: {fileID: 6105231090367054623}
@@ -182,6 +214,7 @@ Transform:
   - {fileID: 7596667310564608927}
   - {fileID: 2657332730267829800}
   - {fileID: 6321645028895713389}
+  - {fileID: 4797688193238504987}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -204,6 +237,20 @@ MonoBehaviour:
   peeController: {fileID: 4483467003314978182}
   attackController: {fileID: 5630154466719249470}
   explosionController: {fileID: 4775017744865238040}
+--- !u!114 &4656084052715933752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6146336497634898392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e60319b391f4a4fbb7e52ff89a9d16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxIntervalBounds: {x: 5, y: 6}
+  sourcePoint: {fileID: 3442816822142542483}
 --- !u!114 &6175745162276111684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672ba1ab173129141a29216a92125b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieIdleTimeBounds: {x: 1, y: 1}
+  zombieIdleTimeBounds: {x: 2, y: 5}
   attackTime: 1
   destroyAfterTime: 10
   attackStoppingDistance: 1

@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: de0aa8a7-7199-433b-ac64-d1a36c7a7b9f
     title: gaga_name
     description: gaga_description
-    price: 101
-    satisfaction: 3
-    causticity: 6
-    saturation: 6
+    price: 120
+    satisfaction: 2
+    causticity: 2
+    saturation: 8
     visabilityType: 2
     unlockQuestType: 0
-    suppliersShopPrice: 10
+    suppliersShopPrice: 240

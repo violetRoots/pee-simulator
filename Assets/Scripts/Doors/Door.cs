@@ -56,6 +56,7 @@ public class Door : MonoBehaviour
         visual.SetActive(false);
 
         _questsManager.ChangeProgressQuest(QuestConfig.QuestType.OpenDoors, 1);
+        gameObject.Play3DSound(SfxType.DoorOpened, 1);
     }
 
     private void Close()

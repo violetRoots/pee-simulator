@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 312bfddf-e40f-4abf-8e39-404363b9d6b3
     title: anya_name
     description: anya_description
-    price: 101
-    satisfaction: 3
-    causticity: 6
+    price: 180
+    satisfaction: 4
+    causticity: 4
     saturation: 6
     visabilityType: 2
     unlockQuestType: 0
-    suppliersShopPrice: 10
+    suppliersShopPrice: 300

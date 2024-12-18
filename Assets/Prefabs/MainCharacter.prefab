@@ -519,11 +519,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.193
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.318
+      value: -1.961
       objectReference: {fileID: 0}
     - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -797,7 +797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapons:
-  - {fileID: 2408966311291153779}
+  - {fileID: 1022176658560205257}
   - {fileID: 4903382394969899687}
   - {fileID: 7931917700604912596}
 --- !u!114 &5471249255055231060 stripped
@@ -823,6 +823,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CatWeapon
       objectReference: {fileID: 0}
+    - target: {fileID: 4679680192601039632, guid: d425b373cc52bb947be38676e0985c06, type: 3}
+      propertyPath: peeParts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679680192601039632, guid: d425b373cc52bb947be38676e0985c06, type: 3}
+      propertyPath: peeParts.Array.data[0]
+      value: 
+      objectReference: {fileID: 5957326044438887213}
     - target: {fileID: 4690885704961600987, guid: d425b373cc52bb947be38676e0985c06, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -867,73 +875,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5455116490161501710, guid: d425b373cc52bb947be38676e0985c06, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8048018359589244842, guid: d425b373cc52bb947be38676e0985c06, type: 3}
-      propertyPath: peeParts.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8048018359589244842, guid: d425b373cc52bb947be38676e0985c06, type: 3}
-      propertyPath: peeParts.Array.data[0]
-      value: 
-      objectReference: {fileID: 8783944320499075849}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3701119512244173357, guid: d425b373cc52bb947be38676e0985c06, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8783944320499075849}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d425b373cc52bb947be38676e0985c06, type: 3}
---- !u!4 &1136965013898415874 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4690885704961600987, guid: d425b373cc52bb947be38676e0985c06, type: 3}
-  m_PrefabInstance: {fileID: 5682997466484957913}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2408966311291153779 stripped
+--- !u!114 &1022176658560205257 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8048018359589244842, guid: d425b373cc52bb947be38676e0985c06, type: 3}
+  m_CorrespondingSourceObject: {fileID: 4679680192601039632, guid: d425b373cc52bb947be38676e0985c06, type: 3}
   m_PrefabInstance: {fileID: 5682997466484957913}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9044095017883490548}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9794db443279dc04c8297c11c2bec52f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &2841687060196688311 stripped
+--- !u!4 &1136965013898415874 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7616047962826662766, guid: d425b373cc52bb947be38676e0985c06, type: 3}
+  m_CorrespondingSourceObject: {fileID: 4690885704961600987, guid: d425b373cc52bb947be38676e0985c06, type: 3}
   m_PrefabInstance: {fileID: 5682997466484957913}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &6124699905698085754 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1882889521532983715, guid: d425b373cc52bb947be38676e0985c06, type: 3}
-  m_PrefabInstance: {fileID: 5682997466484957913}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &9044095017883490548 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3701119512244173357, guid: d425b373cc52bb947be38676e0985c06, type: 3}
-  m_PrefabInstance: {fileID: 5682997466484957913}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8783944320499075849
+--- !u!114 &5957326044438887213 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2049907966956640756, guid: d425b373cc52bb947be38676e0985c06, type: 3}
+  m_PrefabInstance: {fileID: 5682997466484957913}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9044095017883490548}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09f97a0c8e444974c82cb9d83637004e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boilerTickValue: 0.0001
-  peeStrength: 200
-  spawnPeeInterval: 1e-30
-  peeBoxPrefab: {fileID: 2670403216011622776, guid: 513f96b9406092d4d83333eff3e1c62d, type: 3}
-  peeOrigins:
-  - {fileID: 2841687060196688311}
-  - {fileID: 6124699905698085754}

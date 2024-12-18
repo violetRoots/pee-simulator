@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 9b3c6d2a-2601-4bd3-90bc-6243c7bce66d
     title: gigachad_name
     description: gigachad_description
-    price: 101
-    satisfaction: 3
-    causticity: 6
-    saturation: 6
+    price: 200
+    satisfaction: 6
+    causticity: 1
+    saturation: 4
     visabilityType: 2
     unlockQuestType: 0
-    suppliersShopPrice: 10
+    suppliersShopPrice: 450

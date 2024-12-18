@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 3a1d06d6-73e5-4f95-9ae0-2c515f0a6354
     title: kim_name
     description: kim_description
-    price: 101
-    satisfaction: 3
-    causticity: 6
-    saturation: 6
+    price: 160
+    satisfaction: 4
+    causticity: 2
+    saturation: 2
     visabilityType: 2
     unlockQuestType: 0
-    suppliersShopPrice: 10
+    suppliersShopPrice: 400

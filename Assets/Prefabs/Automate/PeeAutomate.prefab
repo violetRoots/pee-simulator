@@ -315,6 +315,7 @@ MonoBehaviour:
   - {fileID: 48142252320824730}
   - {fileID: 7950579074315297870}
   automateTimerPanel: {fileID: 8493759160181859535}
+  bottleHint: {fileID: 0}
 --- !u!114 &48142252320824730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,6 +859,14 @@ PrefabInstance:
     - target: {fileID: 4934256358320819752, guid: 6cd34770957fd38408602b9be99aa248, type: 3}
       propertyPath: m_Name
       value: AutomateTimerPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437476311495572809, guid: 6cd34770957fd38408602b9be99aa248, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437476311495572809, guid: 6cd34770957fd38408602b9be99aa248, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: 414f24ac-0123-4f73-9fab-24f92563f6f3
     title: hunter_name
     description: hunter_description
-    price: 91
-    satisfaction: 3
-    causticity: 3
-    saturation: 4
+    price: 150
+    satisfaction: 7
+    causticity: 5
+    saturation: 2
     visabilityType: 1
     unlockQuestType: 4
     suppliersShopPrice: 0

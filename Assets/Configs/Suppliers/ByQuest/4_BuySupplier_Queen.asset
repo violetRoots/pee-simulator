@@ -16,10 +16,10 @@ MonoBehaviour:
     visualId: efdd0a0c-a6b3-4a47-a87d-71f0e42d2232
     title: queen_name
     description: gueen_description
-    price: 101
-    satisfaction: 3
-    causticity: 6
-    saturation: 6
+    price: 900
+    satisfaction: 2
+    causticity: 1
+    saturation: 20
     visabilityType: 1
     unlockQuestType: 6
     suppliersShopPrice: 0
