@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c438ff4e155b24c85cd17727d0c3c2, type: 3}
+  m_Name: 100_FullBottle_Quest
+  m_EditorClassIdentifier: 
+  Data:
+    type: 3
+    title: quest_fullbottle_name
+    description: quest_fullbottle_description
+    maxProgress: 10
+    supplierVisualId: c644702d-f0e1-4ce7-a628-6d2b79c82b6b
+    hintPriority: 100
+  supplier: {fileID: 11400000, guid: 626c2e9cd7272774cabb2d6b5c117761, type: 2}

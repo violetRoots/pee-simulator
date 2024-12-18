@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: PeeRayGenerator_CircleItem
   m_EditorClassIdentifier: 
   type: 0
-  title: ui_rails_name
+  title: ui_rays_name
   price: 0
   duration: 30
+  cooldown: 5
   automate: {fileID: 5491532946541515805, guid: 4c553ef2f6059bb4fa4ae048583b7905, type: 3}
   needBoiler: 0

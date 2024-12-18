@@ -13,6 +13,8 @@ public class Plant : MonoBehaviour
 
     [SerializeField] private MeshRenderer meshRenderer;
 
+    private QuestsManager _questsManager;
+
     private int HP
     {
         get => _hp;
@@ -21,6 +23,12 @@ public class Plant : MonoBehaviour
     private int _hp;
 
     private bool _canWither = true;
+    private bool _isDead;
+
+    private void Awake()
+    {
+        _questsManager = GameManager.Instance.QuestsManager;
+    }
 
     private void Start()
     {
@@ -37,6 +45,9 @@ public class Plant : MonoBehaviour
             var color = Color.Lerp(yellowColor, greenColor, (float) _hp / hpCount);
             UpdateColor(color);
 
+            if(HP < hpCount * 0.1f)
+                _isDead = true;
+
             yield return new WaitForSeconds(1.0f);
         }
     }
@@ -48,6 +59,13 @@ public class Plant : MonoBehaviour
         HP += (int)(1 * hpPeeMultiplier);
         var color = Color.Lerp(yellowColor, greenColor, (float)_hp / hpCount);
         UpdateColor(color);
+
+        if(_isDead)
+        {
+            _questsManager.ChangeProgressQuest(QuestConfig.QuestType.Plants, 1);
+
+            _isDead = false;
+        }
     }
 
     private void UpdateColor(Color color)

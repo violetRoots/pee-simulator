@@ -23,6 +23,9 @@ public class CharacterBuildController : MonoBehaviour
     [SerializeField] private float scrollSensitivity = 0.1f;
 
     [Space]
+    [SerializeField] private string controlsHintKey;
+
+    [Space]
     [SerializeField] private GameObject wholeBuildContainer;
 
     [SerializeField] private Transform raycastOrigin;
@@ -31,8 +34,11 @@ public class CharacterBuildController : MonoBehaviour
     [SerializeField] private Transform deafultTargetPositionAndRotation;
 
     private GameManager _gameManager;
+    private QuestsManager _questsManager;
+
     private InputManager _inputManager;
     private PlayerStats _playerStats;
+    private UiGameplayManager _uiGameplayManager;
     private CharacterInteractionController _characterInteractionController;
 
     private bool _canBuild;
@@ -54,8 +60,11 @@ public class CharacterBuildController : MonoBehaviour
     private void Awake()
     {
         _gameManager = GameManager.Instance;
+        _questsManager = _gameManager.QuestsManager;
+
         _inputManager = InputManager.Instance;
         _playerStats = SavesManager.Instance.PlayerStats.Value;
+        _uiGameplayManager = UiGameplayManager.Instance;
         _characterInteractionController = GameManager.Instance.CharacterProvider.InteractionController;
 
         _layerMask = LayerMask.GetMask(layerMaskName);
@@ -114,9 +123,16 @@ public class CharacterBuildController : MonoBehaviour
 
         wholeBuildContainer.SetActive(_canBuild);
 
-        if(!_canBuild) return;
+        if(_canBuild)
+        {
+            SetContent();
+            _uiGameplayManager.ShowControls(controlsHintKey, true);
 
-        SetContent();
+        }
+        else
+        {
+            _uiGameplayManager.HideControls(true);
+        }
     }
 
     private void OnPlaceButtonPressed()
@@ -134,8 +150,13 @@ public class CharacterBuildController : MonoBehaviour
         _content = null;
 
         _playerStats.ChangeMoney(-_currentItemToBuild.price);
+        _uiGameplayManager.SetCircleItemUsed(_currentItemToBuild);
 
         SetContent();
+
+        _characterInteractionController.interactionMode.Value = CharacterInteractionController.CharacterInteractionMode.Gameplay;
+
+        _questsManager.ChangeProgressQuest(QuestConfig.QuestType.BuildFirst, 1);
     }
 
     public void SetItem(CircleItemConfig item)

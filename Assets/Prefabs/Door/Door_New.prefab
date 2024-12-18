@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daec2632fa57680429e623e0754dbd75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
+  key: ui_door_controls_hint
   interactionController: {fileID: 7488082028469913470}
 --- !u!114 &7488082028469913470
 MonoBehaviour:

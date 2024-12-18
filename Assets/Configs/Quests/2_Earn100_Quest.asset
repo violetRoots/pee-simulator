@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c438ff4e155b24c85cd17727d0c3c2, type: 3}
+  m_Name: 2_Earn100_Quest
+  m_EditorClassIdentifier: 
+  Data:
+    type: 4
+    title: quest_earn100_name
+    description: quest_earn100_description
+    maxProgress: 100
+    supplierVisualId: 414f24ac-0123-4f73-9fab-24f92563f6f3
+    hintPriority: 2
+  supplier: {fileID: 11400000, guid: 554bb0113605cbe47bb84bd5eb45a0cc, type: 2}

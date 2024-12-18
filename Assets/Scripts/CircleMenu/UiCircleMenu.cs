@@ -2,6 +2,7 @@ using Common.Localisation;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,10 +15,16 @@ public class UiCircleMenu : MonoBehaviour
         public CircleItemConfig config;
         public Image selectImage;
         public float targetAngle;
+
+        [HideInInspector]
+        public float lastUseTime;
+        [HideInInspector]
+        public bool isUsed;
     }
 
     [SerializeField] private TranslatedTextMeshPro title;
     [SerializeField] private TextMeshProUGUI price;
+    [SerializeField] private Image cooldownImage;
 
     [SerializeField] private CircleSegmentInfo[] segmentInfos;
 
@@ -57,6 +64,28 @@ public class UiCircleMenu : MonoBehaviour
 
     private void Update()
     {
+        UpdateTargetCircleItem();
+    }
+
+    public void ApplySelectedCircleItem()
+    {
+        if (_targetSegmentInfo == null) return;
+
+        if (_targetSegmentInfo.isUsed && Time.time - _targetSegmentInfo.lastUseTime < _targetSegmentInfo.config.cooldown) return;
+
+        if(_targetSegmentInfo.config.type == CircleItemConfig.CircleType.Automate)
+        {
+            _characterBuildController.SetItem(_targetSegmentInfo.config);
+            _characterInteractionController.SetInteractionMode(CharacterInteractionController.CharacterInteractionMode.Build);
+        }
+        else if (_targetSegmentInfo.config.type == CircleItemConfig.CircleType.Weapon)
+        {
+            _characterWeaponController.EnableWeapon(_targetSegmentInfo.config);
+        }
+    }
+
+    private void UpdateTargetCircleItem()
+    {
         Vector2 mousePos = Input.mousePosition;
         var direction = (mousePos - _centerPos).normalized;
         var angle = Vector2.SignedAngle(direction, Vector2.up);
@@ -86,20 +115,23 @@ public class UiCircleMenu : MonoBehaviour
         title.SetKey(_targetSegmentInfo.config.title);
         price.text = $"{_targetSegmentInfo.config.price}";
         price.color = _playerStats.money < _targetSegmentInfo.config.price ? Color.red : Color.green;
+
+        if (_targetSegmentInfo.isUsed)
+        {
+            var cooldownValue = 1.0f - Mathf.Clamp01((Time.time - _targetSegmentInfo.lastUseTime) / _targetSegmentInfo.config.cooldown);
+            cooldownImage.fillAmount = cooldownValue;
+        }
+        else
+        {
+            cooldownImage.fillAmount = 0;
+        }
     }
 
-    public void ApplySelectedCircleItem()
+    public void SetUsed(CircleItemConfig config)
     {
-        if (_targetSegmentInfo == null) return;
+        var segment = segmentInfos.Where(info => info.config == config).FirstOrDefault();
 
-        if(_targetSegmentInfo.config.type == CircleItemConfig.CircleType.Automate)
-        {
-            _characterBuildController.SetItem(_targetSegmentInfo.config);
-            _characterInteractionController.SetInteractionMode(CharacterInteractionController.CharacterInteractionMode.Build);
-        }
-        else if (_targetSegmentInfo.config.type == CircleItemConfig.CircleType.Weapon)
-        {
-            _characterWeaponController.EnableWeapon(_targetSegmentInfo.config);
-        }
+        segment.lastUseTime = Time.time;
+        segment.isUsed = true;
     }
 }

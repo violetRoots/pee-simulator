@@ -519,27 +519,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4199999
+      value: -0.193
       objectReference: {fileID: 0}
     - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.49
+      value: -2.318
       objectReference: {fileID: 0}
     - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 20395501606822184, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: field of view
@@ -730,6 +734,7 @@ MonoBehaviour:
   rotationDampTime: 0.1
   contentRotationOffset: {x: 90, y: 0, z: 0}
   scrollSensitivity: 0.3
+  controlsHintKey: ui_build_controls_hint
   wholeBuildContainer: {fileID: 3951912674168558564}
   raycastOrigin: {fileID: 5821434694072588925}
   buildTarget: {fileID: 1427919517693797850}
@@ -775,6 +780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwForce: 50000
+  controlsHintKey: ui_item_controls_hint
   itemContainer: {fileID: 8086028584871734344}
   itemThrowContainer: {fileID: 320290838300597623}
   _characterProvider: {fileID: 5528933123390752341}

@@ -17,11 +17,13 @@ public class ZombieExplosionController : MonoBehaviour
     [SerializeField] private GameObject zombieObj;
     [SerializeField] private GameObject zombiePartsObj;
 
-    private Collider[] _ragDollColliders;
-
     [SerializeField]
     [HideInInspector]
     private ZombieProvider _zombieProvider;
+
+    private QuestsManager _questsManager;
+
+    private Collider[] _ragDollColliders;
 
 #if UNITY_EDITOR
     private void OnValidate()
@@ -31,6 +33,13 @@ public class ZombieExplosionController : MonoBehaviour
 #endif
 
     private void Awake()
+    {
+        _questsManager = GameManager.Instance.QuestsManager;
+
+        InitRagdoll();
+    }
+
+    private void InitRagdoll()
     {
         _ragDollColliders = bonesParent.GetComponentsInChildren<Collider>();
 
@@ -57,6 +66,8 @@ public class ZombieExplosionController : MonoBehaviour
             part.AddExplosionForce(explosionForce, explosionPos, explosionRadius);
             BloodEffectActivate(part.transform.position);
         }
+
+        _questsManager.ChangeProgressQuest(QuestConfig.QuestType.ZombieDie, 1);
     }
 
     private void BloodEffectActivate(Vector3 pos)

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16e94e8a6ac43844a4cd039db595f9a, type: 3}
+  m_Name: BiserKing
+  m_EditorClassIdentifier: 
+  Data:
+    visualId: 8c4592ba-bcc9-45b4-a128-9612771ce9f9
+    title: biser_king_name
+    description: biser_king_description
+    price: 101
+    satisfaction: 3
+    causticity: 6
+    saturation: 6
+    visabilityType: 2
+    unlockQuestType: 0
+    suppliersShopPrice: 10

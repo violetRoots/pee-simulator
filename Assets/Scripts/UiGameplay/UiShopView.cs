@@ -14,33 +14,27 @@ public class UiShopView : MonoBehaviour
     [SerializeField] private UiShopUpperButton suppliersButton;
     [SerializeField] private UiShopUpperButton questsButton;
     [SerializeField] private UiShopUpperButton checksButton;
-    [SerializeField] private UiShopUpperButton roomsButton;
+    [SerializeField] private UiShopUpperButton suppliersShopButton;
     [SerializeField] private Button exitButton;
 
     [Header("Panels")]
     [SerializeField] private GameObject suppliersPanel;
     [SerializeField] private GameObject questsPanel;
     [SerializeField] private GameObject checksPanel;
-    [SerializeField] private GameObject roomsPanel;
-
-    [Header("Rooms")]
-    [SerializeField] private UiRoomCell roomCell;
-    [SerializeField] RectTransform roomsContentObj;
+    [SerializeField] private GameObject suppliersShopPanel;
 
     private GameManager _gameManager;
-    private RoomsManager _roomsManager;
 
     private void Awake()
     {
         _gameManager = GameManager.Instance;
-        _roomsManager = _gameManager.RoomsManager;
 
-        InitRooms();
+        InitSuppliersShop();
 
         suppliersButton.Subscribe(ShowSuppliers);
         questsButton.Subscribe(ShowQuests);
         checksButton.Subscribe(ShowChecks);
-        roomsButton.Subscribe(ShowRooms);
+        suppliersShopButton.Subscribe(ShowSuppliersShop);
 
         exitButton.onClick.AddListener(OnExitButton);
     }
@@ -57,14 +51,9 @@ public class UiShopView : MonoBehaviour
         _gameManager.RemoveLock(this);
     }
 
-    private void InitRooms()
+    private void InitSuppliersShop()
     {
-        var rooms = _roomsManager.GetRooms();
-        foreach (var room in rooms)
-        {
-            var cell = Instantiate(roomCell, roomsContentObj);
-            cell.SetContext(room);
-        }
+        
     }
 
     private void ShowSuppliers()
@@ -72,12 +61,12 @@ public class UiShopView : MonoBehaviour
         suppliersPanel.SetActive(true);
         questsPanel.SetActive(false);
         checksPanel.SetActive(false);
-        roomsPanel.SetActive(false);
+        suppliersShopPanel.SetActive(false);
 
         suppliersButton.IsActive = true;
         questsButton.IsActive = false;
         checksButton.IsActive = false;
-        roomsButton.IsActive = false;
+        suppliersShopButton.IsActive = false;
     }
 
     private void ShowQuests()
@@ -85,12 +74,12 @@ public class UiShopView : MonoBehaviour
         suppliersPanel.SetActive(false);
         questsPanel.SetActive(true);
         checksPanel.SetActive(false);
-        roomsPanel.SetActive(false);
+        suppliersShopPanel.SetActive(false);
 
         suppliersButton.IsActive = false;
         questsButton.IsActive = true;
         checksButton.IsActive = false;
-        roomsButton.IsActive = false;
+        suppliersShopButton.IsActive = false;
     }
 
     private void ShowChecks()
@@ -98,25 +87,25 @@ public class UiShopView : MonoBehaviour
         suppliersPanel.SetActive(false);
         questsPanel.SetActive(false);
         checksPanel.SetActive(true);
-        roomsPanel.SetActive(false);
+        suppliersShopPanel.SetActive(false);
 
         suppliersButton.IsActive = false;
         questsButton.IsActive = false;
         checksButton.IsActive = true;
-        roomsButton.IsActive = false;
+        suppliersShopButton.IsActive = false;
     }
 
-    private void ShowRooms()
+    private void ShowSuppliersShop()
     {
         suppliersPanel.SetActive(false);
         questsPanel.SetActive(false);
         checksPanel.SetActive(false);
-        roomsPanel.SetActive(true);
+        suppliersShopPanel.SetActive(true);
 
         suppliersButton.IsActive = false;
         questsButton.IsActive = false;
         checksButton.IsActive = false;
-        roomsButton.IsActive = true;
+        suppliersShopButton.IsActive = true;
     }
 
     private void OnExitButton()

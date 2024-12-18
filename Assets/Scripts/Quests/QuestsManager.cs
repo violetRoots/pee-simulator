@@ -48,19 +48,20 @@ public class QuestsManager
 
     public void ChangeProgressQuest(QuestConfig.QuestType type, float amount)
     {
-        var questInfo = runtimeQuests.Where(info => info.configData.type == type).FirstOrDefault();
+        var questInfos = runtimeQuests.Where(info => info.configData.type == type && !info.isFinished);
 
-        if (questInfo == null || questInfo.isFinished) return;
+        foreach (var questInfo in questInfos)
+        {
+            questInfo.progressValue += amount;
 
-        questInfo.progressValue += amount;
+            if (questInfo.progressValue >= questInfo.configData.maxProgress)
+                questInfo.isFinished = true;
 
-        if (questInfo.progressValue >= questInfo.configData.maxProgress)
-            questInfo.isFinished = true;
-
-        onQuestProgressUpdated?.Invoke(questInfo);
+            onQuestProgressUpdated?.Invoke(questInfo);
+        }
     }
 
-    private void OnPastDay()
+    private void OnPastDay(int daysCount)
     {
         _playerStats.runtimeQuests = runtimeQuests.ToList();
     }

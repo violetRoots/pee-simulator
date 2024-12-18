@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0bca6f03801a243bd968107c3436f1, type: 3}
   m_Name: PeeFountain_CircleItem
   m_EditorClassIdentifier: 
+  type: 0
   title: ui_fountain_name
   price: 10
   duration: 10
+  cooldown: 5
   automate: {fileID: 7913420000253184615, guid: d285c9790699cea4ca684fa8d7732043, type: 3}
+  needBoiler: 1

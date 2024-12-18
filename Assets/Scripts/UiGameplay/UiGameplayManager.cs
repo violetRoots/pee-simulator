@@ -5,21 +5,34 @@ public class UiGameplayManager : SingletonMonoBehaviourBase<UiGameplayManager>
     [SerializeField] private UiCircleMenu circleMenu;
     [SerializeField] private UiShopView shopView;
     [SerializeField] private ControlsView controlsView;
+    [SerializeField] private UiTutorialView tutorialView;
+    [SerializeField] private UiPauseMenu pauseMenu;
 
     [SerializeField] private RectTransform markersContainer;
 
     private GameManager _gameManager;
     private InputManager _inputManager;
+    private PlayerStats _playerStats;
 
     private void Awake()
     {
-
         _gameManager = GameManager.Instance;
         _inputManager = InputManager.Instance;
+        _playerStats = SavesManager.Instance.PlayerStats.Value;
 
         circleMenu.gameObject.SetActive(false);
         shopView.gameObject.SetActive(false);
         controlsView.gameObject.SetActive(false);
+
+        if(_playerStats.firstLoad)
+        {
+            tutorialView.gameObject.SetActive(true);
+            _playerStats.firstLoad = false;
+        }
+        else
+        {
+            tutorialView.gameObject.SetActive(false);
+        }
     }
 
     private void OnEnable()
@@ -29,6 +42,8 @@ public class UiGameplayManager : SingletonMonoBehaviourBase<UiGameplayManager>
 
         //_inputManager.OnShopButtonDown += ShowShopView;
         _inputManager.OnBackButtonDown += HideShopView;
+
+        _inputManager.OnPauseButtonDown += OnPauseButtonDown;
     }
 
     private void OnDisable()
@@ -40,6 +55,8 @@ public class UiGameplayManager : SingletonMonoBehaviourBase<UiGameplayManager>
 
             //_inputManager.OnShopButtonDown -= ShowShopView;
             _inputManager.OnBackButtonDown -= HideShopView;
+
+            _inputManager.OnPauseButtonDown -= OnPauseButtonDown;
         }
     }
 
@@ -48,15 +65,21 @@ public class UiGameplayManager : SingletonMonoBehaviourBase<UiGameplayManager>
         return Instantiate(markerPrefab, markersContainer);
     }
 
-    public void ShowControls(string key)
+    public void ShowControls(string key, bool lockMode = false)
     {
         controlsView.gameObject.SetActive(true);
         controlsView.SetControls(key);
+
+        if (lockMode)
+            controlsView.SetLock(true);
     }
 
-    public void HideControls()
+    public void HideControls(bool lockMode = false)
     {
         controlsView.gameObject.SetActive(false);
+
+        if (lockMode)
+            controlsView.SetLock(false);
     }
 
     private void ShowCircleMenu()
@@ -80,5 +103,15 @@ public class UiGameplayManager : SingletonMonoBehaviourBase<UiGameplayManager>
     private void HideShopView()
     {
         shopView.gameObject.SetActive(false);
+    }
+
+    public void SetCircleItemUsed(CircleItemConfig config)
+    {
+        circleMenu.SetUsed(config);
+    }
+
+    private void OnPauseButtonDown()
+    {
+        pauseMenu.gameObject.SetActive(!pauseMenu.gameObject.activeSelf);
     }
 }

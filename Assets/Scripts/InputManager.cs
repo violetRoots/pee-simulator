@@ -12,6 +12,7 @@ public class InputManager : SingletonMonoBehaviourBase<InputManager>
     public event Action OnTalkButtonDown;
     public event Action OnBackButtonDown;
     public event Action OnItemDropButtonDown;
+    public event Action OnPauseButtonDown;
 
     public bool RunButtonValue { get; private set; }
 
@@ -52,6 +53,10 @@ public class InputManager : SingletonMonoBehaviourBase<InputManager>
         if (Input.GetKeyDown(KeyCode.Q))
         {
             OnItemDropButtonDown?.Invoke();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            OnPauseButtonDown?.Invoke();
         }
 
         RunButtonValue = Input.GetKey(KeyCode.LeftShift);

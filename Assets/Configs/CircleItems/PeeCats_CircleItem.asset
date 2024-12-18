@@ -16,4 +16,6 @@ MonoBehaviour:
   title: ui_cats_name
   price: 0
   duration: 20
+  cooldown: 5
   automate: {fileID: 8206282974585324324, guid: ec443b531a1f8944586c643a207bfac3, type: 3}
+  needBoiler: 1

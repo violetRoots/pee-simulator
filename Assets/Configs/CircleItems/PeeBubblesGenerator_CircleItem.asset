@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: PeeBubblesGenerator_CircleItem
   m_EditorClassIdentifier: 
   type: 0
-  title: ui_rails_name
+  title: ui_bubbles_name
   price: 0
   duration: 30
+  cooldown: 5
   automate: {fileID: 4253263750967655672, guid: e08ff4822dc815d469595aedb68c7de8, type: 3}
+  needBoiler: 1

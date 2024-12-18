@@ -17,6 +17,7 @@ public class UiQuestCell : MonoBehaviour
     [SerializeField] private CanvasGroup finsihedGroup;
     [SerializeField] private CanvasGroup lockGroup;
     [SerializeField] private CanvasGroup openedGroup;
+    [SerializeField] private CanvasGroup openButtonGroup;
 
     [SerializeField] private LockEffect lockEffect;
 
@@ -55,12 +56,15 @@ public class UiQuestCell : MonoBehaviour
         lockGroup.gameObject.SetActive(!RuntimeInfo.isOpened);
         lockEffect.SetIsActive(RuntimeInfo.isFinished);
         openedGroup.gameObject.SetActive(RuntimeInfo.isOpened);
+        openButtonGroup.gameObject.SetActive(RuntimeInfo.isFinished && !RuntimeInfo.isOpened);
 
         icon.sprite = RuntimeInfo.isOpened ? RuntimeInfo.VisualInfo.icon : RuntimeInfo.VisualInfo.unknownIcon;
     }
 
     private void OnOpenButtonClicked()
     {
+        if (!RuntimeInfo.isFinished) return;
+
         RuntimeInfo.isOpened = true;
 
         UpdateProgressValue();

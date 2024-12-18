@@ -6,12 +6,19 @@ using UnityEngine;
 
 public class ControlsView : MonoBehaviour
 {
-    //[SerializeField] private TranslatedTextMeshPro controls;
-    [SerializeField] private TextMeshProUGUI controls;
+    [SerializeField] private TranslatedTextMeshPro controls;
+
+    private bool _isLocked = false;
 
     public void SetControls(string key)
     {
-        //controls.SetKey(key);
-        controls.text = key;
+        if(_isLocked) return;
+
+        controls.SetKey(key);
+    }
+
+    public void SetLock(bool locked)
+    {
+        _isLocked = locked;
     }
 }

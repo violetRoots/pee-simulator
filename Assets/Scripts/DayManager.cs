@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DayManager : SingletonMonoBehaviourBase<DayManager>
 {
-    public event Action onPastDay;
+    public event Action<int> onPastDay;
 
     public enum DayState
     {
@@ -42,8 +42,12 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
     [HideInInspector]
     public readonly ReactiveProperty<DayState> state = new ReactiveProperty<DayState>(DayState.NeedOpenDoors);
 
-    private SavesManager _dataManager;
+    private GameManager _gameManager;
+    private QuestsManager _questsManager;
+    private SavesManager _savesManager;
     private DoorsManager _doorsManager;
+
+    private int _daysCount = 0;
 
     private IDisposable _stateSubscrition;
 
@@ -57,8 +61,11 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
 
     private void Awake()
     {
-        _dataManager = SavesManager.Instance;
-        _doorsManager = GameManager.Instance.DoorsManager;
+        _savesManager = SavesManager.Instance;
+
+        _gameManager = GameManager.Instance;
+        _doorsManager = _gameManager.DoorsManager;
+        _questsManager = _gameManager.QuestsManager;
     }
 
     private void Update()
@@ -85,12 +92,20 @@ public class DayManager : SingletonMonoBehaviourBase<DayManager>
 
         if(newState == DayState.NeedOpenDoors)
         {
+            _daysCount++;
+
+            if(_daysCount > 1)
+            {
+                _questsManager.ChangeProgressQuest(QuestConfig.QuestType.Day1, 1);
+                _questsManager.ChangeProgressQuest(QuestConfig.QuestType.Day10, 1);
+            }
+
             dayProgressValue = 0;
             _doorsManager.SetDoorsInteractable(true, Door.DoorState.Opened);
 
-            onPastDay?.Invoke();
+            onPastDay?.Invoke(_daysCount);
 
-            _dataManager.PlayerStats.Save();
+            _savesManager.PlayerStats.Save();
         }
         else if(newState == DayState.SpawnProcess)
         {

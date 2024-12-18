@@ -1,3 +1,4 @@
+using NaughtyAttributes;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -20,9 +21,21 @@ public class SupplierConfig : ScriptableObject
         public int causticity = 1;
         public int saturation = 1;
 
+        public SupplierVisabilityType visabilityType;
+
+        [Header("Only for 'by quest'")]
         public QuestConfig.QuestType unlockQuestType;
-        public bool isAvailableOnStart;
+        [Header("Only for 'by shop'")]
+        public int suppliersShopPrice;
+
     }
 
     public SupplierConfigData Data;
+}
+
+public enum SupplierVisabilityType
+{
+    OnStart = 0,
+    ByQuest = 1,
+    ByShop = 2,
 }

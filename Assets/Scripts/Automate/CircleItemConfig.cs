@@ -15,6 +15,7 @@ public class CircleItemConfig : ScriptableObject
     public string title;
     public int price = 0;
     public float duration = 10.0f;
+    public float cooldown = 1.0f;
     public PeeAutomate automate;
     public bool needBoiler = true;
 }

@@ -15,11 +15,13 @@ public class SuppliersManager
 
     private SavesManager _savesManager;
     private DayManager _dayManager;
+    private QuestsManager _questsManager;
 
     public void Init()
     {
         _savesManager = SavesManager.Instance;
         _dayManager = DayManager.Instance;
+        _questsManager = GameManager.Instance.QuestsManager;
 
         runtimeSuppliers = _savesManager.PlayerStats.Value.runtimeSuppliers;
 
@@ -38,14 +40,14 @@ public class SuppliersManager
 
     private void OnlyFirstInitSuppliers()
     {
-        suppliers = suppliers.OrderByDescending(supplier => supplier.Data.isAvailableOnStart).ToArray();
+        suppliers = suppliers.OrderByDescending(supplier => supplier.Data.visabilityType).ToArray();
 
         foreach (var supplier in suppliers)
         {
             var supplierInfo = new SupplierRuntimeInfo()
             {
                 configData = supplier.Data,
-                isAvailable = supplier.Data.isAvailableOnStart
+                isAvailable = supplier.Data.visabilityType == SupplierVisabilityType.OnStart,
             };
 
             runtimeSuppliers.Add(supplierInfo);
@@ -55,6 +57,11 @@ public class SuppliersManager
     public SupplierRuntimeInfo[] GetSuppliers()
     {
         return runtimeSuppliers.ToArray();
+    }
+
+    public SupplierRuntimeInfo[] GetShopSuppliers()
+    {
+        return runtimeSuppliers.Where(info => info.configData.visabilityType == SupplierVisabilityType.ByShop).ToArray();
     }
 
     public SupplierRuntimeInfo GetRandomavailableSupplier()
@@ -75,8 +82,18 @@ public class SuppliersManager
         onUpdateSupplierVisability?.Invoke();
     }
 
-    private void OnPastDay()
+    public void SetAvailableByShop(SupplierRuntimeInfo supplierInfo)
+    {
+        supplierInfo.isAvailable = true;
+        onUpdateSupplierVisability?.Invoke();
+
+        _questsManager.ChangeProgressQuest(QuestConfig.QuestType.BuySupplier, 1);
+    }
+
+    private void OnPastDay(int daysCount)
     {
         _savesManager.PlayerStats.Value.runtimeSuppliers = runtimeSuppliers;
     }
+
+    
 }

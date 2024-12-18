@@ -30,7 +30,7 @@ public class ChecksManager
         _dayManager.onPastDay -= OnPastDay;
     }
 
-    private void OnPastDay()
+    private void OnPastDay(int daysCount)
     {
         AddRandomCheck();
         UpdateCheckTerms();

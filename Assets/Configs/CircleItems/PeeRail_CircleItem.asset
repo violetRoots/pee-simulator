@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0bca6f03801a243bd968107c3436f1, type: 3}
   m_Name: PeeRail_CircleItem
   m_EditorClassIdentifier: 
+  type: 0
   title: ui_rails_name
   price: 100
   duration: 10
+  cooldown: 5
   automate: {fileID: 8206282974585324324, guid: ec443b531a1f8944586c643a207bfac3, type: 3}
+  needBoiler: 1

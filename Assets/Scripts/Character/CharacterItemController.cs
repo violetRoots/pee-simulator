@@ -6,14 +6,19 @@ public class CharacterItemController : MonoBehaviour
 {
     [SerializeField] private float throwForce = 100.0f;
 
+    [Space]
+    [SerializeField] private string controlsHintKey;
+
     [SerializeField] private Transform itemContainer;
     [SerializeField] private Transform itemThrowContainer;
 
     [HideInInspector]
     [SerializeField] private CharacterProvider _characterProvider;
+
     private CharacterInteractionController _interactionController;
 
     private InputManager _inputManager;
+    private UiGameplayManager _uiGameplayManager;
 
 #if UNITY_EDITOR
     private void OnValidate()
@@ -28,6 +33,7 @@ public class CharacterItemController : MonoBehaviour
     private void Awake()
     {
         _inputManager = InputManager.Instance;
+        _uiGameplayManager = UiGameplayManager.Instance;
         _interactionController = _characterProvider.InteractionController;
     }
 
@@ -52,6 +58,8 @@ public class CharacterItemController : MonoBehaviour
         _currentItem = item;
 
         _currentItem.Attach(itemContainer);
+
+        _uiGameplayManager.ShowControls(controlsHintKey, true);
     }
 
     public Item PopItem()
@@ -64,6 +72,8 @@ public class CharacterItemController : MonoBehaviour
         item.Detach();
 
         _interactionController.SetInteractionMode(CharacterInteractionController.CharacterInteractionMode.Gameplay);
+
+        _uiGameplayManager.HideControls(true);
 
         return item;
     }

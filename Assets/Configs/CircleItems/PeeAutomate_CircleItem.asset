@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0bca6f03801a243bd968107c3436f1, type: 3}
   m_Name: PeeAutomate_CircleItem
   m_EditorClassIdentifier: 
+  type: 0
   title: ui_polivalka_name
   price: 30
   duration: 10
+  cooldown: 5
   automate: {fileID: 7938455433468244784, guid: c1505fb4a7dc3824eb099f85e4a1efec, type: 3}
+  needBoiler: 1

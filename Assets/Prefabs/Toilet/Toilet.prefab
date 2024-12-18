@@ -1902,7 +1902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daec2632fa57680429e623e0754dbd75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0413\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
+  key: ui_toilet_controls_hint
   interactionController: {fileID: 1971968646539232241}
 --- !u!114 &1971968646539232241
 MonoBehaviour:

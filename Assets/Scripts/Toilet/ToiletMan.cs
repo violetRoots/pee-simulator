@@ -13,10 +13,12 @@ public class ToiletMan : MonoBehaviour
     [SerializeField] private UiToiletManTalkPanel talkPanel;
     [SerializeField] private string[] phraseKeys;
 
+    private QuestsManager _questsManager;
     private CharacterProvider _characterProvider;
 
     private void Awake()
     {
+        _questsManager = GameManager.Instance.QuestsManager;
         _characterProvider = GameManager.Instance.CharacterProvider;
     }
 
@@ -34,6 +36,8 @@ public class ToiletMan : MonoBehaviour
 
         var randomPhraseKey = phraseKeys[Random.Range(0, phraseKeys.Length)];
         talkPanel.Show(randomPhraseKey);
+
+        _questsManager.ChangeProgressQuest(QuestConfig.QuestType.ToiletTalk, 1);
 
     }
 }

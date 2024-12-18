@@ -241,9 +241,7 @@ MonoBehaviour:
     moneyMultiplier: 2
     emotion: 1
   preferSupplierPeeMultiplier: 1.5
-  peeBubblePeeMultiplier: 2
-  maxPeeCountBounds: {x: 1, y: 2}
-  maxPeeMultiplier: 500
+  maxPeeCountBounds: {x: 2500, y: 3000}
   changeMaterialCooldown: 1
   addMoneyCooldown: 0.25
   needPeePanel: {fileID: 5079598433161199408}

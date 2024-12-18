@@ -23,9 +23,8 @@ public class HumanPeeController : MonoBehaviour
 
     [SerializeField] private float preferSupplierPeeMultiplier = 1.5f;
 
-    [MinMaxSlider(1, 10)]
+    [MinMaxSlider(0, 9999)]
     [SerializeField] private Vector2Int maxPeeCountBounds;
-    [SerializeField] private int maxPeeMultiplier = 100;
     [SerializeField] private float changeMaterialCooldown = 1.0f;
 
     [SerializeField] private float addMoneyCooldown = 1.0f;
@@ -73,7 +72,7 @@ public class HumanPeeController : MonoBehaviour
 
         _contentController = _humanProvider.ContentController;
 
-        _maxPeeCount = UnityEngine.Random.Range(maxPeeCountBounds.x, maxPeeCountBounds.y) * maxPeeMultiplier;
+        _maxPeeCount = UnityEngine.Random.Range(maxPeeCountBounds.x, maxPeeCountBounds.y);
         state.Value = states[0];
 
         //HideUI();

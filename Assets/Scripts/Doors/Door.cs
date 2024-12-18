@@ -21,11 +21,15 @@ public class Door : MonoBehaviour
     [SerializeField] private DayStateMarker openDoorMarker;
     [SerializeField] private DayStateMarker closeDoorMarker;
 
+    private QuestsManager _questsManager;
+
     private DoorState _state = DoorState.Closed;
 
 
     private void Awake()
     {
+        _questsManager = GameManager.Instance.QuestsManager;
+
         interactionHandler.onInteract = OnInteract;
     }
 
@@ -50,6 +54,8 @@ public class Door : MonoBehaviour
         _state = DoorState.Opened;
 
         visual.SetActive(false);
+
+        _questsManager.ChangeProgressQuest(QuestConfig.QuestType.OpenDoors, 1);
     }
 
     private void Close()

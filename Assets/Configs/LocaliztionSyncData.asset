@@ -25,73 +25,6 @@ MonoBehaviour:
   translation:
   - langKey: russian
     localization:
-    - key: trump_name
-      text: "\u041E\u0440\u0430\u043D\u0436\u0435\u0432\u044B\u0439 \u0441\u043B\u043E\u043D"
-    - key: trump_description
-      text: "\u041E\u0431\u043E\u0433\u0430\u0449\u0435\u043D\u0430 \u0432\u0438\u0442\u0430\u043C\u0438\u043D\u043E\u043C
-        \u041A"
-    - key: borat_name
-      text: "\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D \u0441\u0443\u043F\u0435\u0440
-        \u0433\u0443\u0434"
-    - key: borat_description
-      text: "\u042F \u0437\u0430\u043A\u0443\u043F\u0430\u0439 \u043C\u043D\u043E\u0433\u043E
-        \u0431\u0443\u0442\u044B\u043B\u0435\u0439, \u043E\u043D \u043D\u0435 \u043D\u0430\u043A\u043E\u043F\u0438\u043B.
-        \u0420\u0430\u0434\u043E\u0441\u0442\u043D\u043E!"
-    - key: eva_name
-      text: "\u041F\u043E\u043B\u0443\u044D\u043B\u044C\u0444 \u041F\u043E\u043B\u0443\u043A\u0442\u043E"
-    - key: eva_description
-      text: "\u0418\u0442\u0441 \u0433\u0435\u0442\u0442\u0438\u043D\u0433 \u0432\u0435\u0442\u0442\u0435\u0440"
-    - key: hideo_name
-      text: "\u0413\u0415\u041D\u0418\u0410\u041B\u042C\u041D\u0410\u042F"
-    - key: hideo_description
-      text: BY HIT!NEO KOTZIMA
-    - key: skibididopdop_name
-      text: "\u0422\u0440\u0440\u0440 \u0421\u043A\u0438\u0431\u0438\u0434\u0438"
-    - key: skibididopdop_description
-      text: "\u0414\u043E\u0431 \u0434\u043E\u0431 \u0435\u0441 \u0435\u0441\u0441\u0441"
-    - key: maddison_name
-      text: "\u041C\u0443\u0434\u0434\u0438\u0431\u0430\u0442\u044F"
-    - key: maddison_description
-      text: "\u0421 \u043F\u0440\u0438\u0432\u043A\u0443\u0441\u043E\u043C \u043F\u0438\u0432\u0430
-        \u0438 \u0440\u0430\u0437\u043E\u0447\u0430\u0440\u043E\u0432\u0430\u043D\u0438\u044F"
-    - key: musk_name
-      text: "\u0423\u0440\u0438\u043D\u0430X"
-    - key: musk_description
-      text: "\u041A\u0430\u043A \u0442\u0435\u0431\u0435 \u0442\u0430\u043A\u043E\u0435?
-        \u0445\u0430\u0445\u0430 \u043E\u0444\u0438\u0433\u0435\u043D\u043D\u043E"
-    - key: gosling_name
-      text: "\u0414\u0440\u0430\u0439\u0432\u043E\u0432\u044B\u0439 \u041F\u0438\u043F\u043A\u0430"
-    - key: gosling_description
-      text: "\u0417\u0430\u0442\u043A\u043D\u0438 \u0441\u0432\u043E\u044E \u043F\u0430\u0441\u0442\u044C
-        \u0438\u043B\u0438 \u044F \u0437\u0430\u043B\u044C\u044E \u044D\u0442\u043E
-        \u0442\u0435\u0431\u0435 \u0432 \u0433\u043B\u043E\u0442\u043A\u0443"
-    - key: hunter_name
-      text: "\u042D\u0439\u0444\u043E\u0440\u0438\u0447\u043D\u0430\u044F \u0434\u0435\u0432\u043A\u0430"
-    - key: hunter_description
-      text: "\u041E\u0434\u0438\u043D \u0440\u0430\u0437 \u043D\u0435, \u0431\u0440\u0430\u0442"
-    - key: mrbeast_name
-      text: "\u041C\u0438\u0441\u0442\u043E\u0440 \u041F\u0441-\u041F\u0441-\u041F\u0441\u0441\u0442"
-    - key: mrbeast_description
-      text: "\u0412\u0441\u0442\u0430\u0432\u0438\u0442 \u0440\u0435\u043A\u043B\u0430\u043C\u043D\u0443\u044E
-        \u0438\u043D\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044E \u044D\u0442\u043E\u0433\u043E
-        \u043D\u0435\u043A\u0442\u0430\u0440\u0430 \u0432 \u0431\u0443\u0434\u0443\u0449\u0438\u0439
-        \u0440\u043E\u043B\u0438\u043A"
-    - key: pepe_name
-      text: "\u041F\u0438\u043F\u0438 \u043E\u0442 \u041F\u0435\u043F\u0435"
-    - key: pepe_description
-      text: "\u041B\u044F\u0433\u0443\u0448\u043A\u0438 \u043D\u0435 \u0443\u043C\u0435\u044E\u0442
-        \u043F\u0438\u0441\u0430\u0442\u044C. \u0414\u0443\u043C\u0430\u0439\u0442\u0435."
-    - key: gnom_name
-      text: "\u041F\u0438\u0441 \u041F\u0438\u0441\u044B\u0447"
-    - key: gnom_description
-      text: "\u0413\u043E\u0440\u044C\u043A\u0430\u044F, \u043A\u0430\u043A \u0438
-        \u0435\u0433\u043E \u0443\u043B\u044B\u0431\u043A\u0430"
-    - key: supplier_characteristics_pattern
-      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0435\u043D\u0438\u0435:
-        <b>{0}</b>\n\u0415\u0434\u043A\u043E\u0441\u0442\u044C: <b>{1}</b>\n\u041D\u0430\u0441\u044B\u0449\u0435\u043D\u043D\u043E\u0441\u0442\u044C:
-        <b>{2}</b>"
-    - key: supplier_price_pattern
-      text: "\u041A\u0423\u041F\u0418\u0422\u042C {0}$"
     - key: ui_satisfaction
       text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0435\u043D\u0438\u0435"
     - key: ui_saturation
@@ -99,7 +32,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: "\u0415\u0434\u043A\u043E\u0441\u0442\u044C"
     - key: ui_suppliers
-      text: "\u041F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0438"
+      text: "\u0421\u0441\u0430\u043A\u0438"
     - key: ui_quests
       text: "\u0417\u0430\u0434\u0430\u0447\u043A\u0438"
     - key: ui_checks
@@ -110,8 +43,17 @@ MonoBehaviour:
       text: "\u041A\u0443\u043F\u0438\u0442\u044C"
     - key: ui_pay
       text: "\u041E\u043F\u043B\u0430\u0442\u0438\u0442\u044C"
+    - key: ui_suppliers_shop
+      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
     - key: ui_rent_button
       text: "\u0421\u043D\u044F\u0442\u044C"
+    - key: ui_open
+      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+    - key: ui_pause_menu_continue
+      text: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+    - key: ui_pause_menu_return
+      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
+        \u043C\u0435\u043D\u044E"
     - key: ui_main_menu_new_game
       text: "\u041D\u043E\u0432\u0430\u044F \u0438\u0433\u0440\u0430"
     - key: ui_main_menu_continue_game
@@ -144,10 +86,50 @@ MonoBehaviour:
       text: "\u0417\u043E\u043B\u043E\u0442\u043E\u0439 \u0424\u043E\u043D\u0442\u0430\u043D"
     - key: ui_rails_name
       text: "\u0420\u0435\u043B\u044C\u0441\u044B \u0421\u0441\u0430\u043D\u044C\u044F"
+    - key: ui_cats_name
+      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+    - key: ui_bubbles_name
+      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+    - key: ui_gun_name
+      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F64"
+    - key: ui_rays_name
+      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+    - key: ui_tutorial_title
+      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
+        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
+        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+    - key: ui_tutorial_message
+      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
+        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
+        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
+        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
+        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
+        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
+        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
+        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
+        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
+        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
+        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
+        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
+        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
+        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
+        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
+        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
+        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
     - key: ui_door_controls_hint
       text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
     - key: ui_toilet_controls_hint
-      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0413\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
+      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
+        \u0441\u043C\u0435\u043D\u0443"
+    - key: ui_build_controls_hint
+      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
+        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+    - key: ui_item_controls_hint
+      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
+        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+    - key: ui_build_controls_minihint
+      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
     - key: quest_run_name
       text: "\u0411\u0435\u0433\u0438, \u043E\u0431\u0441\u0441\u044B\u0445\u0430,
         \u0431\u0435\u0433\u0438!"
@@ -164,6 +146,56 @@ MonoBehaviour:
     - key: quest_fullbottle_description
       text: "\u0412\u044B\u0431\u0440\u043E\u0441\u0438 <b>{0}</b> \u043F\u043E\u043B\u043D\u044B\u0445
         \u0431\u0443\u0442\u044B\u043B\u043E\u043A"
+    - key: quest_earn100_name
+      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
+    - key: quest_earn100_description
+      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
+    - key: quest_buildfirst_name
+      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
+    - key: quest_buildfirst_description
+      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
+    - key: quest_buysupplier_name
+      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
+    - key: quest_buysupplier_description
+      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
+        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
+    - key: quest_zomdiedie_name
+      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
+    - key: quest_zomdiedie_description
+      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
+        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
+    - key: quest_day1_name
+      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
+    - key: quest_day1_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
+        \u043C\u0435\u0447\u0442\u044B"
+    - key: quest_day10_name
+      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
+        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
+    - key: quest_day10_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
+        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
+    - key: quest_vershina_name
+      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
+    - key: quest_vershina_description
+      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
+    - key: quest_toilettalk_name
+      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
+    - key: quest_toilettalk_description
+      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
+        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
+    - key: quest_plants_name
+      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
+    - key: quest_plants_description
+      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
+        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
+    - key: quest_opendoors_name
+      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
+    - key: quest_opendoors_description
+      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
+        \u043C\u0430\u043B\u044B\u0448"
     - key: skibidi_random_phrase_1
       text: "\u041D\u0430\u043B\u0435\u0442\u0430\u0439! \u041F\u043E\u043A\u0443\u043F\u0430\u0439!"
     - key: skibidi_random_phrase_2
@@ -241,13 +273,216 @@ MonoBehaviour:
     - key: skibidi_random_phrase_19
       text: "\u0420\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u043C\u0430\u0440\u043A\u0435\u0442\u043E\u043B\u043E\u0433\u043E\u043C
         \u0437\u0430\u0448\u043A\u0432\u0430\u0440\u043D\u0435\u0435"
-    - key: room_name_1
-      text: "\u041F\u041E\u041C\u041E\u0415\u0427\u041D\u0410\u042F"
-    - key: room_description_1
-      text: "<b>4</b> \u0431\u043E\u0439\u043B\u0435\u0440\u0430\n<b>11</b> \u043C\u0435\u0441\u0442\n<b>100</b>
-        \u043A\u0432. \u043C."
-    - key: room_price_pattern
-      text: "\u0421\u041D\u042F\u0422\u042C {0}$"
+    - key: trump_name
+      text: "\u041E\u0440\u0430\u043D\u0436\u0435\u0432\u044B\u0439 \u0441\u043B\u043E\u043D"
+    - key: trump_description
+      text: "\u041E\u0431\u043E\u0433\u0430\u0449\u0435\u043D\u0430 \u0432\u0438\u0442\u0430\u043C\u0438\u043D\u043E\u043C
+        \u041A"
+    - key: borat_name
+      text: "\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D \u0441\u0443\u043F\u0435\u0440
+        \u0433\u0443\u0434"
+    - key: borat_description
+      text: "\u042F \u0437\u0430\u043A\u0443\u043F\u0430\u0439 \u043C\u043D\u043E\u0433\u043E
+        \u0431\u0443\u0442\u044B\u043B\u0435\u0439, \u043E\u043D \u043D\u0435 \u043D\u0430\u043A\u043E\u043F\u0438\u043B.
+        \u0420\u0430\u0434\u043E\u0441\u0442\u043D\u043E!"
+    - key: eva_name
+      text: "\u041F\u043E\u043B\u0443\u044D\u043B\u044C\u0444 \u041F\u043E\u043B\u0443\u043A\u0442\u043E"
+    - key: eva_description
+      text: "\u0418\u0442\u0441 \u0433\u0435\u0442\u0442\u0438\u043D\u0433 \u0432\u0435\u0442\u0442\u0435\u0440"
+    - key: hideo_name
+      text: "\u0413\u0415\u041D\u0418\u0410\u041B\u042C\u041D\u0410\u042F"
+    - key: hideo_description
+      text: BY HIT!NEO KOTZIMA
+    - key: biser_fez_name
+      text: "\u0422\u0440\u0440\u0440 \u0421\u043A\u0438\u0431\u0438\u0434\u0438"
+    - key: biser_fez_description
+      text: "\u0414\u043E\u0431 \u0434\u043E\u0431 \u0435\u0441 \u0435\u0441\u0441\u0441"
+    - key: maddison_name
+      text: "\u041C\u0443\u0434\u0434\u0438\u0431\u0430\u0442\u044F"
+    - key: maddison_description
+      text: "\u0421 \u043F\u0440\u0438\u0432\u043A\u0443\u0441\u043E\u043C \u043F\u0438\u0432\u0430
+        \u0438 \u0440\u0430\u0437\u043E\u0447\u0430\u0440\u043E\u0432\u0430\u043D\u0438\u044F"
+    - key: musk_name
+      text: "\u0423\u0440\u0438\u043D\u0430X"
+    - key: musk_description
+      text: "\u041A\u0430\u043A \u0442\u0435\u0431\u0435 \u0442\u0430\u043A\u043E\u0435?
+        \u0445\u0430\u0445\u0430 \u043E\u0444\u0438\u0433\u0435\u043D\u043D\u043E"
+    - key: gosling_name
+      text: "\u0414\u0440\u0430\u0439\u0432\u043E\u0432\u044B\u0439 \u041F\u0438\u043F\u043A\u0430"
+    - key: gosling_description
+      text: "\u0417\u0430\u0442\u043A\u043D\u0438 \u0441\u0432\u043E\u044E \u043F\u0430\u0441\u0442\u044C
+        \u0438\u043B\u0438 \u044F \u0437\u0430\u043B\u044C\u044E \u044D\u0442\u043E
+        \u0442\u0435\u0431\u0435 \u0432 \u0433\u043B\u043E\u0442\u043A\u0443"
+    - key: hunter_name
+      text: "\u042D\u0439\u0444\u043E\u0440\u0438\u0447\u043D\u0430\u044F \u0434\u0435\u0432\u043A\u0430"
+    - key: hunter_description
+      text: "\u041E\u0434\u0438\u043D \u0440\u0430\u0437 \u043D\u0435, \u0431\u0440\u0430\u0442"
+    - key: mister_pissed_name
+      text: "\u041C\u0438\u0441\u0442\u043E\u0440 \u041F\u0441-\u041F\u0441-\u041F\u0441\u0441\u0442"
+    - key: mister_pissed_description
+      text: "\u0412\u0441\u0442\u0430\u0432\u0438\u0442 \u0440\u0435\u043A\u043B\u0430\u043C\u043D\u0443\u044E
+        \u0438\u043D\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044E \u044D\u0442\u043E\u0433\u043E
+        \u043D\u0435\u043A\u0442\u0430\u0440\u0430 \u0432 \u0431\u0443\u0434\u0443\u0449\u0438\u0439
+        \u0440\u043E\u043B\u0438\u043A"
+    - key: pepe_name
+      text: "\u041F\u0438\u043F\u0438 \u043E\u0442 \u041F\u0435\u043F\u0435"
+    - key: pepe_description
+      text: "\u041B\u044F\u0433\u0443\u0448\u043A\u0438 \u043D\u0435 \u0443\u043C\u0435\u044E\u0442
+        \u043F\u0438\u0441\u0430\u0442\u044C. \u0414\u0443\u043C\u0430\u0439\u0442\u0435."
+    - key: gnom_name
+      text: "\u041F\u0438\u0441 \u041F\u0438\u0441\u044B\u0447"
+    - key: gnom_description
+      text: "\u0413\u043E\u0440\u044C\u043A\u0430\u044F, \u043A\u0430\u043A \u0438
+        \u0435\u0433\u043E \u0443\u043B\u044B\u0431\u043A\u0430"
+    - key: alt_name
+      text: "\u0410\u043B\u044C\u0442\u0443\u0448\u043A\u0430."
+    - key: alt_description
+      text: "\u0421\u043B\u0430\u0432\u0430 \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439,
+        \u0434\u0435\u0432\u043E\u0447\u043A\u0438 \u0442\u043E\u0436\u0435 \u043F\u0438\u0441\u0430\u044E\u0442!"
+    - key: asuka_name
+      text: "\u041F\u0430\u043A\u0435\u0442\u0438\u043A (\u043C\u043E\u0447\u0438)"
+    - key: asuka_description
+      text: "\u041F\u043E\u043B\u0435\u0437\u0430\u0439 \u0432 \u0435\u0431\u0430\u043D\u044B\u0439
+        \u0442\u0443\u0430\u043B\u0435\u0442, \u0421\u0438\u043D\u0434\u0437\u0438"
+    - key: bu_name
+      text: "\u0411\u0443!"
+    - key: bu_description
+      text: "\u0418\u0441\u043F\u0443\u0433\u0430\u043B\u0438\u0441\u044C? \u041E\u0431\u043E\u0441\u0441\u0430\u043B\u0441\u044F"
+    - key: doomer_name
+      text: Depressive 4chan
+    - key: doomer_description
+      text: "\u041C\u043C\u043C... \u0422\u0443\u0448\u0438\u0442\u044C \u0432 \u043D\u0435\u0439
+        \u0441\u0438\u0433\u0430\u0440\u0435\u0442\u0443 \u0441 \u0448\u0438\u043F\u044F\u0449\u0438\u043C
+        \u0437\u0432\u0443\u043A\u043E\u043C..."
+    - key: gandalf_name
+      text: "\u041F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0447\u0435\u0441\u043A\u0430\u044F"
+    - key: gandalf_description
+      text: "\u0422\u044B \u043D\u0435 \u043F\u0440\u043E\u0441\u0441\u044B\u0448\u044C!"
+    - key: jinx_name
+      text: "\u041F\u0438\u043D\u043A\u0441"
+    - key: Jinx_description
+      text: "\u0414\u043E\u043B\u0436\u043D\u0430 \u0431\u044B\u0442\u044C \u0433\u043E\u043B\u0443\u0431\u043E\u0439,
+        \u043D\u043E \u043D\u0430\u043C \u043D\u0435 \u0445\u0432\u0430\u0442\u0438\u043B\u043E
+        \u043D\u0430 \u044D\u0442\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0438."
+    - key: markaryan_name
+      text: "\u041C\u0438\u0437\u043E\u0433\u0438\u043C\u043B\u0438"
+    - key: markaryan_description
+      text: "\u042F \u0433\u043D\u043E\u043C, \u0438 \u044F \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044E
+        \u0441\u0435\u0431\u044F \u043E\u0431\u0441\u0441\u044B\u0432\u0430\u0442\u044C!
+        \u0422\u043E\u043B\u044C\u043A\u043E \u043D\u0435 \u0431\u043E\u0440\u043E\u0434\u0443!"
+    - key: goblin_name
+      text: "\u0413\u043E\u0431\u043B\u0438\u043D\u043A\u043E\u0440"
+    - key: goblin_description
+      text: "\u0422\u0430\u043A \u043F\u0430\u0445\u043D\u0435\u0442 \u0431\u0430\u0442\u0438\u043D
+        \u0430\u043D\u0435\u043A\u0434\u043E\u0442"
+    - key: president_name
+      text: "\u0414\u0432\u043E\u0439\u043D\u0438\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
+    - key: president_description
+      text: 
+    - key: queen_name
+      text: "\u041E\u043B\u0434 \u0431\u0430\u0442 \u0433\u043E\u043B\u0434"
+    - key: gueen_description
+      text: "\u0413\u043E\u0434 \u0441\u044D\u0439\u0432 \u0437\u0435 \u043F\u0438"
+    - key: shrek_name
+      text: "\u0428\u0440\u0435\u043A\u0441\u0443\u0430\u043B\u044C\u043D\u0430\u044F"
+    - key: shrek_description
+      text: "\u041D\u0435 \u0434\u0435\u0440\u0436\u0438 \u0432 \u0441\u0435\u0431\u0435!"
+    - key: sigma_name
+      text: "\u03A3"
+    - key: sigma_description
+      text: "\u0421\u0438\u0433\u043C\u0430 \u043E\u0442 \u043D\u043E\u0441\u0430
+        \u0434\u043E \u043A\u043E\u043D\u0446\u0430"
+    - key: snoop_name
+      text: "\u0421\u043E\u0431\u0430\u0447\u044C\u044F"
+    - key: snoop_description
+      text: "\u041A\u0430\u043F\u043B\u0438 \u043A\u0430\u043A \u0437\u043E\u043B\u043E\u0442\u0430\u044F
+        \u0446\u0435\u043F\u044C \u043D\u0430 \u0435\u0433\u043E \u0433\u0440\u0443\u0434\u0438"
+    - key: substance_name
+      text: Piss It Up
+    - key: substance_description
+      text: "\u041D\u0430 \u0442\u043E\u0439 \u0432\u0435\u0447\u0435\u0440\u0438\u043D\u043A\u0435
+        \u043E\u0431\u043E\u0441\u0441\u0430\u043B\u0441\u044F \u0414\u0440\u0443\u0433\u043E\u0439
+        \u0422\u044B"
+    - key: dicktator_name
+      text: "Dick\u0442\u0430\u0442\u043E\u0440"
+    - key: dicktator_description
+      text: 
+    - key: ramzi_name
+      text: 
+    - key: ramzi_description
+      text: 
+    - key: remy_name
+      text: 
+    - key: remy_description
+      text: 
+    - key: shef_name
+      text: 
+    - key: shef_description
+      text: 
+    - key: peterson_name
+      text: 
+    - key: peterson_description
+      text: 
+    - key: pie_name
+      text: 
+    - key: pie_description
+      text: 
+    - key: rogan_name
+      text: 
+    - key: rogan_description
+      text: 
+    - key: tucker_name
+      text: 
+    - key: tucker_description
+      text: 
+    - key: biser_fez_name
+      text: NONE
+    - key: biser_fez_description
+      text: NONE
+    - key: mister_pissed_name
+      text: NONE
+    - key: mister_pissed_description
+      text: NONE
+    - key: anya_description
+      text: NONE
+    - key: anya_name
+      text: NONE
+    - key: rin_name
+      text: NONE
+    - key: rin_description
+      text: NONE
+    - key: biser_king_name
+      text: NONE
+    - key: biser_king_description
+      text: NONE
+    - key: gaga_name
+      text: NONE
+    - key: gaga_description
+      text: NONE
+    - key: gigachad_name
+      text: NONE
+    - key: gigachad_description
+      text: NONE
+    - key: hermione_name
+      text: NONE
+    - key: hermione_description
+      text: NONE
+    - key: kim_name
+      text: NONE
+    - key: kim_description
+      text: NONE
+    - key: shalame_name
+      text: NONE
+    - key: shalame_description
+      text: NONE
+    - key: supplier_characteristics_pattern
+      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0435\u043D\u0438\u0435:
+        <b>{0}</b>\n\u0415\u0434\u043A\u043E\u0441\u0442\u044C: <b>{1}</b>\n\u041D\u0430\u0441\u044B\u0449\u0435\u043D\u043D\u043E\u0441\u0442\u044C:
+        <b>{2}</b>"
+    - key: supplier_price_pattern
+      text: "\u041A\u0423\u041F\u0418\u0422\u042C {0}$"
+    - key: suppliershop_price_pattern
+      text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
     - key: check_name_1
       text: "\u0428\u0422\u0420\u0410\u0424: \u041C\u041E\u0427\u0415\u0413\u041E\u041D\u041D\u0410\u042F
         \u0418\u041D\u0421\u041F\u0415\u041A\u0426\u0418\u042F"
@@ -258,65 +493,15 @@ MonoBehaviour:
       text: "\u041E\u041F\u041B\u0410\u0422\u0418\u0422\u042C {0}$"
     - key: check_term_pattern
       text: "\u0421\u0440\u043E\u043A: <b>{0}</b> \u0434\u043D\u0435\u0439"
+    - key: room_name_1
+      text: "\u041F\u041E\u041C\u041E\u0415\u0427\u041D\u0410\u042F"
+    - key: room_description_1
+      text: "<b>4</b> \u0431\u043E\u0439\u043B\u0435\u0440\u0430\n<b>11</b> \u043C\u0435\u0441\u0442\n<b>100</b>
+        \u043A\u0432. \u043C."
+    - key: room_price_pattern
+      text: "\u0421\u041D\u042F\u0422\u042C {0}$"
   - langKey: english
     localization:
-    - key: trump_name
-      text: Orange asf
-    - key: trump_description
-      text: IT'S NOT A JUICE.
-    - key: borat_name
-      text: Kazakhstan's Super Good
-    - key: borat_description
-      text: U get a big stream, they cannot afford. Great success!
-    - key: eva_name
-      text: Adam's GF
-    - key: eva_description
-      text: It's show(er) time
-    - key: hideo_name
-      text: Metal Genius
-    - key: hideo_description
-      text: We'll drink every drop of whatever he offers
-    - key: skibididopdop_name
-      text: Trr Stibidi
-    - key: skibididopdop_description
-      text: Dob dob yes yes
-    - key: maddison_name
-      text: Stinky Letsplayer
-    - key: maddison_description
-      text: Flavored with beer and disappointment
-    - key: musk_name
-      text: UrineX
-    - key: musk_description
-      text: Innovative (to the creator's taste)
-    - key: gosling_name
-      text: A Real Human Pee
-    - key: gosling_description
-      text: Hey girl, it tastes almost like a cappuccino
-    - key: hunter_name
-      text: What's a F#@king Pussy
-    - key: hunter_description
-      text: It's okay to be
-    - key: mrbeast_name
-      text: Mr.Peest
-    - key: mrbeast_description
-      text: Deez nuts
-    - key: pepe_name
-      text: Pepe's Pee-Pee
-    - key: pepe_description
-      text: Frogs can't piss, btw
-    - key: gnom_name
-      text: Suicidal Nepo-Kid
-    - key: gnom_description
-      text: Bitter like his future drug addiction
-    - key: supplier_characteristics_pattern
-      text: 'Satisfaction: <b>{0}</b>
-
-        Acidity: <b>{1}</b>
-
-        Saturation:
-        <b>{2}</b>'
-    - key: supplier_price_pattern
-      text: BUY {0}$
     - key: ui_satisfaction
       text: Pleasure
     - key: ui_saturation
@@ -324,7 +509,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: Causticity
     - key: ui_suppliers
-      text: Suppliers
+      text: "\u0421\u0441\u0430\u043A\u0438"
     - key: ui_quests
       text: Challenges
     - key: ui_checks
@@ -335,8 +520,17 @@ MonoBehaviour:
       text: Buy
     - key: ui_pay
       text: Pay
+    - key: ui_suppliers_shop
+      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
     - key: ui_rent_button
       text: Rent
+    - key: ui_open
+      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+    - key: ui_pause_menu_continue
+      text: Continue
+    - key: ui_pause_menu_return
+      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
+        \u043C\u0435\u043D\u044E"
     - key: ui_main_menu_new_game
       text: New game
     - key: ui_main_menu_continue_game
@@ -369,10 +563,50 @@ MonoBehaviour:
       text: Golden Fountain
     - key: ui_rails_name
       text: Peeing Rails
+    - key: ui_cats_name
+      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+    - key: ui_bubbles_name
+      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+    - key: ui_gun_name
+      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F65"
+    - key: ui_rays_name
+      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+    - key: ui_tutorial_title
+      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
+        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
+        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+    - key: ui_tutorial_message
+      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
+        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
+        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
+        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
+        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
+        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
+        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
+        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
+        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
+        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
+        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
+        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
+        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
+        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
+        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
+        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
+        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
     - key: ui_door_controls_hint
-      text: 
+      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
     - key: ui_toilet_controls_hint
-      text: 
+      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
+        \u0441\u043C\u0435\u043D\u0443"
+    - key: ui_build_controls_hint
+      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
+        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+    - key: ui_item_controls_hint
+      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
+        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+    - key: ui_build_controls_minihint
+      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
     - key: quest_run_name
       text: Run, PissBoy! Run!
     - key: quest_run_description
@@ -385,6 +619,56 @@ MonoBehaviour:
       text: Why'd you do that?
     - key: quest_fullbottle_description
       text: Throw away <b>{0}</b> full bottles
+    - key: quest_earn100_name
+      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
+    - key: quest_earn100_description
+      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
+    - key: quest_buildfirst_name
+      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
+    - key: quest_buildfirst_description
+      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
+    - key: quest_buysupplier_name
+      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
+    - key: quest_buysupplier_description
+      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
+        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
+    - key: quest_zomdiedie_name
+      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
+    - key: quest_zomdiedie_description
+      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
+        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
+    - key: quest_day1_name
+      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
+    - key: quest_day1_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
+        \u043C\u0435\u0447\u0442\u044B"
+    - key: quest_day10_name
+      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
+        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
+    - key: quest_day10_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
+        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
+    - key: quest_vershina_name
+      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
+    - key: quest_vershina_description
+      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
+    - key: quest_toilettalk_name
+      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
+    - key: quest_toilettalk_description
+      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
+        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
+    - key: quest_plants_name
+      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
+    - key: quest_plants_description
+      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
+        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
+    - key: quest_opendoors_name
+      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
+    - key: quest_opendoors_description
+      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
+        \u043C\u0430\u043B\u044B\u0448"
     - key: skibidi_random_phrase_1
       text: Come on! Buy!
     - key: skibidi_random_phrase_2
@@ -426,45 +710,25 @@ MonoBehaviour:
         was her name?"
     - key: skibidi_random_phrase_19
       text: Your job is still more useful than a marketer's job
-    - key: room_name_1
-      text: GARBAGE
-    - key: room_description_1
-      text: '<b>4</b> boilers
-
-        <b>11</b> places
-
-        <b>100</b> sq. m.'
-    - key: room_price_pattern
-      text: RENT {0}$
-    - key: check_name_1
-      text: 'FINE: DIURETIC INSPECTION'
-    - key: check_description_1
-      text: The color of urine does not correspond to the specified norm
-    - key: check_price_pattern
-      text: PAY {0}$
-    - key: check_term_pattern
-      text: 'Term: <b>{0}</b> days'
-  - langKey: eng default
-    localization:
     - key: trump_name
-      text: The Orange Man
+      text: Orange asf
     - key: trump_description
-      text: Almost Peking duck
+      text: IT'S NOT A JUICE.
     - key: borat_name
       text: Kazakhstan's Super Good
     - key: borat_description
-      text: Do you know where Kazakhstan is?
+      text: U get a big stream, they cannot afford. Great success!
     - key: eva_name
-      text: Home movie actress
+      text: Adam's GF
     - key: eva_description
-      text: Also sells water from her bathtub
+      text: It's show(er) time
     - key: hideo_name
       text: Metal Genius
     - key: hideo_description
       text: We'll drink every drop of whatever he offers
-    - key: skibididopdop_name
+    - key: biser_fez_name
       text: Trr Stibidi
-    - key: skibididopdop_description
+    - key: biser_fez_description
       text: Dob dob yes yes
     - key: maddison_name
       text: Stinky Letsplayer
@@ -475,25 +739,153 @@ MonoBehaviour:
     - key: musk_description
       text: Innovative (to the creator's taste)
     - key: gosling_name
-      text: A Real Human Hero
+      text: A Real Human Pee
     - key: gosling_description
-      text: He can pee instead of you and me!
+      text: Hey girl, it tastes almost like a cappuccino
     - key: hunter_name
-      text: Netflix Girl
+      text: What's a F#@king Pussy
     - key: hunter_description
-      text: If she's even a girl...
-    - key: mrbeast_name
+      text: It's okay to be
+    - key: mister_pissed_name
       text: Mr.Peest
-    - key: mrbeast_description
-      text: It's a donation from the richest youtuber in the world
+    - key: mister_pissed_description
+      text: Deez nuts
     - key: pepe_name
       text: Pepe's Pee-Pee
     - key: pepe_description
-      text: Frogs can't piss, by the way
+      text: Frogs can't piss, btw
     - key: gnom_name
       text: Suicidal Nepo-Kid
     - key: gnom_description
       text: Bitter like his future drug addiction
+    - key: alt_name
+      text: Alt-pee
+    - key: alt_description
+      text: Thank the universe, girls pee too!
+    - key: asuka_name
+      text: Pathetic Pee
+    - key: asuka_description
+      text: Get in the F#@king toilet, Shinji
+    - key: bu_name
+      text: Boo!
+    - key: bu_description
+      text: Scared? Pissed.
+    - key: doomer_name
+      text: Depressive 4chan
+    - key: doomer_description
+      text: Mmm. Putting out cigarette butts in urine with a hissing...
+    - key: gandalf_name
+      text: Adventurous
+    - key: gandalf_description
+      text: You shall not piss!
+    - key: jinx_name
+      text: Peenx
+    - key: Jinx_description
+      text: It's supposed to be blue, but we didn't have time for that.
+    - key: markaryan_name
+      text: Misogimli
+    - key: markaryan_description
+      text: Misogynistic Gimli? Who can he piss on at his height?
+    - key: goblin_name
+      text: "\u041E\u043B\u0434\u0441\u043A\u0443\u043B\u044C\u043D\u0430\u044F"
+    - key: goblin_description
+      text: The smell of bald grandpa and dumb jokes
+    - key: president_name
+      text: Doppelganger's
+    - key: president_description
+      text: 
+    - key: queen_name
+      text: Old But Gold
+    - key: gueen_description
+      text: God Save The Pee
+    - key: shrek_name
+      text: Shreksy
+    - key: shrek_description
+      text: Straight from the swamps
+    - key: sigma_name
+      text: "\u03A3"
+    - key: sigma_description
+      text: Sigma urine to sigma face
+    - key: snoop_name
+      text: Doggie
+    - key: snoop_description
+      text: Like the golden chains on his chest
+    - key: substance_name
+      text: Piss It Up
+    - key: substance_description
+      text: The Other You pissed yourself at that party
+    - key: dicktator_name
+      text: 
+    - key: dicktator_description
+      text: 
+    - key: ramzi_name
+      text: 
+    - key: ramzi_description
+      text: 
+    - key: remy_name
+      text: 
+    - key: remy_description
+      text: 
+    - key: shef_name
+      text: 
+    - key: shef_description
+      text: 
+    - key: peterson_name
+      text: 
+    - key: peterson_description
+      text: 
+    - key: pie_name
+      text: 
+    - key: pie_description
+      text: 
+    - key: rogan_name
+      text: 
+    - key: rogan_description
+      text: 
+    - key: tucker_name
+      text: 
+    - key: tucker_description
+      text: 
+    - key: biser_fez_name
+      text: NONE
+    - key: biser_fez_description
+      text: NONE
+    - key: mister_pissed_name
+      text: NONE
+    - key: mister_pissed_description
+      text: NONE
+    - key: anya_description
+      text: NONE
+    - key: anya_name
+      text: NONE
+    - key: rin_name
+      text: NONE
+    - key: rin_description
+      text: NONE
+    - key: biser_king_name
+      text: NONE
+    - key: biser_king_description
+      text: NONE
+    - key: gaga_name
+      text: NONE
+    - key: gaga_description
+      text: NONE
+    - key: gigachad_name
+      text: NONE
+    - key: gigachad_description
+      text: NONE
+    - key: hermione_name
+      text: NONE
+    - key: hermione_description
+      text: NONE
+    - key: kim_name
+      text: NONE
+    - key: kim_description
+      text: NONE
+    - key: shalame_name
+      text: NONE
+    - key: shalame_description
+      text: NONE
     - key: supplier_characteristics_pattern
       text: 'Satisfaction: <b>{0}</b>
 
@@ -503,6 +895,28 @@ MonoBehaviour:
         <b>{2}</b>'
     - key: supplier_price_pattern
       text: BUY {0}$
+    - key: suppliershop_price_pattern
+      text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
+    - key: check_name_1
+      text: 'FINE: DIURETIC INSPECTION'
+    - key: check_description_1
+      text: The color of urine does not correspond to the specified norm
+    - key: check_price_pattern
+      text: PAY {0}$
+    - key: check_term_pattern
+      text: 'Term: <b>{0}</b> days'
+    - key: room_name_1
+      text: GARBAGE
+    - key: room_description_1
+      text: '<b>4</b> boilers
+
+        <b>11</b> places
+
+        <b>100</b> sq. m.'
+    - key: room_price_pattern
+      text: RENT {0}$
+  - langKey: eng default
+    localization:
     - key: ui_satisfaction
       text: 
     - key: ui_saturation
@@ -510,7 +924,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: 
     - key: ui_suppliers
-      text: 
+      text: "\u0421\u0441\u0430\u043A\u0438"
     - key: ui_quests
       text: 
     - key: ui_checks
@@ -521,8 +935,17 @@ MonoBehaviour:
       text: 
     - key: ui_pay
       text: 
+    - key: ui_suppliers_shop
+      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
     - key: ui_rent_button
       text: 
+    - key: ui_open
+      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+    - key: ui_pause_menu_continue
+      text: 
+    - key: ui_pause_menu_return
+      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
+        \u043C\u0435\u043D\u044E"
     - key: ui_main_menu_new_game
       text: 
     - key: ui_main_menu_continue_game
@@ -555,10 +978,50 @@ MonoBehaviour:
       text: 
     - key: ui_rails_name
       text: 
+    - key: ui_cats_name
+      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+    - key: ui_bubbles_name
+      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+    - key: ui_gun_name
+      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F66"
+    - key: ui_rays_name
+      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+    - key: ui_tutorial_title
+      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
+        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
+        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+    - key: ui_tutorial_message
+      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
+        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
+        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
+        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
+        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
+        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
+        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
+        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
+        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
+        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
+        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
+        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
+        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
+        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
+        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
+        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
+        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
     - key: ui_door_controls_hint
-      text: 
+      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
     - key: ui_toilet_controls_hint
-      text: 
+      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
+        \u0441\u043C\u0435\u043D\u0443"
+    - key: ui_build_controls_hint
+      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
+        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+    - key: ui_item_controls_hint
+      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
+        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+    - key: ui_build_controls_minihint
+      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
     - key: quest_run_name
       text: Run, pisser! Run!
     - key: quest_run_description
@@ -571,6 +1034,56 @@ MonoBehaviour:
       text: Why'd you do that?
     - key: quest_fullbottle_description
       text: Throw away <b>{0}</b> full bottles
+    - key: quest_earn100_name
+      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
+    - key: quest_earn100_description
+      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
+    - key: quest_buildfirst_name
+      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
+    - key: quest_buildfirst_description
+      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
+    - key: quest_buysupplier_name
+      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
+    - key: quest_buysupplier_description
+      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
+        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
+    - key: quest_zomdiedie_name
+      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
+    - key: quest_zomdiedie_description
+      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
+        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
+    - key: quest_day1_name
+      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
+    - key: quest_day1_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
+        \u043C\u0435\u0447\u0442\u044B"
+    - key: quest_day10_name
+      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
+        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
+    - key: quest_day10_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
+        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
+    - key: quest_vershina_name
+      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
+    - key: quest_vershina_description
+      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
+    - key: quest_toilettalk_name
+      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
+    - key: quest_toilettalk_description
+      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
+        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
+    - key: quest_plants_name
+      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
+    - key: quest_plants_description
+      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
+        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
+    - key: quest_opendoors_name
+      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
+    - key: quest_opendoors_description
+      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
+        \u043C\u0430\u043B\u044B\u0448"
     - key: skibidi_random_phrase_1
       text: Come on! Buy!
     - key: skibidi_random_phrase_2
@@ -613,12 +1126,193 @@ MonoBehaviour:
         was the name of the girl who broke your heart?"
     - key: skibidi_random_phrase_19
       text: Your job is still more useful than a marketer's job
-    - key: room_name_1
+    - key: trump_name
+      text: The Orange Man
+    - key: trump_description
+      text: Almost Peking duck
+    - key: borat_name
+      text: Kazakhstan's Super Good
+    - key: borat_description
+      text: Do you know where Kazakhstan is?
+    - key: eva_name
+      text: Home movie actress
+    - key: eva_description
+      text: Also sells water from her bathtub
+    - key: hideo_name
+      text: Metal Genius
+    - key: hideo_description
+      text: We'll drink every drop of whatever he offers
+    - key: biser_fez_name
+      text: Trr Stibidi
+    - key: biser_fez_description
+      text: Dob dob yes yes
+    - key: maddison_name
+      text: Stinky Letsplayer
+    - key: maddison_description
+      text: Flavored with beer and disappointment
+    - key: musk_name
+      text: UrineX
+    - key: musk_description
+      text: Innovative (to the creator's taste)
+    - key: gosling_name
+      text: A Real Human Hero
+    - key: gosling_description
+      text: He can pee instead of you and me!
+    - key: hunter_name
+      text: Netflix Girl
+    - key: hunter_description
+      text: If she's even a girl...
+    - key: mister_pissed_name
+      text: Mr.Peest
+    - key: mister_pissed_description
+      text: It's a donation from the richest youtuber in the world
+    - key: pepe_name
+      text: Pepe's Pee-Pee
+    - key: pepe_description
+      text: Frogs can't piss, by the way
+    - key: gnom_name
+      text: Suicidal Nepo-Kid
+    - key: gnom_description
+      text: Bitter like his future drug addiction
+    - key: alt_name
+      text: Alt-pee
+    - key: alt_description
+      text: Thank the universe, girls pee too!
+    - key: asuka_name
+      text: Pathetic Pee
+    - key: asuka_description
+      text: Get in the toilet, Shinji
+    - key: bu_name
+      text: Boo!
+    - key: bu_description
+      text: Scared? Pissed.
+    - key: doomer_name
+      text: Depressive 4chan
+    - key: doomer_description
+      text: Mmm. Putting out cigarette butts in urine with a hissing...
+    - key: gandalf_name
+      text: Adventurous
+    - key: gandalf_description
+      text: You shall not piss!
+    - key: jinx_name
+      text: Peenx
+    - key: Jinx_description
+      text: It's supposed to be blue, but we didn't have time for that.
+    - key: markaryan_name
+      text: Misogimli
+    - key: markaryan_description
+      text: Misogynistic Gimli? Who can he piss on at his height?
+    - key: goblin_name
+      text: "\u041E\u043B\u0434\u0441\u043A\u0443\u043B\u044C\u043D\u0430\u044F"
+    - key: goblin_description
+      text: The smell of bald grandpa and dumb jokes.
+    - key: president_name
+      text: Doppelganger's
+    - key: president_description
       text: 
-    - key: room_description_1
+    - key: queen_name
+      text: Old But Gold
+    - key: gueen_description
+      text: God Save The Pee
+    - key: shrek_name
+      text: Shreksy
+    - key: shrek_description
+      text: Straight from the swamps
+    - key: sigma_name
+      text: "\u03A3"
+    - key: sigma_description
+      text: Sigma urine to sigma face
+    - key: snoop_name
+      text: Doggie
+    - key: snoop_description
+      text: Like the golden chains on his chest
+    - key: substance_name
+      text: Piss It Up
+    - key: substance_description
+      text: The Other You pissed yourself at that party
+    - key: dicktator_name
       text: 
-    - key: room_price_pattern
+    - key: dicktator_description
       text: 
+    - key: ramzi_name
+      text: 
+    - key: ramzi_description
+      text: 
+    - key: remy_name
+      text: 
+    - key: remy_description
+      text: 
+    - key: shef_name
+      text: 
+    - key: shef_description
+      text: 
+    - key: peterson_name
+      text: 
+    - key: peterson_description
+      text: 
+    - key: pie_name
+      text: 
+    - key: pie_description
+      text: 
+    - key: rogan_name
+      text: 
+    - key: rogan_description
+      text: 
+    - key: tucker_name
+      text: 
+    - key: tucker_description
+      text: 
+    - key: biser_fez_name
+      text: NONE
+    - key: biser_fez_description
+      text: NONE
+    - key: mister_pissed_name
+      text: NONE
+    - key: mister_pissed_description
+      text: NONE
+    - key: anya_description
+      text: NONE
+    - key: anya_name
+      text: NONE
+    - key: rin_name
+      text: NONE
+    - key: rin_description
+      text: NONE
+    - key: biser_king_name
+      text: NONE
+    - key: biser_king_description
+      text: NONE
+    - key: gaga_name
+      text: NONE
+    - key: gaga_description
+      text: NONE
+    - key: gigachad_name
+      text: NONE
+    - key: gigachad_description
+      text: NONE
+    - key: hermione_name
+      text: NONE
+    - key: hermione_description
+      text: NONE
+    - key: kim_name
+      text: NONE
+    - key: kim_description
+      text: NONE
+    - key: shalame_name
+      text: NONE
+    - key: shalame_description
+      text: NONE
+    - key: supplier_characteristics_pattern
+      text: 'Satisfaction: <b>{0}</b>
+
+        Acidity: <b>{1}</b>
+
+        Saturation:
+        <b>{2}</b>'
+    - key: supplier_price_pattern
+      text: BUY {0}$
+    - key: suppliershop_price_pattern
+      text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
     - key: check_name_1
       text: 
     - key: check_description_1
@@ -627,60 +1321,14 @@ MonoBehaviour:
       text: 
     - key: check_term_pattern
       text: 
+    - key: room_name_1
+      text: 
+    - key: room_description_1
+      text: 
+    - key: room_price_pattern
+      text: 
   - langKey: chinese
     localization:
-    - key: trump_name
-      text: "\u6A59\u8272\u7684\u4EBA"
-    - key: trump_description
-      text: "\u51E0\u4E4E\u662F\u5317\u4EAC\u70E4\u9E2D"
-    - key: borat_name
-      text: "\u54C8\u8428\u514B\u65AF\u5766\u8D85\u7EA7\u597D"
-    - key: borat_description
-      text: "\u4F60\u77E5\u9053\u54C8\u8428\u514B\u65AF\u5766\u5728\u54EA\u91CC\u5417\uFF1F"
-    - key: eva_name
-      text: "\u5BB6\u5EAD\u7535\u5F71\u5973\u6F14\u5458"
-    - key: eva_description
-      text: "\u8FD8\u9500\u552E\u5979\u6D74\u7F38\u4E2D\u7684\u6C34"
-    - key: hideo_name
-      text: "\u91D1\u5C5E\u5929\u624D"
-    - key: hideo_description
-      text: "\u6211\u4EEC\u4F1A\u559D\u4E0B\u4ED6\u63D0\u4F9B\u7684\u6BCF\u4E00\u6EF4\u4E1C\u897F"
-    - key: skibididopdop_name
-      text: "\u7279\u5C14\xB7\u65AF\u8482\u6BD4\u8FEA"
-    - key: skibididopdop_description
-      text: "\u591A\u5E03\u591A\u5E03\uFF0C\u662F\u7684\u662F\u7684"
-    - key: maddison_name
-      text: "\u81ED\u81ED\u7684Letsplayer"
-    - key: maddison_description
-      text: "\u4EE5\u5564\u9152\u548C\u5931\u671B\u8C03\u5473"
-    - key: musk_name
-      text: "\u5C3F\u6DB2X"
-    - key: musk_description
-      text: "\u521B\u65B0\uFF08\u6309\u521B\u4F5C\u8005\u7684\u53E3\u5473\uFF09"
-    - key: gosling_name
-      text: "\u4E00\u4E2A\u771F\u6B63\u7684\u4EBA\u7C7B\u82F1\u96C4"
-    - key: gosling_description
-      text: "\u4ED6\u53EF\u4EE5\u66FF\u4F60\u6211\u6492\u5C3F\uFF01"
-    - key: hunter_name
-      text: "Netflix\u5973\u5B69"
-    - key: hunter_description
-      text: "\u5982\u679C\u5979\u751A\u81F3\u662F\u4E2A\u5973\u5B69\u2026\u2026"
-    - key: mrbeast_name
-      text: Mr.Peest
-    - key: mrbeast_description
-      text: "\u8FD9\u662F\u6765\u81EA\u4E16\u754C\u4E0A\u6700\u5BCC\u6709\u7684YouTuber\u7684\u6350\u8D60"
-    - key: pepe_name
-      text: "\u4F69\u4F69\u7684\u5C0F\u4FBF"
-    - key: pepe_description
-      text: "\u987A\u4FBF\u8BF4\u4E00\u4E0B\uFF0C\u9752\u86D9\u4E0D\u80FD\u6492\u5C3F"
-    - key: gnom_name
-      text: "\u81EA\u6740\u7684\u6709\u5173\u7CFB\u7684\u5B69\u5B50"
-    - key: gnom_description
-      text: "\u50CF\u4ED6\u672A\u6765\u7684\u836F\u7269\u6210\u763E\u4E00\u6837\u82E6\u6DA9"
-    - key: supplier_characteristics_pattern
-      text: "\u6EE1\u610F\u5EA6\uFF1A<b>{0}</b>\r\n\u9178\u5EA6\uFF1A<b>{1}</b>\r\n\u9971\u548C\u5EA6\uFF1A<b>{2}</b>"
-    - key: supplier_price_pattern
-      text: "\u8D2D\u4E70 {0}$"
     - key: ui_satisfaction
       text: "\u5FEB\u4E50"
     - key: ui_saturation
@@ -688,7 +1336,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: "\u8150\u8680\u6027"
     - key: ui_suppliers
-      text: "\u4F9B\u5E94\u5546"
+      text: "\u0421\u0441\u0430\u043A\u0438"
     - key: ui_quests
       text: "\u6311\u6218"
     - key: ui_checks
@@ -699,8 +1347,17 @@ MonoBehaviour:
       text: "\u8D2D\u4E70"
     - key: ui_pay
       text: "\u652F\u4ED8"
+    - key: ui_suppliers_shop
+      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
     - key: ui_rent_button
       text: "\u79DF\u91D1"
+    - key: ui_open
+      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+    - key: ui_pause_menu_continue
+      text: "\u7EE7\u7EED"
+    - key: ui_pause_menu_return
+      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
+        \u043C\u0435\u043D\u044E"
     - key: ui_main_menu_new_game
       text: "\u65B0\u6E38\u620F"
     - key: ui_main_menu_continue_game
@@ -733,10 +1390,50 @@ MonoBehaviour:
       text: "\u91D1\u8272\u55B7\u6CC9"
     - key: ui_rails_name
       text: "\u6492\u5C3F\u94C1\u8F68"
+    - key: ui_cats_name
+      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+    - key: ui_bubbles_name
+      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+    - key: ui_gun_name
+      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F67"
+    - key: ui_rays_name
+      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+    - key: ui_tutorial_title
+      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
+        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
+        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+    - key: ui_tutorial_message
+      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
+        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
+        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
+        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
+        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
+        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
+        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
+        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
+        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
+        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
+        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
+        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
+        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
+        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
+        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
+        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
+        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
     - key: ui_door_controls_hint
-      text: 
+      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
     - key: ui_toilet_controls_hint
-      text: 
+      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
+        \u0441\u043C\u0435\u043D\u0443"
+    - key: ui_build_controls_hint
+      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
+        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+    - key: ui_item_controls_hint
+      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
+        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+    - key: ui_build_controls_minihint
+      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
     - key: quest_run_name
       text: "\u8DD1\uFF0C\u6492\u5C3F\u8005\uFF01\u5FEB\u8DD1\uFF01"
     - key: quest_run_description
@@ -749,6 +1446,56 @@ MonoBehaviour:
       text: "\u4F60\u4E3A\u4EC0\u4E48\u8FD9\u4E48\u505A\uFF1F"
     - key: quest_fullbottle_description
       text: "\u6254\u6389 <b>{0}</b> \u74F6\u6EE1\u74F6\u5B50"
+    - key: quest_earn100_name
+      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
+    - key: quest_earn100_description
+      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
+    - key: quest_buildfirst_name
+      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
+    - key: quest_buildfirst_description
+      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
+    - key: quest_buysupplier_name
+      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
+    - key: quest_buysupplier_description
+      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
+        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
+    - key: quest_zomdiedie_name
+      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
+    - key: quest_zomdiedie_description
+      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
+        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
+    - key: quest_day1_name
+      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
+    - key: quest_day1_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
+        \u043C\u0435\u0447\u0442\u044B"
+    - key: quest_day10_name
+      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
+        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
+    - key: quest_day10_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
+        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
+    - key: quest_vershina_name
+      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
+    - key: quest_vershina_description
+      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
+    - key: quest_toilettalk_name
+      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
+    - key: quest_toilettalk_description
+      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
+        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
+    - key: quest_plants_name
+      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
+    - key: quest_plants_description
+      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
+        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
+    - key: quest_opendoors_name
+      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
+    - key: quest_opendoors_description
+      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
+        \u043C\u0430\u043B\u044B\u0448"
     - key: skibidi_random_phrase_1
       text: "\u5FEB\u70B9\uFF01\u4E70\u5427\uFF01"
     - key: skibidi_random_phrase_2
@@ -787,12 +1534,188 @@ MonoBehaviour:
       text: "\u4F60\u6709\u4E00\u5929\u9192\u6765\u8BF4\uFF0C\u201C\u6211\u60F3\u5356\u5C3F\u201D\uFF1F\u90A3\u4E2A\u4F24\u4E86\u4F60\u5FC3\u7684\u5973\u5B69\u53EB\u4EC0\u4E48\u540D\u5B57\uFF1F"
     - key: skibidi_random_phrase_19
       text: "\u4F60\u7684\u5DE5\u4F5C\u4ECD\u7136\u6BD4\u5E02\u573A\u8425\u9500\u4EBA\u5458\u7684\u5DE5\u4F5C\u66F4\u6709\u7528"
-    - key: room_name_1
-      text: "\u5783\u573E"
-    - key: room_description_1
-      text: "<b>4</b> \u9505\u7089\n<b>11</b> \u4E2A\u5730\u70B9\n<b>100</b> \u5E73\u65B9\u7C73."
-    - key: room_price_pattern
-      text: "\u79DF\u91D1 {0}$"
+    - key: trump_name
+      text: "\u6A59\u8272\u7684\u4EBA"
+    - key: trump_description
+      text: "\u51E0\u4E4E\u662F\u5317\u4EAC\u70E4\u9E2D"
+    - key: borat_name
+      text: "\u54C8\u8428\u514B\u65AF\u5766\u8D85\u7EA7\u597D"
+    - key: borat_description
+      text: "\u4F60\u77E5\u9053\u54C8\u8428\u514B\u65AF\u5766\u5728\u54EA\u91CC\u5417\uFF1F"
+    - key: eva_name
+      text: "\u5BB6\u5EAD\u7535\u5F71\u5973\u6F14\u5458"
+    - key: eva_description
+      text: "\u8FD8\u9500\u552E\u5979\u6D74\u7F38\u4E2D\u7684\u6C34"
+    - key: hideo_name
+      text: "\u91D1\u5C5E\u5929\u624D"
+    - key: hideo_description
+      text: "\u6211\u4EEC\u4F1A\u559D\u4E0B\u4ED6\u63D0\u4F9B\u7684\u6BCF\u4E00\u6EF4\u4E1C\u897F"
+    - key: biser_fez_name
+      text: "\u7279\u5C14\xB7\u65AF\u8482\u6BD4\u8FEA"
+    - key: biser_fez_description
+      text: "\u591A\u5E03\u591A\u5E03\uFF0C\u662F\u7684\u662F\u7684"
+    - key: maddison_name
+      text: "\u81ED\u81ED\u7684Letsplayer"
+    - key: maddison_description
+      text: "\u4EE5\u5564\u9152\u548C\u5931\u671B\u8C03\u5473"
+    - key: musk_name
+      text: "\u5C3F\u6DB2X"
+    - key: musk_description
+      text: "\u521B\u65B0\uFF08\u6309\u521B\u4F5C\u8005\u7684\u53E3\u5473\uFF09"
+    - key: gosling_name
+      text: "\u4E00\u4E2A\u771F\u6B63\u7684\u4EBA\u7C7B\u82F1\u96C4"
+    - key: gosling_description
+      text: "\u4ED6\u53EF\u4EE5\u66FF\u4F60\u6211\u6492\u5C3F\uFF01"
+    - key: hunter_name
+      text: "Netflix\u5973\u5B69"
+    - key: hunter_description
+      text: "\u5982\u679C\u5979\u751A\u81F3\u662F\u4E2A\u5973\u5B69\u2026\u2026"
+    - key: mister_pissed_name
+      text: Mr.Peest
+    - key: mister_pissed_description
+      text: "\u8FD9\u662F\u6765\u81EA\u4E16\u754C\u4E0A\u6700\u5BCC\u6709\u7684YouTuber\u7684\u6350\u8D60"
+    - key: pepe_name
+      text: "\u4F69\u4F69\u7684\u5C0F\u4FBF"
+    - key: pepe_description
+      text: "\u987A\u4FBF\u8BF4\u4E00\u4E0B\uFF0C\u9752\u86D9\u4E0D\u80FD\u6492\u5C3F"
+    - key: gnom_name
+      text: "\u81EA\u6740\u7684\u6709\u5173\u7CFB\u7684\u5B69\u5B50"
+    - key: gnom_description
+      text: "\u50CF\u4ED6\u672A\u6765\u7684\u836F\u7269\u6210\u763E\u4E00\u6837\u82E6\u6DA9"
+    - key: alt_name
+      text: 
+    - key: alt_description
+      text: 
+    - key: asuka_name
+      text: 
+    - key: asuka_description
+      text: 
+    - key: bu_name
+      text: 
+    - key: bu_description
+      text: 
+    - key: doomer_name
+      text: 
+    - key: doomer_description
+      text: 
+    - key: gandalf_name
+      text: 
+    - key: gandalf_description
+      text: 
+    - key: jinx_name
+      text: 
+    - key: Jinx_description
+      text: 
+    - key: markaryan_name
+      text: 
+    - key: markaryan_description
+      text: 
+    - key: goblin_name
+      text: 
+    - key: goblin_description
+      text: 
+    - key: president_name
+      text: 
+    - key: president_description
+      text: 
+    - key: queen_name
+      text: 
+    - key: gueen_description
+      text: 
+    - key: shrek_name
+      text: 
+    - key: shrek_description
+      text: 
+    - key: sigma_name
+      text: 
+    - key: sigma_description
+      text: 
+    - key: snoop_name
+      text: 
+    - key: snoop_description
+      text: 
+    - key: substance_name
+      text: 
+    - key: substance_description
+      text: 
+    - key: dicktator_name
+      text: 
+    - key: dicktator_description
+      text: 
+    - key: ramzi_name
+      text: 
+    - key: ramzi_description
+      text: 
+    - key: remy_name
+      text: 
+    - key: remy_description
+      text: 
+    - key: shef_name
+      text: 
+    - key: shef_description
+      text: 
+    - key: peterson_name
+      text: 
+    - key: peterson_description
+      text: 
+    - key: pie_name
+      text: 
+    - key: pie_description
+      text: 
+    - key: rogan_name
+      text: 
+    - key: rogan_description
+      text: 
+    - key: tucker_name
+      text: 
+    - key: tucker_description
+      text: 
+    - key: biser_fez_name
+      text: NONE
+    - key: biser_fez_description
+      text: NONE
+    - key: mister_pissed_name
+      text: NONE
+    - key: mister_pissed_description
+      text: NONE
+    - key: anya_description
+      text: NONE
+    - key: anya_name
+      text: NONE
+    - key: rin_name
+      text: NONE
+    - key: rin_description
+      text: NONE
+    - key: biser_king_name
+      text: NONE
+    - key: biser_king_description
+      text: NONE
+    - key: gaga_name
+      text: NONE
+    - key: gaga_description
+      text: NONE
+    - key: gigachad_name
+      text: NONE
+    - key: gigachad_description
+      text: NONE
+    - key: hermione_name
+      text: NONE
+    - key: hermione_description
+      text: NONE
+    - key: kim_name
+      text: NONE
+    - key: kim_description
+      text: NONE
+    - key: shalame_name
+      text: NONE
+    - key: shalame_description
+      text: NONE
+    - key: supplier_characteristics_pattern
+      text: "\u6EE1\u610F\u5EA6\uFF1A<b>{0}</b>\r\n\u9178\u5EA6\uFF1A<b>{1}</b>\r\n\u9971\u548C\u5EA6\uFF1A<b>{2}</b>"
+    - key: supplier_price_pattern
+      text: "\u8D2D\u4E70 {0}$"
+    - key: suppliershop_price_pattern
+      text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
     - key: check_name_1
       text: "\u7F5A\u6B3E\uFF1A\u5229\u5C3F\u68C0\u67E5"
     - key: check_description_1
@@ -801,60 +1724,14 @@ MonoBehaviour:
       text: "\u652F\u4ED8 {0}$"
     - key: check_term_pattern
       text: "\u671F\u9650\uFF1A<b>{0}</b> \u5929"
+    - key: room_name_1
+      text: "\u5783\u573E"
+    - key: room_description_1
+      text: "<b>4</b> \u9505\u7089\n<b>11</b> \u4E2A\u5730\u70B9\n<b>100</b> \u5E73\u65B9\u7C73."
+    - key: room_price_pattern
+      text: "\u79DF\u91D1 {0}$"
   - langKey: spanish
     localization:
-    - key: trump_name
-      text: El Hombre Naranja
-    - key: trump_description
-      text: "Casi pato Pek\xEDn"
-    - key: borat_name
-      text: "El S\xFAper Bueno de Kazajist\xE1n"
-    - key: borat_description
-      text: "\xBFSabes d\xF3nde est\xE1 Kazajist\xE1n?"
-    - key: eva_name
-      text: Actriz de cine en casa
-    - key: eva_description
-      text: "Tambi\xE9n vende agua de su ba\xF1era"
-    - key: hideo_name
-      text: Genio del Metal
-    - key: hideo_description
-      text: "Beberemos cada gota de lo que \xE9l ofrezca"
-    - key: skibididopdop_name
-      text: Trr Stibidi
-    - key: skibididopdop_description
-      text: "Dob dob s\xED s\xED"
-    - key: maddison_name
-      text: Stinky Letsplayer
-    - key: maddison_description
-      text: "Saborizado con cerveza y decepci\xF3n"
-    - key: musk_name
-      text: UrineX
-    - key: musk_description
-      text: Innovador (a gusto del creador)
-    - key: gosling_name
-      text: "Un verdadero h\xE9roe humano"
-    - key: gosling_description
-      text: "\xA1\xC9l puede orinar en lugar de ti y de m\xED!"
-    - key: hunter_name
-      text: Chica de Netflix
-    - key: hunter_description
-      text: Si es que ella siquiera es una chica...
-    - key: mrbeast_name
-      text: Mr.Peest
-    - key: mrbeast_description
-      text: "Es una donaci\xF3n del youtuber m\xE1s rico del mundo"
-    - key: pepe_name
-      text: "El Pip\xED de Pepe"
-    - key: pepe_description
-      text: Por cierto, las ranas no pueden orinar
-    - key: gnom_name
-      text: "Ni\xF1o Nepo Suicida"
-    - key: gnom_description
-      text: "Amargo como su futura adicci\xF3n a las drogas"
-    - key: supplier_characteristics_pattern
-      text: "Satisfacci\xF3n: <b>{0}</b>\nAcidez: <b>{1}</b>\nSaturaci\xF3n: <b>{2}</b>"
-    - key: supplier_price_pattern
-      text: COMPRAR {0}$
     - key: ui_satisfaction
       text: Placer
     - key: ui_saturation
@@ -862,7 +1739,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: "C\xE1usticidad"
     - key: ui_suppliers
-      text: Proveedores
+      text: "\u0421\u0441\u0430\u043A\u0438"
     - key: ui_quests
       text: "Desaf\xEDos"
     - key: ui_checks
@@ -873,8 +1750,17 @@ MonoBehaviour:
       text: Comprar
     - key: ui_pay
       text: Pagar
+    - key: ui_suppliers_shop
+      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
     - key: ui_rent_button
       text: Alquiler
+    - key: ui_open
+      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+    - key: ui_pause_menu_continue
+      text: Continuar
+    - key: ui_pause_menu_return
+      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
+        \u043C\u0435\u043D\u044E"
     - key: ui_main_menu_new_game
       text: Nuevo juego
     - key: ui_main_menu_continue_game
@@ -907,10 +1793,50 @@ MonoBehaviour:
       text: Fuente Dorada
     - key: ui_rails_name
       text: Rieles Orinando
+    - key: ui_cats_name
+      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+    - key: ui_bubbles_name
+      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+    - key: ui_gun_name
+      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F68"
+    - key: ui_rays_name
+      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+    - key: ui_tutorial_title
+      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
+        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
+        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+    - key: ui_tutorial_message
+      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
+        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
+        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
+        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
+        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
+        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
+        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
+        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
+        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
+        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
+        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
+        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
+        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
+        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
+        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
+        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
+        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
     - key: ui_door_controls_hint
-      text: 
+      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
     - key: ui_toilet_controls_hint
-      text: 
+      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
+        \u0441\u043C\u0435\u043D\u0443"
+    - key: ui_build_controls_hint
+      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
+        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+    - key: ui_item_controls_hint
+      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
+        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+    - key: ui_build_controls_minihint
+      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
     - key: quest_run_name
       text: "\xA1Corre, meador! \xA1Corre!"
     - key: quest_run_description
@@ -923,6 +1849,56 @@ MonoBehaviour:
       text: "\xBFPor qu\xE9 hiciste eso?"
     - key: quest_fullbottle_description
       text: Tira <b>{0}</b> botellas llenas
+    - key: quest_earn100_name
+      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
+    - key: quest_earn100_description
+      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
+    - key: quest_buildfirst_name
+      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
+    - key: quest_buildfirst_description
+      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
+    - key: quest_buysupplier_name
+      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
+    - key: quest_buysupplier_description
+      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
+        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
+    - key: quest_zomdiedie_name
+      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
+    - key: quest_zomdiedie_description
+      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
+        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
+    - key: quest_day1_name
+      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
+    - key: quest_day1_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
+        \u043C\u0435\u0447\u0442\u044B"
+    - key: quest_day10_name
+      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
+        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
+    - key: quest_day10_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
+        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
+    - key: quest_vershina_name
+      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
+    - key: quest_vershina_description
+      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
+    - key: quest_toilettalk_name
+      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
+    - key: quest_toilettalk_description
+      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
+        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
+    - key: quest_plants_name
+      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
+    - key: quest_plants_description
+      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
+        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
+    - key: quest_opendoors_name
+      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
+    - key: quest_opendoors_description
+      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
+        \u043C\u0430\u043B\u044B\u0448"
     - key: skibidi_random_phrase_1
       text: "\xA1Vamos! \xA1Compra!"
     - key: skibidi_random_phrase_2
@@ -966,12 +1942,188 @@ MonoBehaviour:
         \xBFCu\xE1l era el nombre de la chica que te rompi\xF3 el coraz\xF3n?"
     - key: skibidi_random_phrase_19
       text: "Tu trabajo todav\xEDa es m\xE1s \xFAtil que el de un comercializador"
-    - key: room_name_1
-      text: Basura
-    - key: room_description_1
-      text: "<b>4</b> calderas\n<b>11</b> lugares\n<b>100</b> m\xB2."
-    - key: room_price_pattern
-      text: Alquiler {0}$
+    - key: trump_name
+      text: El Hombre Naranja
+    - key: trump_description
+      text: "Casi pato Pek\xEDn"
+    - key: borat_name
+      text: "El S\xFAper Bueno de Kazajist\xE1n"
+    - key: borat_description
+      text: "\xBFSabes d\xF3nde est\xE1 Kazajist\xE1n?"
+    - key: eva_name
+      text: Actriz de cine en casa
+    - key: eva_description
+      text: "Tambi\xE9n vende agua de su ba\xF1era"
+    - key: hideo_name
+      text: Genio del Metal
+    - key: hideo_description
+      text: "Beberemos cada gota de lo que \xE9l ofrezca"
+    - key: biser_fez_name
+      text: Trr Stibidi
+    - key: biser_fez_description
+      text: "Dob dob s\xED s\xED"
+    - key: maddison_name
+      text: Stinky Letsplayer
+    - key: maddison_description
+      text: "Saborizado con cerveza y decepci\xF3n"
+    - key: musk_name
+      text: UrineX
+    - key: musk_description
+      text: Innovador (a gusto del creador)
+    - key: gosling_name
+      text: "Un verdadero h\xE9roe humano"
+    - key: gosling_description
+      text: "\xA1\xC9l puede orinar en lugar de ti y de m\xED!"
+    - key: hunter_name
+      text: Chica de Netflix
+    - key: hunter_description
+      text: Si es que ella siquiera es una chica...
+    - key: mister_pissed_name
+      text: Mr.Peest
+    - key: mister_pissed_description
+      text: "Es una donaci\xF3n del youtuber m\xE1s rico del mundo"
+    - key: pepe_name
+      text: "El Pip\xED de Pepe"
+    - key: pepe_description
+      text: Por cierto, las ranas no pueden orinar
+    - key: gnom_name
+      text: "Ni\xF1o Nepo Suicida"
+    - key: gnom_description
+      text: "Amargo como su futura adicci\xF3n a las drogas"
+    - key: alt_name
+      text: 
+    - key: alt_description
+      text: 
+    - key: asuka_name
+      text: 
+    - key: asuka_description
+      text: 
+    - key: bu_name
+      text: 
+    - key: bu_description
+      text: 
+    - key: doomer_name
+      text: 
+    - key: doomer_description
+      text: 
+    - key: gandalf_name
+      text: 
+    - key: gandalf_description
+      text: 
+    - key: jinx_name
+      text: 
+    - key: Jinx_description
+      text: 
+    - key: markaryan_name
+      text: 
+    - key: markaryan_description
+      text: 
+    - key: goblin_name
+      text: 
+    - key: goblin_description
+      text: 
+    - key: president_name
+      text: 
+    - key: president_description
+      text: 
+    - key: queen_name
+      text: 
+    - key: gueen_description
+      text: 
+    - key: shrek_name
+      text: 
+    - key: shrek_description
+      text: 
+    - key: sigma_name
+      text: 
+    - key: sigma_description
+      text: 
+    - key: snoop_name
+      text: 
+    - key: snoop_description
+      text: 
+    - key: substance_name
+      text: 
+    - key: substance_description
+      text: 
+    - key: dicktator_name
+      text: 
+    - key: dicktator_description
+      text: 
+    - key: ramzi_name
+      text: 
+    - key: ramzi_description
+      text: 
+    - key: remy_name
+      text: 
+    - key: remy_description
+      text: 
+    - key: shef_name
+      text: 
+    - key: shef_description
+      text: 
+    - key: peterson_name
+      text: 
+    - key: peterson_description
+      text: 
+    - key: pie_name
+      text: 
+    - key: pie_description
+      text: 
+    - key: rogan_name
+      text: 
+    - key: rogan_description
+      text: 
+    - key: tucker_name
+      text: 
+    - key: tucker_description
+      text: 
+    - key: biser_fez_name
+      text: NONE
+    - key: biser_fez_description
+      text: NONE
+    - key: mister_pissed_name
+      text: NONE
+    - key: mister_pissed_description
+      text: NONE
+    - key: anya_description
+      text: NONE
+    - key: anya_name
+      text: NONE
+    - key: rin_name
+      text: NONE
+    - key: rin_description
+      text: NONE
+    - key: biser_king_name
+      text: NONE
+    - key: biser_king_description
+      text: NONE
+    - key: gaga_name
+      text: NONE
+    - key: gaga_description
+      text: NONE
+    - key: gigachad_name
+      text: NONE
+    - key: gigachad_description
+      text: NONE
+    - key: hermione_name
+      text: NONE
+    - key: hermione_description
+      text: NONE
+    - key: kim_name
+      text: NONE
+    - key: kim_description
+      text: NONE
+    - key: shalame_name
+      text: NONE
+    - key: shalame_description
+      text: NONE
+    - key: supplier_characteristics_pattern
+      text: "Satisfacci\xF3n: <b>{0}</b>\nAcidez: <b>{1}</b>\nSaturaci\xF3n: <b>{2}</b>"
+    - key: supplier_price_pattern
+      text: COMPRAR {0}$
+    - key: suppliershop_price_pattern
+      text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
     - key: check_name_1
       text: "MULTA: INSPECCI\xD3N DIUR\xC9TICA"
     - key: check_description_1
@@ -980,60 +2132,14 @@ MonoBehaviour:
       text: PAGAR {0}$
     - key: check_term_pattern
       text: "Plazo: <b>{0}</b> d\xEDas"
+    - key: room_name_1
+      text: Basura
+    - key: room_description_1
+      text: "<b>4</b> calderas\n<b>11</b> lugares\n<b>100</b> m\xB2."
+    - key: room_price_pattern
+      text: Alquiler {0}$
   - langKey: portuguese
     localization:
-    - key: trump_name
-      text: O Homem Laranja
-    - key: trump_description
-      text: "Quase pato Pekin\xEAs"
-    - key: borat_name
-      text: "O Super Bom do Cazaquist\xE3o"
-    - key: borat_description
-      text: "Voc\xEA sabe onde fica o Cazaquist\xE3o?"
-    - key: eva_name
-      text: Atriz de filmes caseiros
-    - key: eva_description
-      text: "Tamb\xE9m vende \xE1gua da sua banheira"
-    - key: hideo_name
-      text: "G\xEAnio do Metal"
-    - key: hideo_description
-      text: Vamos beber cada gota do que ele oferecer
-    - key: skibididopdop_name
-      text: Trr Stibidi
-    - key: skibididopdop_description
-      text: Dob dob sim sim
-    - key: maddison_name
-      text: Stinky Letsplayer
-    - key: maddison_description
-      text: "Saborizado com cerveja e decep\xE7\xE3o"
-    - key: musk_name
-      text: UrineX
-    - key: musk_description
-      text: Inovador (ao gosto do criador)
-    - key: gosling_name
-      text: "Um verdadeiro her\xF3i humano"
-    - key: gosling_description
-      text: "Ele pode fazer xixi no lugar de voc\xEA e de mim!"
-    - key: hunter_name
-      text: Garota da Netflix
-    - key: hunter_description
-      text: "Se ela \xE9 mesmo uma garota..."
-    - key: mrbeast_name
-      text: Mr.Peest
-    - key: mrbeast_description
-      text: "\xC9 uma doa\xE7\xE3o do YouTuber mais rico do mundo"
-    - key: pepe_name
-      text: O Xixi do Pepe
-    - key: pepe_description
-      text: "Ali\xE1s, sapos n\xE3o conseguem fazer xixi"
-    - key: gnom_name
-      text: "Crian\xE7a Nepo Suicida"
-    - key: gnom_description
-      text: "Amargo como seu futura v\xEDcio em drogas"
-    - key: supplier_characteristics_pattern
-      text: "Satisfa\xE7\xE3o: <b>{0}</b>\nAcidez: <b>{1}</b>\nSatura\xE7\xE3o: <b>{2}</b>"
-    - key: supplier_price_pattern
-      text: COMPRAR {0}$
     - key: ui_satisfaction
       text: Prazer
     - key: ui_saturation
@@ -1041,7 +2147,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: Causticidade
     - key: ui_suppliers
-      text: Fornecedores
+      text: "\u0421\u0441\u0430\u043A\u0438"
     - key: ui_quests
       text: Desafios
     - key: ui_checks
@@ -1052,8 +2158,17 @@ MonoBehaviour:
       text: Comprar
     - key: ui_pay
       text: Pagar
+    - key: ui_suppliers_shop
+      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
     - key: ui_rent_button
       text: Aluguel
+    - key: ui_open
+      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+    - key: ui_pause_menu_continue
+      text: Continuar
+    - key: ui_pause_menu_return
+      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
+        \u043C\u0435\u043D\u044E"
     - key: ui_main_menu_new_game
       text: Novo jogo
     - key: ui_main_menu_continue_game
@@ -1086,10 +2201,50 @@ MonoBehaviour:
       text: Fonte Dourada
     - key: ui_rails_name
       text: Trilhos Urinando
+    - key: ui_cats_name
+      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+    - key: ui_bubbles_name
+      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+    - key: ui_gun_name
+      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F69"
+    - key: ui_rays_name
+      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+    - key: ui_tutorial_title
+      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
+        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
+        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+    - key: ui_tutorial_message
+      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
+        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
+        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
+        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
+        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
+        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
+        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
+        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
+        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
+        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
+        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
+        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
+        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
+        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
+        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
+        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
+        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
     - key: ui_door_controls_hint
-      text: 
+      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
     - key: ui_toilet_controls_hint
-      text: 
+      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
+        \u0441\u043C\u0435\u043D\u0443"
+    - key: ui_build_controls_hint
+      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
+        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+    - key: ui_item_controls_hint
+      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
+        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+    - key: ui_build_controls_minihint
+      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
     - key: quest_run_name
       text: Corra, mijador! Corra!
     - key: quest_run_description
@@ -1102,6 +2257,56 @@ MonoBehaviour:
       text: "Por que voc\xEA fez isso?"
     - key: quest_fullbottle_description
       text: Jogue fora <b>{0}</b> garrafas cheias
+    - key: quest_earn100_name
+      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
+    - key: quest_earn100_description
+      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
+    - key: quest_buildfirst_name
+      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
+    - key: quest_buildfirst_description
+      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
+    - key: quest_buysupplier_name
+      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
+    - key: quest_buysupplier_description
+      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
+        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
+    - key: quest_zomdiedie_name
+      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
+    - key: quest_zomdiedie_description
+      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
+        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
+    - key: quest_day1_name
+      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
+    - key: quest_day1_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
+        \u043C\u0435\u0447\u0442\u044B"
+    - key: quest_day10_name
+      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
+        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
+    - key: quest_day10_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
+        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
+    - key: quest_vershina_name
+      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
+    - key: quest_vershina_description
+      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
+    - key: quest_toilettalk_name
+      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
+    - key: quest_toilettalk_description
+      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
+        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
+    - key: quest_plants_name
+      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
+    - key: quest_plants_description
+      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
+        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
+    - key: quest_opendoors_name
+      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
+    - key: quest_opendoors_description
+      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
+        \u043C\u0430\u043B\u044B\u0448"
     - key: skibidi_random_phrase_1
       text: "Vamos l\xE1! Compre!"
     - key: skibidi_random_phrase_2
@@ -1146,12 +2351,188 @@ MonoBehaviour:
     - key: skibidi_random_phrase_19
       text: "Seu trabalho ainda \xE9 mais \xFAtil do que o de um profissional de
         marketing"
-    - key: room_name_1
-      text: Lixo
-    - key: room_description_1
-      text: "<b>4</b> caldeiras\n<b>11</b> locais\n<b>100</b> m\xB2."
-    - key: room_price_pattern
-      text: Aluguel {0}$
+    - key: trump_name
+      text: O Homem Laranja
+    - key: trump_description
+      text: "Quase pato Pekin\xEAs"
+    - key: borat_name
+      text: "O Super Bom do Cazaquist\xE3o"
+    - key: borat_description
+      text: "Voc\xEA sabe onde fica o Cazaquist\xE3o?"
+    - key: eva_name
+      text: Atriz de filmes caseiros
+    - key: eva_description
+      text: "Tamb\xE9m vende \xE1gua da sua banheira"
+    - key: hideo_name
+      text: "G\xEAnio do Metal"
+    - key: hideo_description
+      text: Vamos beber cada gota do que ele oferecer
+    - key: biser_fez_name
+      text: Trr Stibidi
+    - key: biser_fez_description
+      text: Dob dob sim sim
+    - key: maddison_name
+      text: Stinky Letsplayer
+    - key: maddison_description
+      text: "Saborizado com cerveja e decep\xE7\xE3o"
+    - key: musk_name
+      text: UrineX
+    - key: musk_description
+      text: Inovador (ao gosto do criador)
+    - key: gosling_name
+      text: "Um verdadeiro her\xF3i humano"
+    - key: gosling_description
+      text: "Ele pode fazer xixi no lugar de voc\xEA e de mim!"
+    - key: hunter_name
+      text: Garota da Netflix
+    - key: hunter_description
+      text: "Se ela \xE9 mesmo uma garota..."
+    - key: mister_pissed_name
+      text: Mr.Peest
+    - key: mister_pissed_description
+      text: "\xC9 uma doa\xE7\xE3o do YouTuber mais rico do mundo"
+    - key: pepe_name
+      text: O Xixi do Pepe
+    - key: pepe_description
+      text: "Ali\xE1s, sapos n\xE3o conseguem fazer xixi"
+    - key: gnom_name
+      text: "Crian\xE7a Nepo Suicida"
+    - key: gnom_description
+      text: "Amargo como seu futura v\xEDcio em drogas"
+    - key: alt_name
+      text: 
+    - key: alt_description
+      text: 
+    - key: asuka_name
+      text: 
+    - key: asuka_description
+      text: 
+    - key: bu_name
+      text: 
+    - key: bu_description
+      text: 
+    - key: doomer_name
+      text: 
+    - key: doomer_description
+      text: 
+    - key: gandalf_name
+      text: 
+    - key: gandalf_description
+      text: 
+    - key: jinx_name
+      text: 
+    - key: Jinx_description
+      text: 
+    - key: markaryan_name
+      text: 
+    - key: markaryan_description
+      text: 
+    - key: goblin_name
+      text: 
+    - key: goblin_description
+      text: 
+    - key: president_name
+      text: 
+    - key: president_description
+      text: 
+    - key: queen_name
+      text: 
+    - key: gueen_description
+      text: 
+    - key: shrek_name
+      text: 
+    - key: shrek_description
+      text: 
+    - key: sigma_name
+      text: 
+    - key: sigma_description
+      text: 
+    - key: snoop_name
+      text: 
+    - key: snoop_description
+      text: 
+    - key: substance_name
+      text: 
+    - key: substance_description
+      text: 
+    - key: dicktator_name
+      text: 
+    - key: dicktator_description
+      text: 
+    - key: ramzi_name
+      text: 
+    - key: ramzi_description
+      text: 
+    - key: remy_name
+      text: 
+    - key: remy_description
+      text: 
+    - key: shef_name
+      text: 
+    - key: shef_description
+      text: 
+    - key: peterson_name
+      text: 
+    - key: peterson_description
+      text: 
+    - key: pie_name
+      text: 
+    - key: pie_description
+      text: 
+    - key: rogan_name
+      text: 
+    - key: rogan_description
+      text: 
+    - key: tucker_name
+      text: 
+    - key: tucker_description
+      text: 
+    - key: biser_fez_name
+      text: NONE
+    - key: biser_fez_description
+      text: NONE
+    - key: mister_pissed_name
+      text: NONE
+    - key: mister_pissed_description
+      text: NONE
+    - key: anya_description
+      text: NONE
+    - key: anya_name
+      text: NONE
+    - key: rin_name
+      text: NONE
+    - key: rin_description
+      text: NONE
+    - key: biser_king_name
+      text: NONE
+    - key: biser_king_description
+      text: NONE
+    - key: gaga_name
+      text: NONE
+    - key: gaga_description
+      text: NONE
+    - key: gigachad_name
+      text: NONE
+    - key: gigachad_description
+      text: NONE
+    - key: hermione_name
+      text: NONE
+    - key: hermione_description
+      text: NONE
+    - key: kim_name
+      text: NONE
+    - key: kim_description
+      text: NONE
+    - key: shalame_name
+      text: NONE
+    - key: shalame_description
+      text: NONE
+    - key: supplier_characteristics_pattern
+      text: "Satisfa\xE7\xE3o: <b>{0}</b>\nAcidez: <b>{1}</b>\nSatura\xE7\xE3o: <b>{2}</b>"
+    - key: supplier_price_pattern
+      text: COMPRAR {0}$
+    - key: suppliershop_price_pattern
+      text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
     - key: check_name_1
       text: "MULTA: INSPE\xC7\xC3O DIUR\xC9TICA"
     - key: check_description_1
@@ -1160,61 +2541,14 @@ MonoBehaviour:
       text: PAGAR {0}$
     - key: check_term_pattern
       text: 'Prazo: <b>{0}</b> dias'
+    - key: room_name_1
+      text: Lixo
+    - key: room_description_1
+      text: "<b>4</b> caldeiras\n<b>11</b> locais\n<b>100</b> m\xB2."
+    - key: room_price_pattern
+      text: Aluguel {0}$
   - langKey: german
     localization:
-    - key: trump_name
-      text: Der Orange Mann
-    - key: trump_description
-      text: Fast Pekingente
-    - key: borat_name
-      text: Kasachstans Super Gut
-    - key: borat_description
-      text: "Wei\xDFt du, wo Kasachstan ist?"
-    - key: eva_name
-      text: Heimische Film-Schauspielerin
-    - key: eva_description
-      text: Verkauft auch Wasser aus ihrer Badewanne
-    - key: hideo_name
-      text: Metal-Genie
-    - key: hideo_description
-      text: Wir werden jeden Tropfen trinken, den er anbietet
-    - key: skibididopdop_name
-      text: Trr Stibidi
-    - key: skibididopdop_description
-      text: Dob dob ja ja
-    - key: maddison_name
-      text: Stinkender Letsplayer
-    - key: maddison_description
-      text: "Mit Bier und Entt\xE4uschung gew\xFCrzt"
-    - key: musk_name
-      text: UrineX
-    - key: musk_description
-      text: "Innovativ (nach Geschmack des Sch\xF6pfers)"
-    - key: gosling_name
-      text: Ein echter menschlicher Held
-    - key: gosling_description
-      text: Er kann an deiner und meiner Stelle pinkeln!
-    - key: hunter_name
-      text: "Netflix M\xE4dchen"
-    - key: hunter_description
-      text: "Wenn sie \xFCberhaupt ein M\xE4dchen ist..."
-    - key: mrbeast_name
-      text: Mr.Peest
-    - key: mrbeast_description
-      text: Es ist eine Spende vom reichsten YouTuber der Welt
-    - key: pepe_name
-      text: Pepes Pipi
-    - key: pepe_description
-      text: "\xDCbrigens, Fr\xF6sche k\xF6nnen nicht pinkeln"
-    - key: gnom_name
-      text: Suizidaler Nepo-Kid
-    - key: gnom_description
-      text: "Bitter wie seine zuk\xFCnftige Drogenabh\xE4ngigkeit"
-    - key: supplier_characteristics_pattern
-      text: "Satisfaction: <b>{0}</b>\nS\xE4uregehalt: <b>{1}</b>\nS\xE4ttigung:
-        <b>{2}</b>"
-    - key: supplier_price_pattern
-      text: KAUFEN {0}$
     - key: ui_satisfaction
       text: Freude
     - key: ui_saturation
@@ -1222,7 +2556,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: "\xC4tzwirkung"
     - key: ui_suppliers
-      text: Lieferanten
+      text: "\u0421\u0441\u0430\u043A\u0438"
     - key: ui_quests
       text: Herausforderungen
     - key: ui_checks
@@ -1233,8 +2567,17 @@ MonoBehaviour:
       text: Kaufen
     - key: ui_pay
       text: Bezahlen
+    - key: ui_suppliers_shop
+      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
     - key: ui_rent_button
       text: Miete
+    - key: ui_open
+      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+    - key: ui_pause_menu_continue
+      text: Fortsetzen
+    - key: ui_pause_menu_return
+      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
+        \u043C\u0435\u043D\u044E"
     - key: ui_main_menu_new_game
       text: Neues Spiel
     - key: ui_main_menu_continue_game
@@ -1267,10 +2610,50 @@ MonoBehaviour:
       text: Goldener Brunnen
     - key: ui_rails_name
       text: Urinierende Schienen
+    - key: ui_cats_name
+      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+    - key: ui_bubbles_name
+      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+    - key: ui_gun_name
+      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F70"
+    - key: ui_rays_name
+      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+    - key: ui_tutorial_title
+      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
+        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
+        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+    - key: ui_tutorial_message
+      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
+        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
+        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
+        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
+        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
+        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
+        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
+        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
+        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
+        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
+        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
+        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
+        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
+        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
+        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
+        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
+        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
     - key: ui_door_controls_hint
-      text: 
+      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
     - key: ui_toilet_controls_hint
-      text: 
+      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
+        \u0441\u043C\u0435\u043D\u0443"
+    - key: ui_build_controls_hint
+      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
+        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+    - key: ui_item_controls_hint
+      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
+        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+    - key: ui_build_controls_minihint
+      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
     - key: quest_run_name
       text: Lauf, Pisser! Lauf!
     - key: quest_run_description
@@ -1283,6 +2666,56 @@ MonoBehaviour:
       text: Warum hast du das getan?
     - key: quest_fullbottle_description
       text: Wirf <b>{0}</b> volle Flaschen weg
+    - key: quest_earn100_name
+      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
+    - key: quest_earn100_description
+      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
+    - key: quest_buildfirst_name
+      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
+    - key: quest_buildfirst_description
+      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
+    - key: quest_buysupplier_name
+      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
+    - key: quest_buysupplier_description
+      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
+        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
+    - key: quest_zomdiedie_name
+      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
+    - key: quest_zomdiedie_description
+      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
+        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
+    - key: quest_day1_name
+      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
+    - key: quest_day1_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
+        \u043C\u0435\u0447\u0442\u044B"
+    - key: quest_day10_name
+      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
+        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
+    - key: quest_day10_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
+        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
+    - key: quest_vershina_name
+      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
+    - key: quest_vershina_description
+      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
+    - key: quest_toilettalk_name
+      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
+    - key: quest_toilettalk_description
+      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
+        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
+    - key: quest_plants_name
+      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
+    - key: quest_plants_description
+      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
+        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
+    - key: quest_opendoors_name
+      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
+    - key: quest_opendoors_description
+      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
+        \u043C\u0430\u043B\u044B\u0448"
     - key: skibidi_random_phrase_1
       text: Komm schon! Kauf!
     - key: skibidi_random_phrase_2
@@ -1326,12 +2759,189 @@ MonoBehaviour:
         verkaufen\u201D? Wie hie\xDF das M\xE4dchen, das dir das Herz gebrochen hat?"
     - key: skibidi_random_phrase_19
       text: "Dein Job ist immer noch n\xFCtzlicher als der eines Vermarkters"
-    - key: room_name_1
-      text: "M\xFCll"
-    - key: room_description_1
-      text: "<b>4</b> Kessel\n<b>11</b> Pl\xE4tze\n<b>100</b> qm."
-    - key: room_price_pattern
-      text: Miete {0}$
+    - key: trump_name
+      text: Der Orange Mann
+    - key: trump_description
+      text: Fast Pekingente
+    - key: borat_name
+      text: Kasachstans Super Gut
+    - key: borat_description
+      text: "Wei\xDFt du, wo Kasachstan ist?"
+    - key: eva_name
+      text: Heimische Film-Schauspielerin
+    - key: eva_description
+      text: Verkauft auch Wasser aus ihrer Badewanne
+    - key: hideo_name
+      text: Metal-Genie
+    - key: hideo_description
+      text: Wir werden jeden Tropfen trinken, den er anbietet
+    - key: biser_fez_name
+      text: Trr Stibidi
+    - key: biser_fez_description
+      text: Dob dob ja ja
+    - key: maddison_name
+      text: Stinkender Letsplayer
+    - key: maddison_description
+      text: "Mit Bier und Entt\xE4uschung gew\xFCrzt"
+    - key: musk_name
+      text: UrineX
+    - key: musk_description
+      text: "Innovativ (nach Geschmack des Sch\xF6pfers)"
+    - key: gosling_name
+      text: Ein echter menschlicher Held
+    - key: gosling_description
+      text: Er kann an deiner und meiner Stelle pinkeln!
+    - key: hunter_name
+      text: "Netflix M\xE4dchen"
+    - key: hunter_description
+      text: "Wenn sie \xFCberhaupt ein M\xE4dchen ist..."
+    - key: mister_pissed_name
+      text: Mr.Peest
+    - key: mister_pissed_description
+      text: Es ist eine Spende vom reichsten YouTuber der Welt
+    - key: pepe_name
+      text: Pepes Pipi
+    - key: pepe_description
+      text: "\xDCbrigens, Fr\xF6sche k\xF6nnen nicht pinkeln"
+    - key: gnom_name
+      text: Suizidaler Nepo-Kid
+    - key: gnom_description
+      text: "Bitter wie seine zuk\xFCnftige Drogenabh\xE4ngigkeit"
+    - key: alt_name
+      text: 
+    - key: alt_description
+      text: 
+    - key: asuka_name
+      text: 
+    - key: asuka_description
+      text: 
+    - key: bu_name
+      text: 
+    - key: bu_description
+      text: 
+    - key: doomer_name
+      text: 
+    - key: doomer_description
+      text: 
+    - key: gandalf_name
+      text: 
+    - key: gandalf_description
+      text: 
+    - key: jinx_name
+      text: 
+    - key: Jinx_description
+      text: 
+    - key: markaryan_name
+      text: 
+    - key: markaryan_description
+      text: 
+    - key: goblin_name
+      text: 
+    - key: goblin_description
+      text: 
+    - key: president_name
+      text: 
+    - key: president_description
+      text: 
+    - key: queen_name
+      text: 
+    - key: gueen_description
+      text: 
+    - key: shrek_name
+      text: 
+    - key: shrek_description
+      text: 
+    - key: sigma_name
+      text: 
+    - key: sigma_description
+      text: 
+    - key: snoop_name
+      text: 
+    - key: snoop_description
+      text: 
+    - key: substance_name
+      text: 
+    - key: substance_description
+      text: 
+    - key: dicktator_name
+      text: 
+    - key: dicktator_description
+      text: 
+    - key: ramzi_name
+      text: 
+    - key: ramzi_description
+      text: 
+    - key: remy_name
+      text: 
+    - key: remy_description
+      text: 
+    - key: shef_name
+      text: 
+    - key: shef_description
+      text: 
+    - key: peterson_name
+      text: 
+    - key: peterson_description
+      text: 
+    - key: pie_name
+      text: 
+    - key: pie_description
+      text: 
+    - key: rogan_name
+      text: 
+    - key: rogan_description
+      text: 
+    - key: tucker_name
+      text: 
+    - key: tucker_description
+      text: 
+    - key: biser_fez_name
+      text: NONE
+    - key: biser_fez_description
+      text: NONE
+    - key: mister_pissed_name
+      text: NONE
+    - key: mister_pissed_description
+      text: NONE
+    - key: anya_description
+      text: NONE
+    - key: anya_name
+      text: NONE
+    - key: rin_name
+      text: NONE
+    - key: rin_description
+      text: NONE
+    - key: biser_king_name
+      text: NONE
+    - key: biser_king_description
+      text: NONE
+    - key: gaga_name
+      text: NONE
+    - key: gaga_description
+      text: NONE
+    - key: gigachad_name
+      text: NONE
+    - key: gigachad_description
+      text: NONE
+    - key: hermione_name
+      text: NONE
+    - key: hermione_description
+      text: NONE
+    - key: kim_name
+      text: NONE
+    - key: kim_description
+      text: NONE
+    - key: shalame_name
+      text: NONE
+    - key: shalame_description
+      text: NONE
+    - key: supplier_characteristics_pattern
+      text: "Satisfaction: <b>{0}</b>\nS\xE4uregehalt: <b>{1}</b>\nS\xE4ttigung:
+        <b>{2}</b>"
+    - key: supplier_price_pattern
+      text: KAUFEN {0}$
+    - key: suppliershop_price_pattern
+      text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
     - key: check_name_1
       text: 'STRAFE: DIURETISCHE INSPEKTION'
     - key: check_description_1
@@ -1340,65 +2950,14 @@ MonoBehaviour:
       text: ZAHLEN {0}$
     - key: check_term_pattern
       text: 'Frist: <b>{0}</b> Tage'
+    - key: room_name_1
+      text: "M\xFCll"
+    - key: room_description_1
+      text: "<b>4</b> Kessel\n<b>11</b> Pl\xE4tze\n<b>100</b> qm."
+    - key: room_price_pattern
+      text: Miete {0}$
   - langKey: japanese
     localization:
-    - key: trump_name
-      text: "\u6A59\u8272\u306E\u7537"
-    - key: trump_description
-      text: "\u307B\u307C\u5317\u4EAC\u30C0\u30C3\u30AF"
-    - key: borat_name
-      text: "\u30AB\u30B6\u30D5\u30B9\u30BF\u30F3\u306E\u30B9\u30FC\u30D1\u30FC\u30B0\u30C3\u30C9"
-    - key: borat_description
-      text: "\u30AB\u30B6\u30D5\u30B9\u30BF\u30F3\u304C\u3069\u3053\u306B\u3042\u308B\u304B\u77E5\u3063\u3066\u3044\u307E\u3059\u304B\uFF1F"
-    - key: eva_name
-      text: "\u30DB\u30FC\u30E0\u30E0\u30FC\u30D3\u30FC\u5973\u512A"
-    - key: eva_description
-      text: "\u5F7C\u5973\u306E\u30D0\u30B9\u30BF\u30D6\u306E\u6C34\u3082\u8CA9\u58F2\u3057\u3066\u3044\u307E\u3059"
-    - key: hideo_name
-      text: "\u30E1\u30BF\u30EB\u306E\u5929\u624D"
-    - key: hideo_description
-      text: "\u5F7C\u304C\u63D0\u4F9B\u3059\u308B\u3082\u306E\u3092\u79C1\u305F\u3061\u306F\u4E00\u6EF4\u3082\u98F2\u307F\u5E72\u3057\u307E\u3059"
-    - key: skibididopdop_name
-      text: Trr Stibidi
-    - key: skibididopdop_description
-      text: "Dob dob \u306F\u3044\u306F\u3044"
-    - key: maddison_name
-      text: "\u81ED\u3044Letsplayer"
-    - key: maddison_description
-      text: "\u30D3\u30FC\u30EB\u3068\u5931\u671B\u3067\u5473\u4ED8\u3051"
-    - key: musk_name
-      text: UrineX
-    - key: musk_description
-      text: "\u9769\u65B0\u7684\uFF08\u30AF\u30EA\u30A8\u30A4\u30BF\u30FC\u306E\u597D\u307F\u306B\u5408\u308F\u305B\u3066\uFF09"
-    - key: gosling_name
-      text: "\u672C\u7269\u306E\u4EBA\u9593\u306E\u82F1\u96C4"
-    - key: gosling_description
-      text: "\u5F7C\u304C\u3042\u306A\u305F\u3068\u79C1\u306E\u4EE3\u308F\u308A\u306B\u304A\u3057\u3063\u3053\u3092\u3067\u304D\u307E\u3059\uFF01"
-    - key: hunter_name
-      text: "Netflix\u30AC\u30FC\u30EB"
-    - key: hunter_description
-      text: "\u3082\u3057\u5F7C\u5973\u304C\u672C\u5F53\u306B\u5973\u306E\u5B50\u306A\u3089..."
-    - key: mrbeast_name
-      text: Mr.Peest
-    - key: mrbeast_description
-      text: "\u4E16\u754C\u3067\u6700\u3082\u88D5\u798F\u306A\u30E6\u30FC\u30C1\u30E5\u30FC\u30D0\u30FC\u304B\u3089\u306E\u5BC4\u4ED8\u3067\u3059"
-    - key: pepe_name
-      text: "\u30DA\u30DA\u306E\u30DA\u30FC\u30DA\u30FC"
-    - key: pepe_description
-      text: "\u3061\u306A\u307F\u306B\u3001\u30AB\u30A8\u30EB\u306F\u304A\u3057\u3063\u3053\u3067\u304D\u307E\u305B\u3093"
-    - key: gnom_name
-      text: "\u81EA\u6BBA\u9858\u671B\u306E\u30CD\u30DD\u30AD\u30C3\u30C9"
-    - key: gnom_description
-      text: "\u5F7C\u306E\u5C06\u6765\u306E\u85AC\u7269\u4F9D\u5B58\u306E\u3088\u3046\u306B\u82E6\u3044"
-    - key: supplier_characteristics_pattern
-      text: 'Satisfaction: <b>{0}</b>
-
-        Acidity: <b>{1}</b>
-
-        Saturation:
-        <b>{2}</b>'
-    - key: supplier_price_pattern
-      text: "\u8CFC\u5165 {0}$"
     - key: ui_satisfaction
       text: "\u5FEB\u697D"
     - key: ui_saturation
@@ -1406,7 +2965,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: "\u8150\u98DF\u6027"
     - key: ui_suppliers
-      text: "\u30B5\u30D7\u30E9\u30A4\u30E4\u30FC"
+      text: "\u0421\u0441\u0430\u043A\u0438"
     - key: ui_quests
       text: "\u30C1\u30E3\u30EC\u30F3\u30B8"
     - key: ui_checks
@@ -1417,8 +2976,17 @@ MonoBehaviour:
       text: "\u8CFC\u5165"
     - key: ui_pay
       text: "\u652F\u6255\u3046"
+    - key: ui_suppliers_shop
+      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
     - key: ui_rent_button
       text: "\u5BB6\u8CC3"
+    - key: ui_open
+      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+    - key: ui_pause_menu_continue
+      text: "\u7D9A\u884C"
+    - key: ui_pause_menu_return
+      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
+        \u043C\u0435\u043D\u044E"
     - key: ui_main_menu_new_game
       text: "\u65B0\u3057\u3044\u30B2\u30FC\u30E0"
     - key: ui_main_menu_continue_game
@@ -1451,10 +3019,50 @@ MonoBehaviour:
       text: "\u9EC4\u91D1\u306E\u5674\u6C34"
     - key: ui_rails_name
       text: "\u5C3F\u3092\u5782\u3089\u3059\u30EC\u30FC\u30EB"
+    - key: ui_cats_name
+      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+    - key: ui_bubbles_name
+      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+    - key: ui_gun_name
+      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F71"
+    - key: ui_rays_name
+      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+    - key: ui_tutorial_title
+      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
+        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
+        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+    - key: ui_tutorial_message
+      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
+        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
+        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
+        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
+        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
+        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
+        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
+        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
+        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
+        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
+        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
+        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
+        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
+        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
+        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
+        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
+        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
     - key: ui_door_controls_hint
-      text: 
+      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
     - key: ui_toilet_controls_hint
-      text: 
+      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
+        \u0441\u043C\u0435\u043D\u0443"
+    - key: ui_build_controls_hint
+      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
+        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+    - key: ui_item_controls_hint
+      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
+        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+    - key: ui_build_controls_minihint
+      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
     - key: quest_run_name
       text: "\u8D70\u308C\u3001\u6392\u5C3F\u8005\uFF01\u8D70\u308C\uFF01"
     - key: quest_run_description
@@ -1467,6 +3075,56 @@ MonoBehaviour:
       text: "\u3069\u3046\u3057\u3066\u305D\u3093\u306A\u3053\u3068\u3092\u3057\u305F\u306E\uFF1F"
     - key: quest_fullbottle_description
       text: "<b>{0}</b>\u672C\u306E\u6E80\u30BF\u30F3\u306E\u30DC\u30C8\u30EB\u3092\u6368\u3066\u308B"
+    - key: quest_earn100_name
+      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
+    - key: quest_earn100_description
+      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
+    - key: quest_buildfirst_name
+      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
+    - key: quest_buildfirst_description
+      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
+    - key: quest_buysupplier_name
+      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
+    - key: quest_buysupplier_description
+      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
+        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
+    - key: quest_zomdiedie_name
+      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
+    - key: quest_zomdiedie_description
+      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
+        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
+    - key: quest_day1_name
+      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
+    - key: quest_day1_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
+        \u043C\u0435\u0447\u0442\u044B"
+    - key: quest_day10_name
+      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
+        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
+    - key: quest_day10_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
+        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
+    - key: quest_vershina_name
+      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
+    - key: quest_vershina_description
+      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
+    - key: quest_toilettalk_name
+      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
+    - key: quest_toilettalk_description
+      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
+        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
+    - key: quest_plants_name
+      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
+    - key: quest_plants_description
+      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
+        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
+    - key: quest_opendoors_name
+      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
+    - key: quest_opendoors_description
+      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
+        \u043C\u0430\u043B\u044B\u0448"
     - key: skibidi_random_phrase_1
       text: "\u3055\u3042\uFF01\u8CB7\u3048\uFF01"
     - key: skibidi_random_phrase_2
@@ -1505,13 +3163,193 @@ MonoBehaviour:
       text: "\u3042\u308B\u65E5\u76EE\u304C\u899A\u3081\u3066\u300C\u5C3F\u3092\u58F2\u308A\u305F\u3044\u300D\u3068\u8A00\u3044\u307E\u3057\u305F\u304B\uFF1F\u5FC3\u3092\u58CA\u3057\u305F\u5973\u306E\u5B50\u306E\u540D\u524D\u306F\u4F55\u3067\u3057\u305F\u304B\uFF1F"
     - key: skibidi_random_phrase_19
       text: "\u541B\u306E\u4ED5\u4E8B\u306F\u307E\u3060\u30DE\u30FC\u30B1\u30BF\u30FC\u306E\u4ED5\u4E8B\u3088\u308A\u5F79\u306B\u7ACB\u3063\u3066\u3044\u307E\u3059"
-    - key: room_name_1
-      text: "\u30B4\u30DF"
-    - key: room_description_1
-      text: "<b>4</b> \u30DC\u30A4\u30E9\u30FC\n<b>11</b> \u5834\u6240\n<b>100</b>
-        \u5E73\u65B9\u30E1\u30FC\u30C8\u30EB."
-    - key: room_price_pattern
-      text: "\u5BB6\u8CC3 {0}$"
+    - key: trump_name
+      text: "\u6A59\u8272\u306E\u7537"
+    - key: trump_description
+      text: "\u307B\u307C\u5317\u4EAC\u30C0\u30C3\u30AF"
+    - key: borat_name
+      text: "\u30AB\u30B6\u30D5\u30B9\u30BF\u30F3\u306E\u30B9\u30FC\u30D1\u30FC\u30B0\u30C3\u30C9"
+    - key: borat_description
+      text: "\u30AB\u30B6\u30D5\u30B9\u30BF\u30F3\u304C\u3069\u3053\u306B\u3042\u308B\u304B\u77E5\u3063\u3066\u3044\u307E\u3059\u304B\uFF1F"
+    - key: eva_name
+      text: "\u30DB\u30FC\u30E0\u30E0\u30FC\u30D3\u30FC\u5973\u512A"
+    - key: eva_description
+      text: "\u5F7C\u5973\u306E\u30D0\u30B9\u30BF\u30D6\u306E\u6C34\u3082\u8CA9\u58F2\u3057\u3066\u3044\u307E\u3059"
+    - key: hideo_name
+      text: "\u30E1\u30BF\u30EB\u306E\u5929\u624D"
+    - key: hideo_description
+      text: "\u5F7C\u304C\u63D0\u4F9B\u3059\u308B\u3082\u306E\u3092\u79C1\u305F\u3061\u306F\u4E00\u6EF4\u3082\u98F2\u307F\u5E72\u3057\u307E\u3059"
+    - key: biser_fez_name
+      text: Trr Stibidi
+    - key: biser_fez_description
+      text: "Dob dob \u306F\u3044\u306F\u3044"
+    - key: maddison_name
+      text: "\u81ED\u3044Letsplayer"
+    - key: maddison_description
+      text: "\u30D3\u30FC\u30EB\u3068\u5931\u671B\u3067\u5473\u4ED8\u3051"
+    - key: musk_name
+      text: UrineX
+    - key: musk_description
+      text: "\u9769\u65B0\u7684\uFF08\u30AF\u30EA\u30A8\u30A4\u30BF\u30FC\u306E\u597D\u307F\u306B\u5408\u308F\u305B\u3066\uFF09"
+    - key: gosling_name
+      text: "\u672C\u7269\u306E\u4EBA\u9593\u306E\u82F1\u96C4"
+    - key: gosling_description
+      text: "\u5F7C\u304C\u3042\u306A\u305F\u3068\u79C1\u306E\u4EE3\u308F\u308A\u306B\u304A\u3057\u3063\u3053\u3092\u3067\u304D\u307E\u3059\uFF01"
+    - key: hunter_name
+      text: "Netflix\u30AC\u30FC\u30EB"
+    - key: hunter_description
+      text: "\u3082\u3057\u5F7C\u5973\u304C\u672C\u5F53\u306B\u5973\u306E\u5B50\u306A\u3089..."
+    - key: mister_pissed_name
+      text: Mr.Peest
+    - key: mister_pissed_description
+      text: "\u4E16\u754C\u3067\u6700\u3082\u88D5\u798F\u306A\u30E6\u30FC\u30C1\u30E5\u30FC\u30D0\u30FC\u304B\u3089\u306E\u5BC4\u4ED8\u3067\u3059"
+    - key: pepe_name
+      text: "\u30DA\u30DA\u306E\u30DA\u30FC\u30DA\u30FC"
+    - key: pepe_description
+      text: "\u3061\u306A\u307F\u306B\u3001\u30AB\u30A8\u30EB\u306F\u304A\u3057\u3063\u3053\u3067\u304D\u307E\u305B\u3093"
+    - key: gnom_name
+      text: "\u81EA\u6BBA\u9858\u671B\u306E\u30CD\u30DD\u30AD\u30C3\u30C9"
+    - key: gnom_description
+      text: "\u5F7C\u306E\u5C06\u6765\u306E\u85AC\u7269\u4F9D\u5B58\u306E\u3088\u3046\u306B\u82E6\u3044"
+    - key: alt_name
+      text: 
+    - key: alt_description
+      text: 
+    - key: asuka_name
+      text: 
+    - key: asuka_description
+      text: 
+    - key: bu_name
+      text: 
+    - key: bu_description
+      text: 
+    - key: doomer_name
+      text: 
+    - key: doomer_description
+      text: 
+    - key: gandalf_name
+      text: 
+    - key: gandalf_description
+      text: 
+    - key: jinx_name
+      text: 
+    - key: Jinx_description
+      text: 
+    - key: markaryan_name
+      text: 
+    - key: markaryan_description
+      text: 
+    - key: goblin_name
+      text: 
+    - key: goblin_description
+      text: 
+    - key: president_name
+      text: 
+    - key: president_description
+      text: 
+    - key: queen_name
+      text: 
+    - key: gueen_description
+      text: 
+    - key: shrek_name
+      text: 
+    - key: shrek_description
+      text: 
+    - key: sigma_name
+      text: 
+    - key: sigma_description
+      text: 
+    - key: snoop_name
+      text: 
+    - key: snoop_description
+      text: 
+    - key: substance_name
+      text: 
+    - key: substance_description
+      text: 
+    - key: dicktator_name
+      text: 
+    - key: dicktator_description
+      text: 
+    - key: ramzi_name
+      text: 
+    - key: ramzi_description
+      text: 
+    - key: remy_name
+      text: 
+    - key: remy_description
+      text: 
+    - key: shef_name
+      text: 
+    - key: shef_description
+      text: 
+    - key: peterson_name
+      text: 
+    - key: peterson_description
+      text: 
+    - key: pie_name
+      text: 
+    - key: pie_description
+      text: 
+    - key: rogan_name
+      text: 
+    - key: rogan_description
+      text: 
+    - key: tucker_name
+      text: 
+    - key: tucker_description
+      text: 
+    - key: biser_fez_name
+      text: NONE
+    - key: biser_fez_description
+      text: NONE
+    - key: mister_pissed_name
+      text: NONE
+    - key: mister_pissed_description
+      text: NONE
+    - key: anya_description
+      text: NONE
+    - key: anya_name
+      text: NONE
+    - key: rin_name
+      text: NONE
+    - key: rin_description
+      text: NONE
+    - key: biser_king_name
+      text: NONE
+    - key: biser_king_description
+      text: NONE
+    - key: gaga_name
+      text: NONE
+    - key: gaga_description
+      text: NONE
+    - key: gigachad_name
+      text: NONE
+    - key: gigachad_description
+      text: NONE
+    - key: hermione_name
+      text: NONE
+    - key: hermione_description
+      text: NONE
+    - key: kim_name
+      text: NONE
+    - key: kim_description
+      text: NONE
+    - key: shalame_name
+      text: NONE
+    - key: shalame_description
+      text: NONE
+    - key: supplier_characteristics_pattern
+      text: 'Satisfaction: <b>{0}</b>
+
+        Acidity: <b>{1}</b>
+
+        Saturation:
+        <b>{2}</b>'
+    - key: supplier_price_pattern
+      text: "\u8CFC\u5165 {0}$"
+    - key: suppliershop_price_pattern
+      text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
     - key: check_name_1
       text: "\u7F70\u91D1\uFF1A\u5229\u5C3F\u691C\u67FB"
     - key: check_description_1
@@ -1520,60 +3358,15 @@ MonoBehaviour:
       text: "\u652F\u6255\u3046 {0}$"
     - key: check_term_pattern
       text: "\u671F\u9593\uFF1A<b>{0}</b> \u65E5\u9593"
+    - key: room_name_1
+      text: "\u30B4\u30DF"
+    - key: room_description_1
+      text: "<b>4</b> \u30DC\u30A4\u30E9\u30FC\n<b>11</b> \u5834\u6240\n<b>100</b>
+        \u5E73\u65B9\u30E1\u30FC\u30C8\u30EB."
+    - key: room_price_pattern
+      text: "\u5BB6\u8CC3 {0}$"
   - langKey: french
     localization:
-    - key: trump_name
-      text: L'Homme Orange
-    - key: trump_description
-      text: "Presque Canard P\xE9kinois"
-    - key: borat_name
-      text: Le Super Bon du Kazakhstan
-    - key: borat_description
-      text: "Sais-tu o\xF9 se trouve le Kazakhstan ?"
-    - key: eva_name
-      text: Actrice de film maison
-    - key: eva_description
-      text: Vend aussi de l'eau de sa baignoire
-    - key: hideo_name
-      text: "G\xE9nie du Metal"
-    - key: hideo_description
-      text: Nous boirons chaque goutte de ce qu'il offre
-    - key: skibididopdop_name
-      text: Trr Stibidi
-    - key: skibididopdop_description
-      text: Dob dob oui oui
-    - key: maddison_name
-      text: Stinky Letsplayer
-    - key: maddison_description
-      text: "Parfum\xE9 \xE0 la bi\xE8re et \xE0 la d\xE9ception"
-    - key: musk_name
-      text: UrineX
-    - key: musk_description
-      text: "Innovant (selon le go\xFBt du cr\xE9ateur)"
-    - key: gosling_name
-      text: "Un vrai h\xE9ros humain"
-    - key: gosling_description
-      text: "Il peut pisser \xE0 ta place et \xE0 la mienne !"
-    - key: hunter_name
-      text: Fille de Netflix
-    - key: hunter_description
-      text: "Si elle est m\xEAme une fille..."
-    - key: mrbeast_name
-      text: Mr.Peest
-    - key: mrbeast_description
-      text: C'est un don du YouTuber le plus riche du monde
-    - key: pepe_name
-      text: Le Pipi de Pepe
-    - key: pepe_description
-      text: Au fait, les grenouilles ne peuvent pas pisser
-    - key: gnom_name
-      text: Enfant Nepo Suicidaire
-    - key: gnom_description
-      text: "Amer comme sa future d\xE9pendance \xE0 la drogue"
-    - key: supplier_characteristics_pattern
-      text: "Satisfaction : <b>{0}</b>\nAcidit\xE9 : <b>{1}</b>\nSaturation : <b>{2}</b>"
-    - key: supplier_price_pattern
-      text: ACHETER {0}$
     - key: ui_satisfaction
       text: Plaisir
     - key: ui_saturation
@@ -1581,7 +3374,7 @@ MonoBehaviour:
     - key: ui_causticity
       text: "Causticit\xE9"
     - key: ui_suppliers
-      text: Fournisseurs
+      text: "\u0421\u0441\u0430\u043A\u0438"
     - key: ui_quests
       text: "D\xE9fis"
     - key: ui_checks
@@ -1592,8 +3385,17 @@ MonoBehaviour:
       text: Acheter
     - key: ui_pay
       text: Payer
+    - key: ui_suppliers_shop
+      text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
     - key: ui_rent_button
       text: Loyer
+    - key: ui_open
+      text: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+    - key: ui_pause_menu_continue
+      text: Continuer
+    - key: ui_pause_menu_return
+      text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
+        \u043C\u0435\u043D\u044E"
     - key: ui_main_menu_new_game
       text: Nouveau jeu
     - key: ui_main_menu_continue_game
@@ -1626,10 +3428,50 @@ MonoBehaviour:
       text: "Fontaine Dor\xE9e"
     - key: ui_rails_name
       text: Rails Urinants
+    - key: ui_cats_name
+      text: "\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u0438"
+    - key: ui_bubbles_name
+      text: "\u0421\u0441\u044B\u043A-\u043C\u0430\u0448\u0438\u043D\u0430"
+    - key: ui_gun_name
+      text: "\u041D\u0430\u0441\u0430\u0434\u043A\u0430 \u0420\u041F72"
+    - key: ui_rays_name
+      text: "\u041B\u0443\u0447\u0435\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+    - key: ui_tutorial_title
+      text: "\u0414\u041E\u0411\u0420\u041E \u041F\u041E\u0416\u0410\u041B\u041E\u0412\u0410\u0422\u042C
+        \u0412 \u041A\u041E\u0420\u041F\u041E\u0420\u0410\u0426\u0418\u042E \xAB\u0422\u0423\u0410\u041B\u0415\u0422\u041D\u042B\u0419
+        \u0428\u041D\u042B\u0420\u042C\xBB!!!"
+    - key: ui_tutorial_message
+      text: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 \u2014
+        \u0434\u0435\u043B\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438.\n\n1.
+        \u041F\u043E\u043B\u0430\u0433\u0430\u0439\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
+        \u043D\u0430 \u0441\u0435\u0431\u044F. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
+        \u0432\u0441\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u043F\u0443\u0437\u044B\u0440\u044F,
+        \u0447\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+        \u043D\u0430\u0441 \u0435\u0449\u0435 \u0431\u043E\u0433\u0430\u0447\u0435:\n<b>[\u041B\u041A\u041C]
+        - \u0441\u0442\u0440\u0443\u044F.</b>\n2. \u041F\u043E\u043A\u0443\u043F\u0430\u0439
+        \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u044B\u0439 \u0441\u0432\u0435\u0436\u0438\u0439
+        \u0442\u043E\u0432\u0430\u0440 \u0443 \u043D\u0430\u0448\u0435\u0433\u043E
+        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044F
+        (\u0431\u0443\u0434\u044C \u0441 \u043D\u0438\u043C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D
+        \u0441 \u0435\u0433\u043E \u0437\u0443\u0431\u0430\u043C\u0438):\n<b>[E]-\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435</b>.\n3.
+        \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0432\u0435\u0441\u044C
+        \u043D\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u043A\u043E\u0433\u0434\u0430
+        \u043F\u043E\u0434\u043A\u043E\u043F\u0438\u0448\u044C \u0434\u0435\u043D\u044C\u0436\u0430\u0442:\n<b>[Tab]-\u0441\u0442\u0440\u043E\u0438\u0442\u044C</b>.\n4.
+        \u0418 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435. <b>\u0417\u0410\u041A\u0420\u042B\u0412\u0410\u0419
+        \u041A\u0410\u0424\u0415 \u0414\u041E \u0422\u0415\u041C\u041D\u041E\u0422\u042B!!!!!</b>"
     - key: ui_door_controls_hint
-      text: 
+      text: "[E] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
     - key: ui_toilet_controls_hint
-      text: 
+      text: "[E] \u041C\u0430\u0433\u0430\u0437\u0438\u043D [T] \u0417\u0430\u043A\u0440\u044B\u0442\u044C
+        \u0441\u043C\u0435\u043D\u0443"
+    - key: ui_build_controls_hint
+      text: "[\u041B\u041A\u041C] \u0421\u0442\u0440\u043E\u0438\u0442\u044C [\u041F\u041A\u041C]
+        \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C [\u0421\u041A\u041C] \u0412\u0440\u0430\u0449\u0430\u0442\u044C"
+    - key: ui_item_controls_hint
+      text: "[Q] \u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C [\u041B\u041A\u041C]
+        \u0411\u0440\u043E\u0441\u0438\u0442\u044C [E] \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
+    - key: ui_build_controls_minihint
+      text: "[TAB] \u0421\u0422\u0420\u041E\u0418\u0422\u042C"
     - key: quest_run_name
       text: Cours, pissou! Cours!
     - key: quest_run_description
@@ -1642,6 +3484,56 @@ MonoBehaviour:
       text: "Pourquoi as-tu fait \xE7a?"
     - key: quest_fullbottle_description
       text: Jette <b>{0}</b> bouteilles pleines
+    - key: quest_earn100_name
+      text: "\u041C\u0430\u043C\u043A\u0438\u043D \u0431\u0438\u0437\u043D\u0435\u0441\u043C\u0435\u043D"
+    - key: quest_earn100_description
+      text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 <b>{0}</b> \u0431\u0430\u0447\u0438\u043D\u0441\u043A\u0438\u0445"
+    - key: quest_buildfirst_name
+      text: "\u041F\u0440\u043E\u0440\u0430\u0431 \u0434\u043E\u0432\u043E\u043B\u0435\u043D"
+    - key: quest_buildfirst_description
+      text: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u043C\u043E\u0447\u0435\u0432\u043E\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
+    - key: quest_buysupplier_name
+      text: "\u0427\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C \u0435\u0449\u0451?"
+    - key: quest_buysupplier_description
+      text: "\u041F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0438 <b>{0}</b> \u043D\u043E\u0432\u044B\u0445
+        \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u043E\u0432"
+    - key: quest_zomdiedie_name
+      text: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u043F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043E\u043C"
+    - key: quest_zomdiedie_description
+      text: "\u0423\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u0438 <b>{0}</b> 
+        \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u0445"
+    - key: quest_day1_name
+      text: "\u041C\u0435\u0447\u0442\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430"
+    - key: quest_day1_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u0434\u0435\u043D\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435
+        \u043C\u0435\u0447\u0442\u044B"
+    - key: quest_day10_name
+      text: "\u0427\u0435\u043B\u043E\u0432\u0435\u0447\u043D\u043E\u0441\u0442\u044C
+        \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u0430"
+    - key: quest_day10_description
+      text: "\u041F\u0440\u043E\u0432\u0435\u0434\u0438 <b>{0}</b> \u0434\u043D\u0435\u0439
+        \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0435"
+    - key: quest_vershina_name
+      text: "\u041D\u0435 \u0441\u0441\u044B\u043B\u043A\u043E!"
+    - key: quest_vershina_description
+      text: "\u0417\u0430\u0431\u0435\u0440\u0438\u0441\u044C \u043F\u043E\u0432\u044B\u0448\u0435"
+    - key: quest_toilettalk_name
+      text: "\u041F\u0440\u044F\u043C\u043E \u0432 \u0443\u0448\u0438"
+    - key: quest_toilettalk_description
+      text: "\u0412\u044B\u0441\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435\u0433\u043E
+        \u043A\u043E\u043B\u043B\u0435\u0433\u0443"
+    - key: quest_plants_name
+      text: "\u0413\u0440\u0438\u043D\u043F\u0438\u0441\u043E\u0432\u0435\u0446"
+    - key: quest_plants_description
+      text: "\u041F\u043E\u043C\u043E\u0433\u0438 \u043E\u0437\u0435\u043B\u0435\u043D\u0438\u0442\u044C
+        <b>{0}</b>  \u043A\u0443\u0441\u0442\u043E\u0432"
+    - key: quest_opendoors_name
+      text: "\u041C\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438\u0441\u044C!"
+    - key: quest_opendoors_description
+      text: "\u041E\u0442\u043A\u0440\u043E\u0439 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438,
+        \u043C\u0430\u043B\u044B\u0448"
     - key: skibidi_random_phrase_1
       text: "Allez! Ach\xE8te!"
     - key: skibidi_random_phrase_2
@@ -1685,12 +3577,188 @@ MonoBehaviour:
         Quel \xE9tait le nom de la fille qui t'a bris\xE9 le c\u0153ur?"
     - key: skibidi_random_phrase_19
       text: Ton travail est toujours plus utile que celui d'un marketeur
-    - key: room_name_1
-      text: Ordures
-    - key: room_description_1
-      text: "<b>4</b> chaudi\xE8res\n<b>11</b> lieux\n<b>100</b> m\xB2."
-    - key: room_price_pattern
-      text: Louer {0}$
+    - key: trump_name
+      text: L'Homme Orange
+    - key: trump_description
+      text: "Presque Canard P\xE9kinois"
+    - key: borat_name
+      text: Le Super Bon du Kazakhstan
+    - key: borat_description
+      text: "Sais-tu o\xF9 se trouve le Kazakhstan ?"
+    - key: eva_name
+      text: Actrice de film maison
+    - key: eva_description
+      text: Vend aussi de l'eau de sa baignoire
+    - key: hideo_name
+      text: "G\xE9nie du Metal"
+    - key: hideo_description
+      text: Nous boirons chaque goutte de ce qu'il offre
+    - key: biser_fez_name
+      text: Trr Stibidi
+    - key: biser_fez_description
+      text: Dob dob oui oui
+    - key: maddison_name
+      text: Stinky Letsplayer
+    - key: maddison_description
+      text: "Parfum\xE9 \xE0 la bi\xE8re et \xE0 la d\xE9ception"
+    - key: musk_name
+      text: UrineX
+    - key: musk_description
+      text: "Innovant (selon le go\xFBt du cr\xE9ateur)"
+    - key: gosling_name
+      text: "Un vrai h\xE9ros humain"
+    - key: gosling_description
+      text: "Il peut pisser \xE0 ta place et \xE0 la mienne !"
+    - key: hunter_name
+      text: Fille de Netflix
+    - key: hunter_description
+      text: "Si elle est m\xEAme une fille..."
+    - key: mister_pissed_name
+      text: Mr.Peest
+    - key: mister_pissed_description
+      text: C'est un don du YouTuber le plus riche du monde
+    - key: pepe_name
+      text: Le Pipi de Pepe
+    - key: pepe_description
+      text: Au fait, les grenouilles ne peuvent pas pisser
+    - key: gnom_name
+      text: Enfant Nepo Suicidaire
+    - key: gnom_description
+      text: "Amer comme sa future d\xE9pendance \xE0 la drogue"
+    - key: alt_name
+      text: 
+    - key: alt_description
+      text: 
+    - key: asuka_name
+      text: 
+    - key: asuka_description
+      text: 
+    - key: bu_name
+      text: 
+    - key: bu_description
+      text: 
+    - key: doomer_name
+      text: 
+    - key: doomer_description
+      text: 
+    - key: gandalf_name
+      text: 
+    - key: gandalf_description
+      text: 
+    - key: jinx_name
+      text: 
+    - key: Jinx_description
+      text: 
+    - key: markaryan_name
+      text: 
+    - key: markaryan_description
+      text: 
+    - key: goblin_name
+      text: 
+    - key: goblin_description
+      text: 
+    - key: president_name
+      text: 
+    - key: president_description
+      text: 
+    - key: queen_name
+      text: 
+    - key: gueen_description
+      text: 
+    - key: shrek_name
+      text: 
+    - key: shrek_description
+      text: 
+    - key: sigma_name
+      text: 
+    - key: sigma_description
+      text: 
+    - key: snoop_name
+      text: 
+    - key: snoop_description
+      text: 
+    - key: substance_name
+      text: 
+    - key: substance_description
+      text: 
+    - key: dicktator_name
+      text: 
+    - key: dicktator_description
+      text: 
+    - key: ramzi_name
+      text: 
+    - key: ramzi_description
+      text: 
+    - key: remy_name
+      text: 
+    - key: remy_description
+      text: 
+    - key: shef_name
+      text: 
+    - key: shef_description
+      text: 
+    - key: peterson_name
+      text: 
+    - key: peterson_description
+      text: 
+    - key: pie_name
+      text: 
+    - key: pie_description
+      text: 
+    - key: rogan_name
+      text: 
+    - key: rogan_description
+      text: 
+    - key: tucker_name
+      text: 
+    - key: tucker_description
+      text: 
+    - key: biser_fez_name
+      text: NONE
+    - key: biser_fez_description
+      text: NONE
+    - key: mister_pissed_name
+      text: NONE
+    - key: mister_pissed_description
+      text: NONE
+    - key: anya_description
+      text: NONE
+    - key: anya_name
+      text: NONE
+    - key: rin_name
+      text: NONE
+    - key: rin_description
+      text: NONE
+    - key: biser_king_name
+      text: NONE
+    - key: biser_king_description
+      text: NONE
+    - key: gaga_name
+      text: NONE
+    - key: gaga_description
+      text: NONE
+    - key: gigachad_name
+      text: NONE
+    - key: gigachad_description
+      text: NONE
+    - key: hermione_name
+      text: NONE
+    - key: hermione_description
+      text: NONE
+    - key: kim_name
+      text: NONE
+    - key: kim_description
+      text: NONE
+    - key: shalame_name
+      text: NONE
+    - key: shalame_description
+      text: NONE
+    - key: supplier_characteristics_pattern
+      text: "Satisfaction : <b>{0}</b>\nAcidit\xE9 : <b>{1}</b>\nSaturation : <b>{2}</b>"
+    - key: supplier_price_pattern
+      text: ACHETER {0}$
+    - key: suppliershop_price_pattern
+      text: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C {0}$"
     - key: check_name_1
       text: "AMENDE : INSPECTION DIUR\xC9TIQUE"
     - key: check_description_1
@@ -1699,3 +3767,9 @@ MonoBehaviour:
       text: PAYER {0}$
     - key: check_term_pattern
       text: "D\xE9lai : <b>{0}</b> jours"
+    - key: room_name_1
+      text: Ordures
+    - key: room_description_1
+      text: "<b>4</b> chaudi\xE8res\n<b>11</b> lieux\n<b>100</b> m\xB2."
+    - key: room_price_pattern
+      text: Louer {0}$

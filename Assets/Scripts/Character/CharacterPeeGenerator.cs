@@ -12,7 +12,14 @@ public class CharacterPeeGenerator : BasePeePart
     [SerializeField] private PeeBox peeBoxPrefab;
     [SerializeField] private Transform[] peeOrigins;
 
+    private QuestsManager _questManager;
+
     private float _lastSpawnPeeTime;
+
+    private void Awake()
+    {
+        _questManager = GameManager.Instance.QuestsManager;
+    }
 
     private void LateUpdate()
     {
@@ -26,6 +33,8 @@ public class CharacterPeeGenerator : BasePeePart
 
     private void Pee()
     {
+        _questManager.ChangeProgressQuest(QuestConfig.QuestType.AllYourself, 0.01f);
+
         foreach (var peeOrigin in peeOrigins)
         {
             if (!peeOrigin.gameObject.activeInHierarchy) continue;

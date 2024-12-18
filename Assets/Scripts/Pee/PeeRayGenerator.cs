@@ -30,7 +30,7 @@ public class PeeRayGenerator : BasePeePart
             if (!rayOrigin.gameObject.activeInHierarchy) continue;
 
             var offset = new Vector3(0.0f, 0.0f, peeBoxPrefab.transform.localScale.z * 0.5f); ;
-            PeeBox ray = Instantiate(peeBoxPrefab, rayOrigin.position + offset, rayOrigin.rotation);
+            PeeBox ray = Instantiate(peeBoxPrefab, rayOrigin.position + Quaternion.LookRotation(transform.forward) * offset, rayOrigin.rotation);
             ray.SetDestroyTimer(rayDestroyDelay);
         }
 
